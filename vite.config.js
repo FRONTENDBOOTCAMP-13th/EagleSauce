@@ -9,6 +9,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
+        header: 'src/components/main-header.html',
+        banner: 'src/components/main-banner.html',
+        bottle: 'src/components/main-bottle.html',
+        footer: 'src/components/main-footer.html',
       },
     },
   },
