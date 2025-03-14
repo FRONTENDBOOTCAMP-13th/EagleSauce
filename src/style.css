@@ -2,9 +2,9 @@
 
 @theme{
   --font-sans: "Pretendard Variable", sans-serif;
-  --adelle: "adelle-sans", sans-serif;
-  --newbery: "newbery-sans-pro", sans-serif;
-  --gastro: gastromond, sans-serif;
+  --font-adelle: "adelle-sans", sans-serif;
+  --font-newbery: "newbery-sans-pro", sans-serif;
+  --font-gastro: gastromond, sans-serif;
 
   /* 색상 */
   --color-hot-brand: #ee2523;
@@ -16,7 +16,9 @@
 
   /* 폰트사이즈 */
   --text-11:.6875rem;
+  --text-12:.75rem;
   --text-13:.8125rem;
+  --text-14:.875rem;
   --text-15:.9375rem;
   --text-16: 1rem;
 
