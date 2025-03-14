@@ -7,5 +7,48 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
+    <section
+      class="bg-amber-600 w-full h-[584.05px] py-12.5 flex items-center justify-center"
+    >
+      <div class="relative inline-block max-w-[550px]">
+        <!-- 테두리 이미지 -->
+        <img
+          class="w-[761.59px] h-[456.36px] object-cover"
+          src="/public/assets/main-frame1.png"
+          alt="중앙이미지 테두리"
+        />
+        <!-- 중앙 이미지 -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <img
+            id="slider-image"
+            class="w-[728px] h-[421.33px] object-cover"
+            src="/public/assets/intro-2.jpg"
+            alt="중앙 이미지"
+          />
+        </div>
+        <!-- 왼쪽 버튼 -->
+        <button
+          id="prev-btn"
+          class="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-full"
+        >
+          <img
+            class="w-[40px] h-[80px]"
+            src="/public/assets/prev.png"
+            alt="이전 이미지"
+          />
+        </button>
+        <!-- 4. 오른쪽 버튼 -->
+        <button
+          id="next-btn"
+          class="absolute top-1/2 right-0 -translate-y-1/2 translate-x-full"
+        >
+          <img
+            class="w-[40px] h-[80px]"
+            src="/public/assets/next.png"
+            alt="다음 이미지"
+          />
+        </button>
+      </div>
+    </section>
   </body>
 </html>
