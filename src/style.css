@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
   --font-sans: "Pretendard Variable", sans-serif;
   --adelle: "adelle-sans", sans-serif;
   --newbery: "newbery-sans-pro", sans-serif;
@@ -9,16 +9,17 @@
   /* 색상 */
   --color-hot-brand: #ee2523;
   --color-hot-main: #f01e14;
-  --color-hot-ivory:#fff9e8;
-  --color-hot-brown:#370e06;
+  --color-hot-ivory: #fff9e8;
+  --color-hot-brown: #370e06;
   --color-hot-gray100: #ccc;
-  --color-hot-gray200:#221e1f;
+  --color-hot-gray200: #221e1f;
 
   /* 폰트사이즈 */
-  --text-11:.6875rem;
-  --text-13:.8125rem;
-  --text-15:.9375rem;
+  --text-11: 0.6875rem;
+  --text-13: 0.8125rem;
+  --text-15: 0.9375rem;
   --text-16: 1rem;
 
-  --pattern-bg: url('/assets/images/') repeat top / 5%;
+  --pattern-bg: url("/assets/images/") repeat top / 5%;
+  --rolltxt-bg: url("/public/assets/rolltxt1.png") repeat-x center / contain;
 }
