@@ -7,11 +7,13 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-    <header class="font-sans">
+    <header class="font-sans relative">
       <p class="text-12 text-white bg-hot-brown text-center py-1.5">
         <span class="text-13 font-bold">[COUPON]</span> 
         카카오 채널 추가 시 무료배송 쿠폰 지급
       </p>
+
+      <!-- Mobile Menu -->
       <div class="menu-mobile lg:hidden relative bg-hot-ivory border-b border-1 p-4">
         <ul class="flex justify-between">
           <li>
@@ -25,15 +27,18 @@
             </a>
           </li>
         </ul> 
-        <a href="#void" class="block w-32 absolute left-1/2 top-1/2 -translate-1/2 -translate-y-1/2">
-          <img src="/assets/logo.png" alt="하랜띵스로고" />
+        <a href="#void" class="block w-32 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <img src="/assets/images/logo.png" alt="하랜띵스로고" />
         </a>
       </div>
+      
+      <!-- Desktop Menu -->
       <nav class="menu-pc hidden lg:flex lg:justify-between relative text-black text-16 font-bold bg-hot-ivory border-b border-1 px-6">
         <ul class="flex">
-          <li class="relative">
+          <!-- ABOUT Menu -->
+          <li class="relative group">
             <a href="#void" class="p-6 block">ABOUT</a>
-            <ul class="pb-6 w-dvw absolute bg-hot-ivory bg-hot-ivory">
+            <ul class="pb-6 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 ">
               <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
                 <a href="#void">OUR BRAND</a>
               </li>
@@ -42,9 +47,11 @@
               </li>
             </ul>
           </li>
-          <li class="relative">
-            <a href="#void" class="p-6 block">SHOP</a>   
-            <ul class="pb-6 w-dvw absolute bg-hot-ivory">
+          
+          <!-- SHOP Menu -->
+          <li class="relative group">
+            <a href="#void" class="p-6 block">SHOP</a>    
+            <ul class="pb-6 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 ">
               <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300 flex gap-4 items-center">
                 <a href="#void">ALL PRODUCTS</a>
                 <p class="text-14 opacity-20">한 입으로 당신의 매 순간에 특별함을 더해주는 하랜띵스</p>
@@ -66,33 +73,37 @@
                 <p class="text-14 opacity-20">일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종 세트</p>
               </li>
               <li class="mt-20 px-6">
-                <p class="font-newbery text-14 font-bold opacity-20 leading-6">HOTN'THINGS exists to spread the concept of 'HOT' around the world.<br>This 'HOT' is not only the realm of the taste sense, but it is also the realm<br>of the sixth sense that is somehow fun and exciting.<br>Experience the thrill of everyday life created by HOTN’THINGS!</p></li>
+                <p class="font-newbery text-14 font-bold opacity-20 leading-6">HOTN'THINGS exists to spread the concept of 'HOT' around the world.<br>This 'HOT' is not only the realm of the taste sense, but it is also the realm<br>of the sixth sense that is somehow fun and exciting.<br>Experience the thrill of everyday life created by HOTN'THINGS!</p>
+              </li>
             </ul>
           </li>
-          <li class="relative">
+          
+          <!-- COMMUNITY Menu -->
+          <li class="relative group">
             <a href="#void" class="p-6 block">COMMUNITY</a>      
-            <ul class="pb-6 absolute bg-hot-ivory">
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="#void">EVENT</a>
-              </li>
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="#void">RECIPES & PARING</a>
-              </li>
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="#void">NAPOLI MATFIA</a>
-              </li>
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="#void">REVIEW</a>
-              </li>
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="#void">FAQ</a>
-              </li>
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="#void">1:1 Q&A</a>
-              </li>
-            </ul>
+              <ul class="pb-6 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 ">
+                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                  <a href="#void">EVENT</a>
+                </li>
+                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                  <a href="#void">RECIPES & PARING</a>
+                </li>
+                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                  <a href="#void">NAPOLI MATFIA</a>
+                </li>
+                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                  <a href="#void">REVIEW</a>
+                </li>
+                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                  <a href="#void">FAQ</a>
+                </li>
+                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                  <a href="#void">1:1 Q&A</a>
+                </li>
+              </ul>
           </li>
-        </ul>         
+        </ul>
+        
         <ul class="flex">
           <li class="relative">
             <a href="#void" class="p-6 block">SEARCH</a>
@@ -103,12 +114,15 @@
           <li class="relative">
             <a href="#void" class="p-6 block">JOIN/LOGIN</a>
           </li>
-        </ul> 
+        </ul>
+        
+        <!-- Logo -->
         <a href="#void" class="block w-32 lg:w-56 absolute left-1/2 -translate-x-1/2 pt-3">
-          <img src="/assets/logo.png" alt="하랜띵스로고" />
+          <img src="/assets/images/logo.png" alt="하랜띵스로고" />
         </a>
       </nav>
+      
+      <!-- <div class="menu-bg w-full h-0 bg-hot-ivory absolute -z-1 transition-all duration-300 group-hover:h-auto"></div> -->
     </header>
   </body>
-  <body></body>
 </html>
