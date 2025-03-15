@@ -24,6 +24,8 @@
   --text-13: 0.8125rem;
   --text-15: 0.9375rem;
   --text-16: 1rem;
+  --text-20: 1.25rem;
+  --text-45: 2.8125rem;
 
   --pattern-bg: url("/assets/images/") repeat top / 5%;
   --rolltxt-bg: url("/public/assets/rolltxt1.png") repeat-x center / contain;
