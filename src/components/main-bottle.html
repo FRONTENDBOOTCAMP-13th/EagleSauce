@@ -6,145 +6,177 @@
     <title>title</title>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body>
-    <section class="relative h-screen bg-gray-500">
-      <!-- 선반 컨테이너 - 바닥에 고정됨 -->
-      <div
-        class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-md"
-      >
-        <!-- 선반 이미지  -->
-        <img
-          src="/public/assets/wood-frame2.jpg"
-          alt=""
-          class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-7/12 w-full max-w-md -z-10"
-        />
-        <img
-          src="/public/assets/showcase.png"
-          alt="Hot Things Shelf"
-          class="w-full"
-        />
-
-        <!-- 소스병 컨테이너 - 선반 위에 절대 위치로 배치 -->
-        <div class="absolute inset-0">
-          <!-- 첫 번째 줄 소스병 -->
+  <body class="bg-amber-300">
+    <section class="relative w-full box-border block mx-auto">
+      <div class="relative w-full mx-auto my-0 z-10 bg-amber-600">
+        <div class="wood-section relative">
+          
           <div
-            class="absolute top-1/4 left-[30%] transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/pyogo.png"
-              alt="Extra Spicy Sauce"
-              class="w-16"
-            />
-          </div>
-          <div
-            class="absolute top-1/4 right-[30%] transform translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/pyogo.png"
-              alt="Extra Spicy Sauce"
-              class="w-16"
-            />
-          </div>
-
-          <!-- 첫 번째 줄 레이블 -->
-          <div
-            class="absolute top-[42%] left-[30%] transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/PYOGORUFFLE-nametag.png"
-              alt="Extra Spicy Label"
-              class="w-16"
-            />
-          </div>
-          <div
-            class="absolute top-[42%] right-[30%] transform translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/PYOGORUFFLE-nametag.png"
-              alt="Extra Spicy Label"
-              class="w-16"
-            />
-          </div>
-
-          <!-- 두 번째 줄 소스병 -->
-          <div
-            class="absolute top-1/2 left-[30%] transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/parmesan.png"
-              alt="Medium Sauce"
-              class="w-16"
-            />
-          </div>
-          <div
-            class="absolute top-1/2 right-[30%] transform translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/parmesan.png"
-              alt="Medium Sauce"
-              class="w-16"
-            />
-          </div>
-
-          <!-- 두 번째 줄 레이블 -->
-          <div
-            class="absolute top-[67%] left-[30%] transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/PARMESANGOCHUJANG-nametag.png"
-              alt="Medium Label"
-              class="w-16"
-            />
-          </div>
-          <div
-            class="absolute top-[67%] right-[30%] transform translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/PARMESANGOCHUJANG-nametag.png"
-              alt="Medium Label"
-              class="w-16"
-            />
-          </div>
-
-          <!-- 세 번째 줄 소스병 -->
-          <div
-            class="absolute top-3/4 left-[30%] transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/53451e197765b700c21b38bc44dae0c7 (1).png"
-              alt="Mild Sauce"
-              class="w-52"
-            />
-          </div>
-          <div
-            class="absolute top-3/4 right-[30%] transform translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/53451e197765b700c21b38bc44dae0c7 (1).png"
-              alt="Mild Sauce"
-              class="w-52"
-            />
-          </div>
-
-          <!-- 세 번째 줄 레이블 -->
-          <div
-            class="absolute top-[92%] left-[30%] transform -translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/XOSHRIMP-nametag.png"
-              alt="Mild Label"
-              class="w-16"
-            />
-          </div>
-          <div
-            class="absolute top-[92%] right-[30%] transform translate-x-1/2 -translate-y-1/2"
-          >
-            <img
-              src="/public/assets/XOSHRIMP-nametag.png"
-              alt="Mild Label"
-              class="w-16"
-            />
-          </div>
+            class="wood-bg"
+          ></div>
+      </div>
+        <!-- 왼쪽 선반 이미지 -->
+        <div
+          class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px]"
+        >
+          <img
+            src="/public/assets/left-showcase.png"
+            alt=""
+            class="w-full align-top"
+          />
+        </div>
+        <!-- 오른쪽 선반 이미지 -->
+        <div
+          class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px]"
+        >
+          <img
+            src="/public/assets/right-showcase.png"
+            alt=""
+            class="w-full align-top"
+          />
+        </div>
+        <!-- 중앙 옷장 이미지 -->
+        <div class="w-[100%] lg:w-[40%] mx-auto relative">
+          <img
+            src="/public/assets/showcase.png"
+            alt=""
+            class="w-full align-top"
+          />
+        <ul class="block list-disc my-4 mx-0 pl-10 w-[40%] bg-lime-500">
+          <li class="list-none list-item">
+            <div class="top-[21%] left-[31%] absolute w-[11%]">
+              <img
+                src="/public/assets/pyogo.png"
+                alt=""
+                class="w-full align-top"
+              />
+              <img
+                src="/public/assets/3b216110d51cb6705e7fa96281a0e8f2.gif"
+                alt=""
+                class="w-full align-top border-0 hidden"
+              />
+              <div class="top-[120%] left-[12%] absolute w-[80%]">
+                <img
+                  src="/public/assets/PYOGORUFFLE-nametag.png"
+                  alt=""
+                  class="w-full align-top"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="list-none list-item">
+            <div class="top-[46.4%] left-[31%] absolute w-[11%]">
+              <img
+                src="/public/assets/parmesan.png"
+                alt=""
+                class="w-full align-top"
+              />
+              <img
+                src="/public/assets/parmesan-gif.gif"
+                alt=""
+                class="w-full align-top border-0 hidden"
+              />
+              <div class="top-[120%] left-[12%] absolute w-[80%]">
+                <img
+                  src="/public/assets/PARMESANGOCHUJANG-nametag.png"
+                  alt=""
+                  class="w-full align-top"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="list-none list-item">
+            <div class="top-[71.8%] left-[31%] absolute w-[11%]">
+              <img
+                src="/public/assets/shrimp.png"
+                alt=""
+                class="w-full align-top"
+              />
+              <img
+                src="/public/assets/parmesan-gif.gif"
+                alt=""
+                class="w-full align-top border-0 hidden"
+              />
+              <div class="top-[120%] left-[12%] absolute w-[80%]">
+                <img
+                  src="/public/assets/PARMESANGOCHUJANG-nametag.png"
+                  alt=""
+                  class="w-full align-top"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="block list-disc my-4 mx-0 pl-10">
+          <li class="list-none list-item">
+            <div class="top-[21%] right-[31.3%] absolute w-[11%]">
+              <img
+                src="/public/assets/pyogo.png"
+                alt=""
+                class="w-full align-top"
+              />
+              <img
+                src="/public/assets/3b216110d51cb6705e7fa96281a0e8f2.gif"
+                alt=""
+                class="w-full align-top border-0 hidden"
+              />
+              <div class="top-[120%] left-[12%] absolute w-[80%]">
+                <img
+                  src="/public/assets/PYOGORUFFLE-nametag.png"
+                  alt=""
+                  class="w-full align-top"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="list-none list-item">
+            <div class="top-[46.4%] right-[31.3%] absolute w-[11%]">
+              <img
+                src="/public/assets/parmesan.png"
+                alt=""
+                class="w-full align-top"
+              />
+              <img
+                src="/public/assets/parmesan-gif.gif"
+                alt=""
+                class="w-full align-top border-0 hidden"
+              />
+              <div class="top-[120%] right-[9%] absolute w-[80%]">
+                <img
+                  src="/public/assets/PARMESANGOCHUJANG-nametag.png"
+                  alt=""
+                  class="w-full align-top"
+                />
+              </div>
+            </div>
+          </li>
+          <li class="list-none list-item">
+            <div class="top-[71.8%] right-[31.3%] absolute w-[11%]">
+              <img
+                src="/public/assets/shrimp.png"
+                alt=""
+                class="w-full align-top"
+              />
+              <img
+                src="/public/assets/parmesan-gif.gif"
+                alt=""
+                class="w-full align-top border-0 hidden"
+              />
+              <div class="top-[120%] left-[12%] absolute w-[80%]">
+                <img
+                  src="/public/assets/PARMESANGOCHUJANG-nametag.png"
+                  alt=""
+                  class="w-full align-top"
+                />
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="wood-bg h-[28vw] w-full absolute bottom-0 left-0 z-0 font-newbery text-20 font-bold">
+        <div class="rolling-txt-bg w-full absolute top-0 left-0 z-1 -translate-y-full">
+          <div class="roll-wrap bg-black text-white"></div>
         </div>
       </div>
     </section>

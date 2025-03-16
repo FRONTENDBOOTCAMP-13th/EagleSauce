@@ -28,5 +28,48 @@
   --text-45: 2.8125rem;
 
   --pattern-bg: url("/assets/images/") repeat top / 5%;
-  --rolltxt-bg: url("/public/assets/rolltxt1.png") repeat-x center / contain;
+  --cloth-bg: url(/public/assets/images/showcase.png);
+}
+
+.wood-bg {
+  background: url(/public/assets/wood-frame2.jpg) repeat-x bottom / cover;
+  position: absolute;
+  width: 100%;
+  height: 80vw; /* Your existing responsive height */
+  bottom: 0;
+  z-index: -10;
+}
+
+@media (min-width: 1024px) {
+  .wood-bg {
+    height: 30vw;
+  }
+}
+
+.rolling-txt-bg {
+  background-color: black;
+  padding: 10px 0;
+}
+
+.roll-wrap {
+  display: flex;
+  animation: rolling 20s linear infinite;
+  white-space: nowrap;
+}
+
+.roll-wrap:before {
+  content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
+  color: white; /* 텍스트 색상 */
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding-right: 20px;
+}
+
+@keyframes rolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
