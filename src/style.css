@@ -27,42 +27,20 @@
   --text-20: 1.25rem;
   --text-45: 2.8125rem;
 
+  /* 이미지설정 */
   --pattern-bg: url("/assets/images/") repeat top / 5%;
-  --cloth-bg: url(/public/assets/images/showcase.png);
-}
-
-.wood-bg {
-  background: url(/public/assets/wood-frame2.jpg) repeat-x bottom / cover;
-  position: absolute;
-  width: 100%;
-  height: 80vw; /* Your existing responsive height */
-  bottom: 0;
-  z-index: -10;
-}
-
-@media (min-width: 1024px) {
-  .wood-bg {
-    height: 30vw;
-  }
-}
-
-.rolling-txt-bg {
-  background-color: black;
-  padding: 10px 0;
+  --wood-bg : url(/public/assets/images/wood-frame2.jpg);
 }
 
 .roll-wrap {
-  display: flex;
   animation: rolling 20s linear infinite;
-  white-space: nowrap;
-}
 
-.roll-wrap:before {
-  content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
-  color: white; /* 텍스트 색상 */
-  font-size: 16px;
-  letter-spacing: 2px;
-  padding-right: 20px;
+  &:before{
+    content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-right: 1.25rem;
+  }
 }
 
 @keyframes rolling {
