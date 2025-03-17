@@ -35,18 +35,18 @@
 
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body
-    class="font-sans bg-hot-ivory min-h-screen overflow-hidden max-[959px]:bg-[url('/public/assets/images/HOTNTHINGSKIT.jpg')] bg-cover"
-  >
-    <div class="h-full flex items-stretch">
+  <body class="bg-hot-ivory min-h-screen overflow-hidden">
+    <div class="h-full flex items-stretch max-[959px]:hidden">
       <!-- 왼쪽 영역 -->
-      <div class="w-1/2 max-[959px]:hidden">
-        <div class="pl-[70px] pt-[75px] pr-[90px] pb-[80px]">
-          <div class="relative">
+      <div class="w-1/2 h-dvh max-[959px]:hidden">
+        <div
+          class="flex flex-col justify-between pl-[70px] pt-[75px] pr-[90px] pb-[80px] h-dvh"
+        >
+          <div class="relative rounded-[5px] border-white">
             <input
               type="text"
               placeholder="맛있는 소스 검색하기"
-              class="border border-black hover:border-black bg-white px-5 py-4 w-full placeholder-gray-300 text-black opacity-60 focus:outline-none"
+              class="rounded-[5px] border border-white hover:border-black bg-white px-5 py-4 w-full placeholder-gray-300 text-black opacity-100 focus:outline-none"
             />
             <!-- 검색 이미지 -->
             <img
@@ -56,29 +56,29 @@
               class="absolute right-3 top-1/2 w-5 h-5 -translate-y-1/2"
             />
           </div>
-          <ul class="">
+          <ul class="font-newbery font-bold">
             <li
-              class="py-5 text-[2.8125rem] border-b border-black hover:text-red-500"
+              class="py-5 text-[42px] text- border-b border-black hover:text-red-500"
             >
               <a href="/">PYOGORUFFLE</a>
             </li>
             <li
-              class="py-5 text-[2.8125rem] border-b border-black hover:text-red-500"
+              class="py-5 text-[42px] border-b border-black hover:text-red-500"
             >
               <a href="/">PARAMESAN GOCHUJANG</a>
             </li>
             <li
-              class="py-5 text-[2.8125rem] border-b border-black hover:text-red-500"
+              class="py-5 text-[42px] border-b border-black hover:text-red-500"
             >
               <a href="/">XO SHRIMP</a>
             </li>
             <li
-              class="py-5 text-[2.8125rem] border-b border-black hover:text-red-500"
+              class="py-5 text-[42px] border-b border-black hover:text-red-500"
             >
-              <a href="/">HOTM'THINGS KIT</a>
+              <a href="/">HOTN'THINGS KIT</a>
             </li>
           </ul>
-          <p>
+          <p class="font-newbery font-bold text-[12px] opacity-20 inline-1.7">
             HOTN’THINGS that add specialness to your every moment.
             <br />
             HOTN’THINGS unique flavor filled with more than 52% premium
@@ -92,13 +92,63 @@
         </div>
       </div>
       <!-- 오른쪽 영역 -->
-      <div class="w-1/2 h-full max-[959px]:hidden">
+      <div class="w-1/2 max-[959px]:hidden">
         <img
-          class="w-full h-full object-cover object-center"
+          class="w-full h-dvh object-cover object-bottom"
           src="/public/assets/images/HOTNTHINGSKIT.jpg"
           alt="/"
           draggable="false"
         />
+        <button class="text-5xl text-white absolute top-10 right-10">
+          <a class="" href="/">x</a>
+        </button>
+      </div>
+    </div>
+
+    <!--모바일 화면-->
+    <div
+      class="bg-[url('/public/assets/images/HOTNTHINGSKIT.jpg')] bg-cover bg-center h-screen w-full relative"
+    >
+      <button class="absolute top-5 right-1 text-5xl text-white">
+        <a href="">x</a>
+      </button>
+      <div class="px-[27px] pt-[15px] h-[28px]">
+        <div class="relative bg-white rounded-[5px] border">
+          <input
+            type="text"
+            placeholder="맛있는 소스 검색하기"
+            class="rounded-[5px] border border-white hover:border-black px-[20px] py-[16px] w-full placeholder-gray-300 text-black opacity-100 focus:outline-none"
+          />
+          <!-- 검색 이미지 -->
+          <img
+            src="/public/assets/icon/search.svg"
+            alt="검색 이미지"
+            draggable="false"
+            class="absolute right-3 top-1/2 w-5 h-5 -translate-y-1/2"
+          />
+        </div>
+        <ul class="font-bold font-newbery">
+          <li
+            class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
+          >
+            <a href="/">PYOGORUFFLE</a>
+          </li>
+          <li
+            class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
+          >
+            <a href="/">PARAMESAN GOCHUJANG</a>
+          </li>
+          <li
+            class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
+          >
+            <a href="/">XO SHRIMP</a>
+          </li>
+          <li
+            class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
+          >
+            <a href="/">HOTN'THINGS KIT</a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
