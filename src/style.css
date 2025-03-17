@@ -28,8 +28,8 @@
   --text-45: 2.8125rem;
 
   /* 이미지설정 */
-  --pattern-bg: url("/assets/images/") repeat top / 5%;
-  --wood-bg : url(/public/assets/images/wood-frame2.jpg);
+  --pattern-bg: url("/public/assets/images/pattern.png");
+  --wood-bg : url("/public/assets/images/wood-frame2.jpg");
 }
 
 .roll-wrap {
