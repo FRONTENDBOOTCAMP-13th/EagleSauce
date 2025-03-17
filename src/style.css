@@ -32,8 +32,8 @@
   --text-85:5.3125rem;
 
   /* 이미지설정 */
-  --pattern-bg: url("/assets/images/");
-  --wood-bg : url(/public/assets/images/wood-frame2.jpg);
+  --pattern-bg: url("/public/assets/images/pattern.png");
+  --wood-bg : url("/public/assets/images/wood-frame2.jpg");
   --ourbrand-bg01: url(/public/assets/images/main.jpg);
   --ourbrand-bg02: url(/public/assets/images/sec2-main.jpg);
   --symbol-bg:url(/public/assets/images/sec10-bg.jpg) ;
