@@ -24,12 +24,25 @@
   --text-13: 0.8125rem;
   --text-15: 0.9375rem;
   --text-16: 1rem;
+  --text-17: 1.0625rem;
   --text-20: 1.25rem;
+  --text-25: 1.5625rem;
   --text-45: 2.8125rem;
+  --text-50: 3.125rem;
+  --text-85:5.3125rem;
 
   /* 이미지설정 */
-  --pattern-bg: url("/assets/images/") repeat top / 5%;
+  --pattern-bg: url("/assets/images/");
   --wood-bg : url(/public/assets/images/wood-frame2.jpg);
+  --ourbrand-bg01: url(/public/assets/images/main.jpg);
+  --ourbrand-bg02: url(/public/assets/images/sec2-main.jpg);
+  --symbol-bg:url(/public/assets/images/sec10-bg.jpg) ;
+}
+
+@layer components{
+  .max-container{
+    @apply max-w-[1920px] mx-auto
+  }
 }
 
 .roll-wrap {
