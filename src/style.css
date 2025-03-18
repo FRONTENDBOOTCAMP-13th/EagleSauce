@@ -35,9 +35,6 @@
   --text-50: 3.125rem;
   --text-85:5.3125rem;
 
-  /* Grid */
-  /* --review: repeat(auto-fit, minmax(300px, 1fr)); */
-
   /* 이미지설정 */
   --pattern-bg: url("/public/assets/images/pattern.png");
   --wood-bg : url("/public/assets/images/wood-frame2.jpg");
@@ -47,9 +44,9 @@
   --symbol-bg:url("/public/assets/images/sec10-bg.jpg") ;
 
   /* 애니메이션 */
-  --animate-rolling : rolling 40s linear infinite ;
+  --animate-cardrolling : cardrolling 40s linear infinite ;
 
-  @keyframes rolling {
+  @keyframes cardrolling {
     0% {
       transform: translateX(0);
     }
