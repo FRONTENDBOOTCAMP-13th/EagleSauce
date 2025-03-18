@@ -1,27 +1,40 @@
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
+import path from 'path';
+import fs from 'fs';
+
+// findAllHtmlFiles 함수 정의 추가
+function findAllHtmlFiles(directory) {
+  const htmlFiles = {};
+  
+  function scanDirectory(dir) {
+    const files = fs.readdirSync(dir);
+    
+    for (const file of files) {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+      
+      if (stat.isDirectory()) {
+        scanDirectory(filePath);
+      } else if (file.endsWith('.html')) {
+        // 키 이름을 경로에서 추출 (확장자 제외)
+        const key = path.relative(__dirname, filePath).replace('.html', '');
+        htmlFiles[key] = filePath;
+      }
+    }
+  }
+  
+  scanDirectory(directory);
+  return htmlFiles;
+}
 
 export default defineConfig({
-	plugins: [
-    tailwindcss(),
-  ],
+  plugins: [tailwindcss()],
   build: {
     rollupOptions: {
       input: {
-        index: 'index.html', // 기본 index.html
-        header: 'src/components/main-header.html',
-        banner: 'src/components/main-banner.html',
-        bottle: 'src/components/main-bottle.html',
-        footer: 'src/components/main-footer.html',
-        ourbrand: 'src/pages/about-ourbrand.html', 
-        inquiry: 'src/pages/about-inquiry.html',
-        search: 'src/pages/search.html',
-        event: 'src/pages/community-event.html',
-        recipes: 'src/pages/community-recipes&paring.html',
-        napoli: 'src/pages/community-napolimatfia.html',
-        review: 'src/pages/community-review.html',
-        faq: 'src/pages/community-faq.html',
-        qna: 'src/pages/community-qna.html',
+        index: path.resolve(__dirname, 'index.html'),
+        ...findAllHtmlFiles(path.resolve(__dirname, 'src')),
       },
     },
   },
