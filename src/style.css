@@ -13,6 +13,8 @@
   --color-hot-brown: #370e06;
   --color-hot-gray100: #ccc;
   --color-hot-gray200: #221e1f;
+  --color-hot-gray300: rgba(36, 36, 36, 0.60);
+  --color-hot-gray400: #616161;
 
   /* 폰트사이즈 */
   --text-11:.6875rem;
@@ -20,23 +22,42 @@
   --text-13:.8125rem;
   --text-14:.875rem;
   --text-15:.9375rem;
-  --text-11: 0.6875rem;
-  --text-13: 0.8125rem;
-  --text-15: 0.9375rem;
   --text-16: 1rem;
   --text-17: 1.0625rem;
+  --text-18: 1.125rem;
   --text-20: 1.25rem;
   --text-25: 1.5625rem;
+  --text-26: 1.625rem;
+  --text-30: 1.875rem;
+  --text-33: 2.0625rem;
+  --text-35: 2.1875rem;
   --text-45: 2.8125rem;
   --text-50: 3.125rem;
   --text-85:5.3125rem;
 
+  /* Grid */
+  /* --review: repeat(auto-fit, minmax(300px, 1fr)); */
+
   /* 이미지설정 */
   --pattern-bg: url("/public/assets/images/pattern.png");
   --wood-bg : url("/public/assets/images/wood-frame2.jpg");
-  --ourbrand-bg01: url(/public/assets/images/main.jpg);
-  --ourbrand-bg02: url(/public/assets/images/sec2-main.jpg);
-  --symbol-bg:url(/public/assets/images/sec10-bg.jpg) ;
+  --ourbrand-bg01: url("/public/assets/images/main.jpg");
+  --ourbrand-bg02: url("/public/assets/images/sec2-main.jpg");
+  --review-bg01: url("/public/assets/images/main02.jpg");
+  --symbol-bg:url("/public/assets/images/sec10-bg.jpg") ;
+
+  /* 애니메이션 */
+  --animate-rolling : rolling 40s linear infinite ;
+
+  @keyframes rolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
 }
 
 @layer components{
