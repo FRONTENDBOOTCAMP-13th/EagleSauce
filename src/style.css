@@ -37,6 +37,9 @@
   --ourbrand-bg01: url(/public/assets/images/main.jpg);
   --ourbrand-bg02: url(/public/assets/images/sec2-main.jpg);
   --symbol-bg:url(/public/assets/images/sec10-bg.jpg) ;
+
+  /*  */
+  --review: repeat(auto-fit, minmax(700px, 1fr));
 }
 
 @layer components{
@@ -49,7 +52,7 @@
   animation: rolling 20s linear infinite;
 
   &:before{
-    content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
+    content: "HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • ";
     font-size: 1rem;
     letter-spacing: 1px;
     padding-right: 1.25rem;
