@@ -14,6 +14,40 @@
 
 		<script type="module" src="/src/main.js"></script>
   </head>
-  <body class="font-sans">
+  <body class="font-sans p-4">          
+    <!-- Review-item : 이미지+텍스트 리뷰형 -->
+    <div class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col">
+      <img src="/assets/images/product-3.png" alt="Product-title" />
+      <div class="space-y-3">
+        <h3 class="text-16 font-semibold">Product-title</h3>
+        <div class="flex justify-between font-semibold text-hot-gray200">
+          <div class="flex gap-1 items-center">
+            <div class="flex h-[16px]">
+              <img src="/assets/icon/star_black.svg" alt="" />
+              <img src="/assets/icon/star_black.svg" alt="" />
+              <img src="/assets/icon/star_black.svg" alt="" />
+              <img src="/assets/icon/star_black.svg" alt="" />
+              <img src="/assets/icon/star_gray.svg" alt="" />
+            </div>
+            <span>4.0</span>
+          </div>
+          <p><span class="mr-1">리뷰</span><span>000</span></p>
+        </div>
+        <div class="flex flex-col gap-2 min-w-0">
+          <div class="flex items-center gap-4 min-w-0">
+            <img src="" class="size-16 rounded-2xl aspect-square" alt="review-img" />
+            <p class="text-13 line-clamp-3">review-text review-text review-text review-text review-text review-text review-text</p>
+          </div>
+          <div class="flex items-center gap-4 min-w-0">
+            <img src="" class="size-16 rounded-2xl aspect-square" alt="review-img" />
+            <p class="text-13 line-clamp-3">review-text review-text review-text review-text review-text review-text review-text</p>
+          </div>
+          <div class="flex items-center gap-4 min-w-0">
+            <img src="" class="size-16 rounded-2xl aspect-square" alt="review-img" />
+            <p class="text-13 line-clamp-3">review-text review-text review-text review-text review-text review-text review-text</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   </html>
