@@ -8,61 +8,77 @@
     <link
       rel="preload"
       as="font"
-      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      href="/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      type="font/woff2"
       crossorigin="anonymous"
     />
     <!-- 폰트 스타일시트 통합 -->
     <link
       rel="stylesheet"
-      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+      href="/assets/fonts/pretendard/pretendardvariable.css"
       as="style"
     />
     <link
       rel="stylesheet"
-      href="/public/assets/fonts/newbery/newbery.css"
+      href="/assets/fonts/newbery/newbery.css"
       as="style"
     />
     <link
       rel="stylesheet"
-      href="/public/assets/fonts/gastromond/gastromond.css"
+      href="/assets/fonts/gastromond/gastromond.css"
       as="style"
     />
     <link
       rel="stylesheet"
-      href="/public/assets/fonts/adelle/adelle.css"
+      href="/assets/fonts/adelle/adelle.css"
       as="style"
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="/src/main.js"></script>
   </head>
-    <body class="font-sans">
-      <section class="relative w-full overflow-hidden">
-        <!-- 이미지 박스 -->
-        <div class="h-[550px] w-full">
-          <img src="/public/assets/images/kit-sec.jpg" alt="HOTN'THINGS KIT" class="w-full h-full object-cover" />
-        </div>
-        <!-- 텍스트 박스 -->
-        <div class="top-[60px] absolute left-1/2 -translate-x-1/2 w-[calc(100%-32px)] text-center text-black">
-          <h4 class="leading-[1.2] font-normal text-14">하랜띵스 키트 (표고러플 + 파마산고추장 + XO쉬림프)</h4>
-          <h3 class="mt-1.5 mx-0 mb-6 text-2xl leading-[1.3] font-gastro font-light">HOTN' THINGS KIT</h3>
-          <p>
+  <body class="font-sans">
+    <section class="relative w-full overflow-hidden bg-orange-500">
+      <!-- 이미지 박스 -->
+      <div class="h-[550px] w-full lg:h-full" aria-hidden="true">
+        <img 
+          src="/assets/images/kit-sec.jpg" 
+          alt="하랜띵스 키트 - 표고러플, 파마산고추장, XO쉬림프 소스 세트" 
+          class="w-full h-full object-cover" 
+        />
+      </div>
+      
+      <!-- 텍스트 박스 -->
+      <div class="absolute top-[60px] w-full flex justify-center lg:top-[15%]">
+        <div class="w-[calc(100%-32px)] max-w-[400px] text-center text-black lg:max-w-none">
+          <h4 class="leading-[1.2] font-normal text-13 lg:text-2xl">하랜띵스 키트 (표고러플 + 파마산고추장 + XO쉬림프)</h4>
+          <h3 class="mt-1.5 mx-0 mb-6 text-2xl leading-[1.3] font-gastro font-light lg:mt-2 lg:mb-[34px] lg:text-6xl">HOTN' THINGS KIT</h3>
+          <p class="text-12 font-normal leading-[1.3] lg:text-18">
             일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종을
             <br />
             세트 할인가로 더 저렴하게 만나보세요
           </p>
           <!-- 가격 박스 -->
-           <div>
-            <span>59,000</span>
-            <p>
-              <strong>46,900</strong>
-              (21%)
+          <div class="mt-[30px] flex items-center justify-center font-bold lg:mt-10" role="text" aria-label="가격 정보">
+            <span class="text-13 line-through text-hot-goldbrown lg:text-2xl lg:font-bold pt-1" aria-label="정상가 59,000원">59,000</span>
+            <p class="text-15 ml-2.5 flex items-center gap-x-2.5 lg:text-[25px]">
+              <strong class="text-18 lg:text-[35px]" aria-label="할인가 46,900원">46,900</strong>
+              <span aria-label="할인율 21퍼센트">(21%)</span>
             </p>
-           </div>
+          </div>
         </div>
-        <!-- 구매 박스  -->
-         <div>
-          <a href="#void">BUY NOW</a>
-         </div>
-      </section>
-    </body>
-  </html>
+      </div>
+      <!-- 구매 박스 - Flexbox 사용 -->
+      <div class="absolute bottom-[40px] w-full flex justify-center">
+        <div class="w-[calc(100%-32px)] max-w-[375px]">
+          <a 
+            href="/product/hot-things-kit" 
+            class="h-[40px] text-13 bg-black text-white flex items-center justify-center font-newbery lg:bottom-[100px] lg:max-w-[470px] lg:w-full lg:h-[55px] lg:text-20 lg:font-bold"
+            aria-label="하랜띵스 키트 구매하기"
+          >
+            BUY NOW
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
