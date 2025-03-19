@@ -1,24 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Pretendard Variable", sans-serif;
-  --font-adelle: "adelle-sans", sans-serif;
-  --font-newbery: "newbery-sans-pro", sans-serif;
-  --font-gastro: gastromond, sans-serif;
-
-  /* 색상 */
-  --color-hot-brand: #ee2523;
-  --color-hot-main: #f01e14;
-  --color-hot-ivory: #fff9e8;
-  --color-hot-brown: #370e06;
-  --color-hot-gray100: #ccc;
-  --color-hot-gray200: #221e1f;
-  --color-hot-gray300: rgba(36, 36, 36, 0.6);
-  --color-hot-gray400: #616161;
-  --color-hot-gray500: #8b8b8b;
-  --color-hot-white100: #fafafa;
-
-  /* 폰트사이즈 */
+  /* 폰트 */
+	--font-sans:"Pretendard Variable", sans-serif;
+	--font-adelle:"adelle-sans", sans-serif;
+	--font-newbery:"newbery-sans-pro", sans-serif;
+	--font-gastro:"gastromond", sans-serif;
+  
+	/* 색상 */
+	--color-hot-brand:#ee2523;
+	--color-hot-main:#f01e14;
+	--color-hot-ivory:#fff9e8;
+	--color-hot-brown:#370e06;
+	--color-hot-gray100:#ccc;
+	--color-hot-gray200:#221e1f;
+	--color-hot-gray300:rgba(36, 36, 36, 0.6);
+	--color-hot-gray400:#616161;
+	--color-hot-gray500:#8b8b8b;
+	--color-hot-white100:#fafafa;
+ 
+	
+	/* 폰트사이즈 */
   --text-11: 0.6875rem;
   --text-12: 0.75rem;
   --text-13: 0.8125rem;
@@ -36,101 +38,76 @@
   --text-45: 2.8125rem;
   --text-50: 3.125rem;
   --text-85: 5.3125rem;
-
-  /* 이미지설정 */
-  --pattern-bg: url("/public/assets/images/pattern.png");
-  --wood-bg: url("/public/assets/images/wood-frame2.jpg");
-  --ourbrand-bg01: url("/public/assets/images/main.jpg");
-  --ourbrand-bg02: url("/public/assets/images/sec2-main.jpg");
-  --review-bg01: url("/public/assets/images/main02.jpg");
-  --symbol-bg: url("/public/assets/images/sec10-bg.jpg");
-
-  /* 애니메이션 */
-  --animate-cardrolling : cardrolling 40s linear infinite ;
-
-  @keyframes cardrolling {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  --review: repeat(auto-fit, minmax(700px, 1fr));
+    
+	/* 이미지설정 */
+	--pattern-bg:url("/public/assets/images/pattern.png");
+	--wood-bg:url("/public/assets/images/wood-frame2.jpg");
+	--ourbrand-bg01:url("/public/assets/images/main.jpg");
+	--ourbrand-bg02:url("/public/assets/images/sec2-main.jpg");
+	--review-bg01:url("/public/assets/images/main02.jpg");
+	--symbol-bg:url("/public/assets/images/sec10-bg.jpg");
+  --qna-bg:url("/public/assets/images/qna-bg.png");
+  --thumb-bg:url("/public/assets/images/thumb-bg.jpg");
+	
+  /* 그리드 */
+	--review:repeat(auto-fit, minmax(700px, 1fr));
+	
+	/* 애니메이션 */
+	@keyframes cardrolling{
+		0%{transform:translateX(0);}
+		100%{transform:translateX(-50%);}
+	}
+	--animate-cardrolling:cardrolling 40s linear infinite;
+	
+	@keyframes bounce{
+		0%, 100%{transform:translateY(0);}
+		50%{transform:translateY(-10px);}
+	}
+	--animate-bounce-1:bounce 2s ease-in-out 0.2s infinite forwards;
+	--animate-bounce-2:bounce 3s ease-in-out 0.4s infinite forwards;
+	--animate-bounce-3:bounce 2.5s ease-in-out 0.2s infinite forwards;
 }
 
-@layer components {
-  .max-container {
-    @apply max-w-[1920px] mx-auto;
-  }
-}
-
-.roll-wrap {
-  animation: rolling 20s linear infinite;
-
-  &:before {
-    content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
-    font-size: 1rem;
-    letter-spacing: 1px;
-    padding-right: 1.25rem;
-  }
-}
-
-@keyframes rolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+@layer components{
+	.max-container{
+		@apply max-w-[1920px] mx-auto;
+	}
 }
 
 summary::marker{
   font-size: 0;
 }
 
-.pyogo-wrap{
-  animation: rotate 3.5s 2s infinite
+.roll-wrap{
+	animation:rolling 20s linear infinite;
+	
+	&:before{
+		content:"HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
+		font-size:1rem;
+		letter-spacing:1px;
+		padding-right:1.25rem;
+	}
 }
 
-.parmesan-wrap{
-  animation: rotate 2.5s 1s infinite
+@keyframes rolling{
+	0%{transform:translateX(0);}
+	100%{transform:translateX(-100%);}
 }
 
-.shirimp-wrap{
-  animation: rotate 2.0s 3s infinite
+.pyogo-wrap{animation:rotate 3.5s 2s infinite;}
+.parmesan-wrap{animation:rotate 2.5s 1s infinite;}
+.shirimp-wrap{animation:rotate 2.0s 3s infinite;}
+
+@keyframes rotate{
+	0%, 100%{transform:rotate(0);}
+	5%{transform:rotate(-2deg);}
+	10%{transform:rotate(2deg);}
+	15%{transform:rotate(-2deg);}
+	20%{transform:rotate(2deg);}
+	25%{transform:rotate(-2deg);}
+	30%{transform:rotate(1deg);}
+	35%{transform:rotate(-1deg);}
+	40%{transform:rotate(1deg);}
+	45%{transform:rotate(0);}
 }
 
-@keyframes rotate {
-  0%, 100% {
-    transform: rotate(0deg);
-  }
-  5% {
-    transform: rotate(-2deg);
-  }
-  10%{
-    transform: rotate(2deg);
-  }
-  15% {
-    transform: rotate(-2deg);
-  }
-  20%{
-    transform: rotate(2deg);
-  }
-  25% {
-    transform: rotate(-2deg);
-  }
-  30% {
-      transform: rotate(1deg);
-  }
-  35% {
-      transform: rotate(-1deg);
-  }
-  40% {
-    transform: rotate(1deg);
-  }
-  45% {
-  transform: rotate(0deg);
-  }
-}
