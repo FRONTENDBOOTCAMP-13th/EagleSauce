@@ -5,222 +5,446 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>UI 프로젝트 - CSS</title>
     <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraBold.otf" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Medium.otf" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Regular.otf" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Light.otf" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Thin.otf" crossorigin="anonymous" />
-    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraBold.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Medium.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Regular.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Light.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Thin.otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/newbery/newbery.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/gastromond/gastromond.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/adelle/adelle.css"
+    />
 
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-  <div id="main_wrap">
+    <div id="main_wrap">
+      <!-- header start -->
+      <header class="font-newbery relative">
+        <p class="text-15 text-white bg-hot-brown text-center py-1.5">
+          <span class="font-bold mr-1">[COUPON]</span>
+          <span class="font-sans">카카오 채널 추가 시 무료배송 쿠폰 지급</span>
+        </p>
 
-    <!-- header start -->
-    <header class="font-newbery relative">
-      <p class="text-15 text-white bg-hot-brown text-center py-1.5">
-        <span class="font-bold mr-1">[COUPON]</span>
-        <span class="font-sans">카카오 채널 추가 시 무료배송 쿠폰 지급</span>
-      </p>
-
-      <!-- Mobile Header -->
-      <div class="menu-mobile lg:hidden relative bg-hot-ivory p-4">
-        <ul class="flex justify-between">
-          <li>
-            <a href="#void" class="size-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#void" class="size-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <a href="#void" class="block w-32 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-          <img src="/assets/images/logo.png" alt="하랜띵스로고" />
-        </a>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div class="w-full h-dvh bg-hot-brand absolute top-0 left-0 text-white hidden">
-        <div class="menu-mobile lg:hidden relative p-4">
+        <!-- Mobile Header -->
+        <div class="menu-mobile lg:hidden relative bg-hot-ivory p-4">
           <ul class="flex justify-between">
             <li>
               <a href="#void" class="size-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-list"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                  />
                 </svg>
               </a>
             </li>
-            <li class="flex items-center gap-3">
+            <li>
               <a href="#void" class="size-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg>
-              </a>
-              <a href="#void" class="size-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                  />
                 </svg>
               </a>
             </li>
           </ul>
-          <a href="#void" class="block w-32 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <a
+            href="#void"
+            class="block w-32 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
             <img src="/assets/images/logo.png" alt="하랜띵스로고" />
           </a>
         </div>
-        <ul>
-          <li class="text-45 font-semibold border-b px-4 py-6">
-            <p class="flex justify-between"><span>SHOP</span><span>-</span></p>
-            <ul class="text-20 font-normal space-y-3 py-4">
-              <li>ALL PRODUCTS</li>
-              <li>PYOGORUFFLE</li>
-              <li>PARMESAN GOCHUJANG</li>
-              <li>XO SHRIMP</li>
-              <li>HOTN'THINGS KIT</li>
-            </ul>
-          </li>
-          <li class="text-45 font-semibold border-b px-4 py-6">
-            <p class="flex justify-between"><span>ABOUT</span><span>-</span></p>
-            <ul class="text-20 font-normal space-y-3 py-4">
-              <li>OUR BRAND</li>
-              <li>INQUIRY</li>
-            </ul>
-          </li>
-          <li class="text-45 font-semibold border-b px-4 py-6">
-            <p class="flex justify-between"><span>COMMNUNITY</span><span>-</span></p>
-          </li>
-          <li class="text-20 font-semibold px-4 py-6">
-            JOIN/LOGIN
-          </li>
-        </ul>
-      </div>
 
-      <!-- Desktop Header -->
-      <nav class="menu-pc hidden border-b lg:flex lg:justify-between relative text-black text-16 font-bold bg-hot-ivory px-6 relative z-10">
-        <ul class="flex ">
-          <!-- ABOUT -->
-          <li class="group">
-            <a href="./src/pages/about-ourbrand.html" class="p-6 block">ABOUT</a>
-            <ul class="font-medium pb-6 pl-6 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b">
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="./src/pages/about-ourbrand.html">OUR BRAND</a>
+        <!-- Mobile Menu -->
+        <div
+          class="w-full h-dvh bg-hot-brand absolute top-0 left-0 text-white hidden"
+        >
+          <div class="menu-mobile lg:hidden relative p-4">
+            <ul class="flex justify-between">
+              <li>
+                <a href="#void" class="size-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                    />
+                  </svg>
+                </a>
               </li>
-              <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                <a href="./src/pages/about-inquiry.html">INQUIRY</a>
+              <li class="flex items-center gap-3">
+                <a href="#void" class="size-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                    />
+                  </svg>
+                </a>
+                <a href="#void" class="size-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    fill="currentColor"
+                    class="bi bi-cart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                    />
+                  </svg>
+                </a>
               </li>
             </ul>
-          </li>
-          <!-- SHOP -->
-          <li class="group">
-            <a href="#void" class="p-6 block">SHOP</a>
-            <ul class="font-medium pb-6 pl-30 absolute left-0 w-screen invisible opacity-0 bg-hot-ivory transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b">
-              <li class="px-6 py-1.5 flex gap-4 items-center">
-                <a href="#void" class="hover:text-hot-main transition-all duration-300 ">ALL PRODUCTS</a>
-                <p class="text-14 opacity-20 font-sans">한 입으로 당신의 매 순간에 특별함을 더해주는 하랜띵스</p>
-              </li>
-              <li class="px-6 py-1.5 flex gap-4 items-center">
-                <a href="#void" class="hover:text-hot-main transition-all duration-300 ">PYOGORUFFLE</a>
-                <p class="text-14 opacity-20 font-sans">트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된 고급스러운 매운맛</p>
-              </li>
-              <li class="px-6 py-1.5 flex gap-4 items-center">
-                <a href="#void" class="hover:text-hot-main transition-all duration-300 ">PARMESAN GOCHUJANG</a>
-                <p class="text-14 opacity-20 font-sans">고추장의 깊고 진한 매콤함에 더한 치즈의 고소하고 짭쪼름한 풍미</p>
-              </li>
-              <li class="px-6 py-1.5 flex gap-4 items-center">
-                <a href="#void" class="hover:text-hot-main transition-all duration-300 ">XO SHRIMP</a>
-                <p class="text-14 opacity-20 font-sans">청양고추를 넣은 알싸한 간장 베이스에 새우로 감칠맛을 끌어올린 단짠 매력</p>
-              </li>
-              <li class="px-6 py-1.5 flex gap-4 items-center">
-                <a href="#void" class="hover:text-hot-main transition-all duration-300 ">HOTN'THINGS KIT</a>
-                <p class="text-14 opacity-20 font-sans">일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종 세트</p>
-              </li>
-              <li class="mt-20 px-6">
-                <p class="font-newbery text-14 font-bold opacity-20 leading-6">HOTN'THINGS exists to spread the concept of 'HOT' around the world.<br>This 'HOT' is not only the realm of the taste sense, but it is also the realm<br>of the sixth sense that is somehow fun and exciting.<br>Experience the thrill of everyday life created by HOTN'THINGS!</p>
-              </li>
-              <div class="flex gap-4 w-[26vw] xl:w-[30vw] 2xl:w-[24vw] absolute top-2 left-[750px]">
-                <img src="/assets/images/napoli-li.jpg"  class="object-cover object-center" alt=""/>
-                <img src="/assets/images/shop-all2.webp"  class="object-cover object-center hidden 2xl:block" alt=""/>
-              </div>
-            </ul>
-          </li>
+            <a
+              href="#void"
+              class="block w-32 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <img src="/assets/images/logo.png" alt="하랜띵스로고" />
+            </a>
+          </div>
+          <ul>
+            <li class="text-45 font-semibold border-b px-4 py-6">
+              <p class="flex justify-between">
+                <span>SHOP</span><span>-</span>
+              </p>
+              <ul class="text-20 font-normal space-y-3 py-4">
+                <li>ALL PRODUCTS</li>
+                <li>PYOGORUFFLE</li>
+                <li>PARMESAN GOCHUJANG</li>
+                <li>XO SHRIMP</li>
+                <li>HOTN'THINGS KIT</li>
+              </ul>
+            </li>
+            <li class="text-45 font-semibold border-b px-4 py-6">
+              <p class="flex justify-between">
+                <span>ABOUT</span><span>-</span>
+              </p>
+              <ul class="text-20 font-normal space-y-3 py-4">
+                <li>OUR BRAND</li>
+                <li>INQUIRY</li>
+              </ul>
+            </li>
+            <li class="text-45 font-semibold border-b px-4 py-6">
+              <p class="flex justify-between">
+                <span>COMMNUNITY</span><span>-</span>
+              </p>
+            </li>
+            <li class="text-20 font-semibold px-4 py-6">JOIN/LOGIN</li>
+          </ul>
+        </div>
 
-          <!-- COMMUNITY -->
-          <li class="group">
-            <a href="./src/pages/community-event.html" class="p-6 block">COMMUNITY</a>
-              <ul class="font-medium pb-6 pl-54 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b ">
-                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+        <!-- Desktop Header -->
+        <nav
+          class="menu-pc hidden border-b lg:flex lg:justify-between relative text-black text-16 font-bold bg-hot-ivory px-6 relative z-10"
+        >
+          <ul class="flex">
+            <!-- ABOUT -->
+            <li class="group">
+              <a href="./src/pages/about-ourbrand.html" class="p-6 block"
+                >ABOUT</a
+              >
+              <ul
+                class="font-medium pb-6 pl-6 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b"
+              >
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
+                  <a href="./src/pages/about-ourbrand.html">OUR BRAND</a>
+                </li>
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
+                  <a href="./src/pages/about-inquiry.html">INQUIRY</a>
+                </li>
+              </ul>
+            </li>
+            <!-- SHOP -->
+            <li class="group">
+              <a href="#void" class="p-6 block">SHOP</a>
+              <ul
+                class="font-medium pb-6 pl-30 absolute left-0 w-screen invisible opacity-0 bg-hot-ivory transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b"
+              >
+                <li class="px-6 py-1.5 flex gap-4 items-center">
+                  <a
+                    href="#void"
+                    class="hover:text-hot-main transition-all duration-300"
+                    >ALL PRODUCTS</a
+                  >
+                  <p class="text-14 opacity-20 font-sans">
+                    한 입으로 당신의 매 순간에 특별함을 더해주는 하랜띵스
+                  </p>
+                </li>
+                <li class="px-6 py-1.5 flex gap-4 items-center">
+                  <a
+                    href="#void"
+                    class="hover:text-hot-main transition-all duration-300"
+                    >PYOGORUFFLE</a
+                  >
+                  <p class="text-14 opacity-20 font-sans">
+                    트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이
+                    결합된 고급스러운 매운맛
+                  </p>
+                </li>
+                <li class="px-6 py-1.5 flex gap-4 items-center">
+                  <a
+                    href="#void"
+                    class="hover:text-hot-main transition-all duration-300"
+                    >PARMESAN GOCHUJANG</a
+                  >
+                  <p class="text-14 opacity-20 font-sans">
+                    고추장의 깊고 진한 매콤함에 더한 치즈의 고소하고 짭쪼름한
+                    풍미
+                  </p>
+                </li>
+                <li class="px-6 py-1.5 flex gap-4 items-center">
+                  <a
+                    href="#void"
+                    class="hover:text-hot-main transition-all duration-300"
+                    >XO SHRIMP</a
+                  >
+                  <p class="text-14 opacity-20 font-sans">
+                    청양고추를 넣은 알싸한 간장 베이스에 새우로 감칠맛을
+                    끌어올린 단짠 매력
+                  </p>
+                </li>
+                <li class="px-6 py-1.5 flex gap-4 items-center">
+                  <a
+                    href="#void"
+                    class="hover:text-hot-main transition-all duration-300"
+                    >HOTN'THINGS KIT</a
+                  >
+                  <p class="text-14 opacity-20 font-sans">
+                    일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종 세트
+                  </p>
+                </li>
+                <li class="mt-20 px-6">
+                  <p
+                    class="font-newbery text-14 font-bold opacity-20 leading-6"
+                  >
+                    HOTN'THINGS exists to spread the concept of 'HOT' around the
+                    world.<br />This 'HOT' is not only the realm of the taste
+                    sense, but it is also the realm<br />of the sixth sense that
+                    is somehow fun and exciting.<br />Experience the thrill of
+                    everyday life created by HOTN'THINGS!
+                  </p>
+                </li>
+                <div
+                  class="flex gap-4 w-[26vw] xl:w-[30vw] 2xl:w-[24vw] absolute top-2 left-[750px]"
+                >
+                  <img
+                    src="/assets/images/napoli-li.jpg"
+                    class="object-cover object-center"
+                    alt=""
+                  />
+                  <img
+                    src="/assets/images/shop-all2.webp"
+                    class="object-cover object-center hidden 2xl:block"
+                    alt=""
+                  />
+                </div>
+              </ul>
+            </li>
+
+            <!-- COMMUNITY -->
+            <li class="group">
+              <a href="./src/pages/community-event.html" class="p-6 block"
+                >COMMUNITY</a
+              >
+              <ul
+                class="font-medium pb-6 pl-54 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b"
+              >
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
                   <a href="./src/pages/community-event.html">EVENT</a>
                 </li>
-                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                  <a href="./src/pages/community-recipes&paring.html">RECIPES & PARING</a>
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
+                  <a href="./src/pages/community-recipes&paring.html"
+                    >RECIPES & PARING</a
+                  >
                 </li>
-                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-                  <a href="./src/pages/community-napolimatfia.html">NAPOLI MATFIA</a>
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
+                  <a href="./src/pages/community-napolimatfia.html"
+                    >NAPOLI MATFIA</a
+                  >
                 </li>
-                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
                   <a href="./src/pages/community-review.html">REVIEW</a>
                 </li>
-                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
                   <a href="./src/pages/community-faq.html">FAQ</a>
                 </li>
-                <li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
+                <li
+                  class="px-6 py-1.5 hover:text-hot-main transition-all duration-300"
+                >
                   <a href="./src/pages/community-qna.html">1:1 Q&A</a>
                 </li>
               </ul>
-          </li>
-        </ul>
+            </li>
+          </ul>
 
-        <ul class="flex">
-          <li>
-            <a href="./src/pages/search.html" class="p-6 block">SEARCH</a>
-          </li>
-          <li>
-            <a href="#void" class="p-6 block">CART</a>
-          </li>
-          <li>
-            <a href="#void" class="p-6 block">JOIN/LOGIN</a>
-          </li>
-        </ul>
+          <ul class="flex">
+            <li>
+              <a href="./src/pages/search.html" class="p-6 block">SEARCH</a>
+            </li>
+            <li>
+              <a href="#void" class="p-6 block">CART</a>
+            </li>
+            <li>
+              <a href="./src/pages/join-login.html" class="p-6 block"
+                >JOIN/LOGIN</a
+              >
+            </li>
+          </ul>
 
-        <!-- Logo -->
-        <a href="#void" class="block w-32 lg:w-56 absolute left-1/2 -translate-x-1/2 pt-3">
-          <img src="/assets/images/logo.png" alt="하랜띵스로고" />
-        </a>
-      </nav>
-    </header>
-    <!-- header end -->
+          <!-- Logo -->
+          <a
+            href="#void"
+            class="block w-32 lg:w-56 absolute left-1/2 -translate-x-1/2 pt-3"
+          >
+            <img src="/assets/images/logo.png" alt="하랜띵스로고" />
+          </a>
+        </nav>
+      </header>
+      <!-- header end -->
 
-
-
-    <div id="container" class="bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
-
+      <div
+        id="container"
+        class="bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]"
+      >
         <!-- photo frame start -->
         <section class="">
           <div class="">
             <div class="py-[50px] flex justify-center items-center">
               <div class="relative w-[70%] max-[959px]:w-[95%]">
-                <img class="w-full h-auto" src="/public/assets/images/main-frame1.png" alt="테두리 이미지" />
+                <img
+                  class="w-full h-auto"
+                  src="/public/assets/images/main-frame1.png"
+                  alt="테두리 이미지"
+                />
 
                 <div class="absolute inset-0 py-[2.3%] px-[2.2%]">
-                  <img id="slider-image" class="w-full h-full object-cover" src="/public/assets/images/intro-2.jpg" alt="중앙 이미지" />
-                  <img src="/public/assets/images/prev.png" alt="왼쪽 버튼" class="w-[40px] h-[80px] absolute left-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" />
-                  <img src="/public/assets/images/next.png" alt="오른쪽 버튼" class="w-[40px] h-[80px] absolute right-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" />
+                  <img
+                    id="slider-image"
+                    class="w-full h-full object-cover"
+                    src="/public/assets/images/intro-2.jpg"
+                    alt="중앙 이미지"
+                  />
+                  <img
+                    src="/public/assets/images/prev.png"
+                    alt="왼쪽 버튼"
+                    class="w-[40px] h-[80px] absolute left-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden"
+                  />
+                  <img
+                    src="/public/assets/images/next.png"
+                    alt="오른쪽 버튼"
+                    class="w-[40px] h-[80px] absolute right-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden"
+                  />
                 </div>
               </div>
             </div>
@@ -228,133 +452,240 @@
         </section>
         <!-- photo frame end -->
 
-
         <!-- showcase start -->
         <section class="w-full">
           <div class="relative w-full">
             <!-- 왼쪽 선반 이미지 -->
-            <div class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" >
-              <img src="/public/assets/images/left-showcase.png" alt="" class="w-full align-top" /> </div>
+            <div
+              class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1"
+            >
+              <img
+                src="/public/assets/images/left-showcase.png"
+                alt=""
+                class="w-full align-top"
+              />
+            </div>
 
             <!-- 오른쪽 선반 이미지 -->
-            <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" >
-              <img src="/public/assets/images/right-showcase.png" alt="" class="w-full align-top" />
+            <div
+              class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1"
+            >
+              <img
+                src="/public/assets/images/right-showcase.png"
+                alt=""
+                class="w-full align-top"
+              />
             </div>
 
             <!-- 중앙 옷장 이미지 -->
             <div class="w-full lg:w-[40%] mx-auto relative z-1">
-              <img src="/public/assets/images/showcase.png" alt="" class="w-full align-top" />
+              <img
+                src="/public/assets/images/showcase.png"
+                alt=""
+                class="w-full align-top"
+              />
               <ul class="pl-10 w-[40%]">
                 <li>
                   <div class="top-[19%] left-[21%] absolute w-[33%] group">
-                    <img src="/public/assets/images/product-1.png" alt="" class="w-full align-top group-hover:hidden" />
-                    <img src="/public/assets/images/product-1.gif" alt="" class="w-full align-top hidden group-hover:block" />
+                    <img
+                      src="/public/assets/images/product-1.png"
+                      alt=""
+                      class="w-full align-top group-hover:hidden"
+                    />
+                    <img
+                      src="/public/assets/images/product-1.gif"
+                      alt=""
+                      class="w-full align-top hidden group-hover:block"
+                    />
                     <div class="top-[102%] left-[35%] absolute w-[24.5%]">
-                      <img src="/public/assets/images/PYOGORUFFLE-nametag.png" alt="" class="w-full align-top" />
+                      <img
+                        src="/public/assets/images/PYOGORUFFLE-nametag.png"
+                        alt=""
+                        class="w-full align-top"
+                      />
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="top-[44%] left-[21%] absolute w-[33%] group">
-                    <img src="/public/assets/images/product-2.png" alt="" class="w-full align-top group-hover:hidden" />
-                    <img src="/public/assets/images/parmesan-gif.gif" alt="" class="w-full align-top hidden group-hover:block" />
+                    <img
+                      src="/public/assets/images/product-2.png"
+                      alt=""
+                      class="w-full align-top group-hover:hidden"
+                    />
+                    <img
+                      src="/public/assets/images/parmesan-gif.gif"
+                      alt=""
+                      class="w-full align-top hidden group-hover:block"
+                    />
                     <div class="top-[103%] left-[35%] absolute w-[25%]">
-                      <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" alt="" class="w-full align-top" />
+                      <img
+                        src="/public/assets/images/PARMESANGOCHUJANG-nametag.png"
+                        alt=""
+                        class="w-full align-top"
+                      />
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="top-[69.5%] left-[21%] absolute w-[33%] group">
-                    <img src="/public/assets/images/product-3.png" alt="" class="w-full align-top" />
-                    <img src="/public/assets/images/product-3.gif" alt="" class="w-full align-top border-0 hidden" />
+                    <img
+                      src="/public/assets/images/product-3.png"
+                      alt=""
+                      class="w-full align-top"
+                    />
+                    <img
+                      src="/public/assets/images/product-3.gif"
+                      alt=""
+                      class="w-full align-top border-0 hidden"
+                    />
                     <div class="top-[103.5%] left-[35%] absolute w-[25%]">
-                      <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" alt="" class="w-full align-top" />
+                      <img
+                        src="/public/assets/images/PARMESANGOCHUJANG-nametag.png"
+                        alt=""
+                        class="w-full align-top"
+                      />
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="top-[19%] left-[47.7%] absolute w-[33%] group">
-                    <img src="/public/assets/images/product-1.png" alt="" class="w-full align-top group-hover:hidden" />
-                    <img src="/public/assets/images/product-1.gif" alt="" class="w-full align-top hidden group-hover:block" />
+                    <img
+                      src="/public/assets/images/product-1.png"
+                      alt=""
+                      class="w-full align-top group-hover:hidden"
+                    />
+                    <img
+                      src="/public/assets/images/product-1.gif"
+                      alt=""
+                      class="w-full align-top hidden group-hover:block"
+                    />
                     <div class="top-[102%] left-[35%] absolute w-[24.5%]">
-                      <img src="/public/assets/images/PYOGORUFFLE-nametag.png" alt="" class="w-full align-top" />
+                      <img
+                        src="/public/assets/images/PYOGORUFFLE-nametag.png"
+                        alt=""
+                        class="w-full align-top"
+                      />
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="top-[44%] left-[47.7%] absolute w-[33%] group">
-                    <img src="/public/assets/images/product-2.png" alt="" class="w-full align-top group-hover:hidden" />
-                    <img src="/public/assets/images/parmesan-gif.gif" alt="" class="w-full align-top hidden group-hover:block" />
+                    <img
+                      src="/public/assets/images/product-2.png"
+                      alt=""
+                      class="w-full align-top group-hover:hidden"
+                    />
+                    <img
+                      src="/public/assets/images/parmesan-gif.gif"
+                      alt=""
+                      class="w-full align-top hidden group-hover:block"
+                    />
                     <div class="top-[103%] left-[35%] absolute w-[25%]">
-                      <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" alt="" class="w-full align-top" />
+                      <img
+                        src="/public/assets/images/PARMESANGOCHUJANG-nametag.png"
+                        alt=""
+                        class="w-full align-top"
+                      />
                     </div>
                   </div>
                 </li>
                 <li>
                   <div class="top-[69.5%] left-[47.7%] absolute w-[33%] group">
-                    <img src="/public/assets/images/product-3.png" alt="" class="w-full align-top" />
-                    <img src="/public/assets/images/product-3.gif" alt="" class="w-full align-top border-0 hidden" />
+                    <img
+                      src="/public/assets/images/product-3.png"
+                      alt=""
+                      class="w-full align-top"
+                    />
+                    <img
+                      src="/public/assets/images/product-3.gif"
+                      alt=""
+                      class="w-full align-top border-0 hidden"
+                    />
                     <div class="top-[103.5%] left-[35%] absolute w-[25%]">
-                      <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" alt="" class="w-full align-top" />
+                      <img
+                        src="/public/assets/images/PARMESANGOCHUJANG-nametag.png"
+                        alt=""
+                        class="w-full align-top"
+                      />
                     </div>
                   </div>
                 </li>
               </ul>
             </div>
 
-            <div class="h-[80vw] lg:h-[28vw] w-full absolute bottom-0 left-0 z-0 bg-(image:--wood-bg) bg-center bg-no-repeat bg-cover">
-              <div class="overflow-hidden bg-black w-full absolute top-0 left-0 z-1 -translate-y-full ">
-                <p class="roll-wrap flex whitespace-nowrap text-white font-newbery text-20 font-bold "></p>
+            <div
+              class="h-[80vw] lg:h-[28vw] w-full absolute bottom-0 left-0 z-0 bg-(image:--wood-bg) bg-center bg-no-repeat bg-cover"
+            >
+              <div
+                class="overflow-hidden bg-black w-full absolute top-0 left-0 z-1 -translate-y-full"
+              >
+                <p
+                  class="roll-wrap flex whitespace-nowrap text-white font-newbery text-20 font-bold"
+                ></p>
               </div>
             </div>
           </div>
         </section>
         <!-- showcase end -->
-    </div>
-
-
-
-    <!-- footer start -->
-    <footer class="bg-hot-gray200 px-3 text-white text-xs font-medium leading-normal lg:px-[58px]">
-      <div class="w-full mx-auto py-[37px] flex flex-col items-center text-center lg:max-w-[1920px] lg:items-start lg:py-10 lg:pb-[33px] lg:text-left">
-
-        <div class="w-[100px] lg:w-[150px]">
-          <a href="/" class="">
-            <img src="/public/assets/images/logo.png" alt="HOTN'THINGS" />
-          </a>
-        </div>
-
-        <div class="my-[19px] mb-[25px] lg:my-[15px]">
-          <p>채팅상담 운영 | 1522-1874</p>
-          <p>Mon-Fri 10:00 - 17:00 (Lunch: pm 12:20 - 13:30)</p>
-          <p>Sat &amp; Sun, Holiday off</p>
-        </div>
-
-        <ul class="flex mb-[25px] lg:mb-[15px] lg:text-[15px]">
-          <li class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden">
-            <a href="" class="inline-block">제휴 파트너 문의</a>
-          </li>
-          <li class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden">
-            <a href="" class="inline-block">채팅상담</a>
-          </li>
-          <li class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden">
-            <a href="" class="inline-block">도움말</a>
-          </li>
-          <li class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden">
-            <a href="" class="inline-block">브랜드 소개</a>
-          </li>
-        </ul>
-
-        <div class="text-[#777] text-[10px] leading-[1.8] lg:text-[11px] lg:leading-[1.365]">
-          (주)티엠스마일ㅣ대표자명 이준호ㅣ04779 202호 서울특별시 성동구 상원1길 5 (성수동1가)<br>
-          사업자등록번호 172-87-01834 | 통신판매업 신고번호 2024-서울성동-1329<br>
-          개인정보보호책임자 : 김수민ㅣ <a href="/member/agreement.html">이용약관</a> ㅣ <a href="/member/privacy.html">개인정보처리방침</a>
-        </div>
       </div>
-    </footer>
-    <!-- footer end -->
 
+      <!-- footer start -->
+      <footer
+        class="bg-hot-gray200 px-3 text-white text-xs font-medium leading-normal lg:px-[58px]"
+      >
+        <div
+          class="w-full mx-auto py-[37px] flex flex-col items-center text-center lg:max-w-[1920px] lg:items-start lg:py-10 lg:pb-[33px] lg:text-left"
+        >
+          <div class="w-[100px] lg:w-[150px]">
+            <a href="/" class="">
+              <img src="/public/assets/images/logo.png" alt="HOTN'THINGS" />
+            </a>
+          </div>
 
-  </div>
+          <div class="my-[19px] mb-[25px] lg:my-[15px]">
+            <p>채팅상담 운영 | 1522-1874</p>
+            <p>Mon-Fri 10:00 - 17:00 (Lunch: pm 12:20 - 13:30)</p>
+            <p>Sat &amp; Sun, Holiday off</p>
+          </div>
+
+          <ul class="flex mb-[25px] lg:mb-[15px] lg:text-[15px]">
+            <li
+              class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden"
+            >
+              <a href="" class="inline-block">제휴 파트너 문의</a>
+            </li>
+            <li
+              class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden"
+            >
+              <a href="" class="inline-block">채팅상담</a>
+            </li>
+            <li
+              class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden"
+            >
+              <a href="" class="inline-block">도움말</a>
+            </li>
+            <li
+              class="whitespace-nowrap after:content-['ㅣ'] after:inline-block after:px-[10px] last:after:hidden"
+            >
+              <a href="" class="inline-block">브랜드 소개</a>
+            </li>
+          </ul>
+
+          <div
+            class="text-[#777] text-[10px] leading-[1.8] lg:text-[11px] lg:leading-[1.365]"
+          >
+            (주)티엠스마일ㅣ대표자명 이준호ㅣ04779 202호 서울특별시 성동구
+            상원1길 5 (성수동1가)<br />
+            사업자등록번호 172-87-01834 | 통신판매업 신고번호
+            2024-서울성동-1329<br />
+            개인정보보호책임자 : 김수민ㅣ
+            <a href="/member/agreement.html">이용약관</a> ㅣ
+            <a href="/member/privacy.html">개인정보처리방침</a>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
   </body>
 </html>
