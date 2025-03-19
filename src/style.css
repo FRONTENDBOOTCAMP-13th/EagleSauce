@@ -15,6 +15,8 @@
   --color-hot-gray200: #221e1f;
   --color-hot-gray300: rgba(36, 36, 36, 0.6);
   --color-hot-gray400: #616161;
+  --color-hot-gray500: #8b8b8b;
+  --color-hot-white100: #fafafa;
 
   /* 폰트사이즈 */
   --text-11: 0.6875rem;
@@ -81,5 +83,54 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+summary::marker{
+  font-size: 0;
+}
+
+.pyogo-wrap{
+  animation: rotate 3.5s 2s infinite
+}
+
+.parmesan-wrap{
+  animation: rotate 2.5s 1s infinite
+}
+
+.shirimp-wrap{
+  animation: rotate 2.0s 3s infinite
+}
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-2deg);
+  }
+  10%{
+    transform: rotate(2deg);
+  }
+  15% {
+    transform: rotate(-2deg);
+  }
+  20%{
+    transform: rotate(2deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  30% {
+      transform: rotate(1deg);
+  }
+  35% {
+      transform: rotate(-1deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  45% {
+  transform: rotate(0deg);
   }
 }
