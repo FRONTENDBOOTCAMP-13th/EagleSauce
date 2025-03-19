@@ -13,15 +13,15 @@
   --color-hot-brown: #370e06;
   --color-hot-gray100: #ccc;
   --color-hot-gray200: #221e1f;
-  --color-hot-gray300: rgba(36, 36, 36, 0.60);
+  --color-hot-gray300: rgba(36, 36, 36, 0.6);
   --color-hot-gray400: #616161;
 
   /* 폰트사이즈 */
-  --text-11:.6875rem;
-  --text-12:.75rem;
-  --text-13:.8125rem;
-  --text-14:.875rem;
-  --text-15:.9375rem;
+  --text-11: 0.6875rem;
+  --text-12: 0.75rem;
+  --text-13: 0.8125rem;
+  --text-14: 0.875rem;
+  --text-15: 0.9375rem;
   --text-16: 1rem;
   --text-17: 1.0625rem;
   --text-18: 1.125rem;
@@ -33,15 +33,15 @@
   --text-35: 2.1875rem;
   --text-45: 2.8125rem;
   --text-50: 3.125rem;
-  --text-85:5.3125rem;
+  --text-85: 5.3125rem;
 
   /* 이미지설정 */
   --pattern-bg: url("/public/assets/images/pattern.png");
-  --wood-bg : url("/public/assets/images/wood-frame2.jpg");
+  --wood-bg: url("/public/assets/images/wood-frame2.jpg");
   --ourbrand-bg01: url("/public/assets/images/main.jpg");
   --ourbrand-bg02: url("/public/assets/images/sec2-main.jpg");
   --review-bg01: url("/public/assets/images/main02.jpg");
-  --symbol-bg:url("/public/assets/images/sec10-bg.jpg") ;
+  --symbol-bg: url("/public/assets/images/sec10-bg.jpg");
 
   /* 애니메이션 */
   --animate-cardrolling : cardrolling 40s linear infinite ;
@@ -58,17 +58,17 @@
   --review: repeat(auto-fit, minmax(700px, 1fr));
 }
 
-@layer components{
-  .max-container{
-    @apply max-w-[1920px] mx-auto
+@layer components {
+  .max-container {
+    @apply max-w-[1920px] mx-auto;
   }
 }
 
 .roll-wrap {
   animation: rolling 20s linear infinite;
 
-  &:before{
-    content: "HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • ";
+  &:before {
+    content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
     font-size: 1rem;
     letter-spacing: 1px;
     padding-right: 1.25rem;
