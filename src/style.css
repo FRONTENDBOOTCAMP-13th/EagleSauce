@@ -2,24 +2,25 @@
 
 @theme {
   /* 폰트 */
-	--font-sans:"Pretendard Variable", sans-serif;
-	--font-adelle:"adelle-sans", sans-serif;
-	--font-newbery:"newbery-sans-pro", sans-serif;
-	--font-gastro:"gastromond", sans-serif;
-  
-	/* 색상 */
-	--color-hot-brand:#ee2523;
-	--color-hot-main:#f01e14;
-	--color-hot-ivory:#fff9e8;
-	--color-hot-brown:#370e06;
-	--color-hot-gray100:#ccc;
-	--color-hot-gray200:#221e1f;
-	--color-hot-gray300:rgba(36, 36, 36, 0.6);
-	--color-hot-gray400:#616161;
-	--color-hot-gray500:#8b8b8b;
-	--color-hot-white100:#fafafa;
- 
-	
+  --font-sans: "Pretendard Variable", sans-serif;
+  --font-adelle: "adelle-sans", sans-serif;
+  --font-newbery: "newbery-sans-pro", sans-serif;
+  --font-gastro: gastromond, sans-serif;
+
+  /* 색상 */
+  --color-hot-brand: #ee2523;
+  --color-hot-main: #f01e14;
+  --color-hot-ivory: #fff9e8;
+  --color-hot-brown: #370e06;
+  --color-hot-gray100: #ccc;
+  --color-hot-gray200: #221e1f;
+  --color-hot-gray300: rgba(36, 36, 36, 0.6);
+  --color-hot-gray400: #616161;
+  --color-hot-gray500: #8b8b8b;
+  --color-hot-white100: #fafafa;
+  --color-hot-naver:#00de5a;
+  --color-hot-naverdark:#00CB52;
+
 	/* 폰트사이즈 */
   --text-11: 0.6875rem;
   --text-12: 0.75rem;
@@ -37,8 +38,9 @@
   --text-35: 2.1875rem;
   --text-45: 2.8125rem;
   --text-50: 3.125rem;
+  --text-65:4.0625rem;
   --text-85: 5.3125rem;
-    
+
 	/* 이미지설정 */
 	--pattern-bg:url("/public/assets/images/pattern.png");
 	--wood-bg:url("/public/assets/images/wood-frame2.jpg");
@@ -48,7 +50,7 @@
 	--symbol-bg:url("/public/assets/images/sec10-bg.jpg");
   --qna-bg:url("/public/assets/images/qna-bg.png");
   --thumb-bg:url("/public/assets/images/thumb-bg.jpg");
-	
+    
   /* 그리드 */
 	--review:repeat(auto-fit, minmax(700px, 1fr));
 	

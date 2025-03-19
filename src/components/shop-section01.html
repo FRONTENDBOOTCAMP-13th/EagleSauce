@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+    
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+
+		<script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <section class="w-full grid lg:grid-cols-2 ">
+      <h1 class="sr-only">표고러플 상품구매페이지</h1>
+      <div class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover">
+        <img src="/assets/images/product-1.gif" alt="" class="scale-[0.7]" />
+      </div>
+      <div class="w-full bg-hot-ivory px-4 py-8">
+        <div class="product-item-info">
+          <div class="relative mb-6">
+            <h2 class="leading-none mb-2 lg:mb-4">
+              <p class="text-15 lg:text-20 font-semibold mb-2">표고러플</p>
+              <p aria-hidden="true" class="font-newbery text-25 lg:text-65 font-semibold">PYOGORUFFLE</p>
+            </h2>
+            <p class="font-newbery text-20 lg:text-35 font-semibold flex items-center gap-1.5 lg:gap-2">
+              <span class="text-15 lg:text-20 font-normal text-hot-gray500"><span class="sr-only">정상가</span><s>23,000</s><span class="sr-only">원</span></span>
+              <span><span class="sr-only">할인가</span>19,900<span class="sr-only">원</span></span>
+              <span class="text-hot-brand"><span class="sr-only">할인율</span>13%</span>
+            </p>
+            <img src="/assets/images/spicy2.png" alt="맵기5단계 중 2단계" class="w-[50px] lg:w-[80px] absolute top-0 right-0"/>
+          </div>
+          <select name="product-option" id="product-option" class="w-full bg-white border-hot-gray100 border-1 py-2 px-5 text-15">
+            <option value="default">-[필수] 옵션을 선택해주세요 -</option>
+            <option value="" disabled>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</option>
+            <option value="" disabled class="font-bold">수량</option>
+            <option value="9">[30,100원 할인] 표고러플 9개 (+129,100)</option>
+            <option value="5">[10,000원 할인] 표고러플 5개 (+69,600)</option>
+            <option value="3">[5,000원 할인] 표고러플 3개 (+34,800)</option>
+            <option value="1">표고러플 단품</option>
+          </select>
+        </div>
+        <hr class="my-6 lg:border-1"/>
+        <div class="product-item-price">
+          <p><span class="sr-only">합계금액</span><span>TOTAL</span><span>0</span></p>
+          <div class="grid grid-cols-2 gap-1">
+            <div class="col-span-1">
+              <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand" aria-label="장바구니담기">
+                CART
+              </button>
+            </div>
+            <div class="col-span-1">
+              <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-hot-brand lg:hover:bg-hot-brand lg:focus:bg-hot-brand lg:bg-black" aria-label="구매하기">
+                BUY NOW
+              </button>
+            </div>
+            <div class="col-span-2">
+              <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 bg-hot-naver lg:hover:bg-hot-naverdark lg:focus:bg-hot-naverdark content-center" aria-label="네이버페이로 구매하기">
+                 <img src="/assets/images/npay_btn_mo.png" class="scale-50 mx-auto lg:hidden"/>
+                 <img src="/assets/images/npay_btn.png" class="scale-45 mx-auto hidden lg:block"/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  </html>
