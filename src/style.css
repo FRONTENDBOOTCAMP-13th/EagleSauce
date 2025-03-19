@@ -17,6 +17,8 @@
   --color-hot-gray400: #616161;
   --color-hot-gray500: #8b8b8b;
   --color-hot-white100: #fafafa;
+  --color-hot-naver:#00de5a;
+  --color-hot-naverdark:#00CB52;
 
   /* 폰트사이즈 */
   --text-11: 0.6875rem;
@@ -35,6 +37,7 @@
   --text-35: 2.1875rem;
   --text-45: 2.8125rem;
   --text-50: 3.125rem;
+  --text-65:4.0625rem;
   --text-85: 5.3125rem;
 
   /* 이미지설정 */
@@ -44,6 +47,7 @@
   --ourbrand-bg02: url("/public/assets/images/sec2-main.jpg");
   --review-bg01: url("/public/assets/images/main02.jpg");
   --symbol-bg: url("/public/assets/images/sec10-bg.jpg");
+  --thumb-bg: url("/public/assets/images/thumb-bg.jpg");
 
   /* 애니메이션 */
   --animate-cardrolling : cardrolling 40s linear infinite ;
