@@ -1,46 +1,46 @@
 @import "tailwindcss";
 
 @theme {
-  /* 폰트 */
-  --font-sans: "Pretendard Variable", sans-serif;
-  --font-adelle: "adelle-sans", sans-serif;
-  --font-newbery: "newbery-sans-pro", sans-serif;
-  --font-gastro: gastromond, sans-serif;
-
-  /* 색상 */
-  --color-hot-brand: #ee2523;
-  --color-hot-main: #f01e14;
-  --color-hot-ivory: #fff9e8;
-  --color-hot-brown: #370e06;
-  --color-hot-gray100: #ccc;
-  --color-hot-gray200: #221e1f;
-  --color-hot-gray300: rgba(36, 36, 36, 0.6);
-  --color-hot-gray400: #616161;
-  --color-hot-gray500: #8b8b8b;
-  --color-hot-white100: #fafafa;
-  --color-hot-naver:#00de5a;
-  --color-hot-naverdark:#00CB52;
-
+	--font-sans:"Pretendard Variable", sans-serif;
+	--font-adelle:"adelle-sans", sans-serif;
+	--font-newbery:"newbery-sans-pro", sans-serif;
+	--font-gastro:"gastromond", sans-serif;
+	
+	/* 색상 */
+	--color-hot-brand:#ee2523;
+	--color-hot-main:#f01e14;
+	--color-hot-ivory:#fff9e8;
+	--color-hot-brown:#370e06;
+	--color-hot-gray100:#ccc;
+	--color-hot-gray200:#221e1f;
+	--color-hot-gray300:rgba(36, 36, 36, 0.6);
+	--color-hot-gray400:#616161;
+	--color-hot-gray500:#8b8b8b;
+	--color-hot-white100:#fafafa;
+	
 	/* 폰트사이즈 */
-  --text-11: 0.6875rem;
-  --text-12: 0.75rem;
-  --text-13: 0.8125rem;
-  --text-14: 0.875rem;
-  --text-15: 0.9375rem;
-  --text-16: 1rem;
-  --text-17: 1.0625rem;
-  --text-18: 1.125rem;
-  --text-20: 1.25rem;
-  --text-25: 1.5625rem;
-  --text-26: 1.625rem;
-  --text-30: 1.875rem;
-  --text-33: 2.0625rem;
-  --text-35: 2.1875rem;
-  --text-45: 2.8125rem;
-  --text-50: 3.125rem;
-  --text-65:4.0625rem;
-  --text-85: 5.3125rem;
-
+	--text-10:.625rem;
+	--text-11:0.6875rem;
+	--text-12:0.75rem;
+	--text-13:0.8125rem;
+	--text-14:0.875rem;
+	--text-15:0.9375rem;
+	--text-16:1rem;
+	--text-17:1.0625rem;
+	--text-18:1.125rem;
+	--text-20:1.25rem;
+	--text-23:1.4375rem;
+	--text-25:1.5625rem;
+	--text-26:1.625rem;
+	--text-30:1.875rem;
+	--text-33:2.0625rem;
+	--text-35:2.1875rem;
+	--text-40:2.5rem;
+	--text-45:2.8125rem;
+	--text-50:3.125rem;
+	--text-65:4.0625rem;
+	--text-85:5.3125rem;
+	
 	/* 이미지설정 */
 	--pattern-bg:url("/public/assets/images/pattern.png");
 	--wood-bg:url("/public/assets/images/wood-frame2.jpg");
@@ -50,11 +50,10 @@
 	--symbol-bg:url("/public/assets/images/sec10-bg.jpg");
   --qna-bg:url("/public/assets/images/qna-bg.png");
   --thumb-bg:url("/public/assets/images/thumb-bg.jpg");
-    
-  /* 그리드 */
-	--review:repeat(auto-fit, minmax(700px, 1fr));
 	
 	/* 애니메이션 */
+	--review:repeat(auto-fit, minmax(700px, 1fr));
+	
 	@keyframes cardrolling{
 		0%{transform:translateX(0);}
 		100%{transform:translateX(-50%);}
@@ -76,10 +75,6 @@
 	}
 }
 
-summary::marker{
-  font-size: 0;
-}
-
 .roll-wrap{
 	animation:rolling 20s linear infinite;
 	
@@ -94,6 +89,10 @@ summary::marker{
 @keyframes rolling{
 	0%{transform:translateX(0);}
 	100%{transform:translateX(-100%);}
+}
+
+summary::marker{
+	font-size:0;
 }
 
 .pyogo-wrap{animation:rotate 3.5s 2s infinite;}
@@ -112,4 +111,3 @@ summary::marker{
 	40%{transform:rotate(1deg);}
 	45%{transform:rotate(0);}
 }
-
