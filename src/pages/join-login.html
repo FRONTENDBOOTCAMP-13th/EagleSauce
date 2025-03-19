@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>join-login</title>
+    <link rel="icon" href="/vite.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/newbery/newbery.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/gastromond/gastromond.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      href="/public/assets/fonts/adelle/adelle.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="bg-pink-400 flex justify-center items-center">
+    <div class="pt-[125px] pb-[125px] justify-center items-center">
+      <div
+        class="px-[75px] pb-[80px] pt-[85px] bg-white w-[650px] max-[959px]:pt-[46px] max-[959px]:pb-[30px] max-[959px]:px-[16px]"
+      >
+        <h2 class="text-[35px] mb-[60px] font-newbery font-bold text-center">
+          LOGIN
+        </h2>
+
+        <button
+          class="w-full mb-[8px] flex items-center justify-center py-3 bg-[#FDDC3F] font-bold"
+        >
+          <img
+            src="https://img.echosting.cafe24.com/skin/skin/member/ico_kakao.svg"
+            alt="Kakao Icon"
+            class="w-5 h-5 mr-2"
+          />
+          카카오로 3초만에 시작하기
+        </button>
+        <form action="/" method="POST" class="mb-4">
+          <div class="mb-4">
+            <label for="userId" class="block font-newbery text-[15px]"
+              >아이디</label
+            >
+            <input
+              type="text"
+              id="userId"
+              name="userId"
+              placeholder="아이디를 입력해 주세요."
+              required
+              class="w-full px-3 py-2 border border-gray-300"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block font-newbery text-[15px]"
+              >비밀번호</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="비밀번호를 입력해 주세요."
+              required
+              class="w-full px-3 py-2 border border-gray-300"
+            />
+          </div>
+
+          <div
+            class="flex items-center justify-between text-sm text-black mt-[10px] mb-[10px]"
+          >
+            <div>
+              <a href="/">아이디찾기</a>
+              <span class="mx-2 text-gray-400">|</span>
+              <a href="/">비밀번호찾기</a>
+            </div>
+            <a href="/">회원가입</a>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-black text-white font-bold font-newbery text-[18px] h-[40px]"
+          >
+            LOGIN
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
