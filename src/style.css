@@ -45,7 +45,8 @@
 	--text-50:3.125rem;
 	--text-65:4.0625rem;
 	--text-85:5.3125rem;
-	
+
+
 	/* 이미지설정 */
 	--pattern-bg:url("/public/assets/images/pattern.png");
 	--wood-bg:url("/public/assets/images/wood-frame2.jpg");
@@ -55,72 +56,127 @@
 	--symbol-bg:url("/public/assets/images/sec10-bg.jpg");
   --qna-bg:url("/public/assets/images/qna-bg.png");
   --thumb-bg:url("/public/assets/images/thumb-bg.jpg");
+	--sec03-bg:url("/public/assets/images/sec2.jpg");
 	--sec06-bg:url("/public/assets/images/sec5-bg.jpg");
+	--sec09-bg:url("/public/assets/images/sec8.gif");
   --point-dot:url("/public/assets/images/point.png");
   --shop-all-item-bg01:url("/public/assets/images/PYOGORUFFLE-listbg.jpg");
   --shop-all-item-bg02:url("/public/assets/images/PARMESANGOCHUJANG-listbg.jpg");
   --shop-all-item-bg03:url("/public/assets/images/XOSHRIMP-listbg.jpg");
   --shop-all-item-bg04:url("/public/assets/images/HOTNTHINGSKIT-listbg.jpg");
   --shop-all-item-bg05:url("/public/assets/images/HOTNTHINGSGIFTBAG-listbg.jpg");
+	--noise-bg:url("/public/assets/images/noise.png");
 
   /* 그리드 */
-	--review:repeat(auto-fit, minmax(700px, 1fr));
-	
-	/* 애니메이션 */
-	@keyframes cardrolling{
-		0%{transform:translateX(0);}
-		100%{transform:translateX(-50%);}
-	}
-	--animate-cardrolling:cardrolling 40s linear infinite;
-	
-	@keyframes bounce{
-		0%, 100%{transform:translateY(0);}
-		50%{transform:translateY(-10px);}
-	}
-	--animate-bounce-1:bounce 2s ease-in-out 0.2s infinite forwards;
-	--animate-bounce-2:bounce 3s ease-in-out 0.4s infinite forwards;
-	--animate-bounce-3:bounce 2.5s ease-in-out 0.2s infinite forwards;
+  --review: repeat(auto-fit, minmax(700px, 1fr));
+
+  /* 애니메이션 */
+  @keyframes cardrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  --animate-cardrolling: cardrolling 40s linear infinite;
+  --animate-cardrolling-r: cardrolling 40s linear infinite;
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  --animate-bounce-1: bounce 2s ease-in-out 0.2s infinite forwards;
+  --animate-bounce-2: bounce 3s ease-in-out 0.4s infinite forwards;
+  --animate-bounce-3: bounce 2.5s ease-in-out 0.2s infinite forwards;
 }
 
-@layer components{
-	.max-container{
-		@apply max-w-[1920px] mx-auto;
-	}
+@layer components {
+  .max-container {
+    @apply max-w-[1920px] mx-auto;
+  }
 }
 
-.roll-wrap{
-	animation:rolling 20s linear infinite;
-	
-	&:before{
-		content:"HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
-		font-size:1rem;
-		letter-spacing:1px;
-		padding-right:1.25rem;
-	}
+summary::marker {
+  font-size: 0;
 }
 
-@keyframes rolling{
-	0%{transform:translateX(0);}
-	100%{transform:translateX(-100%);}
+.roll-wrap {
+  animation: rolling 20s linear infinite;
+
+  &:before {
+    content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding-right: 1.25rem;
+  }
 }
 
-summary::marker{
-	font-size:0;
+@keyframes rolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-.pyogo-wrap{animation:rotate 3.5s 2s infinite;}
-.parmesan-wrap{animation:rotate 2.5s 1s infinite;}
-.shirimp-wrap{animation:rotate 2.0s 3s infinite;}
+.pyogo-wrap {
+  animation: rotate 3.5s 2s infinite;
+}
+.parmesan-wrap {
+  animation: rotate 2.5s 1s infinite;
+}
+.shirimp-wrap {
+  animation: rotate 2s 3s infinite;
+}
 
-@keyframes rotate{
-	0%, 100%{transform:rotate(0);}
-	5%{transform:rotate(-2deg);}
-	10%{transform:rotate(2deg);}
-	15%{transform:rotate(-2deg);}
-	20%{transform:rotate(2deg);}
-	25%{transform:rotate(-2deg);}
-	30%{transform:rotate(1deg);}
-	35%{transform:rotate(-1deg);}
-	40%{transform:rotate(1deg);}
-	45%{transform:rotate(0);}
+
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(-2deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  15% {
+    transform: rotate(-2deg);
+  }
+  20% {
+    transform: rotate(2deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(1deg);
+  }
+  35% {
+    transform: rotate(-1deg);
+  }
+  40% {
+    transform: rotate(1deg);
+  }
+  45% {
+    transform: rotate(0);
+  }
+}
+
+/*준환*/
+@keyframes textrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
+  }
 }
