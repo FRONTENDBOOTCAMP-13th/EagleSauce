@@ -701,7 +701,7 @@
 
     <!-- SECTION-10 -->
     <section class="relative w-full py-20 px-0 bg-hot-ivory lg:pt-[170px] lg:pb-[120px]" aria-labelledby="safety-process-title">
-      <div class="gap-y-12 flex items-center justify-center flex-col max-w-none w-[calc(100%-32px)] my-0 mx-auto">
+      <div class="gap-y-12 flex items-center justify-center flex-col my-0 mx-auto">
         <!-- 이미지 박스 -->
         <div class="w-[calc(70%-32px)] max-w-[400px] relative">
           <div>
@@ -716,11 +716,11 @@
         </div>
         <!-- 텍스트 박스 -->
         <div class="items-center text-center">
-          <span class="text-lg font-normal lg:text-2xl">처음부터 마지막까지
-            <strong class="font-semibold text-lg lg:text-2xl">안전하게</strong>
+          <span class="text-18 font-normal lg:text-[24px]">처음부터 마지막까지
+            <strong class="font-semibold text-18 lg:text-[24px]">안전하게</strong>
           </span>
-          <h3 id="safety-process-title" class="text-[26px] mt-1.5 mx-0 mb-6 leading-[1.3] font-light font-gastro lg:text-5xl lg:mt-2.5">SAFETY PROCESS</h3>
-          <p class="text-sm font-normal leading-[1.5] lg:text-lg">
+          <h3 class="text-[26px] mt-1.5 mx-0 mb-6 leading-[1.3] font-light font-gastro lg:text-[50px] lg:mt-2.5">SAFETY PROCESS</h3>
+          <p class="text-14 font-normal leading-[1.5] lg:text-18">
             원료 선정부터 완제품 출고까지 전 단계에서
             <br />
             HACCP 기준에 의거한 식품 품질 관리 프로세스를 통해
@@ -741,24 +741,24 @@
       <!-- 전체 영역 -->
       <div class="relative w-full py-20 px-0 text-center bg-[image:var(--symbol-bg)] bg-center bg-cover bg-repeat-y lg:pt-[210px] lg:pb-[175px]">
         <div class="max-w-[500px] lg:max-w-[1000px] w-[calc(100%-32px)] my-0 mx-auto text-center items-center">
-          <p class="text-3xl font-normal text-white font-gastro lg:text-5xl">
+          <p class="text-[30px] font-normal text-white font-gastro lg:text-[50px]">
             SPICING UP
           </p>
-          <span class="text-18 mt-4 font-semibold text-white lg:text-2xl lg:mt-[27px]">하랜띵스 라인업</span>
-          <ul class="mt-[50px] w-full lg:mt-[72px] text-center items-center">
-            <li class="mb-[15px] lg:mb-[38px]">
+          <span class="text-18 font-semibold text-white lg:text-[24px] lg:mt-[20px]">하랜띵스 라인업</span>
+          <ul class="mt-[50px] w-full lg:mt-[72px] text-center items-center flex flex-col">
+            <li class="mb-[15px] lg:mb-[38px] order-1" id="pyogo">
               <a href="">
                 <img class="w-full hidden lg:block" src="/public/assets/images/sec10-pyogo-pc.png" alt="" />
                 <img class="w-full lg:hidden" src="/public/assets/images/sec10-pyogo-mo.png" alt="" />
               </a>
             </li>
-            <li class="mb-[15px]">
+            <li class="mb-[15px] order-2" id="parmesan">
               <a href="">
                 <img class="hidden lg:block w-full" src="/public/assets/images/sec10-parmesan-pc.png" alt="" />
                 <img class="lg:hidden w-full" src="/public/assets/images/sec10-parmesan-mo.png" alt="" />
               </a>
             </li>
-            <li class="mb-[15px]">
+            <li class="mb-[15px] order-3" id="shrimp">
               <a href="">
                 <img class="hidden lg:block w-full" src="/public/assets/images/sec10-shrimp-pc.png" alt="" />
                 <img class="lg:hidden w-full" src="/public/assets/images/sec10-shrimp-mo.png" alt="" />
@@ -775,7 +775,7 @@
     </div>
 
     <!-- SECTION-12 -->
-    <section class="relative w-full overflow-hidden bg-orange-500">
+    <section class="relative w-full overflow-hidden">
       <!-- 이미지 박스 -->
       <div class="h-[550px] w-full lg:h-full" aria-hidden="true">
         <img 
@@ -788,16 +788,16 @@
       <!-- 텍스트 박스 -->
       <div class="absolute top-[60px] w-full flex justify-center lg:top-[15%]">
         <div class="w-[calc(100%-32px)] max-w-[400px] text-center text-black lg:max-w-none">
-          <h4 class="leading-[1.2] font-normal text-13 lg:text-2xl">하랜띵스 키트 (표고러플 + 파마산고추장 + XO쉬림프)</h4>
-          <h3 class="mt-1.5 mx-0 mb-6 text-2xl leading-[1.3] font-gastro font-light lg:mt-2 lg:mb-[34px] lg:text-6xl">HOTN' THINGS KIT</h3>
+          <h4 class="leading-[1.2] font-normal text-13 lg:text-[24px]">하랜띵스 키트 (표고러플 + 파마산고추장 + XO쉬림프)</h4>
+          <h3 class="mt-1.5 mx-0 mb-6 text-[24px] leading-[1.3] font-gastro font-light lg:mt-2 lg:mb-[34px] lg:text-[60px]">HOTN' THINGS KIT</h3>
           <p class="text-12 font-normal leading-[1.3] lg:text-18">
             일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종을
             <br />
             세트 할인가로 더 저렴하게 만나보세요
           </p>
           <!-- 가격 박스 -->
-          <div class="mt-[30px] flex items-center justify-center font-bold lg:mt-10" role="text" aria-label="가격 정보">
-            <span class="text-13 line-through text-hot-goldbrown lg:text-2xl lg:font-bold pt-1" aria-label="정상가 59,000원">59,000</span>
+          <div class="mt-[30px] flex items-center justify-center font-bold lg:mt-10" aria-label="가격 정보">
+            <span class="text-13 line-through text-hot-goldbrown lg:text-[24px] lg:font-bold pt-1" aria-label="정상가 59,000원">59,000</span>
             <p class="text-15 ml-2.5 flex items-center gap-x-2.5 lg:text-[25px]">
               <strong class="text-18 lg:text-[35px]" aria-label="할인가 46,900원">46,900</strong>
               <span aria-label="할인율 21퍼센트">(21%)</span>
