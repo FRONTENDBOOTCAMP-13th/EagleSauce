@@ -12,6 +12,7 @@
   --color-hot-main: #f01e14;
   --color-hot-ivory: #fff9e8;
   --color-hot-brown: #370e06;
+	--color-hot-yellow:#FFC20C;
   --color-hot-goldbrown: #A86D11;
   --color-hot-gray100: #ccc;
   --color-hot-gray200: #221e1f;
@@ -55,7 +56,10 @@
   --qna-bg:url("/public/assets/images/qna-bg.png");
   --thumb-bg:url("/public/assets/images/thumb-bg.jpg");
 	--sec06-bg:url("/public/assets/images/sec5-bg.jpg");
+	--sec09-bg:url("/public/assets/images/sec8.gif");
   --point-dot:url("/public/assets/images/point.png");
+	--noise-bg:url("/public/assets/images/noise.png");
+
     
   /* 그리드 */
 	--review:repeat(auto-fit, minmax(700px, 1fr));
