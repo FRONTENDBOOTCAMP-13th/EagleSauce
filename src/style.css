@@ -12,6 +12,8 @@
   --color-hot-main: #f01e14;
   --color-hot-ivory: #fff9e8;
   --color-hot-brown: #370e06;
+	--color-hot-yellow:#FFC20C;
+  --color-hot-goldbrown: #A86D11;
   --color-hot-gray100: #ccc;
   --color-hot-gray200: #221e1f;
   --color-hot-gray300: rgba(36, 36, 36, 0.6);
@@ -21,35 +23,43 @@
   --color-hot-naver: #00de5a;
   --color-hot-naverdark: #00cb52;
 
-  /* 폰트사이즈 */
-  --text-11: 0.6875rem;
-  --text-12: 0.75rem;
-  --text-13: 0.8125rem;
-  --text-14: 0.875rem;
-  --text-15: 0.9375rem;
-  --text-16: 1rem;
-  --text-17: 1.0625rem;
-  --text-18: 1.125rem;
-  --text-20: 1.25rem;
-  --text-25: 1.5625rem;
-  --text-26: 1.625rem;
-  --text-30: 1.875rem;
-  --text-33: 2.0625rem;
-  --text-35: 2.1875rem;
-  --text-45: 2.8125rem;
-  --text-50: 3.125rem;
-  --text-65: 4.0625rem;
-  --text-85: 5.3125rem;
+	/* 폰트사이즈 */
+	--text-10:.625rem;
+	--text-11:0.6875rem;
+	--text-12:0.75rem;
+	--text-13:0.8125rem;
+	--text-14:0.875rem;
+	--text-15:0.9375rem;
+	--text-16:1rem;
+	--text-17:1.0625rem;
+	--text-18:1.125rem;
+	--text-20:1.25rem;
+	--text-23:1.4375rem;
+	--text-25:1.5625rem;
+	--text-26:1.625rem;
+	--text-30:1.875rem;
+	--text-33:2.0625rem;
+	--text-35:2.1875rem;
+	--text-40:2.5rem;
+	--text-45:2.8125rem;
+	--text-50:3.125rem;
+	--text-65:4.0625rem;
+	--text-85:5.3125rem;
 
-  /* 이미지설정 */
-  --pattern-bg: url("/public/assets/images/pattern.png");
-  --wood-bg: url("/public/assets/images/wood-frame2.jpg");
-  --ourbrand-bg01: url("/public/assets/images/main.jpg");
-  --ourbrand-bg02: url("/public/assets/images/sec2-main.jpg");
-  --review-bg01: url("/public/assets/images/main02.jpg");
-  --symbol-bg: url("/public/assets/images/sec10-bg.jpg");
-  --qna-bg: url("/public/assets/images/qna-bg.png");
-  --thumb-bg: url("/public/assets/images/thumb-bg.jpg");
+
+	/* 이미지설정 */
+	--pattern-bg:url("/public/assets/images/pattern.png");
+	--wood-bg:url("/public/assets/images/wood-frame2.jpg");
+	--ourbrand-bg01:url("/public/assets/images/main.jpg");
+	--ourbrand-bg02:url("/public/assets/images/sec2-main.jpg");
+	--review-bg01:url("/public/assets/images/main02.jpg");
+	--symbol-bg:url("/public/assets/images/sec10-bg.jpg");
+  --qna-bg:url("/public/assets/images/qna-bg.png");
+  --thumb-bg:url("/public/assets/images/thumb-bg.jpg");
+	--sec06-bg:url("/public/assets/images/sec5-bg.jpg");
+	--sec09-bg:url("/public/assets/images/sec8.gif");
+  --point-dot:url("/public/assets/images/point.png");
+	--noise-bg:url("/public/assets/images/noise.png");
 
   /* 그리드 */
   --review: repeat(auto-fit, minmax(700px, 1fr));
@@ -64,6 +74,7 @@
     }
   }
   --animate-cardrolling: cardrolling 40s linear infinite;
+  --animate-cardrolling-r: cardrolling 40s linear infinite;
 
   @keyframes bounce {
     0%,
@@ -119,6 +130,7 @@ summary::marker {
   animation: rotate 2s 3s infinite;
 }
 
+
 @keyframes rotate {
   0%,
   100% {
@@ -152,6 +164,7 @@ summary::marker {
     transform: rotate(0);
   }
 }
+
 /*준환*/
 @keyframes textrolling {
   0% {
@@ -160,8 +173,4 @@ summary::marker {
   100% {
     transform: translateX(50%);
   }
-}
-
-:root {
-  --animate-cardrolling-r: cardrolling 40s linear infinite;
 }
