@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+  <link rel="icon" href="/vite.svg" />
+  <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+  
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+	
+
+	<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
+		<!-- left: DETAIL VIEW -->
+		<div class="md:w-[580px]">
+			<a href="#void" class="group">
+				<div class="relative">
+					<div class="z-20 absolute top-0 left-0 flex items-center justify-between w-full py-3 px-4 md:py-5 md:px-6">
+						<img class="h-6" src="/public/assets/images/icon_best.jpg" alt="BEST상품">
+						<img class="hidden h-9 md:block" src="/public/assets/images/spicy2.png" alt="맵기 다섯칸 중 두칸">
+					</div>
+					<div class="relative bg-[image:var(--shop-all-item-bg01)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
+						<img src="/public/assets/images/product-1.png" alt="PYOGORUFFLE" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]">
+						<img src="/public/assets/images/product-1.gif" alt="PYOGORUFFLE 회전되는 영상" class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]">
+					</div>
+					<div class="relative pt-16 px-3 pb-5 md:pt-17 md:px-7 md:pb-7">
+						<img class="absolute right-5 w-12 md:hidden" src="/public/assets/images/spicy2.png" alt="맵기 다섯칸 중 두칸">
+						<h3>
+							<span class="block text-15 font-semibold">표고러플</span>
+							<span class="font-newbery mt-1 text-25 font-semibold">PYOGORUFFLE</span>
+						</h3>
+						<p class="mt-5 text-14 font-medium leading-normal break-keep md:mt-2.5">트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된 고급스러운 매운맛</p>
+						<div class="font-newbery mt-10">
+							<s class="text-hot-gray500 text-15 font-normal">23,000</s>
+							<span class="ml-2.5 text-20 font-semibold">19,900</span>
+							<span class="ml-2.5 text-hot-brand text-20 font-semibold">13%</span>
+						</div>
+						<div class="font-newbery mt-9 p-5 bg-black text-white text-15 font-semibold text-center group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<!-- right: image -->
+		<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg01)] bg-no-repeat bg-center bg-cover"></div>
+	</div>
+
+
+</body>
+</html>
