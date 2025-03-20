@@ -15,5 +15,9 @@
     "npm-run-all": "^4.1.5",
     "tailwindcss": "^4.0.13",
     "vite": "^6.2.1"
+  },
+  "headwind.classRegex": {
+    "html": "\\bclass\\s*=\\s*[\\\"\\'](https://github.com/heybourn/headwind/blob/master/[_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']",
+    "javascriptreact": "(?:\\bclassName\\s*=\\s*[\\\"\\'](https://github.com/heybourn/headwind/blob/master/[_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)"
   }
 }
