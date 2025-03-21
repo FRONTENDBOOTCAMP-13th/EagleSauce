@@ -33,60 +33,64 @@
     <script type="module" src="/src/main.js"></script>
   </head>
   <body class="font-sans">
-    <!-- 하랜띵스 키트 섹션 -->
-    <section 
-    class="relative w-full overflow-hidden"
-    aria-labelledby="shop-product-section12">
-    <h2 class="sr-only" id="shop-product-section12">하랜띵스 키트 구매</h2>
+    <!-- SECTION-12 :: 하랜띵스 키트-->
+    <section class="relative w-full overflow-hidden 2xl:h-screen" aria-labelledby="shop-product-section12">
+      <h2 class="sr-only" id="shop-product-section12">하랜띵스 키트 구매</h2>
       <!-- 이미지 박스 -->
       <div class="w-full h-[550px] lg:h-full">
         <img
           src="/assets/images/kit-sec.jpg"
           alt="하랜띵스 키트 - 표고러플, 파마산고추장, XO쉬림프 소스 세트"
-          class="object-cover w-full h-full"
-        />
+          class="object-cover w-full h-full"/>
       </div>
 
       <!-- 텍스트 박스 -->
-      <div class="absolute top-[60px] w-full flex justify-center lg:top-[15%]">
+      <div class="absolute top-[60px] w-full flex justify-center lg:top-[8%] 2xl:top-[15%]">
         <div
-          class="w-[calc(100%-32px)] max-w-[400px] text-center text-black lg:max-w-none">
-          <h4 class="text-13 leading-[1.2] font-normal lg:text-2xl">
+          class="w-full max-w-[400px] text-center text-black lg:max-w-none">
+          <h4 class="text-13 leading-none font-normal lg:text-[24px]">
             하랜띵스 키트 (표고러플 + 파마산고추장 + XO쉬림프)
           </h4>
 
           <h3
-            class="mt-1.5 mx-0 mb-6 text-2xl leading-[1.3] font-gastro font-light lg:mt-2 lg:mb-[34px] lg:text-6xl">
+            class="text-[24px] leading-none my-4 font-gastro font-light lg:mt-2 lg:mb-[34px] lg:text-[60px]">
             HOTN' THINGS KIT
           </h3>
 
-          <p class="text-12 leading-[1.3] font-normal lg:text-18">
+          <p class="text-13 leading-[1.3] font-normal lg:text-18">
             일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종을
             <br />
             세트 할인가로 더 저렴하게 만나보세요
           </p>
 
           <!-- 가격 박스 -->
-          <div
-            class="mt-[30px] flex items-center justify-center font-bold lg:mt-10">
-            <span
-              class="pt-1 line-through text-13 text-hot-goldbrown lg:text-2xl lg:font-bold"
-              >59,000</span>
-
-            <p
-              class="ml-2.5 text-15 flex items-center gap-x-2.5 lg:text-[25px]">
-              <strong class="text-18 lg:text-[35px]">46,900</strong>
-              <span>(21%)</span>
-            </p>
+          <div class="flex items-center justify-center mt-6 font-bold" role="text"> 
+            <h4 class="sr-only">하랜띵스키트 가격정보</h4>
+            <span class="pt-1 text-13 text-hot-goldbrown lg:text-[24px] lg:font-bold" >
+              <span class="sr-only">정상가</span>
+              <s>59,000</s>
+              <span class="sr-only">원</span>
+            </span>
+            <p class="text-15 ml-2.5 flex items-center gap-x-2.5 lg:text-[25px]">
+              <strong class="text-18 lg:text-[35px]">
+                <span class="sr-only">할인가</span>
+                46,900
+                <span class="sr-only">원</span>
+              </strong>
+              <span>
+                <span class="sr-only">할인율21%</span>
+                <span aria-hidden="true">(21%)</span>
+              </span>
+              </p>
           </div>
         </div>
       </div>
 
       <!-- 구매 박스 -->
-      <div class="absolute bottom-[40px] w-full flex justify-center">
+      <div class="absolute bottom-[40px] w-full flex justify-center 2xl:bottom-[70px]">
         <div class="w-[calc(100%-32px)] max-w-[375px]">
           <a
-            href="/product/hot-things-kit"
+            href="/src/pages/shop-hotnkit.html"
             class="flex items-center justify-center h-[40px] bg-black text-white text-13 font-newbery lg:w-full lg:max-w-[470px] lg:h-[55px] lg:text-20 lg:font-bold"
             aria-label="하랜띵스 키트 구매하기">
             BUY NOW
