@@ -35,36 +35,71 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="/src/main.js"></script>
   </head>
-    <body class="font-sans">
-      <!-- 권혁만 셰프 / 식품기술사 -->
-      <section class="relative w-full pt-[60%] px-0 pb-[70px] lg:py-[80px] lg:px-0 bg-[url('/public/assets/images/sec11.jpg')] bg-no-repeat bg-top bg-cover lg:bg-none lg:bg-hot-gray200">
-        <div class="gap-x-0 flex flex-col lg:flex-row lg:bg-hot-gray200 items-start justify-center relative w-[calc(100%-32px)] my-0 mx-auto max-w-none z-2 lg:gap-x-[80px]">
-          <!-- 왼쪽으로 들어가지는 영역 -->
-          <div class="text-white">
-            <span class="opacity-[0.4] text-14 inline-block font-gastro">MADE BY</span>
-            <h4 class="text-[28px] my-3.5 mx-0 font-semibold">권혁만 셰프 / 식품기술사</h4>
-            <h5 class="text-15 mb-10 text-hot-brand flex items-center font-normal">미슐랭 3스타 레스토랑 출신
-              <img class="ml-2.5 w-2.5" src="/public/assets/images/MichelinStar.png" alt="" aria-hidden="true"/>
-              <img class="ml-1.5 w-2.5" src="/public/assets/images/MichelinStar.png" alt="" aria-hidden="true"/>
-              <img class="ml-1.5 w-2.5" src="/public/assets/images/MichelinStar.png" alt="" aria-hidden="true"/>
-            </h5>
-            <p class="pl-3 border-l-2 border-white text-14 font-medium">
-              미국 Benu(퓨전 한식)
-              <br>
-              홍콩 Ta Vie(재패니즈 프렌치)
-            </p>
-            <p class="mt-5 text-14 font-medium">
-              미슐랭 3스타 레스토랑에서 쌓은 경험을 바탕으로
-              <br />
-              식품 기술사가 되어 일상에 미슐랭급 풍미를 전합니다.
-            </p>
-          </div>
-          <!-- 오른쪽으로 들어가는 영역 -->
-          <div class="hidden w-[calc(100%-32px)] max-w-[260px] lg:block ">
-            <img class="w-full" src="/public/assets/images/sec11.jpg" alt="권혁만 셰프" />
-          </div>
+  <body class="font-sans">
+    <!-- 권혁만 셰프 / 식품기술사 섹션 -->
+    <section
+      aria-labelledby="shop-product-section13"
+      class="relative w-full pt-[60%] px-0 pb-[70px] bg-[url('/public/assets/images/sec11.jpg')] bg-no-repeat bg-top bg-cover lg:py-[80px] lg:px-0 lg:bg-none lg:bg-hot-gray200"
+    >
+    <h2 class="sr-only" id="shop-product-section13">권혁만 셰프 소개</h2>
+      <div
+        class="relative w-[calc(100%-32px)] mx-auto flex flex-col justify-center z-10 lg:flex-row lg:gap-x-[80px] lg:bg-hot-gray200"
+      >
+        <!-- 텍스트 영역 -->
+        <div class="text-white">
+          <span class="inline-block text-14 font-gastro opacity-40"
+            >MADE BY</span
+          >
+          <h4 id="chef-intro" class="text-[28px] my-3.5 font-semibold">
+            권혁만 셰프 / 식품기술사
+          </h4>
+          <h5
+            class="flex items-center mb-10 font-normal text-15 text-hot-brand"
+          >
+            미슐랭 3스타 레스토랑 출신
+            <img
+              src="/public/assets/images/MichelinStar.png"
+              alt="별"
+              aria-hidden="true"
+              class="ml-2.5 w-2.5"
+            />
+            <img
+              src="/public/assets/images/MichelinStar.png"
+              alt="별"
+              aria-hidden="true"
+              class="ml-1.5 w-2.5"
+            />
+            <img
+              src="/public/assets/images/MichelinStar.png"
+              alt="별"
+              aria-hidden="true"
+              class="ml-1.5 w-2.5"
+            />
+          </h5>
+          <p class="pl-3 font-medium border-l-2 border-white text-14">
+            미국 Benu(퓨전 한식)
+            <br />
+            홍콩 Ta Vie(재패니즈 프렌치)
+          </p>
+          <p class="mt-5 font-medium text-14">
+            미슐랭 3스타 레스토랑에서 쌓은 경험을 바탕으로
+            <br />
+            식품 기술사가 되어 일상에 미슐랭급 풍미를 전합니다.
+          </p>
         </div>
-        <div class="absolute inset-0 after:absolute after:inset-0 after:bg-black after:content-[''] after:opacity-70 after:z-1 lg:hidden"></div>
-      </section>
-    </body>
-  </html>
+        <!-- 이미지 영역 (데스크톱 전용) -->
+        <div class="hidden max-w-[260px] lg:block">
+          <img
+            src="/public/assets/images/sec11.jpg"
+            alt="권혁만 셰프 프로필 사진"
+            class="w-full"
+          />
+        </div>
+      </div>
+      <!-- 모바일 오버레이 -->
+      <div
+        class="absolute inset-0 after:absolute after:inset-0 after:bg-black after:content-[''] after:opacity-70 after:z-1 lg:hidden"
+      ></div>
+    </section>
+  </body>
+</html>
