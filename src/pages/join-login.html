@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>join-login</title>
+    <title>HOTN'THINGS-로그인</title>
     <link rel="icon" href="/vite.svg" />
     <link
       rel="preload"
@@ -31,44 +31,41 @@
       as="style"
       href="/public/assets/fonts/adelle/adelle.css"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="bg-pink-400 flex justify-center items-center">
-    <div class="pt-[125px] pb-[125px] justify-center items-center">
+  <body class="bg-hot-ivory">
+    <div class="py-[125px] flex items-center justify-center">
       <div
-        class="px-[75px] pb-[80px] pt-[85px] bg-white w-[650px] max-[959px]:pt-[46px] max-[959px]:pb-[30px] max-[959px]:px-[16px]"
+        class="px-8 lg:px-[100px] py-12 lg:py-20 bg-white w-[650px]"
       >
-        <h2 class="text-[35px] mb-[60px] font-newbery font-bold text-center">
+        <h2 class="text-35 mb-[60px] font-newbery font-bold text-center">
           LOGIN
         </h2>
-
-        <button
-          class="w-full mb-[8px] flex items-center justify-center py-3 bg-[#FDDC3F] font-bold"
-        >
+        <button 
+          type="submit" 
+          class="w-full mb-4 flex items-center justify-center gap-2 h-[45px] lg:h-[50px] px-4 bg-hot-kakao lg:hover:bg-hot-kakaodark lg:focus:bg-hot-kakaodark" 
+          aria-label="카카오로 시작하기">
           <img
-            src="https://img.echosting.cafe24.com/skin/skin/member/ico_kakao.svg"
-            alt="Kakao Icon"
-            class="w-5 h-5 mr-2"
-          />
-          카카오로 3초만에 시작하기
+          src="/public/assets/icon/ico_kakao.svg"
+          alt="카카오톡아이콘"
+          class="w-5 h-5"/>
+          <span>카카오로 3초만에 시작하기</span>
         </button>
-        <form action="/" method="POST" class="mb-4">
+        <form action="/" method="POST" class="space-y-4">
           <div class="mb-4">
-            <label for="userId" class="block font-newbery text-[15px]"
-              >아이디</label
-            >
+            <label for="userId" class="block mb-1 font-newbery text-14">아이디</label>
             <input
               type="text"
               id="userId"
               name="userId"
               placeholder="아이디를 입력해 주세요."
               required
-              class="w-full px-3 py-2 border border-gray-300"
+              class="w-full px-3 py-2 bg-white border border-gray-300"
             />
           </div>
           <div class="mb-4">
-            <label for="password" class="block font-newbery text-[15px]"
+            <label for="password" class="block mb-1 font-newbery text-14"
               >비밀번호</label
             >
             <input
@@ -77,24 +74,19 @@
               name="password"
               placeholder="비밀번호를 입력해 주세요."
               required
-              class="w-full px-3 py-2 border border-gray-300"
+              class="w-full px-3 py-2 bg-white border border-gray-300"
             />
           </div>
-
           <div
-            class="flex items-center justify-between text-sm text-black mt-[10px] mb-[10px]"
-          >
+            class="flex items-center justify-between text-black text-14">
             <div>
-              <a href="/">아이디찾기</a>
-              <span class="mx-2 text-gray-400">|</span>
-              <a href="/">비밀번호찾기</a>
+              <a href="#void" aria-label="아이디찾기">아이디찾기</a>
+              <span class="mx-2 text-gray-400" aria-hidden="true">|</span>
+              <a href="#void" aria-label="비밀번호">비밀번호찾기</a>
             </div>
-            <a href="/">회원가입</a>
+            <a href="#void" aria-label="회원가입">회원가입</a>
           </div>
-          <button
-            type="submit"
-            class="w-full bg-black text-white font-bold font-newbery text-[18px] h-[40px]"
-          >
+          <button type="submit" class="block w-full h-[45px] lg:h-[50px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand" aria-label="로그인하기">
             LOGIN
           </button>
         </form>
