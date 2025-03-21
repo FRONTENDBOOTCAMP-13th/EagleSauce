@@ -54,7 +54,7 @@ function append_header() {
 							</a>
 						</li>
 					</ul>
-					<a href="#void" class="block w-32 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+					<a href="/src/pages/home.html" class="block w-32 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
 						<img src="/assets/images/logo.png" alt="하랜띵스로고"/>
 					</a>
 				</div>
@@ -94,13 +94,13 @@ function append_header() {
 				<ul class="flex">
 					<!-- ABOUT -->
 					<li class="group">
-						<a href="./src/pages/about-ourbrand.html" class="p-6 block">ABOUT</a>
+						<a href="/src/pages/about-ourbrand.html" class="p-6 block">ABOUT</a>
 						<ul class="font-medium pb-6 pl-6 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b">
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-								<a href="./src/pages/about-ourbrand.html">OUR BRAND</a>
+								<a href="/src/pages/about-ourbrand.html">OUR BRAND</a>
 							</li>
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-								<a href="./src/pages/about-inquiry.html">INQUIRY</a>
+								<a href="/src/pages/about-inquiry.html">INQUIRY</a>
 							</li>
 						</ul>
 					</li>
@@ -109,26 +109,26 @@ function append_header() {
 						<a href="#void" class="p-6 block">SHOP</a>
 						<ul class="font-medium pb-6 pl-30 absolute left-0 w-screen invisible opacity-0 bg-hot-ivory transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b">
 							<li class="px-6 py-1.5 flex gap-4 items-center">
-								<a href="#void" class="hover:text-hot-main transition-all duration-300">ALL PRODUCTS</a>
+								<a href="/src/pages/shop-all_products.html" class="hover:text-hot-main transition-all duration-300">ALL PRODUCTS</a>
 								<p class="text-14 opacity-20 font-sans">한 입으로 당신의 매 순간에 특별함을 더해주는 하랜띵스</p>
 							</li>
 							<li class="px-6 py-1.5 flex gap-4 items-center">
-								<a href="#void" class="hover:text-hot-main transition-all duration-300">PYOGORUFFLE</a>
+								<a href="/src/pages/shop-pyogo.html" class="hover:text-hot-main transition-all duration-300">PYOGORUFFLE</a>
 								<p class="text-14 opacity-20 font-sans">트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된 고급스러운 매운맛</p>
 							</li>
 							<li class="px-6 py-1.5 flex gap-4 items-center">
-								<a href="#void" class="hover:text-hot-main transition-all duration-300">PARMESAN GOCHUJANG</a>
+								<a href="/src/pages/shop-parmesan.html" class="hover:text-hot-main transition-all duration-300">PARMESAN GOCHUJANG</a>
 								<p class="text-14 opacity-20 font-sans">고추장의 깊고 진한 매콤함에 더한 치즈의 고소하고 짭쪼름한 풍미</p>
 							</li>
 							<li class="px-6 py-1.5 flex gap-4 items-center">
-								<a href="#void" class="hover:text-hot-main transition-all duration-300">XO SHRIMP</a>
+								<a href="/src/pages/shop-shrimp.html" class="hover:text-hot-main transition-all duration-300">XO SHRIMP</a>
 								<p class="text-14 opacity-20 font-sans">
 									청양고추를 넣은 알싸한 간장 베이스에 새우로 감칠맛을
 									끌어올린 단짠 매력
 								</p>
 							</li>
 							<li class="px-6 py-1.5 flex gap-4 items-center">
-								<a href="#void" class="hover:text-hot-main transition-all duration-300">HOTN'THINGS KIT</a>
+								<a href="/src/pages/shop-hotnkit.html" class="hover:text-hot-main transition-all duration-300">HOTN'THINGS KIT</a>
 								<p class="text-14 opacity-20 font-sans">일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종 세트</p>
 							</li>
 							<li class="mt-20 px-6">
@@ -149,25 +149,25 @@ function append_header() {
 
 					<!-- COMMUNITY -->
 					<li class="group">
-						<a href="./src/pages/community-event.html" class="p-6 block">COMMUNITY</a>
+						<a href="/src/pages/community-event.html" class="p-6 block">COMMUNITY</a>
 						<ul class="font-medium pb-6 pl-54 absolute left-0 w-screen bg-hot-ivory invisible opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 border-b">
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-								<a href="./src/pages/community-event.html">EVENT</a>
+								<a href="/src/pages/community-event.html">EVENT</a>
 							</li>
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-								<a href="./src/pages/community-recipes&paring.html">RECIPES & PARING</a>
+								<a href="/src/pages/community-recipes_and_paring.html">RECIPES & PARING</a>
 							</li>
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
 								<a href="/src/pages/community-napolimatfia.html">NAPOLI MATFIA</a>
 							</li>
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-								<a href="./src/pages/community-review.html">REVIEW</a>
+								<a href="/src/pages/community-review.html">REVIEW</a>
 							</li>
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-								<a href="./src/pages/community-faq.html">FAQ</a>
+								<a href="/src/pages/community-faq.html">FAQ</a>
 							</li>
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-								<a href="./src/pages/community-qna.html" target="_blank" rel="noopener noreferrer">1:1 Q&A</a>
+								<a href="/src/pages/community-qna.html" target="_blank" rel="noopener noreferrer">1:1 Q&A</a>
 							</li>
 						</ul>
 					</li>
