@@ -61,6 +61,7 @@
   --sec03-bg: url("/public/assets/images/section-03.jpg");
   --sec06-bg: url("/public/assets/images/sec5-bg.jpg");
   --sec09-bg: url("/public/assets/images/sec8.gif");
+  --sec11-bg: url("/public/assets/images/sec11.jpg");
   --point-dot: url("/public/assets/images/point.png");
   --noise-bg: url("/public/assets/images/noise.png");
   --shop-all-item-bg01:url("/public/assets/images/PYOGORUFFLE-listbg.jpg");
@@ -73,7 +74,7 @@
   /* 그리드 */
   --review: repeat(auto-fit, minmax(700px, 1fr));
 
-  /* 애니메이션 */
+  /* 키프레임 애니메이션 정의 */
   @keyframes cardrolling {
     0% {
       transform: translateX(0);
@@ -97,6 +98,72 @@
   --animate-bounce-1: bounce 2s ease-in-out 0.2s infinite forwards;
   --animate-bounce-2: bounce 3s ease-in-out 0.4s infinite forwards;
   --animate-bounce-3: bounce 2.5s ease-in-out 0.2s infinite forwards;
+
+  @keyframes rotate {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+    5% {
+      transform: rotate(-2deg);
+    }
+    10% {
+      transform: rotate(2deg);
+    }
+    15% {
+      transform: rotate(-2deg);
+    }
+    20% {
+      transform: rotate(2deg);
+    }
+    25% {
+      transform: rotate(-2deg);
+    }
+    30% {
+      transform: rotate(1deg);
+    }
+    35% {
+      transform: rotate(-1deg);
+    }
+    40% {
+      transform: rotate(1deg);
+    }
+    45% {
+      transform: rotate(0);
+    }
+  }
+
+  --animate-rotate-pyogo: rotate 3.5s 2s infinite;
+  --animate-rotate-parmesan: rotate 2.5s 1s infinite;
+  --animate-rotate-shirimp: rotate 2s 3s infinite;
+
+/* 롤링 관련 설정 */
+  --roll-text: "HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • ";
+  --roll-font-size: 1rem;
+  --roll-letter-spacing: 1px;
+  --roll-padding: 1.25rem;
+
+
+  @keyframes rolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  --animate-roll: rolling 20s linear infinite;
+
+  @keyframes textrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
+    }
+  }
+  
 }
 
 @layer components {
@@ -107,77 +174,4 @@
 
 summary::marker {
   font-size: 0;
-}
-
-.roll-wrap {
-  animation: rolling 20s linear infinite;
-
-  &:before {
-    content: "HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS •HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • HOT'N THINGS • ";
-    font-size: 1rem;
-    letter-spacing: 1px;
-    padding-right: 1.25rem;
-  }
-}
-
-@keyframes rolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.pyogo-wrap {
-  animation: rotate 3.5s 2s infinite;
-}
-.parmesan-wrap {
-  animation: rotate 2.5s 1s infinite;
-}
-.shirimp-wrap {
-  animation: rotate 2s 3s infinite;
-}
-
-@keyframes rotate {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  5% {
-    transform: rotate(-2deg);
-  }
-  10% {
-    transform: rotate(2deg);
-  }
-  15% {
-    transform: rotate(-2deg);
-  }
-  20% {
-    transform: rotate(2deg);
-  }
-  25% {
-    transform: rotate(-2deg);
-  }
-  30% {
-    transform: rotate(1deg);
-  }
-  35% {
-    transform: rotate(-1deg);
-  }
-  40% {
-    transform: rotate(1deg);
-  }
-  45% {
-    transform: rotate(0);
-  }
-}
-
-@keyframes textrolling {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(50%);
-  }
 }
