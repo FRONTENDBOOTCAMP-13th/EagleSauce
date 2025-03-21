@@ -10,7 +10,9 @@
   /* 색상 */
   --color-hot-brand:#ee2523;
   --color-hot-main:#f01e14;
+  --color-hot-secondary: #b51d14;
   --color-hot-ivory:#fff9e8;
+  --color-hot-yellow: #ffc20c;
   --color-hot-brown:#370e06;
   --color-hot-goldbrown:#A86D11;
   --color-hot-gray100:#ccc;
@@ -45,27 +47,28 @@
 	--text-50:3.125rem;
 	--text-65:4.0625rem;
 	--text-85:5.3125rem;
+  --text-100: 6.25rem;
 
-
-	/* 이미지설정 */
-	--pattern-bg:url("/public/assets/images/pattern.png");
-	--wood-bg:url("/public/assets/images/wood-frame2.jpg");
-	--ourbrand-bg01:url("/public/assets/images/main.jpg");
-	--ourbrand-bg02:url("/public/assets/images/sec2-main.jpg");
-	--review-bg01:url("/public/assets/images/main02.jpg");
-	--symbol-bg:url("/public/assets/images/sec10-bg.jpg");
-  --qna-bg:url("/public/assets/images/qna-bg.png");
-  --thumb-bg:url("/public/assets/images/thumb-bg.jpg");
-	--sec03-bg:url("/public/assets/images/sec2.jpg");
-	--sec06-bg:url("/public/assets/images/sec5-bg.jpg");
-	--sec09-bg:url("/public/assets/images/sec8.gif");
-  --point-dot:url("/public/assets/images/point.png");
+  /* 이미지설정 */
+  --pattern-bg: url("/public/assets/images/pattern.png");
+  --wood-bg: url("/public/assets/images/wood-frame2.jpg");
+  --ourbrand-bg01: url("/public/assets/images/main.jpg");
+  --ourbrand-bg02: url("/public/assets/images/sec2-main.jpg");
+  --review-bg01: url("/public/assets/images/main02.jpg");
+  --symbol-bg: url("/public/assets/images/sec10-bg.jpg");
+  --qna-bg: url("/public/assets/images/qna-bg.png");
+  --thumb-bg: url("/public/assets/images/thumb-bg.jpg");
+  --sec03-bg: url("/public/assets/images/section-03.jpg");
+  --sec06-bg: url("/public/assets/images/sec5-bg.jpg");
+  --sec09-bg: url("/public/assets/images/sec8.gif");
+  --point-dot: url("/public/assets/images/point.png");
+  --noise-bg: url("/public/assets/images/noise.png");
   --shop-all-item-bg01:url("/public/assets/images/PYOGORUFFLE-listbg.jpg");
   --shop-all-item-bg02:url("/public/assets/images/PARMESANGOCHUJANG-listbg.jpg");
   --shop-all-item-bg03:url("/public/assets/images/XOSHRIMP-listbg.jpg");
   --shop-all-item-bg04:url("/public/assets/images/HOTNTHINGSKIT-listbg.jpg");
   --shop-all-item-bg05:url("/public/assets/images/HOTNTHINGSGIFTBAG-listbg.jpg");
-	--noise-bg:url("/public/assets/images/noise.png");
+
 
   /* 그리드 */
   --review: repeat(auto-fit, minmax(700px, 1fr));
@@ -136,7 +139,6 @@ summary::marker {
   animation: rotate 2s 3s infinite;
 }
 
-
 @keyframes rotate {
   0%,
   100% {
@@ -171,7 +173,6 @@ summary::marker {
   }
 }
 
-/*준환*/
 @keyframes textrolling {
   0% {
     transform: translateX(0);
