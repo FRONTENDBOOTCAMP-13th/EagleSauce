@@ -1,30 +1,30 @@
 function append_header() {
 	const header_template = `
-		<header class="relative font-newbery">
-			<p class="text-15 text-white bg-hot-brown text-center py-1.5">
+		<header class="fixed top-0 z-1000 w-full font-newbery">
+			<p class="text-15 text-white bg-hot-brown text-center py-1.5 h-[37px]">
 				<span class="mr-1">[2조 - 이글이글🔥]</span>
 				<span class="font-sans">멋쟁이사자 프론트엔드 13기</span>
 			</p>
 
 			<!-- Mobile Header -->
-			<div class="relative p-4 menu-mobile lg:hidden bg-hot-ivory">
+			<div class="relative p-4 menu-mobile lg:hidden bg-hot-ivory border-b">
 				<ul class="flex justify-between">
 					<li>
-						<a href="#void" class="size-5">
+						<div class="size-5">
 							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
 								<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 							</svg>
-						</a>
+						</div>
 					</li>
 					<li>
-						<a href="#void" class="size-5">
+						<a href="/src/pages/cart.html" aria-label="장바구니바로가기" class="size-5">
 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
 								<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
 							</svg>
 						</a>
 					</li>
 				</ul>
-				<a href="/src/pages/home.html" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+				<a href="/src/pages/home.html" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2  transform-none left-1/2 top-1/2">
 					<img src="/public/assets/images/logo.png" alt="하랜띵스로고"/>
 				</a>
 			</div>
@@ -53,7 +53,7 @@ function append_header() {
 							</a>
 						</li>
 					</ul>
-					<a href="/src/pages/home.html" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2">
+					<a href="/src/pages/home.html" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2 transform-none left-1/2 top-1/2">
 						<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스로고"/>
 					</a>
 				</div>
@@ -93,8 +93,8 @@ function append_header() {
 				<ul class="flex">
 					<!-- ABOUT -->
 					<li class="group">
-						<a href="/src/pages/about-ourbrand.html" class="block p-6">ABOUT</a>
-						<ul class="absolute left-0 invisible w-screen pb-6 pl-6 font-medium transition-all duration-300 border-b opacity-0 bg-hot-ivory group-hover:visible group-hover:opacity-100">
+						<a href="/src/pages/about-ourbrand.html" class="block p-6" tabindex="0">ABOUT</a>
+						<ul class="absolute left-0 invisible w-full pb-6 pl-6 font-medium transition-all duration-300 border-b opacity-0 bg-hot-ivory group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
 								<a href="/src/pages/about-ourbrand.html">OUR BRAND</a>
 							</li>
@@ -105,8 +105,8 @@ function append_header() {
 					</li>
 					<!-- SHOP -->
 					<li class="group">
-						<a href="/src/pages/shop-all_products.html" class="block p-6">SHOP</a>
-						<ul class="absolute left-0 invisible w-screen pb-6 font-medium transition-all duration-300 border-b opacity-0 pl-30 bg-hot-ivory group-hover:visible group-hover:opacity-100">
+						<a href="/src/pages/shop-all_products.html" class="block p-6" tabindex="0">SHOP</a>
+						<ul class="absolute left-0 invisible w-full pb-6 font-medium transition-all duration-300 border-b opacity-0 pl-30 bg-hot-ivory group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
 							<li class="px-6 py-1.5 flex gap-4 items-center">
 								<a href="/src/pages/shop-all_products.html" class="transition-all duration-300 hover:text-hot-main">ALL PRODUCTS</a>
 								<p class="font-sans text-14 opacity-20">한 입으로 당신의 매 순간에 특별함을 더해주는 하랜띵스</p>
@@ -148,8 +148,8 @@ function append_header() {
 
 					<!-- COMMUNITY -->
 					<li class="group">
-						<a href="/src/pages/community-event.html" class="block p-6">COMMUNITY</a>
-						<ul class="absolute left-0 invisible w-screen pb-6 font-medium transition-all duration-300 border-b opacity-0 pl-54 bg-hot-ivory group-hover:visible group-hover:opacity-100">
+						<a href="/src/pages/community-event.html" class="block p-6" tabindex="0">COMMUNITY</a>
+						<ul class="absolute left-0 invisible w-full pb-6 font-medium transition-all duration-300 border-b opacity-0 pl-54 bg-hot-ivory group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
 							<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
 								<a href="/src/pages/community-event.html">EVENT</a>
 							</li>
@@ -179,7 +179,7 @@ function append_header() {
 				</ul>
 
 				<!-- Logo -->
-				<a href="/src/pages/home.html" class="absolute block w-32 pt-3 -translate-x-1/2 lg:w-56 left-1/2">
+				<a href="/src/pages/home.html" class="absolute inline-flex w-32 mt-3 -translate-x-1/2 transform-none lg:w-56 left-1/2" tabindex="1">
 					<img src="/public/assets/images/logo.png" alt="하랜띵스로고"/>
 				</a>
 			</nav>
