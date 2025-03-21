@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>main-footer</title>
+    <title>HOTN'THINGS-SEARCH</title>
     <link rel="icon" href="/vite.svg" />
     <link
       rel="preload"
@@ -35,53 +35,56 @@
 
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="bg-hot-ivory min-h-screen overflow-hidden">
-    <div class="h-full flex items-stretch max-[959px]:hidden">
+  <body class="min-h-screen overflow-hidden bg-hot-ivory">
+    <div class="h-full flex items-stretch max-[959px]:hidden" aria-labelledby="HOTNTHINGS-SEARCH">
+      <h2 class="sr-only" id="HOTNTHINGS-SEARCH">검색</h2>
       <!-- 왼쪽 영역 -->
       <div class="w-1/2 h-dvh max-[959px]:hidden">
         <div
           class="flex flex-col justify-between pl-[70px] pt-[75px] pr-[90px] pb-[80px] h-dvh"
         >
-          <div class="relative rounded-[5px] border-white">
+          <form class="relative rounded-[5px] border-white" role="search">
             <input
               type="text"
               placeholder="맛있는 소스 검색하기"
+              aria-label="검색창"
               class="rounded-[5px] border border-white hover:border-black bg-white px-5 py-4 w-full placeholder-gray-300 text-black opacity-100 focus:outline-none"
             />
             <!-- 검색 이미지 -->
             <img
               src="/public/assets/icon/search.svg"
-              alt="검색 이미지"
+              alt=""
+              aria-hidden="true"
               draggable="false"
-              class="absolute right-3 top-1/2 w-5 h-5 -translate-y-1/2"
+              class="absolute w-5 h-5 -translate-y-1/2 right-3 top-1/2"
             />
-          </div>
-          <ul class="font-newbery font-bold">
+          </form>
+          <ul class="font-bold font-newbery">
             <li
               class="py-5 text-[42px] border-b border-black hover:text-red-500"
             >
-              <a href="/">PYOGORUFFLE</a>
+              <a href="/src/pages/shop-pyogo.html">PYOGORUFFLE</a>
             </li>
             <li
               class="py-5 text-[42px] border-b border-black hover:text-red-500"
             >
-              <a href="/">PARAMESAN GOCHUJANG</a>
+              <a href="/src/pages/shop-parmesan.html">PARAMESAN GOCHUJANG</a>
             </li>
             <li
               class="py-5 text-[42px] border-b border-black hover:text-red-500"
             >
-              <a href="/">XO SHRIMP</a>
+              <a href="/src/pages/shop-shrimp.html">XO SHRIMP</a>
             </li>
             <li
               class="py-5 text-[42px] border-b border-black hover:text-red-500"
             >
-              <a href="/">HOTN'THINGS KIT</a>
+              <a href="/src/pages/shop-hotnkit.html">HOTN'THINGS KIT</a>
             </li>
           </ul>
           <p class="font-newbery font-bold text-[12px] opacity-20 inline-1.7">
-            HOTN’THINGS that add specialness to your every moment.
+            HOTN'THINGS that add specialness to your every moment.
             <br />
-            HOTN’THINGS unique flavor filled with more than 52% premium
+            HOTN'THINGS unique flavor filled with more than 52% premium
             ingredients. It contains a generous amount of high-quality
             ingredients used in fine dining. More than 52% of ingredients such
             as white wine vinegar, white soy sauce, shiitake concentrate, extra
@@ -94,59 +97,57 @@
       <!-- 오른쪽 영역 -->
       <div class="w-1/2 max-[959px]:hidden">
         <img
-          class="w-full h-dvh object-cover object-bottom"
+          class="object-cover object-bottom w-full h-dvh"
           src="/public/assets/images/HOTNTHINGSKIT.jpg"
-          alt="/"
+          alt="핫앤띵스 키트 이미지"
           draggable="false"
         />
-        <button class="text-5xl text-white absolute top-10 right-10">
-          <a class="" href="/">x</a>
-        </button>
+        <a href="/src/pages/home.html" class="absolute text-5xl text-white top-10 right-10" aria-label="닫기">x</a>
       </div>
     </div>
 
     <!--모바일 화면-->
     <div
-      class="bg-[url('/public/assets/images/HOTNTHINGSKIT.jpg')] bg-cover bg-center h-screen w-full relative"
+      class="bg-(image:--search-bg) bg-cover bg-center h-screen w-full relative min-[960px]:hidden"
     >
-      <button class="absolute top-5 right-1 text-5xl text-white">
-        <a href="">x</a>
-      </button>
+      <a href="/src/pages/home.html" class="absolute text-white text-50 top-5 right-1" aria-label="닫기">x</a>
       <div class="px-[27px] pt-[15px] h-[28px]">
-        <div class="relative bg-white rounded-[5px] border">
+        <form class="relative bg-white rounded-[5px] border" role="search">
           <input
             type="text"
             placeholder="맛있는 소스 검색하기"
+            aria-label="소스 검색"
             class="rounded-[5px] border border-white hover:border-black px-[20px] py-[16px] w-full placeholder-gray-300 text-black opacity-100 focus:outline-none"
           />
           <!-- 검색 이미지 -->
           <img
             src="/public/assets/icon/search.svg"
-            alt="검색 이미지"
+            alt=""
+            aria-hidden="true"
             draggable="false"
-            class="absolute right-3 top-1/2 w-5 h-5 -translate-y-1/2"
+            class="absolute w-5 h-5 -translate-y-1/2 right-3 top-1/2"
           />
-        </div>
+        </form>
         <ul class="font-bold font-newbery">
           <li
             class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
           >
-            <a href="/">PYOGORUFFLE</a>
+            <a href="/src/pages/shop-pyogo.html">PYOGORUFFLE</a>
           </li>
           <li
             class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
           >
-            <a href="/">PARAMESAN GOCHUJANG</a>
+            <a href="/src/pages/shop-parmesan.html">PARAMESAN GOCHUJANG</a>
           </li>
           <li
             class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
           >
-            <a href="/">XO SHRIMP</a>
+            <a href="/src/pages/shop-shrimp.html">XO SHRIMP</a>
           </li>
           <li
             class="py-[13px] px-[10px] text-[28px] text-white border-b border-white hover:text-red-500"
           >
-            <a href="/">HOTN'THINGS KIT</a>
+            <a href="/src/pages/shop-hotnkit.html">HOTN'THINGS KIT</a>
           </li>
         </ul>
       </div>
