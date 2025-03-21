@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>cart</title>
+    <title>HARNTHINGS-CART</title>
     <link rel="icon" href="/vite.svg" />
     <link
       rel="preload"
@@ -37,17 +37,18 @@
   </head>
   <body class="font-sans bg-hot-ivory">
     <!-- 전체 컨테이너 -->
-    <div class="min-h-[calc(100vh-200px)] w-full h-full flex flex-col gap-y-16 lg:min-h-[calc(100vh-251px)]">
+    <div class="min-h-[calc(100vh-200px)] w-full h-full flex flex-col gap-y-16 lg:min-h-[calc(100vh-251px)]" aria-labelledby="HOTNTHINGS-CART">
+      <h2 class="sr-only" id="HOTNTHINGS-CART">HOTNTHINGS-CART</h2>
       <!-- 상단 컨테이너 -->
-      <div class="max-w-[1280px] w-[calc(100%-32px)] my-0 mx-auto">
-        <div class="pt-[120px] px-0 pb-0 text-center lg:pt-[180px] lg:pb-[30px]">
-          <h1 class="font-newbery text-2xl font-semibold leading-1.5 lg:text-5xl">
+      <div class="max-w-[1280px] my-0 pt-20 mx-auto">
+        <div class="pt-[120px] px-0  text-center lg:pt-[180px] lg:pb-[30px]">
+          <h1 class="font-newbery text-25 font-semibold leading-1.5 lg:text-5xl">
             OH NO!<br />
             YOU DON'T HAVE ANYTHING<br />
             IN YOUR CART YET &#xFF1A;&#x0028;<br />
           </h1>
           <a
-            href="#void"
+            href="/src/pages/shop-all_products.html"
             class="mt-[42px] mx-auto mb-0 text-18 font-newbery font-medium h-10 w-full max-w-[470px] flex justify-center items-center bg-black border-black text-white lg:h-[55px]"
             aria-label="쇼핑몰로 이동하기"
             >GO TO THE SHOP</a
@@ -72,7 +73,8 @@
           src="/public/assets/images/product-1.png"
           alt=""
           aria-hidden="true"
-          class="animate-rotate-pyogo left-[-8%] -z-1 w-[55%] top-[-3%] absolute align-top lg:left-[10%] lg:w-[30%] lg:top-[-8%]"
+          class="animate-rotate-pyogo left-[-8%] -z-1 w-[55%] top-[-3%] absolute align-top
+          lg:left-[10%] lg:w-[30%] lg:top-[-8%]"
         />
         <img
           src="/public/assets/images/product-2.png"
