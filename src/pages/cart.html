@@ -1,96 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HOTN'THINGS-CART</title>
-    <link rel="icon" href="/vite.svg" />
-    <link
-      rel="preload"
-      as="font"
-      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
-      crossorigin="anonymous"
-    />
-    <!-- 폰트 스타일시트 통합 -->
-    <link
-      rel="stylesheet"
-      href="/public/assets/fonts/pretendard/pretendardvariable.css"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="/public/assets/fonts/newbery/newbery.css"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="/public/assets/fonts/gastromond/gastromond.css"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="/public/assets/fonts/adelle/adelle.css"
-      as="style"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans bg-hot-ivory">
-    <!-- 전체 컨테이너 -->
-    <div class="min-h-[calc(100vh-200px)] w-full h-full flex flex-col gap-y-16 lg:min-h-[calc(100vh-251px)]" aria-labelledby="HOTNTHINGS-CART">
-      <h2 class="sr-only" id="HOTNTHINGS-CART">HOTNTHINGS-CART</h2>
-      <!-- 상단 컨테이너 -->
-      <div class="max-w-[1280px] my-0 pt-20 mx-auto">
-        <div class="pt-[120px] px-0  text-center lg:pt-[180px] lg:pb-[30px]">
-          <h1 class="font-newbery text-25 font-semibold leading-1.5 lg:text-5xl">
-            OH NO!<br />
-            YOU DON'T HAVE ANYTHING<br />
-            IN YOUR CART YET &#xFF1A;&#x0028;<br />
-          </h1>
-          <a
-            href="/src/pages/shop-all_products.html"
-            class="mt-[42px] mx-auto mb-0 text-18 font-newbery font-medium h-10 w-full max-w-[470px] flex justify-center items-center bg-black border-black text-white lg:h-[55px]"
-            aria-label="쇼핑몰로 이동하기"
-            >GO TO THE SHOP</a
-          >
-        </div>
-      </div>
-      <!-- 하단 컨테이너 -->
-      <div class="relative mt-auto overflow-hidden">
-        <img
-          src="/public/assets/images/cart-bg.png"
-          alt=""
-          aria-hidden="true"
-          class="hidden w-full align-top lg:block"
-        />
-        <img
-          src="/public/assets/images/bg-mo.png"
-          alt=""
-          aria-hidden="true"
-          class="w-full align-top lg:hidden"
-        />
-        <img
-          src="/public/assets/images/product-1.png"
-          alt=""
-          aria-hidden="true"
-          class="animate-rotate-pyogo left-[-8%] -z-1 w-[55%] top-[-3%] absolute align-top
-          lg:left-[10%] lg:w-[30%] lg:top-[-8%]"
-        />
-        <img
-          src="/public/assets/images/product-2.png"
-          alt=""
-          aria-hidden="true"
-          class="animate-rotate-parmesan left-[25%] z-1 w-[55%] top-[-3%] absolute align-top
-          lg:left-[35%] lg:w-[30%] lg:top-[-19%]"
-        />
-        <img
-          src="/public/assets/images/product-3.png"
-          alt=""
-          aria-hidden="true"
-          class="animate-rotate-shirimp left-[55%] -z-1 w-[55%] top-[-3%] absolute align-top
-          lg:left-[62%] lg:w-[30%] lg:top-[-14%]"
-        />
-      </div>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - CART</title>
+  <link rel="icon" href="/public/assets/images/favicon.png"/>
+  <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous"/> 
+  
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <script type="module" src="/src/js/sub-header.js"></script>
+  <script type="module" src="/src/js/footer.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+
+  <!-- 전체 컨테이너 -->
+  <div class="flex flex-col w-full min-h-[calc(100dvh-90px)] lg:min-h-[calc(100dvh-110px)]" aria-labelledby="hatnthings-cart">
+    <h2 class="sr-only" id="hatnthings-cart">장바구니 페이지</h2>
+
+    <!-- 상단 컨테이너 -->
+    <div class="max-w-[1280px] pt-[180px] mx-auto text-center">
+      <p class="font-semibold leading-10 font-newbery lg:leading-16 text-25 lg:text-5xl">
+        OH NO!<br />
+        YOU DON'T HAVE ANYTHING<br />
+        IN YOUR CART YET&#xFF1A;&#x0028;<br />
+      </p>
+      <a href="/src/pages/shop-all_products.html" aria-label="쇼핑몰로 이동하기" class="mt-[42px] mx-auto mb-0 text-18 font-newbery font-medium h-10 w-full max-w-[470px] flex justify-center items-center bg-black border-black text-white lg:h-[55px]">GO TO THE SHOP</a >
     </div>
-  </body>
+
+    <!-- 하단 컨테이너 -->
+    <div class="relative mt-auto overflow-hidden">
+      <img src="/public/assets/images/cart-bg.png" alt="핫소스 배경" aria-hidden="true" class="relative z-20 hidden w-full align-top lg:block"/>
+      <img src="/public/assets/images/bg-mo.png" alt="핫소스 배경 모바일" aria-hidden="true" class="w-full align-top lg:hidden"/>
+      <img src="/public/assets/images/product-1.png" alt="핫소스" aria-hidden="true" class="animate-rotate-pyogo left-[-8%] w-[55%] top-[-3%] absolute align-top lg:left-[10%] lg:w-[30%] lg:top-[-8%]"/>
+      <img src="/public/assets/images/product-2.png" alt="핫소스" aria-hidden="true" class="animate-rotate-parmesan left-[25%] z-10 w-[55%] top-[-3%] absolute align-top lg:left-[35%] lg:w-[30%] lg:top-[-19%]"/>
+      <img src="/public/assets/images/product-3.png" alt="핫소스" aria-hidden="true" class="animate-rotate-shirimp left-[55%] z-10 w-[55%] top-[-3%] absolute align-top lg:left-[62%] lg:w-[30%] lg:top-[-14%]"/>
+    </div>
+  </div>
+
+
+</div>
+<common-footer></common-footer>
+
+
+</body>
 </html>

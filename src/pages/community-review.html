@@ -1,1037 +1,313 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HOTN'THINGS-REVIEW</title>
-    <link rel="icon" href="/vite.svg" />
-    <link
-      rel="preload"
-      as="font"
-      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - REVEIW</title>
+  <link rel="icon" href="/public/assets/images/favicon.png"/>
+  <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous"/> 
+  
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css"/>
 
-    <link
-      rel="stylesheet"
-      as="style"
-      href="/public/assets/fonts/pretendard/pretendardvariable.css"
-    />
-    <link
-      rel="stylesheet"
-      as="style"
-      href="/public/assets/fonts/newbery/newbery.css"
-    />
-    <link
-      rel="stylesheet"
-      as="style"
-      href="/public/assets/fonts/gastromond/gastromond.css"
-    />
-    <link
-      rel="stylesheet"
-      as="style"
-      href="/public/assets/fonts/adelle/adelle.css"
-    />
+  <script type="module" src="/src/js/sub-header.js"></script>
+  <script type="module" src="/src/js/footer.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
 
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans bg-hot-ivory">
-    <!-- 애니메이션 -->
-    <section
-      aria-labelledby="review-section1"
-      class="py-30 bg-(image:--review-bg01) w-full bg-no-repeat bg-cover bg-center relative after:absolute after:inset-0 after:bg-black after:opacity-30 after:content-['']"
-    >
-      <h2 id="review-section1" class="sr-only">Card Review Sider</h2>
-      <div class="relative text-center text-white z-1 mb-9">
-        <h3 class="font-bold text-30 lg:text-35 font-newbery mb-9">
-          Please write your review!
-        </h3>
-        <p class="font-semibold text-14 lg:text-18">
-          당신의 매 순간에 특별함을 더 해주는 하랜띵스,<br />
-          다양한 곳에서 하랜띵스를 만나보세요
-        </p>
-      </div>
-      <div class="relative z-1 overflow-hidden w-full h-[420px] lg:h-[520px]">
-        <div class="flex gap-4 w-[1000%] lg:w-[540%] animate-cardrolling">
-          <!-- 이미지1 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden"
-          >
-            <img
-              loading="lazy"
-              class="object-cover w-full h-full"
-              src="/assets/images/review-con-1.png"
-              alt="하이볼,XO쉬림프,과자 사진"
-            />
+
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+  
+  <!-- 애니메이션 -->
+  <section aria-labelledby="review-section1" class="py-30 bg-(image:--review-bg01) w-full bg-no-repeat bg-cover bg-center relative after:absolute after:inset-0 after:bg-black after:opacity-30 after:content-['']" >
+    <h2 id="review-section1" class="sr-only">Card Review Sider</h2>
+    <div class="relative text-center text-white z-1 mb-9">
+      <h3 class="font-bold text-30 lg:text-35 font-newbery mb-9">
+        Please write your review!
+      </h3>
+      <p class="font-semibold text-14 lg:text-18">
+        당신의 매 순간에 특별함을 더 해주는 하랜띵스,<br />
+        다양한 곳에서 하랜띵스를 만나보세요
+      </p>
+    </div>
+    <div class="relative z-1 overflow-hidden w-full h-[420px] lg:h-[520px]">
+      <div class="flex gap-4 w-[1000%] lg:w-[540%] animate-cardrolling">
+        <!-- 이미지1 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
+          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-1.png" alt="하이볼,XO쉬림프,과자 사진" />
+        </div>
+
+        <!-- 상품1:쉬림프 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
+          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+          <div class="space-y-8 text-center keep-all">
+            <h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]" >
+              XO SHIRIMP
+            </h3>
+            <p class="font-medium text-15 lg:text-20">
+              뚜껑 열자마자 맛있는 냄새가 나요! 소스볼에 부어두고 앉아서 밥
+              먹는 내내 좋은 향이 나서 식욕이 돌아요 :) 향만큼 엄청
+              맛있기도해서 여기저기 자주 곁들여 먹기 좋아요
+            </p>
+            <p class="text-13 text-hot-gray300">김**</p>
           </div>
+        </div>
 
-          <!-- 상품1:쉬림프 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center"
-          >
-            <img
-              loading="lazy"
-              src="/assets/images/symbol.png"
-              alt="하랜띵스새심볼"
-            />
-            <div class="space-y-8 text-center keep-all">
-              <h3
-                class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]"
-              >
-                XO SHIRIMP
-              </h3>
-              <p class="font-medium text-15 lg:text-20">
-                뚜껑 열자마자 맛있는 냄새가 나요! 소스볼에 부어두고 앉아서 밥
-                먹는 내내 좋은 향이 나서 식욕이 돌아요 :) 향만큼 엄청
-                맛있기도해서 여기저기 자주 곁들여 먹기 좋아요
-              </p>
-              <p class="text-13 text-hot-gray300">김**</p>
-            </div>
+        <!-- 이미지2 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
+          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-1.jpg" alt="라면, 삼각김밥, 표고러플 사진" />
+        </div>
+
+        <!-- 상품2:파마산고추장 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
+          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+          <div class="space-y-8 text-center keep-all">
+            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+              PARMESAN<br />GOCHUJANG
+            </h3>
+            <p class="font-medium text-15 lg:text-20">
+              맛있다 완전 맘에 쏙듬 불닭에 삼김조합에 이거까지 더하니까
+              스트레스 싹 풀려요ㅋㅋㅋㅋㅋㅋ
+            </p>
+            <p class="text-13 text-hot-gray300">전**</p>
           </div>
+        </div>
 
-          <!-- 이미지2 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden"
-          >
-            <img
-              loading="lazy"
-              class="object-cover w-full h-full"
-              src="/assets/images/review-con-1.jpg"
-              alt="라면, 삼각김밥, 표고러플 사진"
-            />
+        <!-- 이미지3 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
+          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-5.jpg" alt="피자랑 표고러플 사진" />
+        </div>
+
+        <!-- 상품3:표고러플 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
+          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+          <div class="space-y-8 text-center keep-all">
+            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+              PYOGORUFFLE
+            </h3>
+            <p class="font-medium text-15 lg:text-20">
+              듬뿍 뿌려야 맛있어요 이정도 가격 이정도 퀄리티면 팍팍 뿌려먹어도
+              괜찮아요
+            </p>
+            <p class="text-13 text-hot-gray300">강**</p>
           </div>
+        </div>
 
-          <!-- 상품2:파마산고추장 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center"
-          >
-            <img
-              loading="lazy"
-              src="/assets/images/symbol.png"
-              alt="하랜띵스새심볼"
-            />
-            <div class="space-y-8 text-center keep-all">
-              <h3
-                class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery"
-              >
-                PARMESAN<br />GOCHUJANG
-              </h3>
-              <p class="font-medium text-15 lg:text-20">
-                맛있다 완전 맘에 쏙듬 불닭에 삼김조합에 이거까지 더하니까
-                스트레스 싹 풀려요ㅋㅋㅋㅋㅋㅋ
-              </p>
-              <p class="text-13 text-hot-gray300">전**</p>
-            </div>
+        <!-- 이미지4 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
+          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-3.jpg" alt="파마산 고추장 이미지" />
+        </div>
+
+        <!-- 상품4:파마산고추장 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
+          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+          <div class="space-y-8 text-center keep-all">
+            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+              PARMESAN<br />GOCHUJANG
+            </h3>
+            <p class="font-medium text-15 lg:text-20">
+              부모님도 좋아하실 맛일거 같아서 세트로 배송드렸어요~ 누구나
+              부담없이 맛있게 즐길 수 있는 핫소스입니다 최고에요
+            </p>
+            <p class="text-13 text-hot-gray300">박**</p>
           </div>
+        </div>
 
-          <!-- 이미지3 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden"
-          >
-            <img
-              loading="lazy"
-              class="object-cover w-full h-full"
-              src="/assets/images/review-con-5.jpg"
-              alt="피자랑 표고러플 사진"
-            />
+        <!-- 이미지5 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden" >
+          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-4.jpg" alt="식당에서 찍은 표고러플 사진" />
+        </div>
+
+        <!-- 상품5:표고러플 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
+          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+          <div class="space-y-8 text-center keep-all">
+            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+              PYOGORUFFLE
+            </h3>
+            <p class="font-medium text-15 lg:text-20">
+              ㅋㅋㅋㅋㅋㅋㅋ요즘 넘 푹 빠져있어서 고기집까지 들고가서
+              친구들한테 잔뜩 영업하고 왔어요 아 진짜 넘 맛있어서 싸들고
+              다니고 싶은데 다이소가서 소분용기 좀 알아봐야겠어요
+            </p>
+            <p class="text-13 text-hot-gray300">장**</p>
           </div>
+        </div>
 
-          <!-- 상품3:표고러플 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center"
-          >
-            <img
-              loading="lazy"
-              src="/assets/images/symbol.png"
-              alt="하랜띵스새심볼"
-            />
-            <div class="space-y-8 text-center keep-all">
-              <h3
-                class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery"
-              >
-                PYOGORUFFLE
-              </h3>
-              <p class="font-medium text-15 lg:text-20">
-                듬뿍 뿌려야 맛있어요 이정도 가격 이정도 퀄리티면 팍팍 뿌려먹어도
-                괜찮아요
-              </p>
-              <p class="text-13 text-hot-gray300">강**</p>
-            </div>
-          </div>
+        <!-- 이미지6 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden" >
+          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-2.jpg" alt="XO쉬림프 이미지" />
+        </div>
 
-          <!-- 이미지4 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden"
-          >
-            <img
-              loading="lazy"
-              class="object-cover w-full h-full"
-              src="/assets/images/review-con-3.jpg"
-              alt="파마산 고추장 이미지"
-            />
-          </div>
-
-          <!-- 상품4:파마산고추장 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center"
-          >
-            <img
-              loading="lazy"
-              src="/assets/images/symbol.png"
-              alt="하랜띵스새심볼"
-            />
-            <div class="space-y-8 text-center keep-all">
-              <h3
-                class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery"
-              >
-                PARMESAN<br />GOCHUJANG
-              </h3>
-              <p class="font-medium text-15 lg:text-20">
-                부모님도 좋아하실 맛일거 같아서 세트로 배송드렸어요~ 누구나
-                부담없이 맛있게 즐길 수 있는 핫소스입니다 최고에요
-              </p>
-              <p class="text-13 text-hot-gray300">박**</p>
-            </div>
-          </div>
-
-          <!-- 이미지5 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden"
-          >
-            <img
-              loading="lazy"
-              class="object-cover w-full h-full"
-              src="/assets/images/review-con-4.jpg"
-              alt="식당에서 찍은 표고러플 사진"
-            />
-          </div>
-
-          <!-- 상품5:표고러플 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center"
-          >
-            <img
-              loading="lazy"
-              src="/assets/images/symbol.png"
-              alt="하랜띵스새심볼"
-            />
-            <div class="space-y-8 text-center keep-all">
-              <h3
-                class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery"
-              >
-                PYOGORUFFLE
-              </h3>
-              <p class="font-medium text-15 lg:text-20">
-                ㅋㅋㅋㅋㅋㅋㅋ요즘 넘 푹 빠져있어서 고기집까지 들고가서
-                친구들한테 잔뜩 영업하고 왔어요 아 진짜 넘 맛있어서 싸들고
-                다니고 싶은데 다이소가서 소분용기 좀 알아봐야겠어요
-              </p>
-              <p class="text-13 text-hot-gray300">장**</p>
-            </div>
-          </div>
-
-          <!-- 이미지6 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden"
-          >
-            <img
-              loading="lazy"
-              class="object-cover w-full h-full"
-              src="/assets/images/review-con-2.jpg"
-              alt="XO쉬림프 이미지"
-            />
-          </div>
-
-          <!-- 상품6:쉬림프 -->
-          <div
-            class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center"
-          >
-            <img
-              loading="lazy"
-              src="/assets/images/symbol.png"
-              alt="하랜띵스새심볼"
-            />
-            <div class="space-y-8 text-center keep-all">
-              <h3
-                class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]"
-              >
-                XO SHIRIMP
-              </h3>
-              <p class="font-medium text-15 lg:text-20">
-                소스가 이렇게 예쁠 일인가요.. 아까워서 뜯지도 못하겠어요 소스
-                자체는 실링 잘 되어서 왔구 겉보기에는 되게 되직한 질감이네요?
-                굴소스보다는 묽어보여요 해산물 향이 강해서 팟타이 같은 음식
-                만들어먹으면 잘 어울릴 것 같아요
-              </p>
-              <p class="text-13 text-hot-gray300">김**</p>
-            </div>
+        <!-- 상품6:쉬림프 -->
+        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
+          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+          <div class="space-y-8 text-center keep-all">
+            <h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]" >
+              XO SHIRIMP
+            </h3>
+            <p class="font-medium text-15 lg:text-20">
+              소스가 이렇게 예쁠 일인가요.. 아까워서 뜯지도 못하겠어요 소스
+              자체는 실링 잘 되어서 왔구 겉보기에는 되게 되직한 질감이네요?
+              굴소스보다는 묽어보여요 해산물 향이 강해서 팟타이 같은 음식
+              만들어먹으면 잘 어울릴 것 같아요
+            </p>
+            <p class="text-13 text-hot-gray300">김**</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 맛리뷰 -->
-    <section class="py-16 overflow-hidden" aria-labelledby="review-taste">
-      <h2
-        id="review-taste"
-        class="mb-8 font-bold text-center text-35 font-newbery"
-      >
-        Review by Taste
-      </h2>
-      <div class="px-4 max-container">
-        <div
-          class="lg:w-[80%] mx-auto flex lg:justify-center overflow-x-auto gap-4"
-        >
-          <!-- XO 쉬림프 -->
-          <div
-            class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col flex-shrink-0 max-w-[300px] lg:max-w-none lg:w-[30%]"
-          >
-            <a
-              aria-label="XO쉬림프 상품페이지로 이동하기"
-              href="/src/pages/shop-shrimp.html"
-            >
-              <img
-                loading="lazy"
-                src="/assets/images/product-3.png"
-                alt="XO 쉬림프"
-              />
-            </a>
-            <div class="space-y-3">
-              <h3 class="font-semibold text-16">XO 쉬림프</h3>
-              <div class="flex justify-between font-semibold text-hot-gray200">
-                <div class="flex items-center gap-1">
-                  <div class="flex h-[16px]">
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                  </div>
-                  <span>4.7</span>
+  <!-- 맛리뷰 -->
+  <section class="py-16 overflow-hidden" aria-labelledby="review-taste">
+    <h2 id="review-taste" class="mb-8 font-bold text-center text-35 font-newbery" >
+      Review by Taste
+    </h2>
+    <div class="px-4 max-container">
+      <div class="lg:w-[80%] mx-auto flex lg:justify-center overflow-x-auto gap-4" >
+        <!-- XO 쉬림프 -->
+        <div class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col flex-shrink-0 max-w-[300px] lg:max-w-none lg:w-[30%]" >
+          <a aria-label="XO쉬림프 상품페이지로 이동하기" href="/src/pages/shop-shrimp.html" >
+            <img loading="lazy" src="/assets/images/product-3.png" alt="XO 쉬림프" />
+          </a>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-16">XO 쉬림프</h3>
+            <div class="flex justify-between font-semibold text-hot-gray200">
+              <div class="flex items-center gap-1">
+                <div class="flex h-[16px]">
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
                 </div>
-                <p><span class="mr-1">리뷰</span><span>585</span></p>
+                <span>4.7</span>
               </div>
-              <div class="flex flex-col min-w-0 gap-2">
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-11.jpg"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="XO쉬림프 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    상품후기며 유명인들이 극찬을 해서 사봤는데.. 진짜 간단한
-                    재료로 맛있게 만드는 비법이 있네요. 특히 볶음류는 가히 어느
-                    소스와 견주어도 손색이 없네요. 특히, 애가 잘먹어서 너무
-                    좋아요.
-                  </p>
-                </div>
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-13.jpg"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="XO쉬림프 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    패키지도 이쁘고 볶음밥할때 빛을 발하네요
-                  </p>
-                </div>
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-14.jpg"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="XO쉬림프 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    가격은 너무 비싸지만 소스 쓰임이 많고 맛있어서 5개나
-                    구매합니다~
-                  </p>
-                </div>
-              </div>
+              <p><span class="mr-1">리뷰</span><span>585</span></p>
             </div>
-          </div>
-
-          <!-- 파마산 고추장 -->
-          <div
-            class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col flex-shrink-0 max-w-[300px] lg:max-w-none lg:w-[30%]"
-          >
-            <a
-              aria-label="파마산 고추장 페이지로 이동하기"
-              href="/src/pages/shop-parmesan.html"
-            >
-              <img
-                loading="lazy"
-                src="/assets/images/product-2.png"
-                alt="파마산 고추장"
-              />
-            </a>
-            <div class="space-y-3">
-              <h3 class="font-semibold text-16">파마산 고추장</h3>
-              <div class="flex justify-between font-semibold text-hot-gray200">
-                <div class="flex items-center gap-1">
-                  <div class="flex h-[16px]">
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                  </div>
-                  <span>4.8</span>
-                </div>
-                <p><span class="mr-1">리뷰</span><span>134</span></p>
+            <div class="flex flex-col min-w-0 gap-2">
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-11.jpg" class="size-16 rounded-2xl aspect-square" alt="XO쉬림프 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  상품후기며 유명인들이 극찬을 해서 사봤는데.. 진짜 간단한
+                  재료로 맛있게 만드는 비법이 있네요. 특히 볶음류는 가히 어느
+                  소스와 견주어도 손색이 없네요. 특히, 애가 잘먹어서 너무
+                  좋아요.
+                </p>
               </div>
-              <div class="flex flex-col min-w-0 gap-2">
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-15.png"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="파마산고추장 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    저 이제 이 소스로 갈아탑니다.. 요즘 브리또나 샌드위치 같은
-                    거 간단하게 만들어 먹는 데에 빠졌거든요..!! 뭔가 적당한
-                    소스가 없어서 심심했는데 딱 맞는 소스를 찾은 것 같아요ㅜ
-                  </p>
-                </div>
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-16.jpg"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="파마산고추장 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    맛있다고 난리난리여서 구매했습니다~ 짜장면에 비벼 먹으면
-                    맛있다길래 도전해보려고 합니다ㅋㅋ
-                  </p>
-                </div>
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-17.jpg"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="파마산고추장 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    간단히 먹어봤는대 그렇게 맛있는지 잘 모르겠어요 ㅋ 너무
-                    홍보를 때려서.. ㅋ 다른메뉴로 다시 잘 머거보겠습니다
-                  </p>
-                </div>
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-13.jpg" class="size-16 rounded-2xl aspect-square" alt="XO쉬림프 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  패키지도 이쁘고 볶음밥할때 빛을 발하네요
+                </p>
               </div>
-            </div>
-          </div>
-
-          <!-- 표고러플 -->
-          <div
-            class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col flex-shrink-0 max-w-[300px] lg:max-w-none lg:w-[30%]"
-          >
-            <a
-              aria-label="표고러플 상품페이지로 이동하기"
-              href="/src/pages/shop-pyogo.html"
-            >
-              <img src="/assets/images/product-3.png" alt="표고러플" />
-            </a>
-            <div class="space-y-3">
-              <h3 class="font-semibold text-16">표고러플</h3>
-              <div class="flex justify-between font-semibold text-hot-gray200">
-                <div class="flex items-center gap-1">
-                  <div class="flex h-[16px]">
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_black.svg"
-                      alt="리뷰평가 별점"
-                    />
-                    <img
-                      loading="lazy"
-                      src="/assets/icon/star_gray.svg"
-                      alt="리뷰평가 별점"
-                    />
-                  </div>
-                  <span>4.2</span>
-                </div>
-                <p><span class="mr-1">리뷰</span><span>933</span></p>
-              </div>
-              <div class="flex flex-col min-w-0 gap-2">
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-18.jpg"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="표고러플 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    표고러플이 제일 맛있어요!!!! 진짜 4주만에 다먹고 다른맛
-                    시켰는데 성에 안참ㅜㅜ 샌드위치에 뿌려먹고 후라이에 뿌려먹고
-                    심지어 비빔밥에도 뿌려먹음ㅎ
-                  </p>
-                </div>
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-19.jpg"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="표고러플 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    조금 더 매콤한 카레가 먹고 싶어서 뿌려봤는데 맛있네요^^ 병도
-                    예뻐서 같이 두고 찍으니 사진이 예쁘게 잘 나오네요~^^ 아주
-                    근사한 한 끼였어요
-                  </p>
-                </div>
-                <div class="flex items-center min-w-0 gap-4">
-                  <img
-                    loading="lazy"
-                    src="/assets/images/review-20.png"
-                    class="size-16 rounded-2xl aspect-square"
-                    alt="표고러플 리뷰이미지"
-                  />
-                  <p class="text-13 line-clamp-3">
-                    밤에 마시는 맥주에 찰떡이에요 그냥 편의점 마른안주에 확
-                    풍미를 살려주는게 아주 맛있습니다 분명 이렇게 먹으면
-                    살찔텐데 알면서도 끊기 힘드네요^^
-                  </p>
-                </div>
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-14.jpg" class="size-16 rounded-2xl aspect-square" alt="XO쉬림프 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  가격은 너무 비싸지만 소스 쓰임이 많고 맛있어서 5개나
+                  구매합니다~
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex justify-center gap-2 mt-6 text-13">
-          <button
-            class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Group 7">
-                <g id="Group 888">
-                  <path
-                    id="Vector 2"
-                    d="M13 4L9 8L13 12"
-                    stroke="#44556B"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    id="Vector 3"
-                    d="M7 4L3 8L7 12"
-                    stroke="#44556B"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </g>
-              </g>
-            </svg>
-          </button>
-          <button
-            class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Group 6">
-                <path
-                  id="Vector 2"
-                  d="M10 4L6 8L10 12"
-                  stroke="#44556B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </g>
-            </svg>
-          </button>
-          <button
-            class="flex items-center justify-center p-2 text-white rounded-md bg-hot-gray400 size-8"
-          >
-            1
-          </button>
-          <button
-            class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Group 6">
-                <path
-                  id="Vector 2"
-                  d="M6 12L10 8L6 4"
-                  stroke="#44556B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </g>
-            </svg>
-          </button>
-          <button
-            class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="Group 7">
-                <g id="Group 888">
-                  <path
-                    id="Vector 2"
-                    d="M3 12L7 8L3 4"
-                    stroke="#44556B"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                  <path
-                    id="Vector 3"
-                    d="M9 12L13 8L9 4"
-                    stroke="#44556B"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                  />
-                </g>
-              </g>
-            </svg>
-          </button>
+
+        <!-- 파마산 고추장 -->
+        <div class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col flex-shrink-0 max-w-[300px] lg:max-w-none lg:w-[30%]" >
+          <a aria-label="파마산 고추장 페이지로 이동하기" href="/src/pages/shop-parmesan.html" >
+            <img loading="lazy" src="/assets/images/product-2.png" alt="파마산 고추장" />
+          </a>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-16">파마산 고추장</h3>
+            <div class="flex justify-between font-semibold text-hot-gray200">
+              <div class="flex items-center gap-1">
+                <div class="flex h-[16px]">
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                </div>
+                <span>4.8</span>
+              </div>
+              <p><span class="mr-1">리뷰</span><span>134</span></p>
+            </div>
+            <div class="flex flex-col min-w-0 gap-2">
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-15.png" class="size-16 rounded-2xl aspect-square" alt="파마산고추장 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  저 이제 이 소스로 갈아탑니다.. 요즘 브리또나 샌드위치 같은
+                  거 간단하게 만들어 먹는 데에 빠졌거든요..!! 뭔가 적당한
+                  소스가 없어서 심심했는데 딱 맞는 소스를 찾은 것 같아요ㅜ
+                </p>
+              </div>
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-16.jpg" class="size-16 rounded-2xl aspect-square" alt="파마산고추장 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  맛있다고 난리난리여서 구매했습니다~ 짜장면에 비벼 먹으면
+                  맛있다길래 도전해보려고 합니다ㅋㅋ
+                </p>
+              </div>
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-17.jpg" class="size-16 rounded-2xl aspect-square" alt="파마산고추장 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  간단히 먹어봤는대 그렇게 맛있는지 잘 모르겠어요 ㅋ 너무
+                  홍보를 때려서.. ㅋ 다른메뉴로 다시 잘 머거보겠습니다
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- 모든리뷰 -->
-    <section class="py-16 text-12" aria-labelledby="review-all">
-      <h2
-        id="review-all"
-        class="mb-8 font-bold text-center text-35 font-newbery"
-      >
-        All Review
-      </h2>
-      <div class="px-4 max-container">
-        <div
-          class="lg:w-[80%] mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
-        >
-          <div
-            class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-21.png"
-                class="w-full h-full cover"
-                alt="김밥을 하랜띵스 찍는 사진"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                와 진짜 제 최애 소스 등극이에요 스쿨푸드 스팸모짜마리에 표고러플
-                찍어먹으면 같이 주는 마리소스보다 안느끼하고 맛있어서 진짜 혼자
-                2판도 시켜먹어요;;;
-              </p>
-              <p class="font-medium text-hot-gray300">이재*</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="하랜띵스 키트 상품페이지로 이동하기"
-                  href="/src/pages/shop-hotnkit.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-all.png"
-                    alt="하랜띵스 키트 이미지"
-                  />
-                </a>
+        <!-- 표고러플 -->
+        <div class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col flex-shrink-0 max-w-[300px] lg:max-w-none lg:w-[30%]" >
+          <a aria-label="표고러플 상품페이지로 이동하기" href="/src/pages/shop-pyogo.html" >
+            <img src="/assets/images/product-3.png" alt="표고러플" />
+          </a>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-16">표고러플</h3>
+            <div class="flex justify-between font-semibold text-hot-gray200">
+              <div class="flex items-center gap-1">
+                <div class="flex h-[16px]">
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_black.svg" alt="리뷰평가 별점" />
+                  <img loading="lazy" src="/assets/icon/star_gray.svg" alt="리뷰평가 별점" />
+                </div>
+                <span>4.2</span>
               </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">
-                  하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)
-                </p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.5</span>
-                  <span>리뷰 863</span>
+              <p><span class="mr-1">리뷰</span><span>933</span></p>
+            </div>
+            <div class="flex flex-col min-w-0 gap-2">
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-18.jpg" class="size-16 rounded-2xl aspect-square" alt="표고러플 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  표고러플이 제일 맛있어요!!!! 진짜 4주만에 다먹고 다른맛
+                  시켰는데 성에 안참ㅜㅜ 샌드위치에 뿌려먹고 후라이에 뿌려먹고
+                  심지어 비빔밥에도 뿌려먹음ㅎ
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-22.png"
-                class="w-full h-full cover"
-                alt="XO쉬림프를 찍어 먹으려고 하는 사진"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                매새... 완전 맛없없 조합인거 너무 잘알아서 바로 주문했어요! ㅋㅋ
-                실제로도 매운새우깡이 최애인 사람임 .. 근데 이게 무슨닐이야~~
-                매새보다 더 맛있음~~ 저 이거 중독돼서 요즘 진짜 안뿌려먹는 곳이
-                없어요... 벌써 반밖에 안남아서 재주문하려구용 ..
-              </p>
-              <p class="font-medium text-hot-gray300">김명*</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="XO쉬림프 상품페이지로 이동하기"
-                  href="/src/pages/shop-shrimp.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-3.png"
-                    alt="XO쉬림프 소스 이미지"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">XO 쉬림프</p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.7</span>
-                  <span>리뷰 591</span>
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-19.jpg" class="size-16 rounded-2xl aspect-square" alt="표고러플 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  조금 더 매콤한 카레가 먹고 싶어서 뿌려봤는데 맛있네요^^ 병도
+                  예뻐서 같이 두고 찍으니 사진이 예쁘게 잘 나오네요~^^ 아주
+                  근사한 한 끼였어요
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-20.png"
-                class="w-full h-full cover"
-                alt="표고러플 찍어 먹으려고 하는 사진"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                밤에 마시는 맥주에 찰떡이에요 그냥 편의점 마른안주에 확 풍미를
-                살려주는게 아주 맛있습니다 분명 이렇게 먹으면 살찔텐데 알면서도
-                끊기 힘드네요^^
-              </p>
-              <p class="font-medium text-hot-gray300">전예*</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="표고러플 상품페이지로 이동하기"
-                  href="/src/pages/shop-pyogo.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-1.png"
-                    alt="표고러플 소스 이미지"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">표고러플</p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.4</span>
-                  <span>리뷰 933</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-23.jpg"
-                class="w-full h-full cover"
-                alt="소분한 하랜띵스 키드 이미지"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                너무 맛있어요!! 소분해서 가져다니면서 먹고 있어요ㅋㅋㅋㅋ
-                파마산고추장은 다 먹어서 재구매 하려구요!
-              </p>
-              <p class="font-medium text-hot-gray300">이지*</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="하랜띵스키드 구매하기"
-                  href="/src/pages/shop-hotnkit.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-all.png"
-                    alt="하랜띵스 키트 이미지"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">
-                  하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)
-                </p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.5</span>
-                  <span>리뷰 863</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl sm:flex"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-24.jpg"
-                class="w-full h-full cover"
-                alt="표고러플 소스통을 들고있는 이미지"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                광고뜨길래 사봤는데 트러플풍미가 있는 핫소스 입니다 과식주의
-              </p>
-              <p class="font-medium text-hot-gray300">네이버페이</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="표고러플 상품페이지로 이동하기"
-                  href="/src/pages/shop-pyogo.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-1.png"
-                    alt="표고러플 소스 이미지"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">표고러플</p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.4</span>
-                  <span>리뷰 933</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl sm:flex"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-25.jpg"
-                class="w-full h-full cover"
-                alt="하랜띵스 키트 이미지"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                표고러플은 제 입맛은 아니더라고요 ㅎㅎㅎ 쉬림프는 맛있고... 엄청
-                광고하고 극찬하던데ㅎㅎ그렇게까지 라는 생각도 조금 들긴했어요
-              </p>
-              <p class="font-medium text-hot-gray300">네이버 페이</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="하랜띵스키트 상품페이지로 이동하기"
-                  href="/src/pages/shop-hotnkit.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-all.png"
-                    alt="하랜띵스 키트 이미지"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">
-                  하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)
-                </p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.5</span>
-                  <span>리뷰 863</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl lg:flex"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-26.jpg"
-                class="w-full h-full cover"
-                alt="아직 안 뜯은 XO쉬림프 이미지"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                아직 더 먹어봐야 알것같아요.삼겸살 먹을때 한번만 먿어봐서 잘;;
-              </p>
-              <p class="font-medium text-hot-gray300">네이버 페이</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="XO쉬림프 상품페이지로 이동하기"
-                  href="/src/pages/shop-shrimp.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-3.png"
-                    alt="XO쉬림프 소스 이미지"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">XO 쉬림프</p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.7</span>
-                  <span>리뷰 591</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl lg:flex"
-          >
-            <div class="overflow-hidden bg-red-400 aspect-square">
-              <img
-                loading="lazy"
-                src="/assets/images/review-27.jpg"
-                class="w-full h-full cover"
-                alt="XO쉬림프 소스통을 들고 있는 이미지"
-              />
-            </div>
-            <div class="p-4 space-y-1 sm:space-y-2">
-              <p>⭐⭐⭐⭐⭐</p>
-              <p class="font-medium truncate">
-                냄새에서 약간 호불호가 있을것 같네요~ 처음에 맡았을때
-                이상했어요ㅜ 남편은 맛있다고 좋아하네요~^^
-              </p>
-              <p class="font-medium text-hot-gray300">네이버 페이</p>
-            </div>
-            <div
-              class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13"
-            >
-              <div class="aspect-square max-w-12">
-                <a
-                  aria-label="XO쉬림프 상품페이지로 이동하기"
-                  href="/src/pages/shop-shrimp.html"
-                >
-                  <img
-                    loading="lazy"
-                    src="/assets/images/product-3.png"
-                    alt="XO쉬림프 이미지"
-                  />
-                </a>
-              </div>
-              <div class="flex flex-col justify-center w-full min-w-0 gap-2">
-                <p class="truncate min-h-4">XO 쉬림프</p>
-                <p class="flex items-center justify-between">
-                  <span>평점 4.7</span>
-                  <span>리뷰 591</span>
+              <div class="flex items-center min-w-0 gap-4">
+                <img loading="lazy" src="/assets/images/review-20.png" class="size-16 rounded-2xl aspect-square" alt="표고러플 리뷰이미지" />
+                <p class="text-13 line-clamp-3">
+                  밤에 마시는 맥주에 찰떡이에요 그냥 편의점 마른안주에 확
+                  풍미를 살려주는게 아주 맛있습니다 분명 이렇게 먹으면
+                  살찔텐데 알면서도 끊기 힘드네요^^
                 </p>
               </div>
             </div>
@@ -1039,123 +315,330 @@
         </div>
       </div>
       <div class="flex justify-center gap-2 mt-6 text-13">
-        <button
-          class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-        >
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
             <g id="Group 7">
               <g id="Group 888">
-                <path
-                  id="Vector 2"
-                  d="M13 4L9 8L13 12"
-                  stroke="#44556B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  id="Vector 3"
-                  d="M7 4L3 8L7 12"
-                  stroke="#44556B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
+                <path id="Vector 2" d="M13 4L9 8L13 12" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+                <path id="Vector 3" d="M7 4L3 8L7 12" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
               </g>
             </g>
           </svg>
         </button>
-        <button
-          class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-        >
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
             <g id="Group 6">
-              <path
-                id="Vector 2"
-                d="M10 4L6 8L10 12"
-                stroke="#44556B"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
-            </g>
-          </svg></button
-        ><button
-          class="flex items-center justify-center p-2 text-white rounded-md bg-hot-gray400 size-8"
-        >
-          1
-        </button>
-        <button
-          class="flex items-center justify-center p-2 bg-white rounded-md text-hot-gray400 size-8"
-        >
-          2
-        </button>
-        <button
-          class="flex items-center justify-center p-2 bg-white rounded-md text-hot-gray400 size-8"
-        >
-          3
-        </button>
-        <button
-          class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-        >
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Group 6">
-              <path
-                id="Vector 2"
-                d="M6 12L10 8L6 4"
-                stroke="#44556B"
-                stroke-width="2"
-                stroke-linecap="round"
-              />
+              <path id="Vector 2" d="M10 4L6 8L10 12" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
             </g>
           </svg>
         </button>
-        <button
-          class="flex items-center justify-center p-2 bg-white rounded-md size-8"
-        >
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+        <button class="flex items-center justify-center p-2 text-white rounded-md bg-hot-gray400 size-8" > 1 </button>
+        <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+            <g id="Group 6">
+              <path id="Vector 2" d="M6 12L10 8L6 4" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+            </g>
+          </svg>
+        </button>
+        <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
             <g id="Group 7">
               <g id="Group 888">
-                <path
-                  id="Vector 2"
-                  d="M3 12L7 8L3 4"
-                  stroke="#44556B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  id="Vector 3"
-                  d="M9 12L13 8L9 4"
-                  stroke="#44556B"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
+                <path id="Vector 2" d="M3 12L7 8L3 4" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+                <path id="Vector 3" d="M9 12L13 8L9 4" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
               </g>
             </g>
           </svg>
         </button>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <!-- 모든리뷰 -->
+  <section class="py-16 text-12" aria-labelledby="review-all">
+    <h2 id="review-all" class="mb-8 font-bold text-center text-35 font-newbery" >
+      All Review
+    </h2>
+    <div class="px-4 max-container">
+      <div class="lg:w-[80%] mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4" >
+        <div class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-21.png" class="w-full h-full cover" alt="김밥을 하랜띵스 찍는 사진" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              와 진짜 제 최애 소스 등극이에요 스쿨푸드 스팸모짜마리에 표고러플
+              찍어먹으면 같이 주는 마리소스보다 안느끼하고 맛있어서 진짜 혼자
+              2판도 시켜먹어요;;;
+            </p>
+            <p class="font-medium text-hot-gray300">이재*</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="하랜띵스 키트 상품페이지로 이동하기" href="/src/pages/shop-hotnkit.html" >
+                <img loading="lazy" src="/assets/images/product-all.png" alt="하랜띵스 키트 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">
+                하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)
+              </p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.5</span>
+                <span>리뷰 863</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-22.png" class="w-full h-full cover" alt="XO쉬림프를 찍어 먹으려고 하는 사진" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              매새... 완전 맛없없 조합인거 너무 잘알아서 바로 주문했어요! ㅋㅋ
+              실제로도 매운새우깡이 최애인 사람임 .. 근데 이게 무슨닐이야~~
+              매새보다 더 맛있음~~ 저 이거 중독돼서 요즘 진짜 안뿌려먹는 곳이
+              없어요... 벌써 반밖에 안남아서 재주문하려구용 ..
+            </p>
+            <p class="font-medium text-hot-gray300">김명*</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="XO쉬림프 상품페이지로 이동하기" href="/src/pages/shop-shrimp.html" >
+                <img loading="lazy" src="/assets/images/product-3.png" alt="XO쉬림프 소스 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">XO 쉬림프</p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.7</span>
+                <span>리뷰 591</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-20.png" class="w-full h-full cover" alt="표고러플 찍어 먹으려고 하는 사진" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              밤에 마시는 맥주에 찰떡이에요 그냥 편의점 마른안주에 확 풍미를
+              살려주는게 아주 맛있습니다 분명 이렇게 먹으면 살찔텐데 알면서도
+              끊기 힘드네요^^
+            </p>
+            <p class="font-medium text-hot-gray300">전예*</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="표고러플 상품페이지로 이동하기" href="/src/pages/shop-pyogo.html" >
+                <img loading="lazy" src="/assets/images/product-1.png" alt="표고러플 소스 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">표고러플</p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.4</span>
+                <span>리뷰 933</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-23.jpg" class="w-full h-full cover" alt="소분한 하랜띵스 키드 이미지" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              너무 맛있어요!! 소분해서 가져다니면서 먹고 있어요ㅋㅋㅋㅋ
+              파마산고추장은 다 먹어서 재구매 하려구요!
+            </p>
+            <p class="font-medium text-hot-gray300">이지*</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="하랜띵스키드 구매하기" href="/src/pages/shop-hotnkit.html" >
+                <img loading="lazy" src="/assets/images/product-all.png" alt="하랜띵스 키트 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">
+                하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)
+              </p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.5</span>
+                <span>리뷰 863</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl sm:flex" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-24.jpg" class="w-full h-full cover" alt="표고러플 소스통을 들고있는 이미지" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              광고뜨길래 사봤는데 트러플풍미가 있는 핫소스 입니다 과식주의
+            </p>
+            <p class="font-medium text-hot-gray300">네이버페이</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="표고러플 상품페이지로 이동하기" href="/src/pages/shop-pyogo.html" >
+                <img loading="lazy" src="/assets/images/product-1.png" alt="표고러플 소스 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">표고러플</p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.4</span>
+                <span>리뷰 933</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl sm:flex" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-25.jpg" class="w-full h-full cover" alt="하랜띵스 키트 이미지" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              표고러플은 제 입맛은 아니더라고요 ㅎㅎㅎ 쉬림프는 맛있고... 엄청
+              광고하고 극찬하던데ㅎㅎ그렇게까지 라는 생각도 조금 들긴했어요
+            </p>
+            <p class="font-medium text-hot-gray300">네이버 페이</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="하랜띵스키트 상품페이지로 이동하기" href="/src/pages/shop-hotnkit.html" >
+                <img loading="lazy" src="/assets/images/product-all.png" alt="하랜띵스 키트 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">
+                하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)
+              </p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.5</span>
+                <span>리뷰 863</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl lg:flex" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-26.jpg" class="w-full h-full cover" alt="아직 안 뜯은 XO쉬림프 이미지" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              아직 더 먹어봐야 알것같아요.삼겸살 먹을때 한번만 먿어봐서 잘;;
+            </p>
+            <p class="font-medium text-hot-gray300">네이버 페이</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="XO쉬림프 상품페이지로 이동하기" href="/src/pages/shop-shrimp.html" >
+                <img loading="lazy" src="/assets/images/product-3.png" alt="XO쉬림프 소스 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">XO 쉬림프</p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.7</span>
+                <span>리뷰 591</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-col hidden overflow-hidden border-hot-gray100 border-1 rounded-2xl lg:flex" >
+          <div class="overflow-hidden bg-red-400 aspect-square">
+            <img loading="lazy" src="/assets/images/review-27.jpg" class="w-full h-full cover" alt="XO쉬림프 소스통을 들고 있는 이미지" />
+          </div>
+          <div class="p-4 space-y-1 sm:space-y-2">
+            <p>⭐⭐⭐⭐⭐</p>
+            <p class="font-medium truncate">
+              냄새에서 약간 호불호가 있을것 같네요~ 처음에 맡았을때
+              이상했어요ㅜ 남편은 맛있다고 좋아하네요~^^
+            </p>
+            <p class="font-medium text-hot-gray300">네이버 페이</p>
+          </div>
+          <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13" >
+            <div class="aspect-square max-w-12">
+              <a aria-label="XO쉬림프 상품페이지로 이동하기" href="/src/pages/shop-shrimp.html" >
+                <img loading="lazy" src="/assets/images/product-3.png" alt="XO쉬림프 이미지" />
+              </a>
+            </div>
+            <div class="flex flex-col justify-center w-full min-w-0 gap-2">
+              <p class="truncate min-h-4">XO 쉬림프</p>
+              <p class="flex items-center justify-between">
+                <span>평점 4.7</span>
+                <span>리뷰 591</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center gap-2 mt-6 text-13">
+      <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <g id="Group 7">
+            <g id="Group 888">
+              <path id="Vector 2" d="M13 4L9 8L13 12" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+              <path id="Vector 3" d="M7 4L3 8L7 12" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+            </g>
+          </g>
+        </svg>
+      </button>
+      <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <g id="Group 6">
+            <path id="Vector 2" d="M10 4L6 8L10 12" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+          </g>
+        </svg>
+      </button>
+      <button class="flex items-center justify-center p-2 text-white rounded-md bg-hot-gray400 size-8" > 1 </button>
+      <button class="flex items-center justify-center p-2 bg-white rounded-md text-hot-gray400 size-8" > 2 </button>
+      <button class="flex items-center justify-center p-2 bg-white rounded-md text-hot-gray400 size-8" > 3 </button>
+      <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <g id="Group 6">
+            <path id="Vector 2" d="M6 12L10 8L6 4" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+          </g>
+        </svg>
+      </button>
+      <button class="flex items-center justify-center p-2 bg-white rounded-md size-8" >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" >
+          <g id="Group 7">
+            <g id="Group 888">
+              <path id="Vector 2" d="M3 12L7 8L3 4" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+              <path id="Vector 3" d="M9 12L13 8L9 4" stroke="#44556B" stroke-width="2" stroke-linecap="round" />
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+
+</div>
+<common-footer></common-footer>
+
+
+</body>
 </html>
