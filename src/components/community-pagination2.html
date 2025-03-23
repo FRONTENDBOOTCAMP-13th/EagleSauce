@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-    
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - pagination2</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+	
 
-		<script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans p-10">
     <!-- Pagination2 -->
-    <div class="flex justify-center items-center gap-5">
+    <div class="flex items-center justify-center gap-5">
       <a href="#void" aria-label="이전 페이지" class="size-5 lg:size-7">
         <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
         <g id="Group 6">
@@ -24,7 +18,7 @@
         </g>
         </svg>              
       </a>
-      <ol class="flex gap-7 items-center text-center font-newbery font-semibold" aria-label="페이지 네비게이션">
+      <ol class="flex items-center font-semibold text-center gap-7 font-newbery" aria-label="페이지 네비게이션">
         <li>
           <a href="#void" aria-label="1페이지, 현재 페이지" aria-current="true" class="text-4xl text-hot-brand">1</a>
         </li>
@@ -43,5 +37,7 @@
         </svg>              
       </a>
     </div>
-  </body>
-  </html>
+
+
+</body>
+</html>

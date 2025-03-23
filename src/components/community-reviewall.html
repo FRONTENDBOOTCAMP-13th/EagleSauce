@@ -1,36 +1,30 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-    
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - reveiw</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+	
 
-		<script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans p-20">
-    <div class="border-hot-gray100 border-1 rounded-2xl overflow-hidden flex flex-col">
-      <div class="bg-hot-ivory aspect-square overflow-hidden">
-        <img src="/assets/images/intro-1.jpg" class="cover w-full h-full" alt="리뷰대표이미지" />
+    <div class="flex flex-col overflow-hidden border-hot-gray100 border-1 rounded-2xl">
+      <div class="overflow-hidden bg-hot-ivory aspect-square">
+        <img src="/assets/images/intro-1.jpg" class="w-full h-full cover" alt="리뷰대표이미지" />
       </div>
       <div class="p-4 space-y-1 sm:space-y-2">
         <p>⭐⭐⭐⭐⭐</p>
-        <p class="truncate font-medium">
+        <p class="font-medium truncate">
           Review text Review text Review text Review text Review text Review text
         </p>
-        <p class="text-hot-gray300 font-medium">Reviewer</p>
+        <p class="font-medium text-hot-gray300">Reviewer</p>
       </div>
-      <div class="p-4 border-t border-hot-gray100 flex itmes-center gap-2 text-13 font-medium">
+      <div class="flex gap-2 p-4 font-medium border-t border-hot-gray100 itmes-center text-13">
         <div class="aspect-square max-w-12">
           <img src="/assets/images/product-all.png" alt="상품이미지"/>
         </div>
-        <div class="flex flex-col justify-center gap-2 w-full min-w-0">
+        <div class="flex flex-col justify-center w-full min-w-0 gap-2">
           <p class="truncate min-h-4">Product Title</p>
           <p class="flex items-center justify-between">
             <span>평점 0.0</span>
@@ -39,5 +33,7 @@
         </div>
       </div>
     </div>
-  </body>
-  </html>
+
+    
+</body>
+</html>

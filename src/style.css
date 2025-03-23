@@ -70,6 +70,7 @@
 	--sec11-bg:url("/public/assets/images/sec11.jpg");
 	--point-dot:url("/public/assets/images/point.png");
 	--noise-bg:url("/public/assets/images/noise.png");
+	--rolling-bg:url("/public/assets/images/rolltxt1.png");
 	--shop-all-item-bg01:url("/public/assets/images/PYOGORUFFLE-listbg.jpg");
 	--shop-all-item-bg02:url("/public/assets/images/PARMESANGOCHUJANG-listbg.jpg");
 	--shop-all-item-bg03:url("/public/assets/images/XOSHRIMP-listbg.jpg");
@@ -141,15 +142,30 @@
 		0%{transform:translateX(0);}
 		100%{transform:translateX(50%);}
 	}
+
+	@keyframes marquee_text{
+		0%{background-position:0;}
+		100%{background-position:-3000px;}
+	}
+	--animate-marquee:marquee_text 100s infinite forwards linear;
 }
 
 @layer components{
+	/* 
 	body.loading{
 		@apply hidden;
+	} 
+
+	#page_loading{
+		@apply hidden;
 	}
+	body.loading #page_loading{
+		@apply block z-[2000] absolute left-0 right-0 w-full h-full bg-[rgba(255,255,255,0.7)];
+	}
+	*/
 
   #container{
-    @apply pt-[90px] lg:pt-[110px];
+    @apply w-full min-h-dvh pt-[90px] lg:pt-[110px];
   }
   
 	.max-container{

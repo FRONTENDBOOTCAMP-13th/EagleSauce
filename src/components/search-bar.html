@@ -1,64 +1,60 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-    
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - search</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
 
-		<script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans p-10">
-    <section class="flex flex-col gap-4">
-      <div class="compononent-wrap">
-        <h2 class="text-35 font-bold text-start">Searchbar-md</h2>
-        <div class="rounded-sm bg-white border-hot-gray100 border-1 overflow-hidden py-4 px-5 pr-10 relative focus-within:border-black">
-          <label for="search-bar" class="sr-only">검색창</label>
-          <input
-            type="search"
-            id="search-bar"
-            name="search-bar"
-            value=""
-            placeholder="맛있는 소스 검색하기"
-            class="w-full hover:border-black placeholder-gray-300 text-16 focus:outline-none "
-          />
-          <!-- 검색 이미지 -->
-          <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5">
-            <img
-              src="/public/assets/icon/search.svg"
-              alt="검색"
-            />
-          </button>
-        </div>
-      </div>
 
-      <div class="compononent-wrap">
-        <h2 class="text-35 font-bold text-start">Searchbar-sm</h2>
-        <div class="rounded-sm bg-white border-hot-gray100 border-1 overflow-hidden py-2.5 px-5 pr-10 relative focus-within:border-black">
-          <label for="search-bar" class="sr-only">검색창</label>
-          <input
-            type="search"
-            id="search-bar"
-            name="search-bar"
-            value=""
-            placeholder="자주 묻는 질문을 입력해주세요."
-            class="w-full hover:border-black placeholder-gray-300 focus:outline-none text-14"
+  <section class="flex flex-col gap-4">
+    <div class="compononent-wrap">
+      <h2 class="font-bold text-35 text-start">Searchbar-md</h2>
+      <div class="relative px-5 py-4 pr-10 overflow-hidden bg-white rounded-sm border-hot-gray100 border-1 focus-within:border-black">
+        <label for="search-bar" class="sr-only">검색창</label>
+        <input
+          type="search"
+          id="search-bar"
+          name="search-bar"
+          value=""
+          placeholder="맛있는 소스 검색하기"
+          class="w-full placeholder-gray-300 hover:border-black text-16 focus:outline-none "
+        />
+        <!-- 검색 이미지 -->
+        <button type="submit" class="absolute w-5 h-5 -translate-y-1/2 right-4 top-1/2">
+          <img
+            src="/public/assets/icon/search.svg"
+            alt="검색"
           />
-          <!-- 검색 이미지 -->
-          <button type="submit" class="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4">
-            <img
-              src="/public/assets/icon/search.svg"
-              alt="검색"
-            />
-          </button>
-        </div>
+        </button>
       </div>
-    </section>
-  </body>
-  </html>
+    </div>
+
+    <div class="compononent-wrap">
+      <h2 class="font-bold text-35 text-start">Searchbar-sm</h2>
+      <div class="rounded-sm bg-white border-hot-gray100 border-1 overflow-hidden py-2.5 px-5 pr-10 relative focus-within:border-black">
+        <label for="search-bar" class="sr-only">검색창</label>
+        <input
+          type="search"
+          id="search-bar"
+          name="search-bar"
+          value=""
+          placeholder="자주 묻는 질문을 입력해주세요."
+          class="w-full placeholder-gray-300 hover:border-black focus:outline-none text-14"
+        />
+        <!-- 검색 이미지 -->
+        <button type="submit" class="absolute w-4 h-4 -translate-y-1/2 right-4 top-1/2">
+          <img
+            src="/public/assets/icon/search.svg"
+            alt="검색"
+          />
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>

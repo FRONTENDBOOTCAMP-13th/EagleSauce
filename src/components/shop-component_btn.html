@@ -1,30 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-    
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - shop button</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+	
 
-		<script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans">
-    <div class="space-y-4">
-      <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand" aria-label="장바구니담기">
-        CART
-      </button>
-      <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-hot-brand lg:hover:bg-hot-brand lg:focus:bg-hot-brand lg:bg-black" aria-label="구매하기">
-        BUY NOW
-      </button>
-      <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 bg-hot-naver lg:hover:bg-hot-naverdark lg:focus:bg-hot-naverdark content-center" aria-label="네이버페이로 구매하기">
-        <img src="/assets/images/npay_btn_mo.png" class="scale-50 mx-auto lg:hidden"/>
-        <img src="/assets/images/npay_btn.png" class="scale-45 mx-auto hidden lg:block"/>
-      </button>
-    </div>
+  <div class="space-y-4">
+    <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand" aria-label="장바구니담기">
+      CART
+    </button>
+    <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-hot-brand lg:hover:bg-hot-brand lg:focus:bg-hot-brand lg:bg-black" aria-label="구매하기">
+      BUY NOW
+    </button>
+    <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 bg-hot-naver lg:hover:bg-hot-naverdark lg:focus:bg-hot-naverdark content-center" aria-label="네이버페이로 구매하기">
+      <img src="/assets/images/npay_btn_mo.png" class="mx-auto scale-50 lg:hidden"/>
+      <img src="/assets/images/npay_btn.png" class="hidden mx-auto scale-45 lg:block"/>
+    </button>
+  </div>
+
+  
+</body>
 </html>

@@ -20,7 +20,13 @@ class page_head{
 		//스타일 시트 추가 (preload)
 		const preload_stylesheets = [
 			'/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2',
-			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraBold.otf'
+			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraBold.otf',
+			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf',
+			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Medium.otf',
+			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Regular.otf',
+			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Light.otf',
+			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf',
+			'/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Thin.otf'
 		];
 		preload_stylesheets.forEach(sheet => {
 			const link = document.createElement('link');
@@ -101,4 +107,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	//document.body.classList.add('loading');
 	page_head.addHeadElements();
 });
-
