@@ -30,7 +30,7 @@ class mainHeader extends HTMLElement {
 						</li>
 					</ul>
 					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2  transform-none left-1/2 top-1/2">
-						<img src="/public/assets/images/logo.png" alt="하랜띵스로고"/>
+						<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스로고"/>
 					</a>
 				</div>
 
@@ -186,7 +186,8 @@ class mainHeader extends HTMLElement {
 
 					<!-- Logo -->
 					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute inline-flex w-32 mt-3 -translate-x-1/2 transform-none lg:w-56 left-1/2" tabindex="1">
-						<img src="/public/assets/images/logo.png" alt="하랜띵스로고"/>
+						<img slot="logo" src="/public/assets/images/logo.png" loading="lazy" alt="로고">
+						<span class="test w-[50px] h-[50px] bg-[url('/public/assets/images/logo.png')] bg-no-repeat bg-contain"></span>
 					</a>
 				</nav>
 			</header>
@@ -209,5 +210,4 @@ class mainHeader extends HTMLElement {
 	}
 }
 
-// 웹 컴포넌트 등록
 customElements.define('main-header', mainHeader);

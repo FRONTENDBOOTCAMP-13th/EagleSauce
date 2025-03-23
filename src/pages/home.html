@@ -4,6 +4,17 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>HOTN'THINGS - HOME</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/src/main.js"></script>
@@ -12,6 +23,7 @@
 
 
 <main-header></main-header>
+
 <div id="container" class="bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
   
 
@@ -19,26 +31,26 @@
   <section>
     <div class="py-[50px] flex justify-center items-center">
       <div class="relative w-[90%] max-w-7xl">
-        <img src="/public/assets/images/main-frame1.png" alt="포토 프레임" class="w-full h-auto"/>
+        <img src="/public/assets/images/main-frame1.png" loading="lazy" alt="포토 프레임" class="w-full h-auto"/>
 
         <div class="absolute inset-0 py-[2.3%] px-[2.2%]">
           <div class="sld_btn w-[40px] h-[80px] absolute left-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" data-type="prev">
-            <img src="/public/assets/images/prev.png" alt="슬라이드 왼쪽 버튼">
+            <img src="/public/assets/images/prev.png" loading="lazy" alt="슬라이드 왼쪽 버튼">
           </div>
           <div class="sld_btn w-[40px] h-[80px] absolute right-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" data-type="next">
-            <img src="/public/assets/images/next.png" alt="슬라이드 오른쪽 버튼">
+            <img src="/public/assets/images/next.png" loading="lazy" alt="슬라이드 오른쪽 버튼">
           </div>
 
           <div id="photo_frame_sld" class="swiper photo_frame_sld">
             <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="/public/assets/images/napoli-zip.jpg" alt="나폴리맛피아가 핫소스 뿌리는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main01-zip.jpg" alt="피자에 핫소스 뿌리는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main02-zip.jpg" alt="감자튀김 핫소스에 찍어먹는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main03-zip.jpg" alt="음식에 핫소스 뿌리는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main04-zip.jpg" alt="핫소스 사진"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main05-zip.jpg" alt="핫소스 사진"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main06-zip.jpg" alt="핫소스 사진"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main07-zip.jpg" alt="핫소스 사진"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/napoli-zip.jpg" loading="lazy" alt="나폴리맛피아가 핫소스 뿌리는 모습"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/main01-zip.jpg" loading="lazy" alt="피자에 핫소스 뿌리는 모습"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/main02-zip.jpg" loading="lazy" alt="감자튀김 핫소스에 찍어먹는 모습"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/main03-zip.jpg" loading="lazy" alt="음식에 핫소스 뿌리는 모습"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/main04-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/main05-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/main06-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+              <div class="swiper-slide"><img src="/public/assets/images/main07-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
             </div>
           </div>
 
