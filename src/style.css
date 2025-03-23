@@ -57,6 +57,8 @@
   --wood-bg: url("/public/assets/images/wood-frame2.jpg");
   --ourbrand-bg01: url("/public/assets/images/main.jpg");
   --ourbrand-bg02: url("/public/assets/images/sec2-main.jpg");
+  --giftbag-sec02-bg: url("/public/assets/images/sec2-bg.png");
+  --giftbag-sec04-bg: url("/public/assets/images/giftsec-bg.jpg");
   --review-bg01: url("/public/assets/images/main02.jpg");
   --search-bg: url("/public/assets/images/HOTNTHINGSKIT.jpg");
   --symbol-bg: url("/public/assets/images/sec10-bg.jpg");
@@ -152,6 +154,7 @@
 
 /* 롤링 관련 설정 */
   --roll-text: "HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • ";
+  --roll-text2:"Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce •Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce •Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • ";
   --roll-font-size: 1rem;
   --roll-letter-spacing: 1px;
   --roll-padding: 1.25rem;
