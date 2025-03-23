@@ -4,194 +4,394 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>UI 프로젝트 - CSS</title>
-	<link rel="icon" href="/vite.svg" />
-	<link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous"/>
-
-	<link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraBold.otf" crossorigin="anonymous"/>
-	<link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" crossorigin="anonymous"/>
-	<link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Medium.otf" crossorigin="anonymous"/>
-	<link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Regular.otf" crossorigin="anonymous"/>
-	<link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Light.otf" crossorigin="anonymous"/>
-	<link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" crossorigin="anonymous"/>
-	<link rel="preload" as="font" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Thin.otf" crossorigin="anonymous"/>
-	<link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous"/>
-
-	<link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
-	<link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css"/>
-	<link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css"/>
-	<link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css"/>
-
 	<script type="module" src="/src/main.js"></script>
 </head>
 
 
-<body class="font-sans bg-hot-ivory">
+<body class="font-sans">
+	<a href="/src/pages/home.html">HOME</a>
+
+	<div id="container" class="bg-hot-ivory">
 
 
-  <div id="main_wrap">
-    <div id="container" class="bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
-
-      <a href="/src/pages/home.html">HOME</a>
-      
-    </div>
-  </div>
-
-
-	<!-- 프로젝트소개 -->
-	<section>
-		<div class="flex flex-col items-center gap-8 p-10">
-			<h3 class="text-30 md:text-45 xl:text-65 font-semibold leading-[1.3] break-keep">
-				<span class="whitespace-nowrap">프로젝트 소개</span>
-			</h3>
-			<div class="flex items-center">
-				<div class="max-w-[800px] mx-auto relative">
-					<img src="/public/assets/images/computer.png" alt="컴퓨터"/>
-					<div class="absolute left-[4%] top-[6%] w-[92%] h-[62%] bg-amber-300 overflow-y-scroll">
-						<img src="/public/assets/images/screenshot.png" alt="페이지스크린샷" />
+		<!-- 프로젝트소개 -->
+		<section>
+			<div class="flex flex-col items-center gap-8 p-10">
+				<h3 class="text-30 md:text-45 xl:text-65 font-semibold leading-[1.3] break-keep">
+					<span class="whitespace-nowrap">프로젝트 소개</span>
+				</h3>
+				<div class="flex items-center">
+					<div class="max-w-[800px] mx-auto relative">
+						<img src="/public/assets/images/computer.png" alt="컴퓨터"/>
+						<div class="absolute left-[4%] top-[6%] w-[92%] h-[62%] bg-amber-300 overflow-y-scroll">
+							<img src="/public/assets/images/screenshot.png" alt="페이지스크린샷"/>
+						</div>
 					</div>
-				</div>
-				<div class="max-w-[500px] mx-auto relative">
-					<img src="/public/assets/images/phone.png" alt="컴퓨터" class="z-1 relative"/>
-					<div class="absolute left-[27.5%] top-[3%] w-[45%] h-[94%] rounded-3xl bg-amber-300 overflow-hidden">
-						<img src="/public/assets/images/screenshot2.png" alt="페이지스크린샷" />
+					<div class="max-w-[500px] mx-auto relative">
+						<img src="/public/assets/images/phone.png" alt="컴퓨터" class="relative z-1"/>
+						<div class="absolute left-[28%] top-[3%] w-[43%] h-[94%] rounded-[1vw] bg-amber-300 overflow-hidden">
+							<img src="/public/assets/images/screenshot2.png" alt="페이지스크린샷"/>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<!-- 컴포넌트페이지 -->
-	<section
-		aria-labelledby="shop-product-section14"
-		class="py-20 bg-hot-ivory"
-	>
-		<h2 class="sr-only" id="shop-product-section13">하랜띵스 소스 활용</h2>
-		<!-- 상단 이미지 영역 -->
-		<div class="relative overflow-hidden transform -rotate-2">
-			<div class="flex gap-4 animate-cardrolling-r">
-				<!-- 1 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-1.png"
-						alt="하랜띵스 소스 1"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 2 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-2.png"
-						alt="하랜띵스 소스 2"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 3 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-3.png"
-						alt="하랜띵스 소스 3"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 4 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-4.png"
-						alt="하랜띵스 소스 4"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 5 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-5.png"
-						alt="하랜띵스 소스 5"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 6 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-6.png"
-						alt="하랜띵스 소스 6"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 7 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-7.png"
-						alt="하랜띵스 소스 7"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 8 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-8.png"
-						alt="하랜띵스 소스 8"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 9 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-9.png"
-						alt="하랜띵스 소스 9"
-						class="object-cover w-full h-full"
-					/>
+		<!-- 컴포넌트페이지 -->
+		<section aria-labelledby="shop-product-section14" class="py-20 overflow-hidden bg-hot-ivory">
+			<h2 class="sr-only" id="shop-product-section13">하랜띵스 소스 활용</h2>
+			<!-- 상단 이미지 영역 -->
+			<div>
+				<div class="relative flex gap-4 transform animate-cardrolling-r -rotate-2">
+					<!-- 1 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-1.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 1" class="object-cover w-full h-full" />
+					</div>
+					<!-- 2 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-2.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 2" class="object-cover w-full h-full" />
+					</div>
+					<!-- 3 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-3.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 3" class="object-cover w-full h-full" />
+					</div>
+					<!-- 4 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 4" class="object-cover w-full h-full" />
+					</div>
+					<!-- 5 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 5" class="object-cover w-full h-full" />
+					</div>
+					<!-- 6 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 6" class="object-cover w-full h-full" />
+					</div>
+					<!-- 7 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-7.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 7" class="object-cover w-full h-full" />
+					</div>
+					<!-- 8 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-8.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 8" class="object-cover w-full h-full" />
+					</div>
+					<!-- 9 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-9.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 9" class="object-cover w-full h-full" />
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- 가운데 텍스트 영역 -->
-		<div class="px-4 py-20 text-center text-black bg-hot-ivory">
-			<h2 class="mb-4 text-2xl font-normal lg:text-5xl">
-				<strong>하랜띵스 컴포넌트</strong><br />
-				 살펴보기
-			</h2>
-			<div class="flex flex-col gap-4 items-center py-4">
-        <details class="w-[60%] font-medium border rounded-2xl text-15 break-keep group" open>
-          <summary class="flex items-center justify-between px-4 py-6">
-            <p class="font-normal lg:text-20">
-							<strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등<br />
+
+			<!-- 가운데 텍스트 영역 -->
+			<div class="px-4 py-20 text-center text-black bg-hot-ivory">
+				<h2 class="mb-4 text-2xl font-normal lg:text-5xl">
+					<strong>하랜띵스 컴포넌트</strong><br />
+					살펴보기
+				</h2>
+				<div class="flex flex-col items-center gap-4 py-4">
+					<details class="w-[60%] font-medium border rounded-2xl text-15 break-keep group" open>
+						<summary class="flex items-center justify-between px-4 py-6">
+							<p class="font-normal lg:text-20">
+								<strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등<br />
+							</p>
+							<p class="relative">
+								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
+								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>              
+							</p>
+						</summary>
+						<div class="px-6 pb-6 space-y-4">
+							<ul class="flex flex-col gap-x-4 gap-y-2">
+								<li class="flex items-center gap-2">
+									<p class="text-16">버튼</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[40%]">
+										<img src="/assets/images/point-bg.png" alt="2단계" class="relative"/>
+									</div>
+								</li>
+								<li class="flex items-center gap-2">
+									<p class="text-16">타이틀</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[80%]">
+										<img src="/assets/images/point-bg.png" alt="4단계" class="relative"/>
+									</div>
+								</li>
+								<li class="flex items-center gap-2">
+									<p class="text-16">단맛</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[60%]">
+										<img src="/assets/images/point-bg.png" alt="3단계" class="relative"/>
+									</div>
+								</li>
+								<li class="flex items-center gap-2">
+									<p class="text-16">신맛</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[80%]">
+										<img src="/assets/images/point-bg.png" alt="4단계" class="relative"/>
+									</div>
+								</li>
+								<li class="flex items-center gap-2">
+									<p class="text-16">짠맛</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[60%]">
+										<img src="/assets/images/point-bg.png" alt="3단계" class="relative"/>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</details>
+
+					<details class="w-[60%] font-medium border rounded-2xl text-15 break-keep group" open>
+						<summary class="flex items-center justify-between w-full px-4 py-6">
+							<p class="font-normal lg:text-20"><strong>🥫레이아웃 요소</strong> - 헤더, 푸터, 모달 창</p>
+							<p class="relative">
+								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
+								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>              
+							</p>
+						</summary>
+						
+						<div class="px-6 pb-6 space-y-4">
+							<ul class="flex flex-col gap-x-4 gap-y-2">
+								<li class="flex items-center gap-2">
+									<p class="text-16">헤더</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[40%]">
+										<img src="/assets/images/point-bg.png" alt="2단계" class="relative"/>
+									</div>
+								</li>
+								<li class="flex items-center gap-2">
+									<p class="text-16">푸터</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[80%]">
+										<img src="/assets/images/point-bg.png" alt="4단계" class="relative"/>
+									</div>
+								</li>
+								<li class="flex items-center gap-2">
+									<p class="text-16">모달창</p>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[60%]">
+										<img src="/assets/images/point-bg.png" alt="3단계" class="relative"/>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</details>
+
+					<details class="w-[60%] font-medium border rounded-2xl text-15 break-keep group" open>
+						<summary class="flex items-center justify-between w-full px-4 py-6">
+							<p class="font-normal lg:text-20">
+								<strong>🌶️페이지별 카드 컴포넌트</strong> - 상품 카드, 프로필 카드, 게시물 카드</p>
+							<p class="relative">
+								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
+								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>              
+							</p>
+						</summary>
+						<div class="px-6 pb-6 space-y-4">
+							<ul class="flex flex-col gap-x-4 gap-y-2">
+								<li class="flex items-center gap-2">
+									<a href="/src/components/community-reviewtext.html" 
+										target="_blank" 
+										rel="noopener noreferrer" 
+										class="text-16">[Community]카드형컴포넌트 - 텍스트</a>
+									<div class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[40%]">
+										<img src="/assets/images/point-bg.png" alt="2단계" class="relative"/>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</details>
+				</div>
+			</div>
+
+
+			<!-- 하단 이미지 영역 -->
+			<div>
+				<div class="relative flex gap-4 transform animate-cardrolling rotate-2">
+					<!-- 10 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 10" class="object-cover w-full h-full" />
+					</div>
+					<!-- 11 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 11" class="object-cover w-full h-full" />
+					</div>
+					<!-- 12 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 12" class="object-cover w-full h-full" />
+					</div>
+					<!-- 13 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 13" class="object-cover w-full h-full" />
+					</div>
+					<!-- 14 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 14" class="object-cover w-full h-full" />
+					</div>
+					<!-- 15 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 15" class="object-cover w-full h-full" />
+					</div>
+					<!-- 16 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 16" class="object-cover w-full h-full" />
+					</div>
+					<!-- 17 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 17" class="object-cover w-full h-full" />
+					</div>
+					<!-- 18 -->
+					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
+						<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 18" class="object-cover w-full h-full" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- 팀원소개 -->
+		<section class="py-[150px] lg:py-[140px] lg:pb-[300px]">
+				<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1200px] grid justify-items-center lg:justify-items-start lg:grid-cols-10 lg:gap-5">
+					<div class="mb-10 text-center lg:text-left lg:mt-[100px] lg:col-span-3 xl:col-span-4" data-aos="fade-up" data-aos-duration="500">
+						<h3 class="text-30 md:text-45 xl:text-65 font-semibold leading-[1.3] break-keep">
+							<span class="whitespace-nowrap">2팀 이글이글</span>
+							<span class="whitespace-nowrap">팀원소개</span>
+						</h3>
+						<p class="mt-[22px] lg:mt-[36px] text-14 lg:text-15 xl:text-18 font-semibold leading-[1.7]">
+							‘하랜띵스’ 홈페이지를 깊이 있게 분석하고<br>
+							사용자 경험을 새롭게 재해석했습니다.<br>
+							고급스러운 매콤함을 더해<br>
+							평범한 일상 속에서도 미슐랭급 웹 경험을 즐겨보세요.
 						</p>
+<<<<<<< HEAD
+					</div>
+					
+					<div class="grid gap-5 justify-items-center md:grid-cols-2 lg:col-span-7 xl:col-span-6">
+
+						<!-- 시안(1) -->
+						<div class="inline-block align-top content-end md:even:translate-y-[80px]" >
+							<div class="flex flex-col">
+								<div class="bg-white">
+									<img src="/public/assets/images/psy.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+								</div>
+								<div class="text-white bg-black p-7">
+									<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
+									<P>
+										함께하는 프로젝트를 통해<br />
+										많이 배우며 성장하는 기회가 되길 원해요!<br />
+										이글이글 화이팅🔥🔥
+									</P>
+									<ul class="mt-10 text-17">
+										<li class="flex items-center justify-between">
+											<span>이메일</span>
+											<span>tjsduddlfma1@naver.com</span>
+										</li>
+										<li class="flex items-center justify-between">
+											<strong>MBTI</strong>
+											<strong>ESFP</strong>
+										</li>
+									</ul>
+								</div>
+								<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand  text-white text-20 font-semibold text-center content-center w-full">
+									팀원
+								</a>
+							</div>
+						</div>
+
+						<div class="inline-block align-top content-end md:even:translate-y-[80px]" >
+							<div class="flex flex-col">
+								<div class="bg-white">
+									<img src="/public/assets/images/psy.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+								</div>
+								<div class="text-white bg-black p-7">
+									<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
+									<P>
+										함께하는 프로젝트를 통해<br />
+										많이 배우며 성장하는 기회가 되길 원해요!<br />
+										이글이글 화이팅🔥🔥
+									</P>
+									<ul class="mt-10 text-17">
+										<li class="flex items-center justify-between">
+											<span>이메일</span>
+											<span>tjsduddlfma1@naver.com</span>
+										</li>
+										<li class="flex items-center justify-between">
+											<strong>MBTI</strong>
+											<strong>ESFP</strong>
+										</li>
+									</ul>
+								</div>
+								<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand text-white text-20 font-semibold text-center content-center w-full">
+									팀원
+								</a>
+							</div>
+						</div>
+
+						<!-- 시안(2) -->
+						<div class="inline-block align-top content-end md:even:translate-y-[80px]">
+							<div class="flex flex-col">
+								<div class="bg-white">
+									<img src="/public/assets/images/psy.png" width="400" height="420" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+								</div>
+								<div class="text-white bg-black p-7">
+									<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
+									<P>
+										함께하는 프로젝트를 통해<br />
+										많이 배우며 성장하는 기회가 되길 원해요!<br />
+										이글이글 화이팅🔥🔥
+									</P>
+									<ul class="mt-10 text-17">
+										<li class="flex items-center justify-between font-normal">
+											<span>역할</span>
+											<span>팀원</span>
+										</li>
+										<li class="flex items-center justify-between">
+											<span>MBTI</span>
+											<span>ESFP</span>
+										</li>
+										<li class="flex items-center justify-between">
+											<span>EMAIL</span>
+											<span>tjsduddlfma1@naver.com</span>
+										</li>
+									</ul>
+								</div>
+								<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
+									GITHUB
+								</a>
+							</div>
+						</div>
+
+						<div class="inline-block align-top content-end md:even:translate-y-[80px]" >
+							<div class="flex flex-col">
+								<div class="bg-white">
+									<img src="/public/assets/images/psy.png" width="400" height="420" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+								</div>
+								<div class="text-white bg-black p-7">
+									<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
+									<P>
+										함께하는 프로젝트를 통해<br />
+										많이 배우며 성장하는 기회가 되길 원해요!<br />
+										이글이글 화이팅🔥🔥
+									</P>
+									<ul class="mt-10 text-17">
+										<li class="flex items-center justify-between font-normal">
+											<span>역할</span>
+											<span>팀원</span>
+										</li>
+										<li class="flex items-center justify-between">
+											<span>MBTI</span>
+											<span>ESFP</span>
+										</li>
+										<li class="flex items-center justify-between">
+											<span>EMAIL</span>
+											<span>tjsduddlfma1@naver.com</span>
+										</li>
+									</ul>
+								</div>
+								<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
+									GITHUB
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+		</section>
+					
+		<div class="overflow-hidden bg-black w-full lg:py-1.5">
+			<p class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20" >
+			</p>
+=======
             <p class="relative">
               <span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
               <span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>              
@@ -333,290 +533,11 @@
           </div>
         </details>
       </div>
+>>>>>>> develop
 		</div>
+		
+	</div>
 
-		<!-- 하단 이미지 영역 -->
-		<div class="relative overflow-hidden transform rotate-2">
-			<div class="flex gap-4 animate-cardrolling">
-				<!-- 10 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-4.png"
-						alt="하랜띵스 소스 10"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 11 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-5.png"
-						alt="하랜띵스 소스 11"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 12 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-6.png"
-						alt="하랜띵스 소스 12"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 13 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-4.png"
-						alt="하랜띵스 소스 13"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 14 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-5.png"
-						alt="하랜띵스 소스 14"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 15 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-6.png"
-						alt="하랜띵스 소스 15"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 16 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-4.png"
-						alt="하랜띵스 소스 16"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 17 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-5.png"
-						alt="하랜띵스 소스 17"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-				<!-- 18 -->
-				<div
-					class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
-				>
-					<img
-						loading="lazy"
-						aria-hidden="true"
-						src="/public/assets/images/component-6.png"
-						alt="하랜띵스 소스 18"
-						class="object-cover w-full h-full"
-					/>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-  <div class="overflow-hidden bg-black w-full lg:py-1.5">
-    <p
-      class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20"
-    ></p>
-  </div>
-
-	<!-- 팀원소개 -->
-	<section class="py-[150px] lg:py-[140px] lg:pb-[300px]">
-			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1200px] grid justify-items-center lg:justify-items-start lg:grid-cols-10 lg:gap-5">
-				<div class="mb-10 text-center lg:text-left lg:mt-[100px] lg:col-span-3 xl:col-span-4" data-aos="fade-up" data-aos-duration="500">
-					<h3 class="text-30 md:text-45 xl:text-65 font-semibold leading-[1.3] break-keep">
-						<span class="whitespace-nowrap">2팀 이글이글</span>
-						<span class="whitespace-nowrap">팀원소개</span>
-					</h3>
-					<p class="mt-[22px] lg:mt-[36px] text-14 lg:text-15 xl:text-18 font-semibold leading-[1.7]">
-						‘하랜띵스’ 홈페이지를 깊이 있게 분석하고<br>
-						사용자 경험을 새롭게 재해석했습니다.<br>
-						고급스러운 매콤함을 더해<br>
-						평범한 일상 속에서도 미슐랭급 웹 경험을 즐겨보세요.
-					</p>
-				</div>
-				
-				<div class="grid gap-5 justify-items-center md:grid-cols-2 lg:col-span-7 xl:col-span-6">
-
-					<!-- 시안(1) -->
-					<div class="inline-block align-top content-end md:even:translate-y-[80px]" >
-						<div class="flex flex-col">
-							<div>
-								<img src="/public/assets/images/psy.png" width="400" height="420" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
-								<P>
-									함께하는 프로젝트를 통해<br />
-									많이 배우며 성장하는 기회가 되길 원해요!<br />
-									이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between">
-										<span>이메일</span>
-										<span>tjsduddlfma1@naver.com</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<strong>MBTI</strong>
-										<strong>ESFP</strong>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/seonyoungg" 
-							aria-label="박선영 깃허브저장소이동"
-							target="_blank" 
-							class="p-1.5 bg-hot-brand  text-white text-20 font-semibold text-center content-center w-full">
-							팀원
-							</a>
-						</div>
-					</div>
-
-					<div class="inline-block align-top content-end md:even:translate-y-[80px]" >
-						<div class="flex flex-col">
-							<div>
-								<img src="/public/assets/images/psy.png" width="400" height="420" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
-								<P>
-									함께하는 프로젝트를 통해<br />
-									많이 배우며 성장하는 기회가 되길 원해요!<br />
-									이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between">
-										<span>이메일</span>
-										<span>tjsduddlfma1@naver.com</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<strong>MBTI</strong>
-										<strong>ESFP</strong>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/seonyoungg" 
-							aria-label="박선영 깃허브저장소이동"
-							target="_blank" 
-							class="p-1.5 bg-hot-brand  text-white text-20 font-semibold text-center content-center w-full">
-							팀원
-							</a>
-						</div>
-					</div>
-
-					<!-- 시안(2) -->
-					<div class="inline-block align-top content-end md:even:translate-y-[80px]" >
-						<div class="flex flex-col">
-							<div>
-								<img src="/public/assets/images/psy.png" width="400" height="420" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
-								<P>
-									함께하는 프로젝트를 통해<br />
-									많이 배우며 성장하는 기회가 되길 원해요!<br />
-									이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between font-normal">
-										<span>역할</span>
-										<span>팀원</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>MBTI</span>
-										<span>ESFP</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>EMAIL</span>
-										<span>tjsduddlfma1@naver.com</span>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/seonyoungg" 
-							aria-label="박선영 깃허브저장소이동"
-							target="_blank" 
-							class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-							GITHUB
-							</a>
-						</div>
-					</div>
-
-					<div class="inline-block align-top content-end md:even:translate-y-[80px]" >
-						<div class="flex flex-col">
-							<div>
-								<img src="/public/assets/images/psy.png" width="400" height="420" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
-								<P>
-									함께하는 프로젝트를 통해<br />
-									많이 배우며 성장하는 기회가 되길 원해요!<br />
-									이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between font-normal">
-										<span>역할</span>
-										<span>팀원</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>MBTI</span>
-										<span>ESFP</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>EMAIL</span>
-										<span>tjsduddlfma1@naver.com</span>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/seonyoungg" 
-							aria-label="박선영 깃허브저장소이동"
-							target="_blank" 
-							class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-							GITHUB
-							</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-	</section>
-				
-	
 </body>
 
 </html>

@@ -1,123 +1,119 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-    
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
-    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
-
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - main header</title>
   <script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans bg-hot-ivory">
-    <section aria-labelledby="shop-product-section8">
-      <h2 id="shop-product-section8" class="sr-only">표고러플맛소개</h2>
-      
-      <div class="flex flex-col items-center justify-center w-full h-screen gap-4 text-center break-keep">
-        <p class="font-semibold font-newbery text-15 lg:text-25">HARMONIOUS TASTE</p>
-        <p class="font-medium text-15 lg:text-20">동서양 대중음식 어디에나 어울리는 매콤한 밸런스</p>
-        <h2 class="text-40 font-normal leading-[1.5] lg:text-[60px]">
-          동양과 서양을 아우르는 식재료로<br />
-          <strong>어느 음식에도 조화롭게 어우러집니다</strong>
+</head>
+<body class="font-sans">
+	
+
+  <section aria-labelledby="shop-product-section8" class="bg-hot-ivory">
+    <h2 id="shop-product-section8" class="sr-only">표고러플맛소개</h2>
+    
+    <div class="flex flex-col items-center justify-center w-full h-screen gap-4 text-center break-keep">
+      <p class="font-semibold font-newbery text-15 lg:text-25">HARMONIOUS TASTE</p>
+      <p class="font-medium text-15 lg:text-20">동서양 대중음식 어디에나 어울리는 매콤한 밸런스</p>
+      <h2 class="text-40 font-normal leading-[1.5] lg:text-[60px]">
+        동양과 서양을 아우르는 식재료로<br />
+        <strong>어느 음식에도 조화롭게 어우러집니다</strong>
+      </h2>
+      <p class="text-17 font-medium leading-[1.8] lg:text-20">
+        강하지만 휘발되는 서양의 매운맛과 <br />
+        은은하게 오래가는 동양의 매운맛을 모두 느껴보세요
+      </p>
+    </div>
+    
+    <div class="content-center w-full h-screen">
+      <div class="w-full px-4 flex flex-col gap-[60px] items-center justify-center break-keep relative ">
+        <h2 class="text-center font-gastro text-[14vw] md:text-[105px] lg:text-[128px]  transition-all duration-300 leading-[1.1] text-hot-brand">
+          <p>WESTERN</p>
+          <P class="text-hot-secondary">EASTERN</P>
         </h2>
-        <p class="text-17 font-medium leading-[1.8] lg:text-20">
-          강하지만 휘발되는 서양의 매운맛과 <br />
-          은은하게 오래가는 동양의 매운맛을 모두 느껴보세요
-        </p>
-      </div>
-      
-      <div class="content-center w-full h-screen">
-        <div class="w-full px-4 flex flex-col gap-[60px] items-center justify-center break-keep relative ">
-          <h2 class="text-center font-gastro text-[14vw] md:text-[105px] lg:text-[128px]  transition-all duration-300 leading-[1.1] text-hot-brand">
-            <p>WESTERN</p>
-            <P class="text-hot-secondary">EASTERN</P>
-          </h2>
-          <div class="grid grid-cols-2 gap-x-[50px] gap-y-6 lg:gap-x-[100px]">
-            <div class="relative flex flex-col gap-y-6">
-              <div class="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-5">
-                <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-brand text-white font-semibold text-15 text-center">
-                  향긋함
-                </p>
-                <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-end">
-                  트러플, 엑스트라버진 올리브 오일
-                </p>
-              </div>
-              <div class="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-5">
-                <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-brand text-white font-semibold text-15 text-center">
-                  매운맛
-                </p>
-                <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-end">
-                  큐민
-                </p>
-              </div>
-              <div class="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-5">
-                <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-brand text-white font-semibold text-15 text-center">
-                  신맛
-                </p>
-                <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-end">
-                  화이트와인 비네거
-                </p>
-              </div>
-              <div class="absolute -left-[20px] -translate-x-full top-0 -translate-y-1/2 transition-all duration-300 opacity-0 xl:opacity-100">
-                <img src="/assets/images/pyogo_1.png" alt="표고러플재료" aria-hidden="true" />
-              </div> 
+        <div class="grid grid-cols-2 gap-x-[50px] gap-y-6 lg:gap-x-[100px]">
+          <div class="relative flex flex-col gap-y-6">
+            <div class="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-5">
+              <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-brand text-white font-semibold text-15 text-center">
+                향긋함
+              </p>
+              <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-end">
+                트러플, 엑스트라버진 올리브 오일
+              </p>
             </div>
-            <div class="relative flex flex-col gap-y-6">
-              <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5">
-                <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-secondary text-white font-semibold text-15 text-center">
-                  감칠맛
-                </p>
-                <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-start">
-                  표고버섯, 백간장
-                </p>
-              </div>
-              <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5">
-                <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-secondary text-white font-semibold text-15 text-center">
-                  매운맛
-                </p>
-                <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-start">
-                  청양고추, 마늘
-                </p>
-              </div>
-              <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5">
-                <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-secondary text-white font-semibold text-15 text-center">
-                  단맛
-                </p>
-                <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-start">
-                  양파
-                </p>
-              </div>
-              
-              <div class="absolute right-0 translate-x-[90%] top-0 -translate-y-1/2 transition-all duration-300 opacity-0 xl:opacity-100">
-                <img src="/assets/images/pyogo_2.png" alt="표고러플재료" aria-hidden="true"/>
-              </div>
+            <div class="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-5">
+              <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-brand text-white font-semibold text-15 text-center">
+                매운맛
+              </p>
+              <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-end">
+                큐민
+              </p>
             </div>
-          </div> 
+            <div class="flex flex-col items-center gap-2 lg:flex-row-reverse lg:gap-5">
+              <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-brand text-white font-semibold text-15 text-center">
+                신맛
+              </p>
+              <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-end">
+                화이트와인 비네거
+              </p>
+            </div>
+            <div class="absolute -left-[20px] -translate-x-full top-0 -translate-y-1/2 transition-all duration-300 opacity-0 xl:opacity-100">
+              <img src="/assets/images/pyogo_1.png" alt="표고러플재료" aria-hidden="true" />
+            </div> 
+          </div>
+          <div class="relative flex flex-col gap-y-6">
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5">
+              <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-secondary text-white font-semibold text-15 text-center">
+                감칠맛
+              </p>
+              <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-start">
+                표고버섯, 백간장
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5">
+              <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-secondary text-white font-semibold text-15 text-center">
+                매운맛
+              </p>
+              <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-start">
+                청양고추, 마늘
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-5">
+              <p class="py-1 px-4 min-w-[90px] rounded-2xl bg-hot-secondary text-white font-semibold text-15 text-center">
+                단맛
+              </p>
+              <p class="max-[370px]:h-[30px] text-13 lg:text-15 font-semibold text-center lg:text-start">
+                양파
+              </p>
+            </div>
+            
+            <div class="absolute right-0 translate-x-[90%] top-0 -translate-y-1/2 transition-all duration-300 opacity-0 xl:opacity-100">
+              <img src="/assets/images/pyogo_2.png" alt="표고러플재료" aria-hidden="true"/>
+            </div>
+          </div>
+        </div> 
 
-          <!-- Mo -->
-          <div class="absolute w-[280px] top-0 -translate-y-[75%] left-1/2 -translate-x-[45px] z-1 lg:hidden">
-            <img src="/assets/images/scroll1.png" alt="표고러플제품" aria-hidden="true" class="-rotate-8 "/>
-          </div>
-          <div class="absolute w-[20px] lg:w-[30px] h-[360px] overflow-hidden left-1/2 -translate-x-1/2 top-[40px] lg:hidden">
-            <img src="/assets/images/scroll2.png" alt="흐르는소스" aria-hidden="true" class="absolute bottom-0"/>
-          </div>
-          <!-- 소스높이로 조정(0~360px) -->
-
-          <!-- PC -->
-          <div class="absolute w-[480px] top-0 -translate-y-[88%] left-1/2 -translate-x-[75px] z-1 hidden lg:block">
-            <img src="/assets/images/scroll1.png" alt="표고러플제품" aria-hidden="true" class="-rotate-8 "/>
-          </div>
-          <div class="absolute w-[30px] lg:w-[30px] h-[500px] overflow-hidden left-1/2 -translate-x-1/2 top-[40px] hidden lg:block">
-            <img src="/assets/images/scroll2.png" alt="흐르는소스" aria-hidden="true" class="absolute bottom-0"/>
-          </div>
-          <!-- 소스높이로 조정(0~500px) --> 
+        <!-- Mo -->
+        <div class="absolute w-[280px] top-0 -translate-y-[75%] left-1/2 -translate-x-[45px] z-1 lg:hidden">
+          <img src="/assets/images/scroll1.png" alt="표고러플제품" aria-hidden="true" class="-rotate-8 "/>
         </div>
+        <div class="absolute w-[20px] lg:w-[30px] h-[360px] overflow-hidden left-1/2 -translate-x-1/2 top-[40px] lg:hidden">
+          <img src="/assets/images/scroll2.png" alt="흐르는소스" aria-hidden="true" class="absolute bottom-0"/>
+        </div>
+        <!-- 소스높이로 조정(0~360px) -->
+
+        <!-- PC -->
+        <div class="absolute w-[480px] top-0 -translate-y-[88%] left-1/2 -translate-x-[75px] z-1 hidden lg:block">
+          <img src="/assets/images/scroll1.png" alt="표고러플제품" aria-hidden="true" class="-rotate-8 "/>
+        </div>
+        <div class="absolute w-[30px] lg:w-[30px] h-[500px] overflow-hidden left-1/2 -translate-x-1/2 top-[40px] hidden lg:block">
+          <img src="/assets/images/scroll2.png" alt="흐르는소스" aria-hidden="true" class="absolute bottom-0"/>
+        </div>
+        <!-- 소스높이로 조정(0~500px) --> 
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+
+</body>
 </html>
