@@ -51,7 +51,7 @@
 	--text-85:5.3125rem;
 	--text-100:6.25rem;
 	--text-150:9.375rem;
-	
+
 	/* 이미지설정 */
 	--pattern-bg:url("/public/assets/images/pattern.png");
 	--wood-bg:url("/public/assets/images/wood-frame2.jpg");
@@ -83,11 +83,15 @@
 	--recipes-05:url("/public/assets/images/recipes-5.jpg");
 	--recipes-06:url("/public/assets/images/recipes-6.jpg");
 	--recipes-07:url("/public/assets/images/recipes-7.jpg");
-	--recipes-08:url("/public/assets/images/recipes-8.jpg");
+	--recipes-08:url("/public/assets/images/recipes-8.jpg");  
+  --giftbag-sec02-bg: url("/public/assets/images/sec2-bg.png");
+  --giftbag-sec04-bg: url("/public/assets/images/giftsec-bg.jpg");
+  
 	
 	/* 그리드 */
 	--review:repeat(auto-fit, minmax(700px, 1fr));
 	
+
 	/* 키프레임 애니메이션 정의 */
 	@keyframes cardrolling{
 		0%{transform:translateX(0);}
@@ -100,7 +104,7 @@
 		100%{transform:translateX(0);}
 	}
 	--animate-cardrolling-r: cardrollingright 40s linear infinite;
-	
+	  
 	@keyframes bounce{
 		0%, 100%{transform:translateY(0);}
 		50%{transform:translateY(-10px);}
@@ -128,7 +132,8 @@
 	
 	/* 롤링 관련 설정 */
 	--roll-text:"HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS •HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • HOTN' THINGS • ";
-	--roll-font-size:1rem;
+  --roll-text2:"Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce •Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce •Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • Eagle-sauce • ";
+  --roll-font-size:1rem;
 	--roll-letter-spacing:1px;
 	--roll-padding:1.25rem;
 	
@@ -176,4 +181,3 @@
 summary::marker{
 	font-size:0;
 }
-
