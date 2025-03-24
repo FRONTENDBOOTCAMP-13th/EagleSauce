@@ -4,18 +4,31 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>COMPONENT - rollingtext</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans">
+
+
   <!-- rollingtext start -->
   <fieldset class="border m-4 p-4">
     <legend class="text-20 font-semibold">[Common] 롤링 텍스트 컴포넌트</legend>
-  <div class="overflow-hidden bg-black w-full lg:py-1.5">
-    <p
-      class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20"
-    ></p>
-  </div>
+    <div class="overflow-hidden bg-black w-full lg:py-1.5">
+      <p class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20" ></p>
+    </div>
   </fieldset>
   <!-- rollingtext end -->
+
+
 </body>
 </html>

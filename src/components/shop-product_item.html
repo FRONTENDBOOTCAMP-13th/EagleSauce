@@ -4,49 +4,62 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>COMPONENT - product item</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans">
 
-<!-- Shop-item : product-item -->
-<fieldset class="p-4 m-4 border">
-  <legend class="font-semibold text-20">[Shop-item] product-item</legend>
 
-	<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
-		<!-- left: DETAIL VIEW -->
-		<div class="md:w-[580px]">
-			<a href="#void" class="group">
-				<div class="relative">
-					<div class="absolute top-0 left-0 z-20 flex items-center justify-between w-full px-4 py-3 md:py-5 md:px-6">
-						<img class="h-6" src="/public/assets/images/icon_best.jpg" alt="BEST상품">
-						<img class="hidden h-9 md:block" src="/public/assets/images/spicy2.png" alt="맵기 다섯칸 중 두칸">
-					</div>
-					<div class="relative bg-[image:var(--shop-all-item-bg01)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
-						<img src="/public/assets/images/product-1.png" alt="PYOGORUFFLE" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]">
-						<img src="/public/assets/images/product-1.gif" alt="PYOGORUFFLE 회전되는 영상" class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]">
-					</div>
-					<div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
-						<img class="absolute w-12 right-5 md:hidden" src="/public/assets/images/spicy2.png" alt="맵기 다섯칸 중 두칸">
-						<h3>
-							<span class="block font-semibold text-15">표고러플</span>
-							<span class="mt-1 font-semibold font-newbery text-25">PYOGORUFFLE</span>
-						</h3>
-						<p class="mt-5 text-14 font-medium leading-normal break-keep md:mt-2.5">트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된 고급스러운 매운맛</p>
-						<div class="mt-10 font-newbery">
-							<s class="font-normal text-hot-gray500 text-15">23,000</s>
-							<span class="ml-2.5 text-20 font-semibold">19,900</span>
-							<span class="ml-2.5 text-hot-brand text-20 font-semibold">13%</span>
+	<!-- Shop-item : product-item -->
+	<fieldset class="p-4 m-4 border">
+		<legend class="font-semibold text-20">[Shop-item] product-item</legend>
+
+		<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
+			<!-- left: DETAIL VIEW -->
+			<div class="md:w-[580px]">
+				<a href="#void" class="group">
+					<div class="relative">
+						<div class="absolute top-0 left-0 z-20 flex items-center justify-between w-full px-4 py-3 md:py-5 md:px-6">
+							<img class="h-6" src="/public/assets/images/icon_best.jpg" alt="BEST상품">
+							<img class="hidden h-9 md:block" src="/public/assets/images/spicy2.png" alt="맵기 다섯칸 중 두칸">
 						</div>
-						<div class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
+						<div class="relative bg-[image:var(--shop-all-item-bg01)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
+							<img src="/public/assets/images/product-1.png" alt="PYOGORUFFLE" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]">
+							<img src="/public/assets/images/product-1.gif" alt="PYOGORUFFLE 회전되는 영상" class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]">
+						</div>
+						<div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
+							<img class="absolute w-12 right-5 md:hidden" src="/public/assets/images/spicy2.png" alt="맵기 다섯칸 중 두칸">
+							<h3>
+								<span class="block font-semibold text-15">표고러플</span>
+								<span class="mt-1 font-semibold font-newbery text-25">PYOGORUFFLE</span>
+							</h3>
+							<p class="mt-5 text-14 font-medium leading-normal break-keep md:mt-2.5">트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된 고급스러운 매운맛</p>
+							<div class="mt-10 font-newbery">
+								<s class="font-normal text-hot-gray500 text-15">23,000</s>
+								<span class="ml-2.5 text-20 font-semibold">19,900</span>
+								<span class="ml-2.5 text-hot-brand text-20 font-semibold">13%</span>
+							</div>
+							<div class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
+						</div>
 					</div>
-				</div>
-			</a>
-		</div>
+				</a>
+			</div>
 
-		<!-- right: image -->
-		<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg01)] bg-no-repeat bg-center bg-cover"></div>
-	</div>
-</fieldset>
+			<!-- right: image -->
+			<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg01)] bg-no-repeat bg-center bg-cover"></div>
+		</div>
+	</fieldset>
+
 
 </body>
 </html>
