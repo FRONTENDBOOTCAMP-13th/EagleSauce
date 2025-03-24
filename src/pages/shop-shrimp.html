@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="sub">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HOTN'THINGS - XO SHRIMP</title>
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans">
-    <sub-header></sub-header>
-    <div id="container" class="bg-hot-ivory">
-      <!-- SECTION-01 -->
-      <section
-        class="grid w-full lg:grid-cols-2"
-        aria-labelledby="shop-product-section1"
-      >
-        <h2 id="shop-product-section1" class="sr-only">쉬림프 상품 구매</h2>
+<head>
+  
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - XO SHRIMP</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 
-        <!-- 상품이미지 -->
-        <div
-          class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover lg:border-r content-center"
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+  
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+
+  <!-- SECTION-01 -->
+  <section
+    class="grid w-full lg:grid-cols-2"
+    aria-labelledby="shop-product-section1"
+  >
+    <h2 id="shop-product-section1" class="sr-only">쉬림프 상품 구매</h2>
+
+    <!-- 상품이미지 -->
+    <div
+      class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover lg:border-r content-center"
+    >
+      <img
+        src="/assets/images/product-3.gif"
+        alt="쉬림프상품"
+        class="scale-[0.7]"
+      />
+    </div>
+
+    <!-- 상품안내 -->
+    <div class="w-full px-6 py-8 space-y-6">
+      <!-- 상품정보 -->
+      <div class="relative product-item-info lg:py-4 lg:px-8">
+        <h2 class="mb-2 leading-none lg:mb-4">
+          <p class="mb-2 font-semibold text-15 lg:text-20">XO 쉬림프</p>
+          <p
+            aria-hidden="true"
+            class="font-semibold font-newbery text-25 lg:text-65"
+          >
+            XO SHRIMP
+          </p>
+        </h2>
+        <img
+          src="/assets/images/spicy3.png"
+          alt="맵기5단계 중 3단계"
+          class="w-[50px] lg:w-[80px] absolute top-0 right-0"
+        />
+        <p
+          class="font-newbery text-20 lg:text-35 font-semibold flex items-center gap-1.5 lg:gap-2"
         >
           <img
             src="/assets/images/product-3.gif"

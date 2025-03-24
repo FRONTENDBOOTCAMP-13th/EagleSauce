@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="sub">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HOTN'THINGS - PARMESAN GOCHUJANG</title>
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans">
-    <sub-header></sub-header>
-    <div id="container" class="bg-hot-ivory">
-      <!-- SECTION-01 -->
-      <section
-        class="grid w-full lg:grid-cols-2"
-        aria-labelledby="shop-product-section1"
-      >
-        <h2 id="shop-product-section1" class="sr-only">
-          파마산고추장 상품 구매
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - PARMESAN GOCHUJANG</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+
+  <!-- SECTION-01 -->
+  <section class="grid w-full lg:grid-cols-2 " aria-labelledby="shop-product-section1">
+    <h2 id="shop-product-section1" class="sr-only">파마산고추장 상품 구매</h2>
+
+    <!-- 상품이미지 -->
+    <div class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover lg:border-r content-center">
+      <img src="/assets/images/product-2.gif" alt="파마산고추장상품" class="scale-[0.7]" />
+    </div>
+
+    <!-- 상품안내 -->
+    <div class="w-full px-6 py-8 space-y-6">
+
+      <!-- 상품정보 -->
+      <div class="relative product-item-info lg:py-4 lg:px-8">
+        <h2 class="mb-2 leading-none lg:mb-4">
+          <p class="mb-2 font-semibold text-15 lg:text-20">파마산고추장</p>
+          <p aria-hidden="true" class="flex flex-wrap font-semibold font-newbery text-25 lg:text-65">
+            <span class="whitespace-nowrap">PARMESAN&nbsp;</span>
+            <span class="whitespace-nowrap">GOCHUJANG</span>
+          </p>
         </h2>
 
         <!-- 상품이미지 -->

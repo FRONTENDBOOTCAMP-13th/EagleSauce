@@ -1,32 +1,44 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="ko-KR" data-page="main">
 <head>
 	<meta charset="UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>UI 프로젝트 - CSS</title>
-	<script type="module" src="/src/main.js"></script>
+	<title>2팀 이글이글</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans">
+
+
 <div id="container" class="pt-0 bg-hot-ivory">
-
-	<!-- <a href="/src/pages/home.html">HOME</a> -->
-
 
 
 	<section data-section="intro">
-		<div class="w-full py-30 bg-(image:--symbol-bg) bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]">
-			<img src="/assets/images/bird.gif" alt="걸으면서 이동하는 하랜띵스 새 심볼" class="w-full">
+		<div class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]">
+			<img src="/assets/images/bird.gif" loading="lazy" alt="걸으면서 이동하는 하랜띵스 새 심볼" class="w-full">
 
-			<div class="flex justify-between gap-10 m-auto mt-20 text-white font-semibold lg:max-w-[1000px]">
+			<div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-10 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]">
 				<div class="w-1/2">
-					<strong class="inline-block mt-1 text-6xl font-semibold text-nowrap">2팀 이글이글</strong><br />
-					<p class="mt-3 text-3xl font-medium text-white">프로젝트 소개</p>
+					<strong class="inline-block mt-1 text-4xl lg:text-6xl font-semibold text-nowrap">2팀 이글이글</strong><br />
+					<p class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white">프로젝트 소개</p>
 				</div>
-				<div class="mt-3 font-medium text-18">
+				<div class="lg:mt-3 font-medium text-16 lg:text-18 break-keep">
 					<p>
-						'이글이글'이라는 팀명에 어울리는 '핫소스'를 판매하는
+						'이글이글'이라는 팀명에 어울리는 '핫소스'를 판매하는<br class="lg:hidden"/>
 						<a href="/src/pages/home.html">
-							<img src="/public/assets/images/logo.png" alt="하랜띵스" class="inline-block w-[150px] border-2"/>
+							<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스" class="inline-block w-[100px] lg:w-[150px] border-2"/>
 						</a>
 						(하랜띵스)라는 홈페이지를 깊이 있게 분석하고 사용자 경험을 새롭게 재해석했습니다.
 					</p>
@@ -43,14 +55,14 @@
 
 
 	<section data-section="team_member">
-		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-30 pb-60">
-			<h2 class="font-semibold text-center mb-30 text-40 font-newbery">TEAM MEMBER🥫</h2>
-
-			<div class="grid gap-5 justify-items-center md:grid-cols-4 lg:grid-cols-8">
+		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
+			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">TEAM MEMBER🥫</h2>
+			
+			<div class="grid gap-5 justify-items-center grid-cols-4 lg:grid-cols-8">
 				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 					<div class="flex flex-col">
 						<div class="bg-white">
-							<img src="/public/assets/images/psy.png" loading="lazy" alt="psh image"/>
+							<img src="/public/assets/images/psh.png" loading="lazy" alt="psh image" />
 						</div>
 						<div class="text-white bg-black p-7">
 							<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박상희</h3>
@@ -74,7 +86,7 @@
 								</li>
 							</ul>
 						</div>
-						<a href="https://github.com/seonyoungg" aria-label="박상희 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
+						<a href="https://github.com/2sign" aria-label="박상희 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
 							GITHUB
 						</a>
 					</div>
@@ -116,7 +128,7 @@
 				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 					<div class="flex flex-col">
 						<div class="bg-white">
-							<img src="/public/assets/images/psy.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+							<img src="/public/assets/images/kjo.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
 						</div>
 						<div class="text-white bg-black p-7">
 							<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">김준오</h3>
@@ -149,7 +161,7 @@
 				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 					<div class="flex flex-col">
 						<div class="bg-white">
-							<img src="/public/assets/images/psy.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+							<img src="/public/assets/images/pjh.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
 						</div>
 						<div class="text-white bg-black p-7">
 							<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박준환</h3>
@@ -184,7 +196,7 @@
 
 
 	<section data-section="components">
-		<div class="py-20 overflow-hidden">
+		<div class="py-10 lg:py-20 overflow-hidden">
 			<!-- 상단 이미지 영역 -->
 			<div class="relative flex gap-4 transform animate-cardrolling-r -rotate-2">
 				<!-- 1 -->
@@ -227,11 +239,11 @@
 
 
 			<!-- 가운데 텍스트 영역 -->
-			<div class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-30 pb-60">
-				<h2 class="font-semibold text-center mb-30 text-40 font-newbery">COMPONENTS🍕</h2>
+			<div class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
+				<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">COMPONENTS🍕</h2>
 
 				<div class="flex flex-col items-center gap-4">
-					<details class="overflow-hidden w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
 						<summary class="flex items-center justify-between px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등
@@ -288,7 +300,7 @@
 					</details>
 
 
-					<details class="overflow-hidden w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
 						<summary class="flex items-center justify-between px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🥫레이아웃 요소</strong> - 헤더, 푸터, 모달 창
@@ -327,7 +339,7 @@
 					</details>
 
 
-					<details class="overflow-hidden w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
 						<summary class="flex items-center justify-between w-full px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🌶️페이지별 카드 컴포넌트</strong> - 상품 카드, 프로필 카드, 게시물 카드
@@ -390,7 +402,7 @@
 					</details>
 
 
-					<details class="overflow-hidden w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
 						<summary class="flex items-center justify-between px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🍰디자인 요소</strong>
@@ -475,8 +487,8 @@
 
 
 	<section data-section="mobile_page">
-		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-30 pb-60">
-			<h2 class="font-semibold text-center mb-30 text-40 font-newbery">MOBILE PAGE🍿</h2>
+		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
+			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">MOBILE PAGE🧁</h2>
 
 			<div></div>
 		</div>
@@ -484,8 +496,8 @@
 
 
 	<section data-section="pc_page">
-		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-30 pb-60">
-			<h2 class="font-semibold text-center mb-30 text-40 font-newbery">PC PAGE🥑</h2>
+		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
+			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">PC PAGE🥑</h2>
 
 			<div></div>
 		</div>
@@ -493,9 +505,9 @@
 
 
 	<section data-section="review">
-		<div class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%] pt-30">
-			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px]">
-				<h2 class="font-semibold text-center mb-30 text-40 font-newbery">REVEIW🧁</h2>
+		<div class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
+			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30">
+				<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">REVEIW🍿</h2>
 
 				<div class="mb-20">
 					<ul class="grid grid-cols-4 gap-4">
@@ -566,7 +578,7 @@
 				</div>
 		
 				<div class="absolute bottom-0 left-0 w-full overflow-hidden">
-						<div class="h-[40vw] bg-[image:var(--wood-bg)] bg-repeat-x bg-bottom bg-[length:auto_100%] md:h-[200px]"></div>
+						<div class="h-[200px] bg-[image:var(--wood-bg)] bg-repeat-x bg-bottom bg-[length:auto_100%]"></div>
 				</div>
 			</div>
 		
@@ -579,10 +591,10 @@
 		<div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
 			<div class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"></div>
 		</div>
-		<div class="py-5 lg:py-10 bg-hot-brand">
+		<div class="py-5 lg:py-10 bg-hot-ivory">
 			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] flex items-center justify-between">
-				<p class="text-white font-gastro font-normal text-[26px] lg:text-[75px]">Eagle Sauce</p>
-				<a href="/src/pages/home.html" class="px-20 py-5 font-semibold bg-white rounded-full text-hot-brand text-30 hover:bg-black hover:text-white">페이지 바로가기</a>
+				<p class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]">EagleSauce</p>
+				<a href="/src/pages/home.html" class="px-6 py-3 lg:px-20 lg:py-5 font-semibold bg-hot-brand rounded-full text-hot-ivory text-16 lg:text-30 hover:bg-black">페이지 바로가기</a>
 			</div>
 		</div>
 	</section>

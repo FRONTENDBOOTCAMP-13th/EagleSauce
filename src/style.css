@@ -156,26 +156,15 @@
 }
 
 @layer components{
-	/* 
-	body.loading{
-		@apply hidden;
-	} 
-
-	#page_loading{
-		@apply hidden;
+	/* page layout start */
+	#container{
+		@apply w-full min-h-dvh pt-[90px] lg:pt-[110px];
 	}
-	body.loading #page_loading{
-		@apply block z-[2000] absolute left-0 right-0 w-full h-full bg-[rgba(255,255,255,0.7)];
-	}
-	*/
-
-  #container{
-    @apply w-full min-h-dvh pt-[90px] lg:pt-[110px];
-  }
-  
+	
 	.max-container{
 		@apply max-w-[1920px] mx-auto;
 	}
+	/* page layout end */
 }
 
 summary::marker{

@@ -1,62 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="sub">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>HOTN'THINGS - EVENT</title>
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans bg-hot-ivory">
-    <sub-header></sub-header>
-    <div id="container" class="bg-hot-ivory">
-      <!-- 첫번째 카드 컴포넌트 영역 -->
-      <section
-        class="py-[60px] px-6 w-full overflow-hidden mb-20"
-        aria-labelledby="event-lists"
-      >
-        <h2 id="event-lists" class="sr-only">이벤트 프로모션 목록</h2>
-        <div
-          class="relative h-full z-1 lg:w-[calc(100%-32px)] justify-center flex flex-wrap"
-        >
-          <div
-            class="h-fit max-w-[500px] w-[calc(100%-32px)] lg:max-w-[1200px] lg:h-[750px]"
-          >
-            <a
-              href="/src/pages/community-eventboard.html"
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label="카카오 채널 전용 무료배송 쿠폰 이벤트 상세보기"
-              class="flex flex-col text-white -rotate-1 bg-hot-brand lg:flex-row lg:w-full lg:h-full lg:-rotate-2"
-            >
-              <!-- 반응형에서 왼쪽으로 들어가지는 이미지 영역 -->
-              <div class="h-[385px] w-full overflow-hidden lg:h-full">
-                <img
-                  class="object-cover w-full h-full"
-                  src="/public/assets/images/event-visual.jpg"
-                  alt="카카오 채널 전용 무료배송 쿠폰 이벤트 이미지"
-                />
-              </div>
-              <!-- 반응형에서 오른쪽으로 들어가지는 이미지 영역 -->
-              <div class="h-[320px] w-full lg:h-full">
-                <!-- 텍스트 박스  -->
-                <div
-                  class="pt-[42px] pr-[28px] pb-[35px] pl-[21px] text-4xl flex flex-col h-full font-newbery font-bold lg:text-6xl lg:pt-[70px] lg:pr-[50px] lg:pb-[60px] lg:pl-[45px] lg:leading-[1.2]"
-                >
-                  <p>Only for KAKAO FREE SHIPPING COUPON</p>
-                  <p class="mt-4 font-sans text-15 lg:text-17 lg:mt-5">
-                    카카오 채널 전용 무료배송 쿠폰
-                  </p>
-                  <span class="mt-auto text-15 lg:text-2xl">Always</span>
-                </div>
-                <div
-                  class="absolute bottom-[35px] right-[28px] text-2xl icon-font before:content-['\2771']"
-                  aria-hidden="true"
-                ></div>
-              </div>
-            </a>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - EVENT</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
+  <script type="module" src="/src/main.js"></script>
+</head>
+
+
+<body class="font-sans bg-hot-ivory">
+
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+
+  <!-- 첫번째 카드 컴포넌트 영역 -->
+  <section class="py-[60px] px-6 w-full overflow-hidden mb-20" aria-labelledby="event-lists">
+    <h2 id="event-lists" class="sr-only">이벤트 프로모션 목록</h2>
+    <div class="relative h-full z-1 lg:w-[calc(100%-32px)] justify-center flex flex-wrap">
+      <div class="h-fit max-w-[500px] w-[calc(100%-32px)] lg:max-w-[1200px] lg:h-[750px] ">
+        <a href="/src/pages/community-eventboard.html" rel="noopener noreferrer" target="_blank" aria-label="카카오 채널 전용 무료배송 쿠폰 이벤트 상세보기" class="flex flex-col text-white -rotate-1 bg-hot-brand lg:flex-row lg:w-full lg:h-full lg:-rotate-2">
+          <!-- 반응형에서 왼쪽으로 들어가지는 이미지 영역 -->
+          <div class="h-[385px] w-full overflow-hidden lg:h-full">
+            <img class="object-cover w-full h-full" src="/public/assets/images/event-visual.jpg" alt="카카오 채널 전용 무료배송 쿠폰 이벤트 이미지" />
           </div>
-        </div>
-      </section>
+          <!-- 반응형에서 오른쪽으로 들어가지는 이미지 영역 -->
+          <div class="h-[320px] w-full lg:h-full">
+            <!-- 텍스트 박스  -->
+            <div class="pt-[42px] pr-[28px] pb-[35px] pl-[21px] text-4xl flex flex-col h-full font-newbery font-bold lg:text-6xl lg:pt-[70px] lg:pr-[50px] lg:pb-[60px] lg:pl-[45px] lg:leading-[1.2] ">
+              <p>Only for KAKAO FREE SHIPPING COUPON</p>
+              <p class="mt-4 font-sans text-15 lg:text-17 lg:mt-5">카카오 채널 전용 무료배송 쿠폰</p>
+              <span class="mt-auto text-15 lg:text-2xl">Always</span>
+            </div>
+            <div class="absolute bottom-[35px] right-[28px] text-2xl icon-font before:content-['\2771']" aria-hidden="true"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
 
       <!-- 중앙 롤링 텍스트 컴포넌트 영역 -->
       <div
