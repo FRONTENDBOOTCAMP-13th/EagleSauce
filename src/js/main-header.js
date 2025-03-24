@@ -158,7 +158,7 @@ class mainHeader extends HTMLElement {
 						<!-- SHOP -->
 						<li class="group">
 							<a aria-label="제품구매" href="/src/pages/shop-all_products.html" class="block p-6" tabindex="0">SHOP</a>
-							<ul class="absolute left-0  w-full pb-6 font-medium transition-all duration-300 border-b opacity-100 pl-30 bg-hot-ivory group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+							<ul class="absolute left-0 invisible w-full pb-6 font-medium transition-all duration-300 border-b opacity-0 pl-30 bg-hot-ivory group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
 								<li class="px-6 py-1.5 flex gap-4 items-center">
 									<a aria-label="모든상품" href="/src/pages/shop-all_products.html" class="transition-all duration-300 hover:text-hot-main">ALL PRODUCTS</a>
 									<p class="font-sans text-14 opacity-20">한 입으로 당신의 매 순간에 특별함을 더해주는 하랜띵스</p>
