@@ -3,6 +3,7 @@ import "./js/main-header.js"
 import "./js/sub-header.js"
 import "./js/footer.js"
 
+// Menu mobile
 document.addEventListener('DOMContentLoaded', function() {
   const menuButton = document.querySelector('.menu-mobile .bi-list').closest('div');
   const menuLists = document.querySelector('.menu-lists');
@@ -17,4 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenu.classList.remove('left-0');
     mobileMenu.classList.add('-left-[100%]');
   });
+});
+
+// Event - review
+var swiper = new Swiper("#event-review", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 1000, 
+    disableOnInteraction: false, 
+  },
+  speed: 3000
 });
