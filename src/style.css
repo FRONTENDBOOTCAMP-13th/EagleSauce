@@ -86,7 +86,9 @@
 	--recipes-08:url("/public/assets/images/recipes-8.jpg");  
   --giftbag-sec02-bg: url("/public/assets/images/sec2-bg.png");
   --giftbag-sec04-bg: url("/public/assets/images/giftsec-bg.jpg");
-
+	--pyogo-rolling:url("/assets/images/sec5-slide-pyogo.png");
+	--parmesan-rolling:url("/assets/images/sec5-slide.png");
+	--shrimp-rolling:url("/assets/images/XO-section6.png");
 	--hot-logo:url("/public/assets/images/logo.png");
 	--header-napoli:url("/public/assets/images/napoli-li.jpg");
 	--header-napoli2:url("/public/assets/images/shop-all2.webp");
