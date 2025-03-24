@@ -35,7 +35,7 @@ class subHeader extends HTMLElement {
 				</div>
 	
 				<!-- Mobile Menu -->
-				<div class="absolute top-0 -left-[100%] transition-all duration-300 w-full text-white mobile-menu h-dvh bg-hot-brand">
+				<div class="absolute top-0 -left-[100%] transition-all duration-300 w-full text-white mobile-menu h-dvh overflow-y-scroll bg-hot-brand z-1100 lg:hidden">
 					<div class="relative p-4 menu-mobile lg:hidden">
 						<ul class="flex justify-between">
 							<li>
