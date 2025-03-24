@@ -31,10 +31,10 @@
 
 			<div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-10 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]">
 				<div class="w-1/2">
-					<strong class="inline-block mt-1 text-4xl lg:text-6xl font-semibold text-nowrap">2팀 이글이글</strong><br />
+					<strong class="inline-block mt-1 text-4xl font-semibold lg:text-6xl text-nowrap">2팀 이글이글</strong><br />
 					<p class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white">프로젝트 소개</p>
 				</div>
-				<div class="lg:mt-3 font-medium text-16 lg:text-18 break-keep">
+				<div class="font-medium lg:mt-3 text-16 lg:text-18 break-keep">
 					<p>
 						'이글이글'이라는 팀명에 어울리는 '핫소스'를 판매하는<br class="lg:hidden"/>
 						<a href="/src/pages/home.html">
@@ -56,9 +56,9 @@
 
 	<section data-section="team_member">
 		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">TEAM MEMBER🥫</h2>
+			<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">TEAM MEMBER🥫</h2>
 			
-			<div class="grid gap-5 justify-items-center grid-cols-4 lg:grid-cols-8">
+			<div class="grid grid-cols-4 gap-5 justify-items-center lg:grid-cols-8">
 				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 					<div class="flex flex-col">
 						<div class="bg-white">
@@ -195,7 +195,7 @@
 
 
 	<section data-section="components">
-		<div class="py-10 lg:py-20 overflow-hidden">
+		<div class="py-10 overflow-hidden lg:py-20">
 			<!-- 상단 이미지 영역 -->
 			<div class="relative flex gap-4 transform animate-cardrolling-r -rotate-2">
 				<!-- 1 -->
@@ -239,7 +239,7 @@
 
 			<!-- 가운데 텍스트 영역 -->
 			<div class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">COMPONENTS🍕</h2>
+				<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">COMPONENTS🍕</h2>
 
 				<div class="flex flex-col items-center gap-4">
 					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
@@ -254,7 +254,7 @@
 						</summary>
 						<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
 							<li class="flex items-start gap-6">
-								<a href="" class="min-w-[160px] text-center px-6 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+								<a href="/src/components/pages-btn.html" class="min-w-[160px] text-center px-6 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									primary button
 								</a>
 								<p>[SHOP] ALL PRODUCTS 페이지<br />[SHOP] PYOGORUFFLE 페이지<br />[SHOP] PARMESAN GOCHUJANG 페이지<br />[SHOP] XO SHRIMP 페이지<br />[SHOP] HOTN'THINGS KIT 페이지</p>
@@ -272,13 +272,22 @@
 								<p>검색 페이지</p>
 							</li>
 							<li class="flex items-center gap-6">
+								<a
+									href="/src/components/join-login-input-component.html"
+									class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+								>
+									input
+								</a>
+								<p>[Join-Login]</p>
+							</li>
+							<li class="flex items-center gap-6">
 								<a href="/src/components/pages-select.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									select
 								</a>
 								<p>[SHOP]</p>
 							</li>
 							<li class="flex items-center gap-6">
-								<a href="/src/components/pages-btn.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+								<a href="/src/components/pages-tag.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									name tag
 								</a>
 								<p>[ABOUT] OUT BRAND 페이지</p>
@@ -317,7 +326,7 @@
 								<p>전체 페이지</p>
 							</li>
 							<li class="flex items-center gap-6">
-								<a href="/src/components/common-footer.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+								<a href="/src/components/main-footer.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									footer
 								</a>
 								<p>전체 페이지</p>
@@ -329,7 +338,7 @@
 								<p>[MAIN] home.html 페이지</p>
 							</li>
 							<li class="flex items-center gap-6">
-								<a href="/src/components/faq-summary.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+								<a href="/src/components/pages-summary.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									summary
 								</a>
 								<p>[FAQ]</p>
@@ -362,8 +371,14 @@
 								<p>[COMMUNITY] RECIPES & PARING 페이지</p>
 							</li>
 							<li class="flex items-center gap-6">
-								<a href="/src/components/community-reviewall.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									review
+								<a href="/src/components/community-review_all.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+									review item
+								</a>
+								<p>[COMMUNITY] REVIEW 페이지</p>
+							</li>
+							<li class="flex items-center gap-6">
+								<a href="/src/components/community-review_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+									review item2
 								</a>
 								<p>[COMMUNITY] REVIEW 페이지</p>
 							</li>
@@ -374,28 +389,41 @@
 								<p>[COMMUNITY] REVIEW 페이지</p>
 							</li>
 							<li class="flex items-center gap-6">
-								<a href="/src/components/community-review_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									review item
-								</a>
-								<p>[COMMUNITY] REVIEW 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
 								<a href="/src/components/community-review_text.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									review text
 								</a>
 								<p>[COMMUNITY] REVIEW 페이지</p>
 							</li>
 							<li class="flex items-center gap-6">
-								<a href="#" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+								<a href="/src/components/shop-component_info.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									shop info
 								</a>
-								<p>[SHOP]</p>
+								<p>[SHOP] Shop 페이지</p>
 							</li>
 							<li class="flex items-center gap-6">
-								<a href="/src/components/community-reviewall.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+								<a href="/src/components/shop-product_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
 									product item
 								</a>
 								<p>[SHOP] ALL PRODUCTS</p>
+							</li>
+							<li class="flex items-center gap-6">
+								<a href="/src/components/shop-product_item2.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+									prodcut item2
+								</a>
+								<p>[SHOP] Shop 페이지</p>
+							</li>
+							<li class="flex items-center gap-6">
+								<a href="/src/components/shop-product_item3.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+									prodcut item3
+								</a>
+								<p>[SHOP] Shop 페이지</p>
+							</li>
+
+							<li class="flex items-center gap-6">
+								<a href="/src/components/community-event_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+									event item
+								</a>
+								<p>[COMMUNITY] EVENT 페이지</p>
 							</li>
 						</ul>
 					</details>
@@ -436,6 +464,12 @@
 								</a>
 								<p>[MAIN]</p>
 							</li>
+							<li class="flex items-center gap-6">
+								<a href="/src/components/pages-rollingtext.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
+										rollingtext
+								</a>
+								<p>[MAIN] rollingtext</p>
+						</li>
 						</ul>
 					</details>
 				</div>
@@ -487,16 +521,20 @@
 
 	<section data-section="mobile_page">
 		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">MOBILE PAGE🧁</h2>
-
-			<div></div>
+			<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">MOBILE PAGE🧁</h2>
+			<div class="max-w-[800px] mx-auto relative">
+				<img src="/public/assets/images/computer.png" alt="컴퓨터"/>
+				<div class="absolute left-[4%] top-[6%] w-[92%] h-[62%] bg-amber-300 overflow-y-scroll">
+					<img src="/public/assets/images/screenshot.png" alt="페이지스크린샷"/>
+				</div>
+			</div>
 		</div>
 	</section>
 
 
 	<section data-section="pc_page">
 		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">PC PAGE🥑</h2>
+			<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">PC PAGE🥑</h2>
 
 			<div></div>
 		</div>
@@ -506,14 +544,42 @@
 	<section data-section="review">
 		<div class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
 			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30">
-				<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">REVEIW🍿</h2>
+				<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">REVEIW🍿</h2>
 
 				<div class="mb-20">
 					<ul class="grid grid-cols-4 gap-4">
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-6 flex flex-col gap-4 items-center justify-center">
+							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
+							<div class="space-y-8 text-center keep-all">
+								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Product title</h3>
+								<p class="font-medium text-15 lg:text-20">Review text Review text Review text Review text Review text Review text Review text Review text Review text</p>
+								<p class="text-13 text-hot-gray300">Reviewer</p>
+							</div>
+						</li>
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-6 flex flex-col gap-4 items-center justify-center">
+							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
+							<div class="space-y-8 text-center keep-all">
+								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Product title</h3>
+								<p class="font-medium text-15 lg:text-20">Review text Review text Review text Review text Review text Review text Review text Review text Review text</p>
+								<p class="text-13 text-hot-gray300">Reviewer</p>
+							</div>
+						</li>
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-6 flex flex-col gap-4 items-center justify-center">
+							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
+							<div class="space-y-8 text-center keep-all">
+								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Product title</h3>
+								<p class="font-medium text-15 lg:text-20">Review text Review text Review text Review text Review text Review text Review text Review text Review text</p>
+								<p class="text-13 text-hot-gray300">Reviewer</p>
+							</div>
+						</li>
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-6 flex flex-col gap-4 items-center justify-center">
+							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
+							<div class="space-y-8 text-center keep-all">
+								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Product title</h3>
+								<p class="font-medium text-15 lg:text-20">Review text Review text Review text Review text Review text Review text Review text Review text Review text</p>
+								<p class="text-13 text-hot-gray300">Reviewer</p>
+							</div>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -593,7 +659,7 @@
 		<div class="py-5 lg:py-10 bg-hot-ivory">
 			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] flex items-center justify-between">
 				<p class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]">EagleSauce</p>
-				<a href="/src/pages/home.html" class="px-6 py-3 lg:px-20 lg:py-5 font-semibold bg-hot-brand rounded-full text-hot-ivory text-16 lg:text-30 hover:bg-black">페이지 바로가기</a>
+				<a href="/src/pages/home.html" class="px-6 py-3 font-semibold rounded-full lg:px-20 lg:py-5 bg-hot-brand text-hot-ivory text-16 lg:text-30 hover:bg-black">페이지 바로가기</a>
 			</div>
 		</div>
 	</section>
