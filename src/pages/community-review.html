@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
   <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans">
@@ -23,7 +25,6 @@
 <sub-header></sub-header>
 <div id="container" class="bg-hot-ivory">
 
-  
   <!-- 애니메이션 -->
   <section aria-labelledby="review-section1" class="py-30 bg-(image:--review-bg01) w-full bg-no-repeat bg-cover bg-center relative after:absolute after:inset-0 after:bg-black after:opacity-30 after:content-['']" >
     <h2 id="review-section1" class="sr-only">Card Review Sider</h2>
@@ -36,129 +37,153 @@
         다양한 곳에서 하랜띵스를 만나보세요
       </p>
     </div>
-    <div class="relative z-1 overflow-hidden w-full h-[420px] lg:h-[520px]">
-      <div class="flex gap-4 w-[1000%] lg:w-[540%] animate-cardrolling">
+    <div id="event-review" class="swiper event-review relative z-1 overflow-hidden w-full h-[420px] lg:h-[520px]">
+      <div class="swiper-wrapper">
         <!-- 이미지1 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl overflow-hidden" >
           <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-1.png" alt="하이볼,XO쉬림프,과자 사진" />
+          </div>
         </div>
-
-        <!-- 상품1:쉬림프 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
-          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
-          <div class="space-y-8 text-center keep-all">
-            <h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]" >
-              XO SHIRIMP
-            </h3>
-            <p class="font-medium text-15 lg:text-20">
-              뚜껑 열자마자 맛있는 냄새가 나요! 소스볼에 부어두고 앉아서 밥
-              먹는 내내 좋은 향이 나서 식욕이 돌아요 :) 향만큼 엄청
-              맛있기도해서 여기저기 자주 곁들여 먹기 좋아요
-            </p>
-            <p class="text-13 text-hot-gray300">김**</p>
+        
+        <!-- 상품1 -->
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-2 lg:py-8 px-6 lg:px-14 flex flex-col gap-4 items-center justify-center" >
+            <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+            <div class="space-y-4 lg:space-y-8 text-center break-keep">
+              <h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]" >
+                XO SHIRIMP
+              </h3>
+              <p class="font-medium text-15 lg:text-20">
+                뚜껑 열자마자 맛있는 냄새가 나요! 소스볼에 부어두고 앉아서 밥
+                먹는 내내 좋은 향이 나서 식욕이 돌아요 :) 향만큼 엄청
+                맛있기도해서 여기저기 자주 곁들여 먹기 좋아요
+              </p>
+              <p class="text-13 text-hot-gray300">김**</p>
+            </div>
           </div>
         </div>
 
         <!-- 이미지2 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
-          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-1.jpg" alt="라면, 삼각김밥, 표고러플 사진" />
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl overflow-hidden" >
+            <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-1.jpg" alt="라면, 삼각김밥, 표고러플 사진" />
+          </div>
         </div>
-
+        
         <!-- 상품2:파마산고추장 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
-          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
-          <div class="space-y-8 text-center keep-all">
-            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
-              PARMESAN<br />GOCHUJANG
-            </h3>
-            <p class="font-medium text-15 lg:text-20">
-              맛있다 완전 맘에 쏙듬 불닭에 삼김조합에 이거까지 더하니까
-              스트레스 싹 풀려요ㅋㅋㅋㅋㅋㅋ
-            </p>
-            <p class="text-13 text-hot-gray300">전**</p>
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-2 lg:py-8 px-6 lg:px-14 flex flex-col gap-4 items-center justify-center" >
+            <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+            <div class="space-y-4 lg:space-y-8 text-center break-keep">
+              <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+                PARMESAN<br />GOCHUJANG
+              </h3>
+              <p class="font-medium text-15 lg:text-20">
+                맛있다 완전 맘에 쏙듬 불닭에 삼김조합에 이거까지 더하니까
+                스트레스 싹 풀려요ㅋㅋㅋㅋㅋㅋ
+              </p>
+              <p class="text-13 text-hot-gray300">전**</p>
+            </div>
           </div>
         </div>
 
         <!-- 이미지3 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
-          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-5.jpg" alt="피자랑 표고러플 사진" />
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl overflow-hidden" >
+            <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-5.jpg" alt="피자랑 표고러플 사진" />
+          </div>
         </div>
-
+        
         <!-- 상품3:표고러플 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
-          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
-          <div class="space-y-8 text-center keep-all">
-            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
-              PYOGORUFFLE
-            </h3>
-            <p class="font-medium text-15 lg:text-20">
-              듬뿍 뿌려야 맛있어요 이정도 가격 이정도 퀄리티면 팍팍 뿌려먹어도
-              괜찮아요
-            </p>
-            <p class="text-13 text-hot-gray300">강**</p>
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-2 lg:py-8 px-6 lg:px-14 flex flex-col gap-4 items-center justify-center" >
+            <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+            <div class="space-y-4 lg:space-y-8 text-center break-keep">
+              <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+                PYOGORUFFLE
+              </h3>
+              <p class="font-medium text-15 lg:text-20">
+                듬뿍 뿌려야 맛있어요 이정도 가격 이정도 퀄리티면 팍팍 뿌려먹어도
+                괜찮아요
+              </p>
+              <p class="text-13 text-hot-gray300">강**</p>
+            </div>
           </div>
         </div>
 
         <!-- 이미지4 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl overflow-hidden" >
-          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-3.jpg" alt="파마산 고추장 이미지" />
-        </div>
-
-        <!-- 상품4:파마산고추장 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
-          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
-          <div class="space-y-8 text-center keep-all">
-            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
-              PARMESAN<br />GOCHUJANG
-            </h3>
-            <p class="font-medium text-15 lg:text-20">
-              부모님도 좋아하실 맛일거 같아서 세트로 배송드렸어요~ 누구나
-              부담없이 맛있게 즐길 수 있는 핫소스입니다 최고에요
-            </p>
-            <p class="text-13 text-hot-gray300">박**</p>
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl overflow-hidden" >
+            <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-3.jpg" alt="파마산 고추장 이미지" />
           </div>
         </div>
 
+        <!-- 상품4:파마산고추장 -->
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-2 lg:py-8 px-6 lg:px-14 flex flex-col gap-4 items-center justify-center" >
+            <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+            <div class="space-y-4 lg:space-y-8 text-center break-keep">
+              <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+                PARMESAN<br />GOCHUJANG
+              </h3>
+              <p class="font-medium text-15 lg:text-20">
+                부모님도 좋아하실 맛일거 같아서 세트로 배송드렸어요~ 누구나
+                부담없이 맛있게 즐길 수 있는 핫소스입니다 최고에요
+              </p>
+              <p class="text-13 text-hot-gray300">박**</p>
+            </div>
+          </div>
+        </div>
+        
         <!-- 이미지5 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden" >
-          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-4.jpg" alt="식당에서 찍은 표고러플 사진" />
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden" >
+            <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-4.jpg" alt="식당에서 찍은 표고러플 사진" />
+          </div>  
         </div>
 
         <!-- 상품5:표고러플 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
-          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
-          <div class="space-y-8 text-center keep-all">
-            <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
-              PYOGORUFFLE
-            </h3>
-            <p class="font-medium text-15 lg:text-20">
-              ㅋㅋㅋㅋㅋㅋㅋ요즘 넘 푹 빠져있어서 고기집까지 들고가서
-              친구들한테 잔뜩 영업하고 왔어요 아 진짜 넘 맛있어서 싸들고
-              다니고 싶은데 다이소가서 소분용기 좀 알아봐야겠어요
-            </p>
-            <p class="text-13 text-hot-gray300">장**</p>
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-2 lg:py-8 px-6 lg:px-14 flex flex-col gap-4 items-center justify-center" >
+            <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+            <div class="space-y-4 lg:space-y-8 text-center break-keep">
+              <h3 class="text-26 lg:text-33 font-bold leading-[1.3] font-newbery" >
+                PYOGORUFFLE
+              </h3>
+              <p class="font-medium text-15 lg:text-20">
+                ㅋㅋㅋㅋㅋㅋㅋ요즘 넘 푹 빠져있어서 고기집까지 들고가서
+                친구들한테 잔뜩 영업하고 왔어요 아 진짜 넘 맛있어서 싸들고
+                다니고 싶은데 다이소가서 소분용기 좀 알아봐야겠어요
+              </p>
+              <p class="text-13 text-hot-gray300">장**</p>
+            </div>
           </div>
         </div>
 
         <!-- 이미지6 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden" >
-          <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-2.jpg" alt="XO쉬림프 이미지" />
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden" >
+            <img loading="lazy" class="object-cover w-full h-full" src="/assets/images/review-con-2.jpg" alt="XO쉬림프 이미지" />
+          </div>
         </div>
 
         <!-- 상품6:쉬림프 -->
-        <div class="w-[300px] h-[420px] lg:w-[400px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-14 flex flex-col gap-4 items-center justify-center" >
-          <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
-          <div class="space-y-8 text-center keep-all">
-            <h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]" >
-              XO SHIRIMP
-            </h3>
-            <p class="font-medium text-15 lg:text-20">
-              소스가 이렇게 예쁠 일인가요.. 아까워서 뜯지도 못하겠어요 소스
-              자체는 실링 잘 되어서 왔구 겉보기에는 되게 되직한 질감이네요?
-              굴소스보다는 묽어보여요 해산물 향이 강해서 팟타이 같은 음식
-              만들어먹으면 잘 어울릴 것 같아요
-            </p>
-            <p class="text-13 text-hot-gray300">김**</p>
+        <div class="swiper-slide w-[calc(100% - 20px) md:w-[calc((100% - 20px) / 2)] xl:w-[calc((100% - 30px) / 3)] 2xl:w-[calc((100% - 60px) / 4)] max-w-[400px]">
+          <div class="w-full h-[420px] lg:h-[520px] rounded-4xl bg-hot-ivory overflow-hidden py-2 lg:py-8 px-6 lg:px-14 flex flex-col gap-4 items-center justify-center" >
+            <img loading="lazy" src="/assets/images/symbol.png" alt="하랜띵스새심볼" />
+            <div class="space-y-4 lg:space-y-8 text-center break-keep">
+              <h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]" >
+                XO SHIRIMP
+              </h3>
+              <p class="font-medium text-15 lg:text-20">
+                소스가 이렇게 예쁠 일인가요.. 아까워서 뜯지도 못하겠어요 소스
+                자체는 실링 잘 되어서 왔구 겉보기에는 되게 되직한 질감이네요?
+                굴소스보다는 묽어보여요 해산물 향이 강해서 팟타이 같은 음식
+                만들어먹으면 잘 어울릴 것 같아요
+              </p>
+              <p class="text-13 text-hot-gray300">김**</p>
+            </div>
           </div>
         </div>
       </div>
