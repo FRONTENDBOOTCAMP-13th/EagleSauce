@@ -4,6 +4,19 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>COMPONENT - main header</title>
+	
+  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_ExtraBold.otf" crossorigin="anonymous" /> 
+  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" crossorigin="anonymous" /> 
+  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Medium.otf" crossorigin="anonymous" /> 
+  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Regular.otf" crossorigin="anonymous" /> 
+  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Light.otf" crossorigin="anonymous" /> 
+  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" crossorigin="anonymous" /> 
+  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Thin.otf" crossorigin="anonymous" /> 
+  <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+  
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
+  <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />    
+
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans">
@@ -41,11 +54,11 @@
 				</div>
 	
 				<!-- Mobile Menu -->
-				<div class="absolute top-0 left-0 hidden w-full text-white mobile-menu h-dvh bg-hot-brand">
+				<div class="absolute top-0 -left-[100%] transition-all duration-300 w-full text-white mobile-menu h-dvh bg-hot-brand">
 					<div class="relative p-4 menu-mobile lg:hidden">
 						<ul class="flex justify-between">
 							<li>
-								<div class="size-5">
+								<div class="size-5 menu-lists">
 									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
 										<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 									</svg>
@@ -68,34 +81,80 @@
 							<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스로고"/>
 						</a>
 					</div>
-					<ul>
-						<li class="px-4 py-6 font-semibold border-b text-45">
+					<ul class="font-semibold border-b text-45">
+						<!-- ABOUT -->
+						<li class="group border-b border-white px-4 py-6 ">
 							<p class="flex justify-between">
-								<span>SHOP</span><span>-</span>
+								<span>ABOUT</span>
+								<span>-</span>
 							</p>
 							<ul class="py-4 space-y-3 font-normal text-20">
-								<li>ALL PRODUCTS</li>
-								<li>PYOGORUFFLE</li>
-								<li>PARMESAN GOCHUJANG</li>
-								<li>XO SHRIMP</li>
-								<li>HOTN'THINGS KIT</li>
+								<li>
+									<a aria-label="브랜드살펴보기" href="/src/pages/about-ourbrand.html">OUR BRAND</a>
+								</li>
+								<li>
+									<a aria-label="입점문의하기" href="/src/pages/about-inquiry.html">INQUIRY</a>
+								</li>
 							</ul>
 						</li>
-						<li class="px-4 py-6 font-semibold border-b text-45">
+	
+						<!-- SHOP -->
+						<li class="group border-b border-white px-4 py-6 ">
 							<p class="flex justify-between">
-								<span>ABOUT</span><span>-</span>
+								<span>SHOP</span>
+								<span>-</span>
 							</p>
 							<ul class="py-4 space-y-3 font-normal text-20">
-								<li>OUR BRAND</li>
-								<li>INQUIRY</li>
+								<li>
+									<a aria-label="모든상품" href="/src/pages/shop-all_products.html">ALL PRODUCTS</a>
+								</li>
+								<li>
+									<a aria-label="표고러플" href="/src/pages/shop-pyogo.html">PYOGORUFFLE</a>
+								</li>
+								<li>
+									<a aria-label="파마산고추장" href="/src/pages/shop-parmesan.html">PARMESAN GOCHUJANG</a>
+								</li>
+								<li>
+									<a aria-label="XO쉬림프" href="/src/pages/shop-shrimp.html">XO SHRIMP</a>
+								</li>
+								<li>
+									<a aria-label="하랜키트3종세트" href="/src/pages/shop-hotnkit.html">HOTN'THINGS KIT</a>
+								</li>
 							</ul>
 						</li>
-						<li class="px-4 py-6 font-semibold border-b text-45">
+	
+						<!-- COMMUNITY -->
+						<li class="group border-b border-white px-4 py-6 ">
 							<p class="flex justify-between">
-								<span>COMMNUNITY</span><span>-</span>
+								<span>COMMUNITY</span>
+								<span>-</span>
 							</p>
+							<ul class="py-4 space-y-3 font-normal text-20">
+								<li>
+									<a aria-label="이벤트" href="/src/pages/community-event.html">EVENT</a>
+								</li>
+								<li>
+									<a aria-label="레시피와페어링" href="/src/pages/community-recipes_and_paring.html">RECIPES & PARING</a>
+								</li>
+								<li>
+									<a aria-label="나폴리맛피아" href="/src/pages/community-napolimatfia.html">NAPOLI MATFIA</a>
+								</li>
+								<li>
+									<a aria-label="리뷰페이지" href="/src/pages/community-review.html">REVIEW</a>
+								</li>
+								<li>
+									<a aria-label="질의응답" href="/src/pages/community-faq.html">FAQ</a>
+								</li>
+								<li>
+									<a aria-label="Q&A바로가기" href="/src/pages/community-qna.html" target="_blank" rel="noopener noreferrer">1:1 Q&A</a>
+								</li>
+							</ul>
 						</li>
-						<li class="px-4 py-6 font-semibold text-20">JOIN/LOGIN</li>
+
+						<!-- 로그인 -->
+						<li class="group  px-4 py-6 text-30">
+							<a href="/src/pages/join-login.html" aria-label="로그인/회원가입">JOIN/LOGIN</a>
+						</li>
 					</ul>
 				</div>
 	
@@ -197,6 +256,5 @@
 				</nav>
 			</header>
 		</fieldset>
-
   </body>
 </html>
