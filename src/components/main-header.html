@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>COMPONENT - main header</title>
 	
-  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_ExtraBold.otf" crossorigin="anonymous" /> 
-  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" crossorigin="anonymous" /> 
-  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Medium.otf" crossorigin="anonymous" /> 
-  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Regular.otf" crossorigin="anonymous" /> 
-  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Light.otf" crossorigin="anonymous" /> 
-  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" crossorigin="anonymous" /> 
-  <link rel="preload" as="font" href="/public/assets/fontsnewbery/fonnts.com-Newbery_Sans_Pro_Thin.otf" crossorigin="anonymous" /> 
-  <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-  
-  <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
-  <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />    
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+ 
+	<link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+	<link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+
+	<link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	<link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+	<link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+	<link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
 
   <script type="module" src="/src/main.js"></script>
 </head>
@@ -54,7 +53,7 @@
 				</div>
 	
 				<!-- Mobile Menu -->
-				<div class="absolute top-0 -left-[100%] transition-all duration-300 w-full text-white mobile-menu h-dvh overflow-y-auto bg-hot-brand z-1100 lg:hidden">
+				<div class="absolute top-0 -left-[100%] transition-all duration-300 w-full text-white mobile-menu h-dvh overflow-y-scroll bg-hot-brand z-1100 lg:hidden">
 					<div class="relative p-4 menu-mobile lg:hidden">
 						<ul class="flex justify-between">
 							<li>
