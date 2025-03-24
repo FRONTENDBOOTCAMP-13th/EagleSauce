@@ -250,7 +250,7 @@
 
 				<div class="flex flex-col items-center gap-4">
 					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
-						<summary class="flex items-center justify-between px-4 py-6">
+						<summary class="flex items-center justify-between px-2 sm:px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등
 							</p>
@@ -528,9 +528,11 @@
 
 	<section data-section="mobile_page">
 		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="mb-10 font-semibold text-center lg:mb-20 text-40 font-newbery">
+			<h2 class="mb-10 font-semibold text-center lg:mb-10 text-40 font-newbery">
 				MOBILE PAGE🧁
-				<p class="text-center text-16 font-normal mt-4 break-keep">하단의 네임태그를 클릭하면 모바일 화면을 미리 살펴볼 수 있어요👀</p>
+				<p class="text-center text-16 font-normal mt-4 break-keep">
+					하단의 애니메이션을 클릭하면 모바일 화면을 <strong>맛보기</strong>로 살펴볼 수 있어요😋
+				</p>
 			</h2>
 			<div class="flex flex-col items-center gap-4">
 				<div class="max-w-[500px] mx-auto relative">
@@ -543,17 +545,17 @@
 					</div>
 				</div>
 				<ul class="relative mt-5 flex gap-y-8 gap-x-4 flex-wrap sm:flex-nowrap items-center justify-center">
-						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
-							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium"># HOME🤯</span>
+						<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white md:font-medium"># HOME🤯</span>
 						</li>
-						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-2)">
-							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium translate-y-[20px]"># ABOUT🥫</span>
+						<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-2)">
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[20px]"># ABOUT🥫</span>
 						</li>
-						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-3)">
-							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium translate-y-[8px]"># SHOP🌶️</span>
+						<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-3)">
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[8px]"># SHOP🌶️</span>
 						</li>
-						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
-							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium translate-y-[8px]"># COMMUNITY🍔</span>
+						<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[8px]"># COMMUNITY🍔</span>
 						</li>
 				</ul>
 			</div>
@@ -563,12 +565,58 @@
 
 	<section data-section="pc_page">
 		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="mb-10 font-semibold text-center lg:mb-20 text-40 font-newbery">PC PAGE🥑</h2>
+			<h2 class="mb-10 font-semibold text-center lg:mb-20 text-40 font-newbery">
+				PC PAGE🥑
+				<p class="text-center text-16 font-normal mt-4 break-keep">
+					<span class="xl:hidden">하단</span>
+					<span class="hidden xl:inline">우측</span>
+					버튼을 클릭하면 PC 페이지 전체를 살펴볼 수 있어요👀
+				</p>
+			</h2>
 
-			<div class="max-w-[800px] mx-auto relative">
-				<img src="/public/assets/images/computer.png" alt="컴퓨터"/>
-				<div class="absolute left-[4%] top-[6%] w-[92%] h-[62%] bg-amber-300 overflow-y-scroll">
-					<img src="/public/assets/images/screenshot.png" alt="페이지스크린샷"/>
+			<div class="flex flex-col xl:flex-row gap-8 justify-center items-center">
+				<div class="max-w-[800px] mx-auto relative">
+					<img src="/public/assets/images/computer.png" alt="컴퓨터"/>
+					<div class="absolute left-[4%] top-[6%] w-[92%] h-[62%] bg-hot-ivory overflow-y-auto">
+						<img class="block" src="/public/assets/images/screenshot-1.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-2.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-3.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-4.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-5.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-6.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-7.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-8.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-9.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-10.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-11.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-12.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-13.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-14.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-15.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-16.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-17.png" alt="페이지스크린샷"/>
+						<img class="hidden" src="/public/assets/images/screenshot-18.png" alt="페이지스크린샷"/>
+					</div>
+				</div>
+				<div class="btn-group w-full max-[500px]:grid-cols-2 grid grid-cols-(--btngroup) xl:grid-cols-2 gap-x-4 gap-y-2">
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="1">HOME</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="2">OURBRAND</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="3">INQUIRY</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="4">ALL PRODUCT</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="5">PYOGORUFFLE</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="6">PARMESAN GOCHUJANG</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="7">XO SHIRIMP</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="8">HOTN'THINGS KIT</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="9">SHOPPING BAG</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="10">EVENT</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="11">EVENT-Sub</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="12">RECIPES & PARING</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="13">NAPOLI MATFIA</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="14">REVIEW</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="15">FAQ</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="16">SEARCH</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="17">CART</button>
+					<button class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black text-white font-newbery font-light" data-pc="18">JOIN & LOGIN</button>
 				</div>
 			</div>
 		</div>
@@ -713,8 +761,6 @@
 			</div>
 		</div>
 	</section>
-
-
 
 </div>
 </body>
