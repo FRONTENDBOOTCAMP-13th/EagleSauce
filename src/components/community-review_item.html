@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="icon" href="/vite.svg" />
+    <link rel="preload" as="font" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
+    
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/pretendard/pretendardvariable.css" />
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/newbery/newbery.css" />
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/gastromond/gastromond.css" />
+    <link rel="stylesheet" as="style" href="/public/assets/fonts/adelle/adelle.css" />
+
+		<script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">          
+
+    <!-- Review-item : 카드형컴포넌트(이미지 + 텍스트)-->
+    <fieldset class="border m-4 p-4">
+      <legend class="text-20 font-semibold">[Community/Review] 카드형컴포넌트(이미지+텍스트)</legend>
+      <div class="border-hot-gray100 border-1 rounded-2xl p-4 lg:p-8 flex flex-col gap-2">
+        <img src="/assets/images/noneimg.png" alt="Product-title" />
+        <div class="space-y-3">
+          <h3 class="text-16 font-semibold">Product-title</h3>
+          <div class="flex justify-between font-semibold text-hot-gray200">
+            <div class="flex gap-1 items-center">
+              <div class="flex h-[16px]">
+                <img src="/assets/icon/star_black.svg" alt="" />
+                <img src="/assets/icon/star_black.svg" alt="" />
+                <img src="/assets/icon/star_black.svg" alt="" />
+                <img src="/assets/icon/star_black.svg" alt="" />
+                <img src="/assets/icon/star_gray.svg" alt="" />
+              </div>
+              <span>4.0</span>
+            </div>
+            <p><span class="mr-1">리뷰</span><span>000</span></p>
+          </div>
+          <div class="flex flex-col gap-2 min-w-0">
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="/assets/images/noneimg.png" class="size-16 rounded-2xl aspect-square" alt="review-img" />
+              <p class="text-13 line-clamp-3">review-text review-text review-text review-text review-text review-text review-text</p>
+            </div>
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="/assets/images/noneimg.png" class="size-16 rounded-2xl aspect-square" alt="review-img" />
+              <p class="text-13 line-clamp-3">review-text review-text review-text review-text review-text review-text review-text</p>
+            </div>
+            <div class="flex items-center gap-4 min-w-0">
+              <img src="/assets/images/noneimg.png" class="size-16 rounded-2xl aspect-square" alt="review-img" />
+              <p class="text-13 line-clamp-3">review-text review-text review-text review-text review-text review-text review-text</p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </fieldset>
+
+  </body>
+  </html>
