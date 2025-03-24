@@ -17,50 +17,51 @@
 
   <script type="module" src="/src/main.js"></script>
 </head>
-  <body class="font-sans">
-    <div class="p-[22px] fixed w-full h-[100vh] overflow-hidden bg-(image:--showcase-popup-bg) z-20 lg:pt-20 lg:px-20 lg:pb-5">
-      <!-- X 닫기  -->
-      <div class="absolute text-white cursor-pointer top-10 right-10 lg:top-20 lg:right-20 z-11">
-        <a href="/src/pages/home.html" aria-label="닫기" class="p-2.5">
-          <i class="before:content-['X'] not-italic scale-y-[0.8] inline-block font-sans font-normal leading-1 text-[24px]">
-          </i>
-        </a>
-      </div>
-      <!-- 이미지, 텍스트 박스 -->
-      <div class="flex flex-col items-center justify-center w-full h-full overflow-hidden">
-        <div class="w-full max-w-[750px] py-[30px] px-0 text-center lg:max-w-none">
-          <!--  소스 섬네일 -->
-          <div class="relative flex items-center justify-center w-full z-2">
-            <img src="/public/assets/images/product-3.png" alt="XO쉬림프 소스 제품 사진" class="z-3 max-w-[750px] relative w-full" />
-            <!-- 떠다니는 소스 재료 사진 PC-->
-            <div class="absolute felx items-center justify-center z-2 w-full max-w-[1400px] hidden lg:block">
-              <img src="/public/assets/images/showcase-popup-shrimp.png" alt="XO쉬림프 소스 재료 사진 PC" 
-              class="w-full animate-bounce-1"/>
-            </div>
-            <!-- 떠다니는 소스 재료 사진 MO -->
-            <div class="absolute felx items-center justify-center z-2 w-full max-w-[1400px] lg:hidden">
-              <img src="/public/assets/images/showcase-popup-shrimp-MO.png" alt="XO쉬림프 소스 재료 사진 모바일" class="w-full animate-bounce-1"/>
-            </div>
-          </div>
-          
+<body class="font-sans">
+
+  
+  <div class="z-20 w-full min-h-[100vh] p-[22px] bg-(image:--showcase-popup-bg) lg:p-20 content-center">
+    <!-- X 닫기  -->
+    <div class="absolute text-white z-11 top-10 right-10 lg:top-20 lg:right-20">
+      <a href="/src/pages/home.html" aria-label="닫기" class="p-2.5">
+        <i class="before:content-['X'] inline-block scale-y-[0.8] text-[24px] font-normal leading-1 not-italic"></i>
+      </a>
+    </div>
+    <!-- 이미지, 텍스트 박스 -->
+    <div class="flex flex-col items-center justify-center w-full h-full">
+      <div class="w-full max-w-[750px] px-0 lg:max-w-none">
+        <!--  소스 섬네일 -->
+        <div class="relative flex items-center justify-center w-full h-[75vw] md:h-[55vw] lg:h-auto mx-auto lg:max-w-[1000px] z-2">
+          <img src="/public/assets/images/product-3.png" alt="XO쉬림프 소스 제품 사진" class="absolute h-full z-3"/>
+          <!-- 떠다니는 소스 재료 사진 PC-->
+          <img src="/public/assets/images/showcase-popup-shrimp.png" alt="XO쉬림프 소스 재료 사진 PC" class="hidden lg:block w-full max-w-[1400px] animate-bounce-1"/>
+          <!-- 떠다니는 소스 재료 사진 MO -->
+          <img src="/public/assets/images/showcase-popup-shrimp-MO.png" alt="XO쉬림프 소스 재료 사진 모바일" class="h-full animate-bounce-1 lg:hidden"/>
+        </div>
+        
+        <div class="text-center">
           <!-- 설명 텍스트 -->
-          <p class="text-23 font-semibold leading-[1.5] text-center mt-[45px] mx-auto mb-[35px] break-keep w-[80%] text-black">
+          <p class="text-14 lg:text-18 font-semibold leading-[1.5] mx-auto my-7 break-keep w-[80%] text-black">
             미슐랭 3스타 레스토랑 출신 식품기술사가 설계한 플레이버를 담다.
             <br />
             청양고추를 넣은 알싸한 간장 베이스에 새우로 감칠맛을 끌어올린 단짠 매력
           </p>
           
           <!-- 현재 상품 구매 -->
-          <a href="/src/pages/shop-shrimp.html" aria-label="XO쉬림프 소스 제품 구매 페이지로 이동" class="lg:h-[65px] lg:w-full lg:text-25 my-0 mx-auto h-[55px] text-23 bg-black  text-white max-w-[470px] lg:max-w-[560px] font-semibold flex items-center justify-center font-newbery">
+          <a href="/src/pages/shop-parmesan.html" aria-label="파마산 고추장 소스 제품 구매 페이지로 이동" class="inline-block w-[calc(100%-32px)] lg:w-full p-3 mx-4 lg:p-4 my-0 text-13 lg:text-20 bg-black text-white max-w-[470px] lg:max-w-[560px] font-semibold font-newbery">
             BUY NOW
           </a>
           
           <!-- 모든 상품 페이지로 이동 -->
-          <a href="/src/pages/shop-all_products.html" aria-label="모든 제품 상세보기 페이지로 이동" class="lg:text-25 text-20 font-semibold my-[35px] mx-auto mb-0 flex pb-[3px] w-fit border-0 border-b border-black items-center justify-center text-black">
+          <a href="/src/pages/shop-all_products.html" aria-label="모든 제품 상세보기 페이지로 이동" class="block my-[35px] mx-auto mb-0 pb-[3px] border-b border-black lg:text-18 w-fit text-4 font-semibold text-black leading-none">
             다른 제품 보러가기
           </a>
         </div>
+        
       </div>
     </div>
-  </body>
+  </div>
+
+
+</body>
 </html>
