@@ -8,10 +8,10 @@ class subHeader extends HTMLElement {
 			<header class="fixed top-0 z-1000 w-full font-newbery">
 				<p class="text-15 text-white bg-hot-brown text-center py-1.5 h-[37px]">
 					<span class="mr-1">[2조 - 이글이글🔥]</span>
-					<span class="font-sans">멋쟁이사자 프론트엔드 13기</span>
+					<span class="font-sans max-[400px]:hidden">멋쟁이사자 프론트엔드 13기</span>
 				</p>
-
-								<!-- Mobile Header -->
+	
+				<!-- Mobile Header -->
 				<div class="relative p-4 border-b menu-mobile lg:hidden bg-hot-ivory">
 					<ul class="flex justify-between">
 						<li>
@@ -30,7 +30,7 @@ class subHeader extends HTMLElement {
 						</li>
 					</ul>
 					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2 transform-none left-1/2 top-1/2">
-						<img src="/public/assets/images/logo.png" alt="하랜띵스로고"/>
+						<div class="bg-(image:--hot-logo) bg-no-repeat w-[140px] h-[30px] bg-center bg-contain"></div>
 					</a>
 				</div>
 	
@@ -59,7 +59,7 @@ class subHeader extends HTMLElement {
 							</li>
 						</ul>
 						<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2 transform-none left-1/2 top-1/2">
-							<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스로고"/>
+							<div class="bg-(image:--hot-logo) bg-no-repeat w-[140px] h-[30px] bg-center bg-contain"></div>
 						</a>
 					</div>
 					<ul class="font-semibold border-b text-45">
@@ -138,7 +138,7 @@ class subHeader extends HTMLElement {
 						</li>
 					</ul>
 				</div>
-
+	
 				<!-- Desktop Header -->
 				<nav class="relative z-10 hidden px-6 font-bold text-black border-b menu-pc lg:flex lg:justify-between text-16 bg-hot-ivory">
 					<ul class="flex">
@@ -154,11 +154,11 @@ class subHeader extends HTMLElement {
 								</li>
 							</ul>
 						</li>
-
+	
 						<!-- SHOP -->
 						<li class="group">
 							<a aria-label="제품구매" href="/src/pages/shop-all_products.html" class="block p-6" tabindex="0">SHOP</a>
-							<ul class="absolute left-0 invisible w-full pb-6 font-medium transition-all duration-300 border-b opacity-0 pl-30 bg-hot-ivory group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+							<ul class="absolute left-0  w-full pb-6 font-medium transition-all duration-300 border-b opacity-100 pl-30 bg-hot-ivory group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
 								<li class="px-6 py-1.5 flex gap-4 items-center">
 									<a aria-label="모든상품" href="/src/pages/shop-all_products.html" class="transition-all duration-300 hover:text-hot-main">ALL PRODUCTS</a>
 									<p class="font-sans text-14 opacity-20">한 입으로 당신의 매 순간에 특별함을 더해주는 하랜띵스</p>
@@ -191,13 +191,15 @@ class subHeader extends HTMLElement {
 										everyday life created by HOTN'THINGS!
 									</p>
 								</li>
-								<div class="flex gap-4 w-[26vw] xl:w-[30vw] 2xl:w-[24vw] absolute top-2 left-[750px]">
-									<img src="/public/assets/images/napoli-li.jpg" loading="lazy" class="object-cover object-center" alt="나폴리맛피아가 핫소스 들고있는 모습"/>
-									<img src="/public/assets/images/shop-all2.webp" loading="lazy" class="hidden object-cover object-center 2xl:block" alt="음식에 핫소스 뿌리는 영상"/>
+								<div class="flex gap-4 xl:w-[30vw] 2xl:w-[40vw] absolute top-2 left-[750px]">
+									<div class="hidden xl:block object-cover object-center w-[400px] aspect-[5/3] bg-(image:--header-napoli) bg-center bg-contain bg-no-repeat">
+									</div>
+									<div class="hidden object-cover object-center 2xl:block w-[400px] aspect-[5/3] bg-(image:--header-napoli2) bg-center bg-contain bg-no-repeat">
+									</div>
 								</div>
 							</ul>
 						</li>
-
+	
 						<!-- COMMUNITY -->
 						<li class="group">
 							<a aria-label="커뮤니티" href="/src/pages/community-event.html" class="block p-6" tabindex="0">COMMUNITY</a>
@@ -223,16 +225,16 @@ class subHeader extends HTMLElement {
 							</ul>
 						</li>
 					</ul>
-
+	
 					<ul class="flex">
 						<li><a href="/src/pages/search.html" aria-label="검색하기" class="block p-6">SEARCH</a></li>
 						<li><a href="/src/pages/cart.html" aria-label="장바구니바로가기" class="block p-6">CART</a></li>
 						<li><a href="/src/pages/join-login.html" aria-label="로그인/회원가입" class="block p-6">JOIN/LOGIN</a></li>
 					</ul>
-
+	
 					<!-- Logo -->
 					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute inline-flex w-32 mt-3 -translate-x-1/2 transform-none lg:w-56 left-1/2" tabindex="1">
-						<img src="/public/assets/images/logo.png" alt="하랜띵스로고"/>
+						<div class="bg-(image:--hot-logo) bg-no-repeat w-[220px] h-[45px] bg-center bg-contain"></div>
 					</a>
 				</nav>
 			</header>
