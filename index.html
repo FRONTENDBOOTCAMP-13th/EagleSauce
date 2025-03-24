@@ -1,605 +1,1102 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="main">
-<head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>2팀 이글이글</title>
-  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2팀 이글이글</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
 
-  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
-	
-  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+    <link
+      rel="preload"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body class="font-sans">
+    <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css" />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/gastromond/gastromond.css"
+    />
+    <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <div id="container" class="pt-0 bg-hot-ivory">
+      <section data-section="intro">
+        <div
+          class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]"
+        >
+          <img
+            src="/assets/images/bird.gif"
+            loading="lazy"
+            alt="걸으면서 이동하는 하랜띵스 새 심볼"
+            class="w-full"
+          />
 
-<div id="container" class="pt-0 bg-hot-ivory">
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-10 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]"
+          >
+            <div class="w-1/2">
+              <strong
+                class="inline-block mt-1 text-4xl lg:text-6xl font-semibold text-nowrap"
+                >2팀 이글이글</strong
+              ><br />
+              <p
+                class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white"
+              >
+                프로젝트 소개
+              </p>
+            </div>
+            <div class="lg:mt-3 font-medium text-16 lg:text-18 break-keep">
+              <p>
+                '이글이글'이라는 팀명에 어울리는 '핫소스'를 판매하는<br
+                  class="lg:hidden"
+                />
+                <a href="/src/pages/home.html">
+                  <img
+                    src="/public/assets/images/logo.png"
+                    loading="lazy"
+                    alt="하랜띵스"
+                    class="inline-block w-[100px] lg:w-[150px] border-2"
+                  />
+                </a>
+                (하랜띵스)라는 홈페이지를 깊이 있게 분석하고 사용자 경험을
+                새롭게 재해석했습니다.
+              </p>
+              <p class="mt-3">
+                무조건 따라하는 것 보다, 사용자 입장에서 한번 더 생각하고 코드
+                재사용을 고려한 컴포넌트 작업과 코드 개선 등을 고민하여
+                작업하였습니다.
+              </p>
+              <p class="mt-3">
+                고급스러운 매콤함을 더해 평범한 일상 속에서도 미슐랭급 웹 경험을
+                즐겨보세요😊
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
+          <div
+            class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"
+          ></div>
+        </div>
+      </section>
 
-	<section data-section="intro">
-		<div class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]">
-			<img src="/assets/images/bird.gif" loading="lazy" alt="걸으면서 이동하는 하랜띵스 새 심볼" class="w-full">
+      <section data-section="team_member">
+        <div
+          class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+        >
+          <h2
+            class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery"
+          >
+            TEAM MEMBER🥫
+          </h2>
 
-			<div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-10 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]">
-				<div class="w-1/2">
-					<strong class="inline-block mt-1 text-4xl lg:text-6xl font-semibold text-nowrap">2팀 이글이글</strong><br />
-					<p class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white">프로젝트 소개</p>
-				</div>
-				<div class="lg:mt-3 font-medium text-16 lg:text-18 break-keep">
-					<p>
-						'이글이글'이라는 팀명에 어울리는 '핫소스'를 판매하는<br class="lg:hidden"/>
-						<a href="/src/pages/home.html">
-							<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스" class="inline-block w-[100px] lg:w-[150px] border-2"/>
-						</a>
-						(하랜띵스)라는 홈페이지를 깊이 있게 분석하고 사용자 경험을 새롭게 재해석했습니다.
-					</p>
-					<p class="mt-3">무조건 따라하는 것 보다, 사용자 입장에서 한번 더 생각하고 코드 재사용을 고려한 컴포넌트 작업과 코드 개선 등을 고민하여 작업하였습니다.</p>
-					<p class="mt-3">고급스러운 매콤함을 더해 평범한 일상 속에서도 미슐랭급 웹 경험을 즐겨보세요😊</p>
-				</div>
-			</div>
-		</div>
+          <div
+            class="grid gap-5 justify-items-center grid-cols-4 lg:grid-cols-8"
+          >
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/psh.png"
+                    loading="lazy"
+                    alt="psh image"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-40"
+                  >
+                    박상희
+                  </h3>
+                  <p>
+                    함께하는 프로젝트를 통해<br />
+                    많이 배우며 성장하는 기회가 되길 원해요!<br />
+                    이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀장/스크럼마스터</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>INTP</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>대전</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/2sign"
+                  aria-label="박상희 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
 
-		<div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
-			<div class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"></div>
-		</div>
-	</section>
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/psy.png"
+                    loading="lazy"
+                    alt="나폴리맛피아가 표고러플 들고있는 모습"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-40"
+                  >
+                    박선영
+                  </h3>
+                  <p>
+                    함께하는 프로젝트를 통해<br />
+                    많이 배우며 성장하는 기회가 되길 원해요!<br />
+                    이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀원/문서작성</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>ESFP</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>서울</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/seonyoungg"
+                  aria-label="박상희 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
 
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/kjo.png"
+                    loading="lazy"
+                    alt="나폴리맛피아가 표고러플 들고있는 모습"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-40"
+                  >
+                    김준오
+                  </h3>
+                  <p>
+                    이번 첫 프로젝트를 통해 서로의 강점을 배우고, 새로운 도전을
+                    통해 함께 성장하는 소중한 시간이 되길 기대합니다!<br />
+                    이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀원</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>ISFJ</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>부산</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/seonyoungg"
+                  aria-label="박선영 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
 
-	<section data-section="team_member">
-		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">TEAM MEMBER🥫</h2>
-			
-			<div class="grid gap-5 justify-items-center grid-cols-4 lg:grid-cols-8">
-				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-					<div class="flex flex-col">
-						<div class="bg-white">
-							<img src="/public/assets/images/psh.png" loading="lazy" alt="psh image" />
-						</div>
-						<div class="text-white bg-black p-7">
-							<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박상희</h3>
-							<P>
-								함께하는 프로젝트를 통해<br />
-								많이 배우며 성장하는 기회가 되길 원해요!<br />
-								이글이글 화이팅🔥🔥
-							</P>
-							<ul class="mt-10 text-17">
-								<li class="flex items-center justify-between">
-									<span>역할</span>
-									<span>팀장/스크럼마스터</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>MBTI</span>
-									<span>INTP</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>지역</span>
-									<span>대전</span>
-								</li>
-							</ul>
-						</div>
-						<a href="https://github.com/2sign" aria-label="박상희 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-							GITHUB
-						</a>
-					</div>
-				</div>
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/pjh.png"
+                    loading="lazy"
+                    alt="나폴리맛피아가 표고러플 들고있는 모습"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-40"
+                  >
+                    박준환
+                  </h3>
+                  <p>
+                    함께하는 프로젝트를 통해<br />
+                    많이 배우며 성장하는 기회가 되길 원해요!<br />
+                    이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀원</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>ISFP</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>서울</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/seonyoungg"
+                  aria-label="박선영 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-					<div class="flex flex-col">
-						<div class="bg-white">
-							<img src="/public/assets/images/psy.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
-						</div>
-						<div class="text-white bg-black p-7">
-							<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박선영</h3>
-							<P>
-								함께하는 프로젝트를 통해<br />
-								많이 배우며 성장하는 기회가 되길 원해요!<br />
-								이글이글 화이팅🔥🔥
-							</P>
-							<ul class="mt-10 text-17">
-								<li class="flex items-center justify-between">
-									<span>역할</span>
-									<span>팀원/문서작성</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>MBTI</span>
-									<span>ESFP</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>지역</span>
-									<span>서울</span>
-								</li>
-							</ul>
-						</div>
-						<a href="https://github.com/seonyoungg" aria-label="박상희 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-							GITHUB
-						</a>
-					</div>
-				</div>
+      <section data-section="components">
+        <div class="py-10 lg:py-20 overflow-hidden">
+          <!-- 상단 이미지 영역 -->
+          <div
+            class="relative flex gap-4 transform animate-cardrolling-r -rotate-2"
+          >
+            <!-- 1 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-1.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 1"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 2 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-2.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 2"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 3 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-3.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 3"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 4 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 4"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 5 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 5"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 6 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 6"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 7 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-7.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 7"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 8 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-8.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 8"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 9 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-9.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 9"
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
 
-				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-					<div class="flex flex-col">
-						<div class="bg-white">
-							<img src="/public/assets/images/kjo.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
-						</div>
-						<div class="text-white bg-black p-7">
-							<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">김준오</h3>
-							<P>
-								이번 첫 프로젝트를 통해 서로의 강점을 배우고, 새로운 도전을 통해 함께 성장하는 소중한 시간이 되길 기대합니다!<br />
-								이글이글 화이팅🔥🔥
-							</P>
-							<ul class="mt-10 text-17">
-								<li class="flex items-center justify-between">
-									<span>역할</span>
-									<span>팀원</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>MBTI</span>
-									<span>ISFJ</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>지역</span>
-									<span>부산</span>
-								</li>
-							</ul>
-						</div>
-						<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-							GITHUB
-						</a>
-					</div>
-				</div>
+          <!-- 가운데 텍스트 영역 -->
+          <div
+            class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+          >
+            <h2
+              class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery"
+            >
+              COMPONENTS🍕
+            </h2>
 
-				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-					<div class="flex flex-col">
-						<div class="bg-white">
-							<img src="/public/assets/images/pjh.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
-						</div>
-						<div class="text-white bg-black p-7">
-							<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">박준환</h3>
-							<P>
-								함께하는 프로젝트를 통해<br />
-								많이 배우며 성장하는 기회가 되길 원해요!<br />
-								이글이글 화이팅🔥🔥
-							</P>
-							<ul class="mt-10 text-17">
-								<li class="flex items-center justify-between">
-									<span>역할</span>
-									<span>팀원</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>MBTI</span>
-									<span>ISFP</span>
-								</li>
-								<li class="flex items-center justify-between">
-									<span>지역</span>
-									<span>서울</span>
-								</li>
-							</ul>
-						</div>
-						<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-							GITHUB
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="flex flex-col items-center gap-4">
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+                open
+              >
+                <summary class="flex items-center justify-between px-4 py-6">
+                  <p class="font-normal lg:text-20">
+                    <strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등
+                  </p>
+                  <div class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </div>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-start gap-6">
+                    <a
+                      href=""
+                      class="min-w-[160px] text-center px-6 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      primary button
+                    </a>
+                    <p>
+                      [SHOP] ALL PRODUCTS 페이지<br />[SHOP] PYOGORUFFLE
+                      페이지<br />[SHOP] PARMESAN GOCHUJANG 페이지<br />[SHOP]
+                      XO SHRIMP 페이지<br />[SHOP] HOTN'THINGS KIT 페이지
+                    </p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-text.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      title
+                    </a>
+                    <p>[COMMUNITY] review 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-searchbar.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      search
+                    </a>
+                    <p>검색 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-select.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      select
+                    </a>
+                    <p>[SHOP]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-btn.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      name tag
+                    </a>
+                    <p>[ABOUT] OUT BRAND 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-pagination.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      pagination
+                    </a>
+                    <p>[COMMUNITY]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-pagination2.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      pagination2
+                    </a>
+                    <p>[COMMUNITY]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/join-login-input-component.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      input
+                    </a>
+                    <p>[Join-Login]</p>
+                  </li>
+                </ul>
+              </details>
 
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+                open
+              >
+                <summary class="flex items-center justify-between px-4 py-6">
+                  <p class="font-normal lg:text-20">
+                    <strong>🥫레이아웃 요소</strong> - 헤더, 푸터, 모달 창
+                  </p>
+                  <p class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </p>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/main-header.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      header
+                    </a>
+                    <p>전체 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/common-footer.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      footer
+                    </a>
+                    <p>전체 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="#void"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      modal
+                    </a>
+                    <p>[MAIN] home.html 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/faq-summary.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      summary
+                    </a>
+                    <p>[FAQ]</p>
+                  </li>
+                </ul>
+              </details>
 
-	<section data-section="components">
-		<div class="py-10 lg:py-20 overflow-hidden">
-			<!-- 상단 이미지 영역 -->
-			<div class="relative flex gap-4 transform animate-cardrolling-r -rotate-2">
-				<!-- 1 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-1.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 1" class="object-cover w-full h-full" />
-				</div>
-				<!-- 2 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-2.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 2" class="object-cover w-full h-full" />
-				</div>
-				<!-- 3 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-3.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 3" class="object-cover w-full h-full" />
-				</div>
-				<!-- 4 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 4" class="object-cover w-full h-full" />
-				</div>
-				<!-- 5 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 5" class="object-cover w-full h-full" />
-				</div>
-				<!-- 6 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 6" class="object-cover w-full h-full" />
-				</div>
-				<!-- 7 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-7.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 7" class="object-cover w-full h-full" />
-				</div>
-				<!-- 8 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-8.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 8" class="object-cover w-full h-full" />
-				</div>
-				<!-- 9 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-9.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 9" class="object-cover w-full h-full" />
-				</div>
-			</div>
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+                open
+              >
+                <summary
+                  class="flex items-center justify-between w-full px-4 py-6"
+                >
+                  <p class="font-normal lg:text-20">
+                    <strong>🌶️페이지별 카드 컴포넌트</strong> - 상품 카드,
+                    프로필 카드, 게시물 카드
+                  </p>
+                  <p class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </p>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-napolimatfia-buynow.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      buynow
+                    </a>
+                    <p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-recipes_item.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      recipes
+                    </a>
+                    <p>[COMMUNITY] RECIPES & PARING 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-reviewall.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-review_img.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review img
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-review_item.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review item
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-review_text.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review text
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="#"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      shop info
+                    </a>
+                    <p>[SHOP]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-reviewall.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      product item
+                    </a>
+                    <p>[SHOP] ALL PRODUCTS</p>
+                  </li>
+                </ul>
+              </details>
 
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+                open
+              >
+                <summary class="flex items-center justify-between px-4 py-6">
+                  <p class="font-normal lg:text-20">
+                    <strong>🍰디자인 요소</strong>
+                  </p>
+                  <p class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </p>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/main-showcase.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      showcase
+                    </a>
+                    <p>[MAIN] home.html 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-napolimatfia-hashtag.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      hash tag
+                    </a>
+                    <p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/shop-component_taste.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      taste
+                    </a>
+                    <p>[SHOP]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/main-photoframe.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      photoframe
+                    </a>
+                    <p>[MAIN]</p>
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
 
-			<!-- 가운데 텍스트 영역 -->
-			<div class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">COMPONENTS🍕</h2>
+          <!-- 하단 이미지 영역 -->
+          <div
+            class="relative flex gap-4 transform animate-cardrolling rotate-2"
+          >
+            <!-- 10 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 10"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 11 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 11"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 12 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 12"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 13 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 13"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 14 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 14"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 15 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 15"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 16 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 16"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 17 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 17"
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 18 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.png"
+                loading="lazy"
+                aria-hidden="true"
+                alt="하랜띵스 소스 18"
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-				<div class="flex flex-col items-center gap-4">
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
-						<summary class="flex items-center justify-between px-4 py-6">
-							<p class="font-normal lg:text-20">
-								<strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등
-							</p>
-							<div class="relative">
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-							</div>
-						</summary>
-						<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-							<li class="flex items-start gap-6">
-								<a href="" class="min-w-[160px] text-center px-6 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									primary button
-								</a>
-								<p>[SHOP] ALL PRODUCTS 페이지<br />[SHOP] PYOGORUFFLE 페이지<br />[SHOP] PARMESAN GOCHUJANG 페이지<br />[SHOP] XO SHRIMP 페이지<br />[SHOP] HOTN'THINGS KIT 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/pages-text.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									title
-								</a>
-								<p>[COMMUNITY] review 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/pages-searchbar.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									search
-								</a>
-								<p>검색 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/pages-select.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									select
-								</a>
-								<p>[SHOP]</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/pages-btn.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									name tag
-								</a>
-								<p>[ABOUT] OUT BRAND 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/pages-pagination.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									pagination
-								</a>
-								<p>[COMMUNITY]</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/pages-pagination2.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									pagination2
-								</a>
-								<p>[COMMUNITY]</p>
-							</li>
-						</ul>
-					</details>
+      <section data-section="mobile_page">
+        <div
+          class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+        >
+          <h2
+            class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery"
+          >
+            MOBILE PAGE🧁
+          </h2>
 
+          <div></div>
+        </div>
+      </section>
 
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
-						<summary class="flex items-center justify-between px-4 py-6">
-							<p class="font-normal lg:text-20">
-								<strong>🥫레이아웃 요소</strong> - 헤더, 푸터, 모달 창
-							</p>
-							<p class="relative">
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-							</p>
-						</summary>
-						<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-							<li class="flex items-center gap-6">
-								<a href="/src/components/main-header.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									header
-								</a>
-								<p>전체 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/common-footer.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									footer
-								</a>
-								<p>전체 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="#void" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									modal
-								</a>
-								<p>[MAIN] home.html 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/faq-summary.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									summary
-								</a>
-								<p>[FAQ]</p>
-							</li>
-						</ul>
-					</details>
+      <section data-section="pc_page">
+        <div
+          class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+        >
+          <h2
+            class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery"
+          >
+            PC PAGE🥑
+          </h2>
 
+          <div></div>
+        </div>
+      </section>
 
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
-						<summary class="flex items-center justify-between w-full px-4 py-6">
-							<p class="font-normal lg:text-20">
-								<strong>🌶️페이지별 카드 컴포넌트</strong> - 상품 카드, 프로필 카드, 게시물 카드
-							</p>
-							<p class="relative">
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-							</p>
-						</summary>
-						<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-napolimatfia-buynow.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									buynow
-								</a>
-								<p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-recipes_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									recipes
-								</a>
-								<p>[COMMUNITY] RECIPES & PARING 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-reviewall.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									review
-								</a>
-								<p>[COMMUNITY] REVIEW 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-review_img.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									review img
-								</a>
-								<p>[COMMUNITY] REVIEW 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-review_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									review item
-								</a>
-								<p>[COMMUNITY] REVIEW 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-review_text.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									review text
-								</a>
-								<p>[COMMUNITY] REVIEW 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="#" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									shop info
-								</a>
-								<p>[SHOP]</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-reviewall.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									product item
-								</a>
-								<p>[SHOP] ALL PRODUCTS</p>
-							</li>
-						</ul>
-					</details>
+      <section data-section="review">
+        <div
+          class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]"
+        >
+          <div
+            class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30"
+          >
+            <h2
+              class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery"
+            >
+              REVEIW🍿
+            </h2>
 
+            <div class="mb-20">
+              <ul class="grid grid-cols-4 gap-4">
+                <li class="bg-white min-h-[500px] rounded-4xl"></li>
+                <li class="bg-white min-h-[500px] rounded-4xl"></li>
+                <li class="bg-white min-h-[500px] rounded-4xl"></li>
+                <li class="bg-white min-h-[500px] rounded-4xl"></li>
+              </ul>
+            </div>
+          </div>
 
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
-						<summary class="flex items-center justify-between px-4 py-6">
-							<p class="font-normal lg:text-20">
-								<strong>🍰디자인 요소</strong>
-							</p>
-							<p class="relative">
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-								<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-							</p>
-						</summary>
-						<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-							<li class="flex items-center gap-6">
-								<a href="/src/components/main-showcase.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									showcase
-								</a>
-								<p>[MAIN] home.html 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/community-napolimatfia-hashtag.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									hash tag
-								</a>
-								<p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/shop-component_taste.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									taste
-								</a>
-								<p>[SHOP]</p>
-							</li>
-							<li class="flex items-center gap-6">
-								<a href="/src/components/main-photoframe.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-									photoframe
-								</a>
-								<p>[MAIN]</p>
-							</li>
-						</ul>
-					</details>
-				</div>
-			</div>
+          <!-- showcase -->
+          <div class="relative">
+            <div
+              class="z-20 relative max-w-[300px] mx-auto w-[calc(100%-32px)] md:w-2/5"
+            >
+              <img src="/public/assets/images/showcase.png" alt="쇼케이스" />
+              <div
+                class="hidden md:block absolute top-0 left-[-70%] w-[65%] max-w-[452px] mt-[160px]"
+                type="left"
+              >
+                <img
+                  src="/public/assets/images/left-showcase.png"
+                  alt="좌측 선반"
+                />
+              </div>
+              <div
+                class="hidden md:block absolute top-0 right-[-70%] w-[65%] max-w-[452px] mt-[160px]"
+                type="right"
+              >
+                <img
+                  src="/public/assets/images/right-showcase.png"
+                  alt="우측 선반"
+                />
+              </div>
 
+              <ul
+                class="absolute top-0 left-0 grid w-full h-full pt-[29.3%] px-[18%] pb-[7%] grid-cols-2 grid-rows-3"
+              >
+                <li class="relative translate-x-[8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      class=""
+                      src="/public/assets/images/product-1.png"
+                      alt="표고러플"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-1.gif"
+                      alt="회전하는 표고러플"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PYOGORUFFLE-nametag.png"
+                    alt="표고러플 네임태그"
+                  />
+                </li>
+                <li class="relative translate-x-[-8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      class=""
+                      src="/public/assets/images/product-1.png"
+                      alt="표고러플"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-1.gif"
+                      alt="회전하는 표고러플"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PYOGORUFFLE-nametag.png"
+                    alt="표고러플 네임태그"
+                  />
+                </li>
+                <li class="relative translate-x-[8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      class=""
+                      src="/public/assets/images/product-2.png"
+                      alt="파마산고추장"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-2.gif"
+                      alt="회전하는 파마산고추장"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PARMESANGOCHUJANG-nametag.png"
+                    alt="파마산고추장 네임태그"
+                  />
+                </li>
+                <li class="relative translate-x-[-8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      class=""
+                      src="/public/assets/images/product-2.png"
+                      alt="파마산고추장"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-2.gif"
+                      alt="회전하는 파마산고추장"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PARMESANGOCHUJANG-nametag.png"
+                    alt="파마산고추장 네임태그"
+                  />
+                </li>
+                <li class="relative translate-x-[8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      class=""
+                      src="/public/assets/images/product-3.png"
+                      alt="XO쉬림프"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-3.gif"
+                      alt="회전하는 XO쉬림프"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/XOSHRIMP-nametag.png"
+                    alt="XO쉬림프 네임태그"
+                  />
+                </li>
+                <li class="relative translate-x-[-8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      class=""
+                      src="/public/assets/images/product-3.png"
+                      alt="XO쉬림프"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-3.gif"
+                      alt="회전하는 XO쉬림프"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/XOSHRIMP-nametag.png"
+                    alt="XO쉬림프 네임태그"
+                  />
+                </li>
+              </ul>
+            </div>
 
-			<!-- 하단 이미지 영역 -->
-			<div class="relative flex gap-4 transform animate-cardrolling rotate-2">
-				<!-- 10 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 10" class="object-cover w-full h-full" />
-				</div>
-				<!-- 11 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 11" class="object-cover w-full h-full" />
-				</div>
-				<!-- 12 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 12" class="object-cover w-full h-full" />
-				</div>
-				<!-- 13 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 13" class="object-cover w-full h-full" />
-				</div>
-				<!-- 14 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 14" class="object-cover w-full h-full" />
-				</div>
-				<!-- 15 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 15" class="object-cover w-full h-full" />
-				</div>
-				<!-- 16 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-4.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 16" class="object-cover w-full h-full" />
-				</div>
-				<!-- 17 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-5.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 17" class="object-cover w-full h-full" />
-				</div>
-				<!-- 18 -->
-				<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-					<img src="/public/assets/images/component-6.png" loading="lazy" aria-hidden="true" alt="하랜띵스 소스 18" class="object-cover w-full h-full" />
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+              <div
+                class="h-[200px] bg-[image:var(--wood-bg)] bg-repeat-x bg-bottom bg-[length:auto_100%]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
-	<section data-section="mobile_page">
-		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">MOBILE PAGE🧁</h2>
-
-			<div></div>
-		</div>
-	</section>
-
-
-	<section data-section="pc_page">
-		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">PC PAGE🥑</h2>
-
-			<div></div>
-		</div>
-	</section>
-
-
-	<section data-section="review">
-		<div class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
-			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30">
-				<h2 class="font-semibold text-center mb-20 lg:mb-30 text-40 font-newbery">REVEIW🍿</h2>
-
-				<div class="mb-20">
-					<ul class="grid grid-cols-4 gap-4">
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
-						<li class="bg-white min-h-[500px] rounded-4xl"></li>
-					</ul>
-				</div>
-			</div>
-
-		
-			<!-- showcase -->
-			<div class="relative">
-				<div class="z-20 relative max-w-[300px] mx-auto w-[calc(100%-32px)] md:w-2/5">
-					<img src="/public/assets/images/showcase.png" alt="쇼케이스">
-					<div class="hidden md:block absolute top-0 left-[-70%] w-[65%] max-w-[452px] mt-[160px]" type="left">
-						<img src="/public/assets/images/left-showcase.png" alt="좌측 선반">
-					</div>
-					<div class="hidden md:block absolute top-0 right-[-70%] w-[65%] max-w-[452px] mt-[160px]" type="right">
-						<img src="/public/assets/images/right-showcase.png" alt="우측 선반">
-					</div>
-
-					<ul class="absolute top-0 left-0 grid w-full h-full pt-[29.3%] px-[18%] pb-[7%] grid-cols-2 grid-rows-3">
-						<li class="relative translate-x-[8%]">
-							<div class="w-full cursor-pointer">
-								<img class="" src="/public/assets/images/product-1.png" alt="표고러플">
-								<img class="hidden" src="/public/assets/images/product-1.gif" alt="회전하는 표고러플">
-							</div>
-							<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PYOGORUFFLE-nametag.png" alt="표고러플 네임태그">
-						</li>
-						<li class="relative translate-x-[-8%]">
-							<div class="w-full cursor-pointer">
-								<img class="" src="/public/assets/images/product-1.png" alt="표고러플">
-								<img class="hidden" src="/public/assets/images/product-1.gif" alt="회전하는 표고러플">
-							</div>
-							<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PYOGORUFFLE-nametag.png" alt="표고러플 네임태그">
-						</li>
-						<li class="relative translate-x-[8%]">
-							<div class="w-full cursor-pointer">
-								<img class="" src="/public/assets/images/product-2.png" alt="파마산고추장">
-								<img class="hidden" src="/public/assets/images/product-2.gif" alt="회전하는 파마산고추장">
-							</div>
-							<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" alt="파마산고추장 네임태그">
-						</li>
-						<li class="relative translate-x-[-8%]">
-							<div class="w-full cursor-pointer">
-								<img class="" src="/public/assets/images/product-2.png" alt="파마산고추장">
-								<img class="hidden" src="/public/assets/images/product-2.gif" alt="회전하는 파마산고추장">
-							</div>
-							<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" alt="파마산고추장 네임태그">
-						</li>
-						<li class="relative translate-x-[8%]">
-							<div class="w-full cursor-pointer">
-								<img class="" src="/public/assets/images/product-3.png" alt="XO쉬림프">
-								<img class="hidden" src="/public/assets/images/product-3.gif" alt="회전하는 XO쉬림프">
-							</div>
-							<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/XOSHRIMP-nametag.png" alt="XO쉬림프 네임태그">
-						</li>
-						<li class="relative translate-x-[-8%]">
-							<div class="w-full cursor-pointer">
-								<img class="" src="/public/assets/images/product-3.png" alt="XO쉬림프">
-								<img class="hidden" src="/public/assets/images/product-3.gif" alt="회전하는 XO쉬림프">
-							</div>
-							<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/XOSHRIMP-nametag.png" alt="XO쉬림프 네임태그">
-						</li>
-					</ul>
-				</div>
-		
-				<div class="absolute bottom-0 left-0 w-full overflow-hidden">
-						<div class="h-[200px] bg-[image:var(--wood-bg)] bg-repeat-x bg-bottom bg-[length:auto_100%]"></div>
-				</div>
-			</div>
-		
-
-		</div>
-	</section>
-
-
-	<section data-section="go_page">
-		<div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
-			<div class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"></div>
-		</div>
-		<div class="py-5 lg:py-10 bg-hot-ivory">
-			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] flex items-center justify-between">
-				<p class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]">EagleSauce</p>
-				<a href="/src/pages/home.html" class="px-6 py-3 lg:px-20 lg:py-5 font-semibold bg-hot-brand rounded-full text-hot-ivory text-16 lg:text-30 hover:bg-black">페이지 바로가기</a>
-			</div>
-		</div>
-	</section>
-
-
-
-</div>
-</body>
+      <section data-section="go_page">
+        <div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
+          <div
+            class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"
+          ></div>
+        </div>
+        <div class="py-5 lg:py-10 bg-hot-ivory">
+          <div
+            class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] flex items-center justify-between"
+          >
+            <p
+              class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]"
+            >
+              EagleSauce
+            </p>
+            <a
+              href="/src/pages/home.html"
+              class="px-6 py-3 lg:px-20 lg:py-5 font-semibold bg-hot-brand rounded-full text-hot-ivory text-16 lg:text-30 hover:bg-black"
+              >페이지 바로가기</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
