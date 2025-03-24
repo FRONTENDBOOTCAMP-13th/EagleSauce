@@ -84,6 +84,9 @@
 	--recipes-06:url("/public/assets/images/recipes-6.jpg");
 	--recipes-07:url("/public/assets/images/recipes-7.jpg");
 	--recipes-08:url("/public/assets/images/recipes-8.jpg");
+	--hot-logo:url("/public/assets/images/logo.png");
+	--header-napoli:url("/public/assets/images/napoli-li.jpg");
+	--header-napoli2:url("/public/assets/images/shop-all2.webp");
 	
 	/* 그리드 */
 	--review:repeat(auto-fit, minmax(700px, 1fr));
