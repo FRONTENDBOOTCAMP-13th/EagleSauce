@@ -167,6 +167,11 @@
 	/* page layout end */
 }
 
+/* summary 스타일 초기화 */
 summary::marker{
 	font-size:0;
+}
+
+summary::-webkit-details-marker {
+	display: none;
 }
