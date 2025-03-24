@@ -4,42 +4,55 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>COMPONENT - buynow</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans">
-	
+
+
   <fieldset class="p-4 m-4 border">
     <legend class="font-semibold text-20">[Community-Napoli] 카드형컴포넌트</legend>
 
-	<!-- buynow -->
-	<div class="inline-block">
-		<div>
-			<img src="/public/assets/images/pick-1-img.png" alt="" />
+		<!-- buynow -->
+		<div class="inline-block">
+			<div>
+				<img src="/public/assets/images/pick-1-img.png" alt="" />
+			</div>
+			<div class="text-white bg-black p-7">
+				<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">PYOGORUFFLE</h3>
+				<P>
+					트러플 풍미과 표고의 감칠맛,<br />
+					화이트 와인 식초의 산뜻함이 결합된<br />
+					고급스러운 매운맛
+				</P>
+				<ul class="mt-10 text-17">
+					<li class="flex items-center justify-between text-hot-gray500">
+						<span>소비자가</span>
+						<s>23,000</s>
+					</li>
+					<li class="flex items-center justify-between">
+						<strong class="font-normal text-17">판매가</strong>
+						<strong class="text-25">
+							<span class="text-hot-brand">13%</span>
+							19,000
+						</strong>
+					</li>
+				</ul>
+			</div>
+			<div class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center">BUY NOW</div>
 		</div>
-		<div class="text-white bg-black p-7">
-			<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-40">PYOGORUFFLE</h3>
-			<P>
-				트러플 풍미과 표고의 감칠맛,<br />
-				화이트 와인 식초의 산뜻함이 결합된<br />
-				고급스러운 매운맛
-			</P>
-			<ul class="mt-10 text-17">
-				<li class="flex items-center justify-between text-hot-gray500">
-					<span>소비자가</span>
-					<s>23,000</s>
-				</li>
-				<li class="flex items-center justify-between">
-					<strong class="font-normal text-17">판매가</strong>
-					<strong class="text-25">
-						<span class="text-hot-brand">13%</span>
-						19,000
-					</strong>
-				</li>
-			</ul>
-		</div>
-		<div class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center">BUY NOW</div>
-	</div>
 	</fieldset>
-	
+
+
 </body>
 </html>
