@@ -11,8 +11,8 @@ class mainHeader extends HTMLElement {
 					<span class="font-sans">멋쟁이사자 프론트엔드 13기</span>
 				</p>
 
-				<!-- Mobile Header -->
-				<div class="relative p-4 menu-mobile lg:hidden bg-hot-ivory border-b">
+							<!-- Mobile Header -->
+				<div class="relative p-4 border-b menu-mobile lg:hidden bg-hot-ivory">
 					<ul class="flex justify-between">
 						<li>
 							<div class="size-5">
@@ -29,24 +29,24 @@ class mainHeader extends HTMLElement {
 							</a>
 						</li>
 					</ul>
-					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2  transform-none left-1/2 top-1/2">
-						<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스로고"/>
+					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute block w-32 -translate-x-1/2 -translate-y-1/2 transform-none left-1/2 top-1/2">
+						<img src="/public/assets/images/logo.png" alt="하랜띵스로고"/>
 					</a>
 				</div>
-
+	
 				<!-- Mobile Menu -->
-				<div class="absolute top-0 left-0 hidden w-full text-white h-dvh bg-hot-brand">
+				<div class="absolute top-0 -left-[100%] transition-all duration-300 w-full text-white mobile-menu h-dvh bg-hot-brand">
 					<div class="relative p-4 menu-mobile lg:hidden">
 						<ul class="flex justify-between">
 							<li>
-								<div class="size-5">
+								<div class="size-5 menu-lists">
 									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
 										<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
 									</svg>
 								</div>
 							</li>
 							<li class="flex items-center gap-3">
-								<a href="/src/pages/search.html" aria-label="검색하기"  class="size-5">
+								<a href="/src/pages/search.html" aria-label="검색하기" class="size-5">
 									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 										<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
 									</svg>
@@ -62,34 +62,80 @@ class mainHeader extends HTMLElement {
 							<img src="/public/assets/images/logo.png" loading="lazy" alt="하랜띵스로고"/>
 						</a>
 					</div>
-					<ul>
-						<li class="px-4 py-6 font-semibold border-b text-45">
+					<ul class="font-semibold border-b text-45">
+						<!-- ABOUT -->
+						<li class="group border-b border-white px-4 py-6 ">
 							<p class="flex justify-between">
-								<span>SHOP</span><span>-</span>
+								<span>ABOUT</span>
+								<span>-</span>
 							</p>
 							<ul class="py-4 space-y-3 font-normal text-20">
-								<li>ALL PRODUCTS</li>
-								<li>PYOGORUFFLE</li>
-								<li>PARMESAN GOCHUJANG</li>
-								<li>XO SHRIMP</li>
-								<li>HOTN'THINGS KIT</li>
+								<li>
+									<a aria-label="브랜드살펴보기" href="/src/pages/about-ourbrand.html">OUR BRAND</a>
+								</li>
+								<li>
+									<a aria-label="입점문의하기" href="/src/pages/about-inquiry.html">INQUIRY</a>
+								</li>
 							</ul>
 						</li>
-						<li class="px-4 py-6 font-semibold border-b text-45">
+	
+						<!-- SHOP -->
+						<li class="group border-b border-white px-4 py-6 ">
 							<p class="flex justify-between">
-								<span>ABOUT</span><span>-</span>
+								<span>SHOP</span>
+								<span>-</span>
 							</p>
 							<ul class="py-4 space-y-3 font-normal text-20">
-								<li>OUR BRAND</li>
-								<li>INQUIRY</li>
+								<li>
+									<a aria-label="모든상품" href="/src/pages/shop-all_products.html">ALL PRODUCTS</a>
+								</li>
+								<li>
+									<a aria-label="표고러플" href="/src/pages/shop-pyogo.html">PYOGORUFFLE</a>
+								</li>
+								<li>
+									<a aria-label="파마산고추장" href="/src/pages/shop-parmesan.html">PARMESAN GOCHUJANG</a>
+								</li>
+								<li>
+									<a aria-label="XO쉬림프" href="/src/pages/shop-shrimp.html">XO SHRIMP</a>
+								</li>
+								<li>
+									<a aria-label="하랜키트3종세트" href="/src/pages/shop-hotnkit.html">HOTN'THINGS KIT</a>
+								</li>
 							</ul>
 						</li>
-						<li class="px-4 py-6 font-semibold border-b text-45">
+	
+						<!-- COMMUNITY -->
+						<li class="group border-b border-white px-4 py-6 ">
 							<p class="flex justify-between">
-								<span>COMMNUNITY</span><span>-</span>
+								<span>COMMUNITY</span>
+								<span>-</span>
 							</p>
+							<ul class="py-4 space-y-3 font-normal text-20">
+								<li>
+									<a aria-label="이벤트" href="/src/pages/community-event.html">EVENT</a>
+								</li>
+								<li>
+									<a aria-label="레시피와페어링" href="/src/pages/community-recipes_and_paring.html">RECIPES & PARING</a>
+								</li>
+								<li>
+									<a aria-label="나폴리맛피아" href="/src/pages/community-napolimatfia.html">NAPOLI MATFIA</a>
+								</li>
+								<li>
+									<a aria-label="리뷰페이지" href="/src/pages/community-review.html">REVIEW</a>
+								</li>
+								<li>
+									<a aria-label="질의응답" href="/src/pages/community-faq.html">FAQ</a>
+								</li>
+								<li>
+									<a aria-label="Q&A바로가기" href="/src/pages/community-qna.html" target="_blank" rel="noopener noreferrer">1:1 Q&A</a>
+								</li>
+							</ul>
 						</li>
-						<li class="px-4 py-6 font-semibold text-20">JOIN/LOGIN</li>
+
+						<!-- 로그인 -->
+						<li class="group  px-4 py-6 text-30">
+							<a href="/src/pages/join-login.html" aria-label="로그인/회원가입">JOIN/LOGIN</a>
+						</li>
 					</ul>
 				</div>
 

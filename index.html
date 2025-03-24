@@ -26,10 +26,10 @@
 
 
 	<section data-section="intro">
-		<div class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]">
-			<img src="/assets/images/bird.gif" loading="lazy" alt="걸으면서 이동하는 하랜띵스 새 심볼" class="w-full">
+		<div class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) overflow-x-hidden bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]">
+			<img src="/assets/images/bird.gif" loading="lazy" alt="걸으면서 이동하는 하랜띵스 새 심볼" class="w-full scale-[200%] md:scale-100">
 
-			<div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-10 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]">
+			<div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-14 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]">
 				<div class="w-1/2">
 					<strong class="inline-block mt-1 text-4xl font-semibold lg:text-6xl text-nowrap">2팀 이글이글</strong><br />
 					<p class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white">프로젝트 소개</p>
@@ -64,7 +64,7 @@
 		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
 			<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">TEAM MEMBER🥫</h2>
 			
-			<div class="grid grid-cols-4 gap-5 justify-items-center lg:grid-cols-8">
+			<div class="grid max-[500px]:grid-cols-2 grid-cols-4 gap-5 justify-items-center lg:grid-cols-8">
 				<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 					<div class="flex flex-col">
 						<div class="bg-white">
@@ -140,6 +140,7 @@
 							<P>
 								함께하는 프로젝트를 통해<br />
 								많이 배우며 성장하는 기회가 되길 원해요!<br />
+								서로 부족한 부분을 채워가봅시다💪<br/>
 								이글이글 화이팅🔥🔥
 							</P>
 							<ul class="mt-10 text-17">
@@ -248,7 +249,7 @@
 				<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">COMPONENTS🍕</h2>
 
 				<div class="flex flex-col items-center gap-4">
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
 						<summary class="flex items-center justify-between px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등
@@ -314,7 +315,7 @@
 					</details>
 
 
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
 						<summary class="flex items-center justify-between px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🥫레이아웃 요소</strong> - 헤더, 푸터, 모달 창
@@ -353,7 +354,7 @@
 					</details>
 
 
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
 						<summary class="flex items-center justify-between w-full px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🌶️페이지별 카드 컴포넌트</strong> - 상품 카드, 프로필 카드, 게시물 카드
@@ -435,7 +436,7 @@
 					</details>
 
 
-					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group" open>
+					<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
 						<summary class="flex items-center justify-between px-4 py-6">
 							<p class="font-normal lg:text-20">
 								<strong>🍰디자인 요소</strong>
@@ -527,29 +528,32 @@
 
 	<section data-section="mobile_page">
 		<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">MOBILE PAGE🧁</h2>
+			<h2 class="mb-10 font-semibold text-center lg:mb-20 text-40 font-newbery">
+				MOBILE PAGE🧁
+				<p class="text-center text-16 font-normal mt-4 break-keep">하단의 네임태그를 클릭하면 모바일 화면을 미리 살펴볼 수 있어요👀</p>
+			</h2>
 			<div class="flex flex-col items-center gap-4">
 				<div class="max-w-[500px] mx-auto relative">
 					<img src="/public/assets/images/phone.png" alt="휴대폰" class="relative z-1"/>
 					<div class="absolute left-[28%] top-[3%] w-[43%] h-[94%] rounded-[1vw] bg-white overflow-hidden">
 						<img class="block" src="/public/assets/images/phone-screen1.png" alt="모바일스크린샷"/>
-						<img class="hidden" src="/public/assets/images/phone-screen2.png" alt="모바일스크린샷"/>
-						<img class="hidden" src="/public/assets/images/phone-screen3.png" alt="모바일스크린샷"/>
-						<img class="hidden" src="/public/assets/images/phone-screen4.png" alt="모바일스크린샷"/>
+						<img class="hidden" src="/public/assets/images/phone-screen2.png" alt="모바일스크린샷2"/>
+						<img class="hidden" src="/public/assets/images/phone-screen3.png" alt="모바일스크린샷3"/>
+						<img class="hidden" src="/public/assets/images/phone-screen4.png" alt="모바일스크린샷4"/>
 					</div>
 				</div>
-				<ul class="relative mt-5">
+				<ul class="relative mt-5 flex gap-y-8 gap-x-4 flex-wrap sm:flex-nowrap items-center justify-center">
 						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
-							<span class="inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 text-white text-15 md:text-17 md:font-medium"># HOME🤯</span>
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium"># HOME🤯</span>
 						</li>
 						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-2)">
-							<span class="inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 text-white text-15 md:text-17 md:font-medium translate-y-[20px]"># ABOUT🥫</span>
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium translate-y-[20px]"># ABOUT🥫</span>
 						</li>
 						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-3)">
-							<span class="inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 text-white text-15 md:text-17 md:font-medium translate-y-[8px]"># SHOP🌶️</span>
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium translate-y-[8px]"># SHOP🌶️</span>
 						</li>
-						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-3)">
-							<span class="inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 text-white text-15 md:text-17 md:font-medium translate-y-[8px]"># COMMUNITY🍔</span>
+						<li class="inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
+							<span class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand transition-all duration-200 text-white text-15 md:text-17 md:font-medium translate-y-[8px]"># COMMUNITY🍔</span>
 						</li>
 				</ul>
 			</div>
@@ -559,7 +563,7 @@
 
 	<section data-section="pc_page">
 		<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-			<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">PC PAGE🥑</h2>
+			<h2 class="mb-10 font-semibold text-center lg:mb-20 text-40 font-newbery">PC PAGE🥑</h2>
 
 			<div class="max-w-[800px] mx-auto relative">
 				<img src="/public/assets/images/computer.png" alt="컴퓨터"/>
@@ -577,8 +581,8 @@
 				<h2 class="mb-20 font-semibold text-center lg:mb-30 text-40 font-newbery">REVEIW🍿</h2>
 
 				<div class="mb-20 ">
-					<ul class="grid grid-cols-4 gap-4 break-keep">
-						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-5 flex flex-col gap-4 items-center justify-center">
+					<ul class="grid max-[450px]:grid-cols-1 grid-cols-2 xl:grid-cols-4 gap-4 break-keep">
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
 							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
 							<div class="space-y-8 text-center keep-all">
 								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3] ">Sanghee</h3>
@@ -590,7 +594,7 @@
 								<!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
 							</div>
 						</li>
-						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-5 flex flex-col gap-4 items-center justify-center">
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
 							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
 							<div class="space-y-8 text-center keep-all">
 								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Juno</h3>
@@ -602,7 +606,7 @@
 								<!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
 							</div>
 						</li>
-						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-5 flex flex-col gap-4 items-center justify-center">
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
 							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
 							<div class="space-y-8 text-center keep-all">
 								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Seonyoung</h3>
@@ -614,7 +618,7 @@
 								<!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
 							</div>
 						</li>
-						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-5 flex flex-col gap-4 items-center justify-center">
+						<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
 							<img src="/assets/images/symbol.png" alt="하랜띵스심볼" />
 							<div class="space-y-8 text-center keep-all">
 								<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Junhwan</h3>
@@ -716,46 +720,40 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+
   // Get all list items
   const listItems = document.querySelectorAll('.mt-5 li');
-  // Get all images in the phone screen div - 선택자 단순화
-  const images = document.querySelectorAll('.absolute div img');
+  // Get all images in the phone screen div
+  const images = document.querySelectorAll('.absolute.left-\\[28\\%\\] img');
   
-  // Add click event listeners to each list item
   listItems.forEach((item, index) => {
     item.addEventListener('click', function() {
-      // Hide all images first
       images.forEach(img => {
         img.classList.add('hidden');
         img.classList.remove('block');
       });
       
-      // Show only the image corresponding to the clicked list item
       if (index < images.length) {
         images[index].classList.remove('hidden');
         images[index].classList.add('block');
       }
       
-      // Update visual feedback for active state
       listItems.forEach(li => {
         const span = li.querySelector('span');
         span.classList.remove('bg-hot-brand');
         span.classList.add('bg-black/90');
       });
       
-      // Apply bg-hot-brand to the clicked item
       const span = item.querySelector('span');
       span.classList.remove('bg-black/90');
       span.classList.add('bg-hot-brand');
     });
   });
   
-  // Show the first image by default and mark the first item as active
   if (images.length > 0) {
     images[0].classList.remove('hidden');
     images[0].classList.add('block');
     
-    // Set the first item as active by default
     const firstSpan = listItems[0].querySelector('span');
     firstSpan.classList.remove('bg-black/90');
     firstSpan.classList.add('bg-hot-brand');
