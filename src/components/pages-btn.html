@@ -3,15 +3,30 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>COMPONENT - nametag</title>
+  <title>COMPONENT - btn</title>
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans">
+	
+
 <!-- Common-component : Btn -->
-<fieldset class="border m-4 p-4">
-  <legend class="text-20 font-semibold">[Common-component] Tag</legend>
-  <h2 class="py-2 font-newbery bg-black text-white w-[120px] lg:w-[150px] text-center font-semibold lg:text-17">Title</h2>
+<fieldset class="p-4 m-4 border">
+  <legend class="font-semibold text-20">[Common-component] Btn</legend>
+
+  <div class="space-y-4">
+    <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand" aria-label="장바구니담기">
+      CART
+    </button>
+    <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-hot-brand lg:hover:bg-hot-brand lg:focus:bg-hot-brand lg:bg-black" aria-label="구매하기">
+      BUY NOW
+    </button>
+    <button type="submit" class="block w-full h-[45px] lg:h-[60px] px-4 bg-hot-naver lg:hover:bg-hot-naverdark lg:focus:bg-hot-naverdark content-center" aria-label="네이버페이로 구매하기">
+      <img src="/assets/images/npay_btn_mo.png" class="mx-auto scale-50 lg:hidden"/>
+      <img src="/assets/images/npay_btn.png" class="hidden mx-auto scale-45 lg:block"/>
+    </button>
+  </div>
 </fieldset>
 
+  
 </body>
 </html>
