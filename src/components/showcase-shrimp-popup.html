@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - showcase-shrimp-popup</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+  <body class="font-sans">
+    <div class="p-[22px] fixed w-full h-[100vh] overflow-hidden bg-(image:--showcase-popup-bg) z-20 lg:pt-20 lg:px-20 lg:pb-5">
+      <!-- X 닫기  -->
+      <div class="absolute text-white cursor-pointer top-10 right-10 lg:top-20 lg:right-20 z-11">
+        <a href="/src/pages/home.html" aria-label="닫기">
+          <i class="before:content-['X'] font-sans font-normal leading-1 text-[24px]">
+          </i>
+        </a>
+      </div>
+      <!-- 이미지, 텍스트 박스 -->
+      <div class="flex flex-col items-center justify-center w-full h-full overflow-hidden">
+        <div class="w-full max-w-[750px] py-[30px] px-0 text-center lg:max-w-none">
+          <!--  소스 섬네일 -->
+          <div class="relative flex items-center justify-center w-full z-2">
+            <img src="/public/assets/images/product-3.png" alt="XO쉬림프 소스 제품 사진" class="z-3 max-w-[750px] relative w-full" />
+            <!-- 떠다니는 소스 재료 사진 PC-->
+            <div class="absolute felx items-center justify-center z-2 w-full max-w-[1400px] hidden lg:block">
+              <img src="/public/assets/images/showcase-popup-shrimp.png" alt="XO쉬림프 소스 재료 사진 PC" 
+              class="w-full animate-bounce-1"/>
+            </div>
+            <!-- 떠다니는 소스 재료 사진 MO -->
+            <div class="absolute felx items-center justify-center z-2 w-full max-w-[1400px] lg:hidden">
+              <img src="/public/assets/images/showcase-popup-shrimp-MO.png" alt="XO쉬림프 소스 재료 사진 모바일" class="w-full animate-bounce-1"/>
+            </div>
+          </div>
+          
+          <!-- 설명 텍스트 -->
+          <p class="text-23 font-semibold leading-[1.5] text-center mt-[45px] mx-auto mb-[35px] break-keep w-[80%] text-black">
+            미슐랭 3스타 레스토랑 출신 식품기술사가 설계한 플레이버를 담다.
+            <br />
+            청양고추를 넣은 알싸한 간장 베이스에 새우로 감칠맛을 끌어올린 단짠 매력
+          </p>
+          
+          <!-- 현재 상품 구매 -->
+          <a href="/src/pages/shop-shrimp.html" aria-label="XO쉬림프 소스 제품 구매 페이지로 이동" class="lg:h-[65px] lg:w-full lg:text-25 my-0 mx-auto h-[55px] text-23 bg-black  text-white max-w-[470px] lg:max-w-[560px] font-semibold flex items-center justify-center font-newbery">
+            BUY NOW
+          </a>
+          
+          <!-- 모든 상품 페이지로 이동 -->
+          <a href="/src/pages/shop-all_products.html" aria-label="모든 제품 상세보기 페이지로 이동" class="lg:text-25 text-20 font-semibold my-[35px] mx-auto mb-0 flex pb-[3px] w-fit border-0 border-b border-black items-center justify-center text-black">
+            다른 제품 보러가기
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
