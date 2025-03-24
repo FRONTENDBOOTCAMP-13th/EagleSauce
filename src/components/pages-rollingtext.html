@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - rollingtext</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+  <!-- rollingtext start -->
+  <fieldset class="border m-4 p-4">
+    <legend class="text-20 font-semibold">[Common] 롤링 텍스트 컴포넌트</legend>
+  <div class="overflow-hidden bg-black w-full lg:py-1.5">
+    <p
+      class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20"
+    ></p>
+  </div>
+  </fieldset>
+  <!-- rollingtext end -->
+</body>
+</html>
