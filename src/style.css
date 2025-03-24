@@ -161,6 +161,10 @@
 
 @layer components{
 	/* page layout start */
+	body.modal{
+		@apply overflow-hidden;
+	}
+	
 	#container{
 		@apply w-full min-h-dvh pt-[90px] lg:pt-[110px];
 	}
@@ -179,3 +183,5 @@ summary::marker{
 summary::-webkit-details-marker {
 	display: none;
 }
+
+
