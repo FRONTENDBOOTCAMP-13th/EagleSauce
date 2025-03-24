@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - SEARCH</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+  
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+
+  <div class="overflow-hidden">
+    <div class="items-stretch hidden h-full lg:flex" aria-labelledby="HOTNTHINGS-SEARCH">
+      <h2 class="sr-only" id="HOTNTHINGS-SEARCH">검색</h2>
+
+      <!-- 왼쪽 영역 -->
+      <div class="hidden w-1/2 h-dvh lg:block">
+        <div class="flex flex-col justify-between px-20 py-[70px] h-dvh" >
+          <form class="relative px-5 py-4 pr-10 overflow-hidden bg-white rounded-sm border-hot-gray100 border-1 focus-within:border-black" role="search">
+            <label for="search-bar" class="sr-only">검색창</label>
+            <input type="search" id="search-bar" name="search-bar" value="" placeholder="맛있는 소스 검색하기" class="w-full placeholder-gray-300 appearance-none hover:border-black text-16 focus:outline-none" />
+            <!-- 검색 이미지 -->
+            <button type="submit" class="absolute w-5 h-5 -translate-y-1/2 right-4 top-1/2">
+              <img src="/public/assets/icon/search.svg" alt="검색" />
+            </button>
+          </form>
+          <ul class="font-bold font-newbery">
+            <li class="py-5 text-[42px] border-b border-black hover:text-red-500" >
+              <a href="/src/pages/shop-pyogo.html">PYOGORUFFLE</a>
+            </li>
+            <li class="py-5 text-[42px] border-b border-black hover:text-red-500" >
+              <a href="/src/pages/shop-parmesan.html">PARAMESAN GOCHUJANG</a>
+            </li>
+            <li class="py-5 text-[42px] border-b border-black hover:text-red-500" >
+              <a href="/src/pages/shop-shrimp.html">XO SHRIMP</a>
+            </li>
+            <li class="py-5 text-[42px] border-b border-black hover:text-red-500" >
+              <a href="/src/pages/shop-hotnkit.html">HOTN'THINGS KIT</a>
+            </li>
+          </ul>
+          <p class="font-newbery font-bold text-12 opacity-20 leading-[1.7]">
+            HOTN'THINGS that add specialness to your every moment.
+            <br />
+            HOTN'THINGS unique flavor filled with more than 52% premium
+            ingredients. It contains a generous amount of high-quality
+            ingredients used in fine dining. More than 52% of ingredients such
+            as white wine vinegar, white soy sauce, shiitake concentrate, extra
+            virgin olive oil, and cumin were added. You can feel the luxurious
+            fuss and savory taste that cannot be found in ready-made hot sauces
+            made with only pepper, salt, and vinegar.
+          </p>
+        </div>
+      </div>
+
+      <!-- 오른쪽 영역 -->
+      <div class="w-1/2 max-[959px]:hidden">
+        <img class="object-cover object-bottom w-full h-dvh" src="/public/assets/images/HOTNTHINGSKIT.jpg" alt="핫앤띵스 키트 이미지" draggable="false" />
+        <a href="/src/pages/home.html" class="absolute text-5xl text-white top-10 right-10" aria-label="닫기">x</a>
+      </div>
+    </div>
+    
+    <!--모바일 화면-->
+    <div
+      class="block lg:hidden bg-(image:--search-bg) bg-cover bg-center h-screen w-full relative">
+      <a href="/src/pages/home.html" class="absolute text-white text-40 lg:text-50 top-1 right-3 lg:top-5 lg:right-1" aria-label="닫기">x</a>
+      <div class="px-8 pt-16 lg:pt-4 h-7">
+        <form class="relative px-5 py-4 pr-10 overflow-hidden bg-white rounded-sm border-hot-gray100 border-1 focus-within:border-black">
+          <label for="search-bar" class="sr-only">검색창</label>
+          <input type="search" id="search-bar" name="search-bar" value="" placeholder="맛있는 소스 검색하기" class="w-full placeholder-gray-300 appearance-none hover:border-black text-16 focus:outline-none" />
+          <!-- 검색 이미지 -->
+          <button type="submit" class="absolute w-5 h-5 -translate-y-1/2 right-4 top-1/2">
+            <img src="/public/assets/icon/search.svg" alt="검색" />
+          </button>
+        </form>
+        <ul class="font-bold font-newbery">
+          <li class="py-[13px] px-2.5 text-[28px] text-white border-b border-white hover:text-hot-brand" >
+            <a aria-label="표고러플" href="/src/pages/shop-pyogo.html">PYOGORUFFLE</a>
+          </li>
+          <li class="py-[13px] px-2.5 text-[28px] text-white border-b border-white hover:text-hot-brand" >
+            <a aria-label="파마산고추장" href="/src/pages/shop-parmesan.html">PARAMESAN GOCHUJANG</a>
+          </li>
+          <li class="py-[13px] px-2.5 text-[28px] text-white border-b border-white hover:text-hot-brand" >
+            <a aria-label="XO쉬림프" href="/src/pages/shop-shrimp.html">XO SHRIMP</a>
+          </li>
+          <li class="py-[13px] px-2.5 text-[28px] text-white border-b border-white hover:text-hot-brand">
+            <a aria-label="하랜띵스키트" href="/src/pages/shop-hotnkit.html">HOTN'THINGS KIT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+<common-footer></common-footer>
+
+
+</body>
+</html>

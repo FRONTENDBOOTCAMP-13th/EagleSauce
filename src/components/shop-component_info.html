@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - shop info</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+  <!-- Shop-item : info -->
+  <fieldset class="p-4 m-4 border">
+    <legend class="font-semibold text-20">[Shop-item] info</legend>
+
+    <div class="relative product-item-info">
+      <h2 class="mb-2 leading-none lg:mb-4">
+        <p class="mb-2 font-semibold text-15 lg:text-20">표고러플</p>
+        <p aria-hidden="true" class="font-semibold font-newbery text-25 lg:text-65">PYOGORUFFLE</p>
+      </h2>
+      <img src="/assets/images/spicy2.png" alt="맵기5단계 중 2단계" class="w-[50px] lg:w-[80px] absolute top-0 right-0"/>
+      <p class="font-newbery text-20 lg:text-35 font-semibold flex items-center gap-1.5 lg:gap-2">
+        <span class="font-normal text-15 lg:text-20 text-hot-gray500"><span class="sr-only">정상가</span><s>23,000</s><span class="sr-only">원</span></span>
+        <span><span class="sr-only">할인가</span>19,900<span class="sr-only">원</span></span>
+        <span class="text-hot-brand"><span class="sr-only">할인율</span>13%</span>
+      </p>
+    </div>
+  </fieldset>
+
+
+</body>
+</html>

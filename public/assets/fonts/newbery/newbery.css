@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'newbery-sans-pro';
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Newbery_Sans_Pro_Thin.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'newbery-sans-pro';
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Newbery_Sans_Pro_ExtraLight.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'newbery-sans-pro';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Newbery_Sans_Pro_Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'newbery-sans-pro';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Newbery_Sans_Pro_Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'newbery-sans-pro';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Newbery_Sans_Pro_Medium.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'newbery-sans-pro';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Newbery_Sans_Pro_Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'newbery-sans-pro';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Newbery_Sans_Pro_ExtraBold.otf') format('opentype');
+}

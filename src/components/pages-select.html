@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - select</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+  <!-- Common-component : Select -->
+  <fieldset class="border m-4 p-4">
+    <legend class="text-20 font-semibold">[Common-component] Select</legend>
+    <select name="product-option" id="product-option" class="w-full px-5 py-2 bg-white border-hot-gray100 border-1 text-15">
+      <option value="default">-[필수] 옵션을 선택해주세요 -</option>
+      <option value="" disabled>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</option>
+      <option value="" disabled class="font-bold">수량</option>
+      <option value="optionA">옵션A</option>
+      <option value="optionB">옵션B</option>
+      <option value="optionC">옵션C</option>
+      <option value="optionD">옵션D</option>
+    </select>
+  </fieldset>
+  
+
+</body>
+</html>

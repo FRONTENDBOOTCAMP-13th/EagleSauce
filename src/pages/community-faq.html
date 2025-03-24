@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - FAQ</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+
+  <div class="py-[60px] lg:py-[120px]" aria-label="HOT'N THINGS-FAQ">
+    <h2 class="sr-only" id="HOT'N THINGS-FAQ" >자주묻는질문</h2>
+    <!-- 상단검색창영역 -->
+    <section>
+      <h2 class="font-semibold text-center text-35 font-newbery">How can we help you?</h2>
+      <div class="my-8 rounded-sm bg-white border-hot-gray100 border-1 overflow-hidden py-2.5 px-5 pr-10 relative focus-within:border-black max-w-[450px] mx-auto">
+        <label for="search-bar" class="sr-only">검색창</label>
+        <input type="search" id="search-bar" name="search-bar" value="" placeholder="자주 묻는 질문을 입력해주세요." class="w-full placeholder-gray-300 hover:border-black focus:outline-none text-14" />
+        <!-- 검색 이미지 -->
+        <button type="submit" class="absolute w-4 h-4 -translate-y-1/2 right-4 top-1/2">
+          <img src="/public/assets/icon/search.svg" alt="검색" />
+        </button>
+      </div>
+    </section>
+    
+    <!-- 질문영역 -->
+    <section class="max-w-[1200px] mx-auto px-4">
+      <div class="grid grid-cols-3 sm:grid-cols-6 gap-[1px] bg-hot-gray400">
+        <div class="px-4 py-2 font-semibold text-center text-white bg-hot-brand text-14">전체</div>
+        <div class="px-4 py-2 font-semibold text-center text-white bg-black text-14">주문/결제</div>
+        <div class="px-4 py-2 font-semibold text-center text-white bg-black text-14">배송</div>
+        <div class="px-4 py-2 font-semibold text-center text-white bg-black text-14">취소/변경</div>
+        <div class="px-4 py-2 font-semibold text-center text-white bg-black text-14">교환/반품</div>
+        <div class="px-4 py-2 font-semibold text-center text-white bg-black text-14">기타</div>
+      </div>
+      <div>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">주문/결제</p>
+            <p class="col-span-2 px-4 sm:col-span-5">주문 취소는 어떻게 하나요?</p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              주문은 입금전, 상품준비중 단계에서만 취소가 가능합니다. <br />
+              * 전일 오후 2시 이후 ~ 평일 오전 9시 이전 결제 완료 건 - 오전 9시까지 주문 취소 및 배송 정보 변경 가능<br />
+              * 평일 오전 9시 이후 ~ 평일 오후 2시 이전 결제 완료 건 - 오후 2시까지 주문 취소 및 배송 정보 변경 가능<br />
+              <br />
+              하랜띵스 홈페이지에서 로그인 후 [MY PAGE > 주문내역 조회] 에서 주문 건 선택 시<br />
+              직접 취소 및 변경이 가능하오니 참고 부탁드립니다.<br />
+              <br />
+              게시판, 상담톡 통해 취소 요청을 남겨주시는 경우 실시간 반영이 되지 않아 출고가 이루어질 수 있어,<br />
+              가급적이면 홈페이지에서 직접 취소 진행해주시면 감사드리겠습니다.<br />
+              <br />
+              * ' 상품준비중' 상태 : 주문 취소 및 주소지 변경 가능<br />
+              * ' 배송준비중' 상태 : 주문 취소 및 주소지 변경 불가<br />
+              <br />
+              [배송준비중] 상태의 경우 출고 작업이 시작된 단계로 해당 단계부터는 취소가 불가한 점 양해 부탁드립니다.
+    
+            </p>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">주문/결제</p>
+            <p class="col-span-2 px-4 sm:col-span-5">상품을 여러 개 주문했는데 상품마다 배송비가 붙어요.</p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              무료 배송비 혜택은 주문건 당 총 결제금액이 50,000원 이상일 경우 적용되며, 출고는 주문번호를 기준으로 이루어집니다.
+              <br /><br />
+              주문을 나누어 진행해주셔서 각 상품마다 주문번호가 다를 경우, 각각 출고되어 개별로 배송비가 발송되는 점 참고 부탁드립니다.
+              <br /><br />
+              상품을 두 가지 이상 주문하게 되실 경우, 장바구니에 담으신 뒤 한번에 결제 해주시기 바랍니다.
+            </p>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">주문/결제</p>
+            <p class="col-span-2 px-4 sm:col-span-5">
+              네이버페이로 결제하고 싶어요.
+            </p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              네이버페이로 결제를 희망하시는 경우,<br />
+              로그인을 하지 않은 상태에서 제품 상세페이지 내 [N pay 구매]라고 표출되는 초록색 탭을 클릭하시어<br />
+              결제를 진행하시면 정상적으로 이용이 가능합니다.
+            </p>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">주문/결제</p>
+            <p class="col-span-2 px-4 sm:col-span-5">
+              고객센터를 통한 주문도 가능한가요?
+            </p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              죄송하게도 시스템 상 대리 주문 및 결제가 불가하여 <br />
+              고객센터를 통한 주문은 도움드리기 어려운 점 양해 부탁드립니다.<br />
+              <br />
+              비회원 구매도 가능하며, 성함과 연락처, 주소지 등 간단한 정보만으로도 주문이 가능하오니
+              <br />
+              번거로우시겠지만 홈페이지를 통해 주문해주시기 바랍니다.
+            </p>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">주문/결제</p>
+            <p class="col-span-2 px-4 sm:col-span-5">회원가입을 해야만 주문이 가능한가요?</p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              비회원으로도 주문이 가능합니다. <br />
+              <br />
+              비회원 주문 시 주문번호와 주문해주실 때 설정하신 비밀번호를 알고 계셔야지만
+              주문조회가 가능하니 꼭 메모해두시길 바랍니다.<br />
+              <br />
+              다만 회원을 위한 다양한 혜택이 준비되어 있어,
+              회원가입 후 구매하시는 것을 추천드립니다.
+            </p>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">기타</p>
+            <p class="col-span-2 px-4 sm:col-span-5">
+              각 제품별 칼로리, 나트륨 함량 등을 알고 싶어요.
+            </p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              각 제품별 영양정보의 경우 하단의 정보를 확인하여 주시기 바라며,
+              상세페이지내의 상품정보에도 표시되어 있습니다.
+            </p>
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <div class="col-span-6 px-4 sm:col-span-5">
+              <img src="/assets/images/nutrition.png" alt="핫소스영양정보3종" />
+            </div>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">기타</p>
+            <p class="col-span-2 px-4 sm:col-span-5">하랜띵스 제품의 보관 방법은 어떻게 되나요?</p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              개봉 전에는 직사광선을 피해 실온 보관하시고, <br />
+              개봉 후에는 변질의 우려가 있으니 냉장 보관 하시길 바랍니다.
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">기타</p>
+            <p class="col-span-2 px-4 sm:col-span-5">HACCP이 무엇인가요?</p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              위해요소분석(Hazard Analysis)과 중요관리점(Critical Control Point)의 약자로, <br />
+              식품 생산 과정 전반이 안전하고 위생적으로 이루어질 수 있게끔 집중 관리하는 정부 인증 표시입니다.<br />
+              <br />
+              하랜띵스의 제품들은 전부 해썹 인증을 받은 전문 제조 업체를 통해 생산하고 있습니다.
+            </p>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">기타</p>
+            <p class="col-span-2 px-4 sm:col-span-5">XO쉬림프의 ‘XO’는 무슨 뜻인가요?</p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              최고 등급의 꼬냑을 표기하는 데 사용하는 XO에서 유래한 XO소스를 의미하며,
+              그만큼 강렬한 맛과 향을 낸다는 걸 의미합니다
+            </p>
+          </div>
+        </details>
+        <details class="font-semibold text-15 break-keep">
+          <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="col-span-1 text-center text-hot-gray500">기타</p>
+            <p class="col-span-2 px-4 sm:col-span-5">
+              표고러플에서 기름이 분리되었는데 이유가 무엇인가요?
+            </p>
+          </summary>
+          <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+            <p class="hidden sm:block sm:col-span-1"></p>
+            <p class="col-span-6 px-4 sm:col-span-5">
+              표고러플의 풍미를 우아하게 만들어주는 올리브유와 카놀라유는 본래 물에 잘 섞이지 않습니다. <br />
+              <br />
+              기름 성분과 물 성분이 잘게 쪼개어져 섞인 듯 보이는 것을 ‘유화’라고 하는데, 외부의 영향으로 인해 유화는 깨어질 수 있습니다. <br />
+              유화를 깰 수 있는 요인으로는 높은 온도(가열), 물리적인 충격, 광선, 진동 등이 있습니다. <br />
+              <br />
+              소스의 보관과 유통 중 소스가 권장 온도보다 높은 온도에 처한 경우 기름의 분리가 발생할 수 있으며, <br />
+              제품에 문제가 있는 것은 아니니 잘 흔들어 혼합해 섭취하여 주시기 바랍니다
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 하단 페이지 이동 링크 영역 -->
+    <div class="flex items-center justify-center gap-5 mt-8">
+      <a href="#void" aria-label="이전 페이지" class="size-5 lg:size-7">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+        <g id="Group 6">
+        <path id="Vector 2" d="M10 4L6 8L10 12" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        </svg>              
+      </a>
+      <ol class="flex items-center font-semibold text-center gap-7 font-newbery" aria-label="페이지 네비게이션">
+        <li>
+          <a href="#void" aria-label="1페이지, 현재 페이지" aria-current="true" class="text-4xl text-hot-brand">1</a>
+        </li>
+        <li>
+          <a href="#void" aria-label="2페이지" aria-current="false" class="text-2xl lg:text-3xl">2</a>
+        </li>
+        <li>
+          <a href="#void" aria-label="3페이지" aria-current="false" class="text-2xl lg:text-3xl">3</a>
+        </li>
+      </ol>
+      <a href="#void" aria-label="다음 페이지" class="size-5 lg:size-7">
+        <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+        <g id="Group 6">
+        <path id="Vector 2" d="M6 12L10 8L6 4" stroke="#000" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        </svg>              
+      </a>
+    </div>
+  </div>
+
+
+</div>
+<common-footer></common-footer>
+
+
+</body>
+</html>

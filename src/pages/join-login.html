@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HOTN'THINGS - LOGIN</title>
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+<sub-header></sub-header>
+<div id="container" class="bg-hot-ivory">
+
+
+  <div class="py-[125px] flex items-center justify-center">
+    <div
+      class="px-8 lg:px-[100px] py-12 lg:py-20 bg-white w-[650px]"
+    >
+      <h2 class="text-35 mb-[60px] font-newbery font-bold text-center">
+        LOGIN
+      </h2>
+      <button 
+        type="submit" 
+        class="w-full mb-4 flex items-center justify-center gap-2 h-[45px] lg:h-[50px] px-4 bg-hot-kakao lg:hover:bg-hot-kakaodark lg:focus:bg-hot-kakaodark" 
+        aria-label="카카오로 시작하기">
+        <img
+        src="/public/assets/icon/ico_kakao.svg"
+        alt="카카오톡아이콘"
+        class="w-5 h-5"/>
+        <span>카카오로 3초만에 시작하기</span>
+      </button>
+      <form action="/" method="POST" class="space-y-4">
+        <div class="mb-4">
+          <label for="userId" class="block mb-1 font-newbery text-14">아이디</label>
+          <input
+            type="text"
+            id="userId"
+            name="userId"
+            placeholder="아이디를 입력해 주세요."
+            required
+            class="w-full px-3 py-2 bg-white border border-gray-300"
+          />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block mb-1 font-newbery text-14"
+            >비밀번호</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="비밀번호를 입력해 주세요."
+            required
+            class="w-full px-3 py-2 bg-white border border-gray-300"
+          />
+        </div>
+        <div
+          class="flex items-center justify-between text-black text-14">
+          <div>
+            <a href="#void" aria-label="아이디찾기">아이디찾기</a>
+            <span class="mx-2 text-gray-400" aria-hidden="true">|</span>
+            <a href="#void" aria-label="비밀번호">비밀번호찾기</a>
+          </div>
+          <a href="#void" aria-label="회원가입">회원가입</a>
+        </div>
+        <button type="submit" class="block w-full h-[45px] lg:h-[50px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand" aria-label="로그인하기">
+          LOGIN
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+<common-footer></common-footer>
+
+
+</body>
+</html>

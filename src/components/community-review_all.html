@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - review all</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+	
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+  <!-- Review-item : 카드형컴포넌트(이미지 + 텍스트)-->
+  <fieldset class="border m-4 p-4">
+    <legend class="text-20 font-semibold">[Community-Review] 카드형컴포넌트(이미지+텍스트)</legend>
+    
+    <div class="border-hot-gray100 border-1 rounded-2xl overflow-hidden flex flex-col min-w-0">
+      <div class="bg-hot-ivory aspect-square overflow-hidden">
+        <img src="/assets/images/noneimg.png" class="cover w-full h-full" alt="리뷰대표이미지" />
+      </div>
+      <div class="p-4 space-y-1 sm:space-y-2 min-w-0">
+        <p>⭐⭐⭐⭐⭐</p>
+        <p class="truncate font-medium">
+          Review text
+        </p>
+        <p class="text-hot-gray300 font-medium">Reviewer</p>
+      </div>
+      <div class="p-4 border-t border-hot-gray100 flex itmes-center gap-2 text-13 font-medium">
+        <div class="aspect-square max-w-12">
+          <img src="/assets/images/noneimg.png" alt="상품이미지"/>
+        </div>
+        <div class="flex flex-col justify-center gap-2 w-full min-w-0">
+          <p class="truncate min-h-4">Product Title</p>
+          <p class="flex items-center justify-between">
+            <span>평점 0.0</span>
+            <span>리뷰 000</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+
+
+</body>
+</html>

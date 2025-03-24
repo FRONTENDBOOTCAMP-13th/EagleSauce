@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - photoframe</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+  <fieldset class="border m-4 p-4">
+    <legend class="text-20 font-semibold">[MAIN] 포토프레임</legend>
+      <section>
+      <div>
+        <div class="py-[50px] flex justify-center items-center">
+          <div class="relative w-[70%] max-[959px]:w-[95%]">
+            <img class="w-full h-auto" src="/public/assets/images/main-frame1.png" alt="테두리 이미지" />
+          
+            <div class="absolute inset-0 py-[2.3%] px-[2.2%]">
+              <img id="slider-image" class="object-cover w-full h-full" src="/public/assets/images/intro-2.jpg" alt="중앙 이미지" />
+              <img src="/public/assets/images/prev.png" alt="왼쪽 버튼" class="w-[40px] h-[80px] absolute left-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" />
+              <img src="/public/assets/images/next.png" alt="오른쪽 버튼" class="w-[40px] h-[80px] absolute right-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </fieldset>
+
+
+</body>
+</html>

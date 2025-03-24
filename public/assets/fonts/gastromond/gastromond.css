@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'gastromond';
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+	src: url('./gastromondtest-regular.otf') format('opentype');
+}

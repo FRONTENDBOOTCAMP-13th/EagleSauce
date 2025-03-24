@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - product item2</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+
+
+  <!-- Shop-item : product-item -->
+  <fieldset class="p-4 m-4 border">
+    <legend class="font-semibold text-20">[Shop-item] product-item2</legend>
+
+    <div
+    class="grid w-full lg:grid-cols-2"
+    aria-labelledby="shop-product-section1">
+    <h2 id="shop-product-section1" class="sr-only">하랜띵스 소스 전용 기프트백 구매</h2>
+
+    <!-- 상품이미지 -->
+    <div class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover lg:border-r content-center">
+      <img
+        src="/assets/images/paper_bag.gif"
+        alt="하랜띵스 소스 전용 기프트백"
+        class="scale-[0.7]"
+      />
+    </div>
+    
+    <!-- 상품안내 -->
+    <div class="w-full px-6 py-8 space-y-6">
+      <!-- 상품정보 -->
+      <div class="relative product-item-info lg:py-4 lg:px-8">
+        <h2 class="mb-2 leading-none lg:mb-4">
+          <p class="mb-2 font-semibold text-15 lg:text-20">기프트백</p>
+          <p
+            aria-hidden="true"
+            class="font-semibold font-newbery text-25 lg:text-65"
+          >
+            HOTN'THINGS GIFTBAG
+          </p>
+        </h2>
+        <p
+          class="font-newbery text-20 lg:text-35 font-semibold flex items-center gap-1.5 lg:gap-2"
+        >
+          <span class="font-normal text-15 lg:text-20 text-hot-gray500">
+            <span class="sr-only">정상가</span>
+            <s>2,000</s>
+            <span class="sr-only">원</span>
+          </span>
+          <span>
+            <span class="sr-only">할인가</span>
+            2,000
+            <span class="sr-only">원</span>
+          </span>
+        </p>
+      </div>
+    
+      <!-- 구분선 -->
+      <hr class="block border-1" aria-hidden="true" />
+    
+      <div class="py-4 space-y-8 lg:px-8">
+        <!-- 상품안내 - 데스크톱 버전 -->
+        <div class="hidden space-y-4 font-semibold lg:block text-18 break-keep">
+          <p class="sr-only">하랜띵스 소스 전용 기프트백 정보</p>
+          <p class="font-newbery">Why We Love This GIFTBAG</p>
+    
+          <div class="space-y-4">
+            <p>
+              <strong class="text-nowrap">선물에 고급스러움을 더해줄 하랜띵스 소스 전용 기프트백</strong>
+              <br />
+              하랜띵스 키트 2개가 깔끔하게 들어가는 사이즈
+              <br />
+              하랜띵스 기프트백으로 여러분의 진심을 선물해보세요
+            </p>
+          </div>
+        </div>
+      
+        <!-- 구분선 -->
+        <div class="space-y-2 product-item-price lg:space-y-4">
+          <!-- 상품가격 -->
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex items-center w-32 h-10 overflow-hidden border border-black rounded-full lg:h-15 lg:w-50">
+              <button class="flex items-center justify-center w-8 h-full text-black lg:w-10 hover:bg-gray-100 text-30">−</button>
+              <div class="flex items-center justify-center flex-1 text-3xl font-bold lg:text-base">1</div>
+              <button class="flex items-center justify-center w-8 h-full text-black lg:w-10 hover:bg-gray-100 text-30">+</button>
+            </div>
+            <p class="flex items-center justify-end gap-2 font-semibold text-25 lg:text-45 font-newbery lg:gap-4">
+              <span class="sr-only">합계금액</span>
+              <span class="text-12 lg:text-20">TOTAL</span>
+              <span class="text-25 lg:text-45">2,000</span>
+            </p>
+          </div>
+        </div>
+    
+        <!-- 구매하기버튼 -->
+        <div class="grid grid-cols-2 gap-1">
+          <div class="col-span-1">
+            <button
+              type="submit"
+              class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand"
+              aria-label="장바구니담기"
+            >
+              CART
+            </button>
+          </div>
+          <div class="col-span-1">
+            <button
+              type="submit"
+              class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-hot-brand lg:hover:bg-hot-brand lg:focus:bg-hot-brand lg:bg-black"
+              aria-label="구매하기"
+            >
+              BUY NOW
+            </button>
+          </div>
+          <div class="col-span-2">
+            <button
+              type="submit"
+              class="block w-full h-[45px] lg:h-[60px] px-4 bg-hot-naver lg:hover:bg-hot-naverdark lg:focus:bg-hot-naverdark content-center"
+              aria-label="네이버페이로 구매하기"
+            >
+              <img
+                src="/assets/images/npay_btn_mo.png"
+                class="mx-auto scale-50 lg:hidden"
+                aria-hidden="true"
+              />
+              <img
+                src="/assets/images/npay_btn.png"
+                class="hidden mx-auto scale-45 lg:block"
+                aria-hidden="true"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 모바일 상세정보 -->
+    <div class="lg:hidden">
+      <!-- 단계별 맛 정보 -->
+      <details class="font-medium border-t text-15 break-keep group">
+        <summary class="flex items-center justify-between px-4 py-6">
+          <p class="sr-only">하랜띵스 소스 전용 기프트백</p>
+          <p class="font-newbery">Why We Love This GIFTBAG</p>
+          <p class="relative">
+            <span
+              class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+            ></span>
+            <span
+              class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+            ></span>
+          </p>
+        </summary>
+        <div class="px-4 pb-6 space-y-4">
+          <p>
+            <strong>선물에 고급스러움을 더해줄 하랜띵스 소스 전용 기프트백</strong>
+            <br />
+            하랜띵스 키트 2개가 깔끔하게 들어가는 사이즈<br />
+            하랜띵스 기프트백으로 여러분의 진심을 선물해보세요
+          </p>
+        </div>
+      </details>
+    </div>
+
+    <!-- 상세보기 -->
+    <div class="px-4 py-6 font-medium text-15 break-keep border-y lg:hidden">
+      <p class="sr-only">상세보기(하단영역)</p>
+      <p class="font-newbery">Detail view</p>
+    </div>
+  </div>
+
+  </fieldset>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'adelle-sans';
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Adelle_Sans_Thin.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'adelle-sans';
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Adelle_Sans_Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'adelle-sans';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Adelle_Sans.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'adelle-sans';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Adelle_Sans_Semibold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'adelle-sans';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Adelle_Sans_Bold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'adelle-sans';
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Adelle_Sans_Extrabold.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'adelle-sans';
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	src: url('./fonnts.com-Adelle_Sans_Heavy.otf') format('opentype');
+}

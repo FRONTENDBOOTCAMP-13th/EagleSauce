@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko-KR" data-page="sub">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COMPONENT - summary</title>
+	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+	
+
+  <!-- Common-component : summary -->
+  <fieldset class="border m-4 p-4">
+    <legend class="text-20 font-semibold">[Common-component] COMMUNITY TITLE</legend>
+
+    <details class="font-semibold text-15 break-keep bg-hot-ivory">
+      <summary class="grid grid-cols-3 bg-white sm:grid-cols-6 py-7 lg:py-10 border-b-1 border-hot-gray100">
+        <p class="col-span-1 text-center text-hot-gray500">항목</p>
+        <p class="col-span-2 px-4 sm:col-span-5">질문내용</p>
+      </summary>
+      <div class="grid grid-cols-6 bg-hot-white100 py-7 lg:py-10 border-b-1 border-hot-gray100">
+        <p class="hidden sm:block sm:col-span-1"></p>
+        <p class="col-span-6 px-4 sm:col-span-5">
+          질문 답변 공간
+        </p>
+      </div>
+    </details>
+  </fieldset>
+
+
+</body>
+</html>
