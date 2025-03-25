@@ -22,15 +22,15 @@
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans modal">
-
-	<div id="container" class="pt-0 bg-hot-ivory">
-		<section data-section="intro">
+ 	<h1 class="sr-only">프로젝트 소개 페이지</h1>
+	<div id="container" class="pt-0 bg-hot-ivory" role="main">
+		<section data-section="intro" aria-labelledby="intro-contents">
 			<div class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) overflow-x-hidden bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]">
 				<img src="/assets/images/bird.gif" loading="lazy" alt="걸으면서 이동하는 하랜띵스 새 심볼" class="w-full scale-[200%] md:scale-100">
 				<div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-14 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]">
 					<div class="w-1/2">
-						<strong class="inline-block mt-1 text-4xl font-semibold lg:text-6xl text-nowrap">2팀 이글이글</strong><br />
-						<p class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white">프로젝트 소개</p>
+						<h2  id="intro-contents" class="inline-block mt-1 text-4xl font-semibold lg:text-6xl text-nowrap">2팀 이글이글</h2><br />
+						<h3 class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white">프로젝트 소개</h3>
 					</div>
 					<div class="font-medium lg:mt-3 text-16 lg:text-18 break-keep">
 						<p>
@@ -50,15 +50,15 @@
 			</div>
 		</section>
 
-		<section data-section="team_member">
+		<section data-section="team_member" aria-labelledby="team-members">
 			<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery">TEAM MEMBER🥫</h2>
+				<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery" id="team-members">TEAM MEMBER🥫</h2>
 				
 				<div class="grid max-[500px]:grid-cols-2 grid-cols-4 gap-5 justify-items-center lg:grid-cols-8">
 					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 						<div class="flex flex-col">
 							<div class="bg-white">
-								<img src="/public/assets/images/psh.png" loading="lazy" alt="psh image" />
+								<img src="/public/assets/images/psh.png" loading="lazy" alt="박상희 미모지" />
 							</div>
 							<div class="text-white bg-black p-7">
 								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">박상희</h3>
@@ -90,7 +90,7 @@
 					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 						<div class="flex flex-col">
 							<div class="bg-white">
-								<img src="/public/assets/images/kjo.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+								<img src="/public/assets/images/kjo.png" loading="lazy" alt="김준오 미모지" />
 							</div>
 							<div class="text-white bg-black p-7">
 								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">김준오</h3>
@@ -122,7 +122,7 @@
 					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 						<div class="flex flex-col">
 							<div class="bg-white">
-								<img src="/public/assets/images/psy.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+								<img src="/public/assets/images/psy.png" loading="lazy" alt="박선영 미모지지" />
 							</div>
 							<div class="text-white bg-black p-7">
 								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">박선영</h3>
@@ -147,7 +147,7 @@
 									</li>
 								</ul>
 							</div>
-							<a href="https://github.com/seonyoungg" aria-label="박상희 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
+							<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
 								GITHUB
 							</a>
 						</div>
@@ -156,7 +156,7 @@
 					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
 						<div class="flex flex-col">
 							<div class="bg-white">
-								<img src="/public/assets/images/pjh.png" loading="lazy" alt="나폴리맛피아가 표고러플 들고있는 모습" />
+								<img src="/public/assets/images/pjh.png" loading="lazy" alt="박준환 미모지" />
 							</div>
 							<div class="text-white bg-black p-7">
 								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">박준환</h3>
@@ -189,7 +189,7 @@
 			</div>
 		</section>
 
-		<section data-section="components">
+		<section data-section="components" aria-labelledby="team-components">
 			<div class="py-10 overflow-hidden lg:py-20">
 				<!-- 상단 이미지 영역 -->
 				<div class="relative flex gap-4 transform animate-cardrolling-r -rotate-2">
@@ -231,10 +231,9 @@
 					</div>
 				</div>
 
-
 				<!-- 가운데 텍스트 영역 -->
 				<div class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-					<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery">COMPONENTS🍕</h2>
+					<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery" id="team-components">COMPONENTS🍕</h2>
 
 					<div class="flex flex-col items-center gap-4">
 						<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
@@ -467,7 +466,6 @@
 					</div>
 				</div>
 
-
 				<!-- 하단 이미지 영역 -->
 				<div class="relative flex gap-4 transform animate-cardrolling rotate-2">
 					<!-- 10 -->
@@ -510,9 +508,9 @@
 			</div>
 		</section>
 
-		<section data-section="mobile_page">
+		<section data-section="mobile_page" aria-labelledby="team-mobilepages">
 			<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 class="mb-10 font-semibold text-center lg:mb-10 text-25 lg:text-40 font-newbery flex flex-col gap-4">
+				<h2 id="team-mobilepages" class="mb-10 font-semibold text-center lg:mb-10 text-25 lg:text-40 font-newbery flex flex-col gap-4">
 					<span>MOBILE PAGE🧁</span>
 					<span class="font-normal text-center text-16 break-keep">
 						하단의 애니메이션을 클릭하면 모바일 화면을 <strong>맛보기</strong>로 살펴볼 수 있어요😋
@@ -546,9 +544,9 @@
 			</div>
 		</section>
 
-		<section data-section="pc_page">
+		<section data-section="pc_page" aria-labelledby="team-pcpages">
 			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 class="mb-10 font-semibold text-center lg:mb-20 text-25 lg:text-40 font-newbery flex flex-col gap-4">
+				<h2 id="team-pcpages" class="mb-10 font-semibold text-center lg:mb-20 text-25 lg:text-40 font-newbery flex flex-col gap-4">
 					<span>PC PAGE🥑</span>
 					<span class="font-normal text-center text-16 break-keep">
 						<span class="xl:hidden">하단</span>
@@ -605,10 +603,10 @@
 			</div>
 		</section>
 
-		<section data-section="review">
+		<section data-section="review" aria-labelledby="team-reviews">
 			<div class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
 				<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30">
-					<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery">REVIEW🍿</h2>
+					<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery" id="team-reviews">REVIEW🍿</h2>
 
 					<div class="mb-20">
 						<ul class="grid max-[450px]:grid-cols-1 grid-cols-2 xl:grid-cols-4 gap-4 break-keep">
@@ -730,13 +728,15 @@
 			</div>
 		</section>
 
-		<section data-section="go_page">
+		<section data-section="go_page" aria-labelledby="gopage-links">
 			<div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
 				<div class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"></div>
 			</div>
 			<div class="py-5 lg:py-10 bg-hot-ivory">
 				<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] flex items-center justify-between">
-					<p class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]">EagleSauce</p>
+					<h2 id="gopage-links" class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]">EagleSauce
+						<span class="sr-only">페이지로 이동</span>
+					</h2>
 					<a href="/src/pages/home.html" class="px-6 py-3 font-semibold rounded-full lg:px-20 lg:py-5 bg-hot-brand text-hot-ivory text-16 lg:text-30 hover:bg-black">페이지 바로가기</a>
 				</div>
 			</div>
