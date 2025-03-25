@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="sub">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PYOGORUFFLE - HOTN'THINGS</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
 
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>HOTN'THINGS - PYOGORUFFLE</title>
-  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <link
+      rel="preload"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+    />
 
   <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
@@ -20,6 +45,7 @@
 </head>
 <body class="font-sans">
   
+  <h1 class="sr-only">PYOGORUFFLE - HOTN'THINGS</h1>
   <sub-header></sub-header>
   <div id="container" class="bg-hot-ivory">
     <!-- SECTION-01 -->
@@ -27,7 +53,6 @@
       class="grid w-full lg:grid-cols-2"
       aria-labelledby="shop-product-section1">
       <h2 id="shop-product-section1" class="sr-only">표고러플 상품 구매</h2>
-
       <!-- 상품이미지 -->
       <div class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover lg:border-r content-center">
         <img
@@ -821,7 +846,9 @@
             </p>
           </div>
           <div class="w-full mb-10 overflow-hidden md:mb-0">
-            <div class="w-full h-[250px] lg:h-[300px] xl:h-[500px] translate-x-0 bg-(image:--pyogo-rolling) bg-repeat-x bg-[0_0] bg-contain animate-marquee"></div>
+            <div
+              class="w-full h-[250px] lg:h-[300px] xl:h-[500px] translate-x-0 bg-(image:--pyogo-rolling) bg-repeat-x bg-[0_0] bg-contain animate-marquee"
+            ></div>
           </div>
         </div>
       </section>
