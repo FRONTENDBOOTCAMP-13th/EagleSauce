@@ -32,368 +32,96 @@
       href="/public/assets/fonts/pretendard/pretendardvariable.css"
     />
 
-    <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css" />
-    <link
-      rel="stylesheet"
-      href="/public/assets/fonts/gastromond/gastromond.css"
-    />
-    <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css" />
+  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
+	
+  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
+  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+  
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body class="font-sans">
+  
+  <h1 class="sr-only">PYOGORUFFLE - HOTN'THINGS</h1>
+  <sub-header></sub-header>
+  <div id="container" class="bg-hot-ivory">
+    <!-- SECTION-01 -->
+    <section
+      class="grid w-full lg:grid-cols-2"
+      aria-labelledby="shop-product-section1">
+      <h2 id="shop-product-section1" class="sr-only">표고러플 상품 구매</h2>
+      <!-- 상품이미지 -->
+      <div class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover lg:border-r content-center">
+        <img
+          src="/assets/images/product-1.gif"
+          alt="표고러플상품"
+          class="scale-[0.7]"/>
+      </div>
 
-    <script type="module" src="/src/main.js"></script>
-  </head>
-  <body class="font-sans">
-    <h1 class="sr-only">PYOGORUFFLE - HOTN'THINGS</h1>
-    <sub-header></sub-header>
-    <div id="container" class="bg-hot-ivory">
-      <!-- SECTION-01 -->
-      <section
-        class="grid w-full lg:grid-cols-2"
-        aria-labelledby="shop-product-section1"
-      >
-        <h2 id="shop-product-section1" class="sr-only">표고러플 상품 구매</h2>
-
-        <!-- 상품이미지 -->
-        <div
-          class="w-full bg-(image:--thumb-bg) bg-no-repeat bg-cover lg:border-r content-center"
-        >
+      <!-- 상품안내 -->
+      <div class="w-full px-6 py-8 space-y-6">
+        <!-- 상품정보 -->
+        <div class="relative product-item-info lg:py-4 lg:px-8">
+          <h2 class="mb-2 leading-none lg:mb-4 flex flex-col gap-2">
+            <span class="font-semibold text-15 lg:text-20">표고러플</span>
+            <span
+              aria-hidden="true"
+              class="font-semibold font-newbery text-25 lg:text-65">
+              PYOGORUFFLE
+            </span>
+          </h2>
           <img
-            src="/assets/images/product-1.gif"
-            alt="표고러플상품"
-            class="scale-[0.7]"
-          />
+            src="/assets/images/spicy2.png"
+            alt="맵기5단계 중 2단계"
+            class="w-[50px] lg:w-[80px] absolute top-0 right-0"/>
+          <p class="font-newbery text-20 lg:text-35 font-semibold flex items-center gap-1.5 lg:gap-2">
+            <span class="font-normal text-15 lg:text-20 text-hot-gray500">
+              <span class="sr-only">정상가</span>
+              <s>23,000</s>
+              <span class="sr-only">원</span>
+            </span>
+            <span>
+              <span class="sr-only">할인가</span>
+              19,900
+              <span class="sr-only">원</span>
+            </span>
+            <span class="text-hot-brand">
+              <span class="sr-only">할인율</span>
+              13%
+            </span>
+          </p>
         </div>
 
-        <!-- 상품안내 -->
-        <div class="w-full px-6 py-8 space-y-6">
-          <!-- 상품정보 -->
-          <div class="relative product-item-info lg:py-4 lg:px-8">
-            <h2 class="mb-2 leading-none lg:mb-4">
-              <p class="mb-2 font-semibold text-15 lg:text-20">표고러플</p>
-              <p
-                aria-hidden="true"
-                class="font-semibold font-newbery text-25 lg:text-65"
-              >
-                PYOGORUFFLE
-              </p>
-            </h2>
-            <img
-              src="/assets/images/spicy2.png"
-              alt="맵기5단계 중 2단계"
-              class="w-[50px] lg:w-[80px] absolute top-0 right-0"
-            />
-            <p
-              class="font-newbery text-20 lg:text-35 font-semibold flex items-center gap-1.5 lg:gap-2"
-            >
-              <span class="font-normal text-15 lg:text-20 text-hot-gray500">
-                <span class="sr-only">정상가</span>
-                <s>23,000</s>
-                <span class="sr-only">원</span>
-              </span>
-              <span>
-                <span class="sr-only">할인가</span>
-                19,900
-                <span class="sr-only">원</span>
-              </span>
-              <span class="text-hot-brand">
-                <span class="sr-only">할인율</span>
-                13%
-              </span>
-            </p>
-          </div>
+        <!-- 옵션선택 -->
+        <select
+          name="product-option-mobile"
+          id="product-option-mobile"
+          class="w-full px-5 py-2 bg-white border-hot-gray100 border-1 text-15 lg:hidden">
+          <option value="default" aria-hidden="true">
+            -[필수] 옵션을 선택해주세요 -
+          </option>
+          <option value="" disabled aria-hidden="true">
+            - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+          </option>
+          <option value="" disabled class="font-bold">수량</option>
+          <option value="9">[30,100원 할인] 표고러플 9개 (+129,100)</option>
+          <option value="5">[10,000원 할인] 표고러플 5개 (+69,600)</option>
+          <option value="3">[5,000원 할인] 표고러플 3개 (+34,800)</option>
+          <option value="1">표고러플 단품</option>
+        </select>
 
-          <!-- 옵션선택 -->
-          <select
-            name="product-option"
-            id="product-option"
-            class="w-full px-5 py-2 bg-white border-hot-gray100 border-1 text-15 lg:hidden"
-          >
-            <option value="default" aria-hidden="true">
-              -[필수] 옵션을 선택해주세요 -
-            </option>
-            <option value="" disabled aria-hidden="true">
-              - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-            </option>
-            <option value="" disabled class="font-bold">수량</option>
-            <option value="9">[30,100원 할인] 표고러플 9개 (+129,100)</option>
-            <option value="5">[10,000원 할인] 표고러플 5개 (+69,600)</option>
-            <option value="3">[5,000원 할인] 표고러플 3개 (+34,800)</option>
-            <option value="1">표고러플 단품</option>
-          </select>
+        <!-- 구분선 -->
+        <hr class="hidden lg:border-1 lg:block" aria-hidden="true" />
 
-          <!-- 구분선 -->
-          <hr class="hidden lg:border-1 lg:block" aria-hidden="true" />
+        <div class="hidden px-8 py-4 space-y-8 product-inner-pc lg:block">
+          <!-- 상품안내 -->
+          <div class="space-y-4 font-semibold text-18 break-keep">
+            <p class="font-newbery">Why We Love This Sauce</p>
 
-          <div class="hidden px-8 py-4 space-y-8 product-inner-pc lg:block">
-            <!-- 상품안내 -->
-            <div class="space-y-4 font-semibold text-18 break-keep">
-              <p class="font-newbery">Why We Love This Sauce</p>
-
-              <div class="space-y-4">
-                <p>
-                  <strong>미슐랭 3스타</strong>
-                  레스토랑 출신 <strong>식품기술사</strong>가 설계한 플레이버를
-                  담다. <br />
-                  트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된
-                  고급스러운 매운맛
-                </p>
-                <div class="flex gap-4 h-[25px]">
-                  <img src="/assets/images/mark-vegan.png" alt="비건인증식품" />
-                  <img
-                    src="/assets/images/mark-gluten.png"
-                    alt="글루텐프리식품"
-                  />
-                </div>
-                <ul class="flex flex-wrap gap-x-4 gap-y-2">
-                  <li class="flex items-center gap-2">
-                    <p class="min-w-[40px] text-14">매운맛</p>
-                    <div
-                      class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[40%]"
-                    >
-                      <img
-                        src="/assets/images/point-bg.png"
-                        alt="2단계"
-                        class="relative"
-                      />
-                    </div>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <p class="min-w-[40px] text-14">감칠맛</p>
-                    <div
-                      class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[80%]"
-                    >
-                      <img
-                        src="/assets/images/point-bg.png"
-                        alt="4단계"
-                        class="relative"
-                      />
-                    </div>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <p class="min-w-[40px] text-14">단맛</p>
-                    <div
-                      class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[60%]"
-                    >
-                      <img
-                        src="/assets/images/point-bg.png"
-                        alt="3단계"
-                        class="relative"
-                      />
-                    </div>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <p class="min-w-[40px] text-14">신맛</p>
-                    <div
-                      class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[80%]"
-                    >
-                      <img
-                        src="/assets/images/point-bg.png"
-                        alt="4단계"
-                        class="relative"
-                      />
-                    </div>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <p class="min-w-[40px] text-14">짠맛</p>
-                    <div
-                      class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[60%]"
-                    >
-                      <img
-                        src="/assets/images/point-bg.png"
-                        alt="2단계"
-                        class="relative"
-                      />
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- 대표원재료 -->
-            <div class="space-y-4 font-semibold text-18 break-keep">
-              <p class="sr-only">대표원재료</p>
-              <p class="font-newbery">Profile</p>
-              <ul class="flex flex-wrap gap-x-8 gap-y-4">
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-4.png"
-                    alt="트러플"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-14"
-                  >
-                    트러플
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-1-1.png"
-                    alt="표고버섯"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-14"
-                  >
-                    표고버섯
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-7.png"
-                    alt="올리브오일"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-14"
-                  >
-                    올리브오일
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-13.png"
-                    alt="화이트와인비네거"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-14"
-                  >
-                    화이트와인비네거
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-8.png"
-                    alt="고춧가루"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-14"
-                  >
-                    고춧가루
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-6.png"
-                    alt="마늘"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-14"
-                  >
-                    마늘
-                  </p>
-                </li>
-              </ul>
-            </div>
-
-            <!-- 옵션 -->
-            <div class="space-y-4 font-semibold text-18 break-keep">
-              <p>수량</p>
-              <select
-                name="product-option"
-                id="product-option"
-                class="w-full px-5 py-2 bg-white border-hot-gray100 border-1 text-15"
-              >
-                <option value="default">-[필수] 옵션을 선택해주세요 -</option>
-                <option value="" disabled aria-hidden="true">
-                  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                </option>
-                <option value="" disabled aria-hidden="true" class="font-bold">
-                  수량
-                </option>
-                <option value="9">
-                  [30,100원 할인] 표고러플 9개 (+129,100)
-                </option>
-                <option value="5">
-                  [10,000원 할인] 표고러플 5개 (+69,600)
-                </option>
-                <option value="3">[5,000원 할인] 표고러플 3개 (+34,800)</option>
-                <option value="1">표고러플 단품</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- 구분선 -->
-          <hr class="lg:border-1" aria-hidden="true" />
-
-          <!-- 상품가격 및 구매 -->
-          <div class="space-y-2 product-item-price lg:space-y-4">
-            <!-- 상품가격 -->
-            <p
-              class="flex items-center justify-end gap-2 font-semibold text-25 lg:text-45 font-newbery lg:gap-4"
-            >
-              <span class="sr-only">합계금액</span>
-              <span class="text-12 lg:text-20">TOTAL</span>
-              <span>0</span>
-            </p>
-
-            <!-- 구매하기버튼 -->
-            <div class="grid grid-cols-2 gap-1">
-              <div class="col-span-1">
-                <button
-                  type="submit"
-                  class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand"
-                  aria-label="장바구니담기"
-                >
-                  CART
-                </button>
-              </div>
-              <div class="col-span-1">
-                <button
-                  type="submit"
-                  class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-hot-brand lg:hover:bg-hot-brand lg:focus:bg-hot-brand lg:bg-black"
-                  aria-label="구매하기"
-                >
-                  BUY NOW
-                </button>
-              </div>
-              <div class="col-span-2">
-                <button
-                  type="submit"
-                  class="block w-full h-[45px] lg:h-[60px] px-4 bg-hot-naver lg:hover:bg-hot-naverdark lg:focus:bg-hot-naverdark content-center"
-                  aria-label="네이버페이로 구매하기"
-                >
-                  <img
-                    src="/assets/images/npay_btn_mo.png"
-                    class="mx-auto scale-50 lg:hidden"
-                    aria-hidden="true"
-                  />
-                  <img
-                    src="/assets/images/npay_btn.png"
-                    class="hidden mx-auto scale-45 lg:block"
-                    aria-hidden="true"
-                  />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 상세정보 -->
-        <div class="lg:hidden">
-          <!-- 단계별 맛 정보 -->
-          <details class="font-medium border-t text-15 break-keep group">
-            <summary class="flex items-center justify-between px-4 py-6">
-              <p class="sr-only">맛 단계별 정보</p>
-              <p class="font-newbery">Why We Love This Sauce</p>
-              <p class="relative">
-                <span
-                  class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
-                ></span>
-                <span
-                  class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
-                ></span>
-              </p>
-            </summary>
-            <div class="px-4 pb-6 space-y-4">
+            <div class="space-y-4">
               <p>
                 <strong>미슐랭 3스타</strong>
                 레스토랑 출신 <strong>식품기술사</strong>가 설계한 플레이버를
@@ -464,126 +192,384 @@
                   >
                     <img
                       src="/assets/images/point-bg.png"
-                      alt="3단계"
+                      alt="2단계"
                       class="relative"
                     />
                   </div>
                 </li>
               </ul>
             </div>
-          </details>
+          </div>
 
           <!-- 대표원재료 -->
-          <details class="font-medium border-t text-15 break-keep group">
-            <summary class="flex items-center justify-between px-4 py-6">
-              <p class="sr-only">대표원재료</p>
-              <p class="font-newbery">Profile</p>
-              <p class="relative">
-                <span
-                  class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
-                ></span>
-                <span
-                  class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
-                ></span>
-              </p>
-            </summary>
-            <div class="px-4 pb-6 space-y-4">
-              <ul class="flex flex-wrap gap-x-4 gap-y-2">
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-4.png"
-                    alt="트러플"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-13"
-                  >
-                    트러플
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-1-1.png"
-                    alt="표고버섯"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-13"
-                  >
-                    표고버섯
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-7.png"
-                    alt="올리브오일"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-13"
-                  >
-                    올리브오일
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-13.png"
-                    alt="화이트와인비네거"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-13"
-                  >
-                    화이트와인비네거
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-8.png"
-                    alt="고춧가루"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-13"
-                  >
-                    고춧가루
-                  </p>
-                </li>
-                <li class="flex flex-col items-center gap-3 w-[60px]">
-                  <img
-                    src="/assets/images/img-6.png"
-                    alt="마늘"
-                    aria-hidden="true"
-                    class="h-[40px] lg:h-auto"
-                  />
-                  <p
-                    class="font-semibold leading-none text-center break-all text-13"
-                  >
-                    마늘
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </details>
+          <div class="space-y-4 font-semibold text-18 break-keep">
+            <p class="sr-only">대표원재료</p>
+            <p class="font-newbery">Profile</p>
+            <ul class="flex flex-wrap gap-x-8 gap-y-4">
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-4.png"
+                  alt="트러플"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-14"
+                >
+                  트러플
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-1-1.png"
+                  alt="표고버섯"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-14"
+                >
+                  표고버섯
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-7.png"
+                  alt="올리브오일"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-14"
+                >
+                  올리브오일
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-13.png"
+                  alt="화이트와인비네거"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-14"
+                >
+                  화이트와인비네거
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-8.png"
+                  alt="고춧가루"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-14"
+                >
+                  고춧가루
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-6.png"
+                  alt="마늘"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-14"
+                >
+                  마늘
+                </p>
+              </li>
+            </ul>
+          </div>
 
-          <!-- 상세보기 -->
-          <div class="px-4 py-6 font-medium text-15 break-keep border-y">
-            <p class="sr-only">상세보기(하단영역)</p>
-            <p class="font-newbery">Detail view</p>
+          <!-- 옵션 -->
+          <div class="space-y-4 font-semibold text-18 break-keep">
+            <p>수량</p>
+            <select
+              name="product-option"
+              id="product-option"
+              class="w-full px-5 py-2 bg-white border-hot-gray100 border-1 text-15"
+            >
+              <option value="default">-[필수] 옵션을 선택해주세요 -</option>
+              <option value="" disabled aria-hidden="true">
+                - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+              </option>
+              <option value="" disabled aria-hidden="true" class="font-bold">
+                수량
+              </option>
+              <option value="9">
+                [30,100원 할인] 표고러플 9개 (+129,100)
+              </option>
+              <option value="5">
+                [10,000원 할인] 표고러플 5개 (+69,600)
+              </option>
+              <option value="3">[5,000원 할인] 표고러플 3개 (+34,800)</option>
+              <option value="1">표고러플 단품</option>
+            </select>
           </div>
         </div>
-      </section>
 
-      <!-- 상세보기(PC) -->
-      <div class="hidden px-10 py-10 font-semibold lg:block text-20 border-y">
-        <p class="sr-only">상세보기(하단영역)</p>
-        <p class="font-newbery">Detail view</p>
+        <!-- 구분선 -->
+        <hr class="lg:border-1" aria-hidden="true" />
+
+        <!-- 상품가격 및 구매 -->
+        <div class="space-y-2 product-item-price lg:space-y-4">
+          <!-- 상품가격 -->
+          <p class="flex items-center justify-end gap-2 font-semibold text-25 lg:text-45 font-newbery lg:gap-4">
+            <span class="sr-only">합계금액</span>
+            <span class="text-12 lg:text-20">TOTAL</span>
+            <span>0</span>
+          </p>
+
+          <!-- 구매하기버튼 -->
+          <div class="grid grid-cols-2 gap-1">
+            <div class="col-span-1">
+              <button
+                type="submit"
+                class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-black lg:hover:bg-hot-brand lg:focus:bg-hot-brand"
+                aria-label="장바구니담기"
+              >
+                CART
+              </button>
+            </div>
+            <div class="col-span-1">
+              <button
+                type="submit"
+                class="block w-full h-[45px] lg:h-[60px] px-4 text-center font-newbery font-semibold text-white text-20 bg-hot-brand lg:hover:bg-hot-brand lg:focus:bg-hot-brand lg:bg-black"
+                aria-label="구매하기"
+              >
+                BUY NOW
+              </button>
+            </div>
+            <div class="col-span-2">
+              <button
+                type="submit"
+                class="block w-full h-[45px] lg:h-[60px] px-4 bg-hot-naver lg:hover:bg-hot-naverdark lg:focus:bg-hot-naverdark content-center"
+                aria-label="네이버페이로 구매하기">
+                <img
+                  src="/assets/images/npay_btn_mo.png"
+                  class="mx-auto scale-50 lg:hidden"
+                  aria-hidden="true"
+                  alt=""/>
+                <img
+                  src="/assets/images/npay_btn.png"
+                  class="hidden mx-auto scale-45 lg:block"
+                  aria-hidden="true"
+                  alt=""/>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- 상세정보 -->
+      <div class="lg:hidden">
+        <!-- 단계별 맛 정보 -->
+        <details class="font-medium border-t text-15 break-keep group">
+          <summary class="flex items-center justify-between px-4 py-6">
+            <span class="sr-only">맛 단계별 정보</span>
+            <span class="font-newbery">Why We Love This Sauce</span>
+            <span class="relative">
+              <span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
+              <span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
+            </span>
+          </summary>
+          <div class="px-4 pb-6 space-y-4">
+            <p>
+              <strong>미슐랭 3스타</strong>
+              레스토랑 출신 <strong>식품기술사</strong>가 설계한 플레이버를
+              담다. <br />
+              트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된
+              고급스러운 매운맛
+            </p>
+            <div class="flex gap-4 h-[25px]">
+              <img src="/assets/images/mark-vegan.png" alt="비건인증식품" />
+              <img
+                src="/assets/images/mark-gluten.png"
+                alt="글루텐프리식품"
+              />
+            </div>
+            <ul class="flex flex-wrap gap-x-4 gap-y-2">
+              <li class="flex items-center gap-2">
+                <p class="min-w-[40px] text-14">매운맛</p>
+                <div
+                  class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[40%]"
+                >
+                  <img
+                    src="/assets/images/point-bg.png"
+                    alt="2단계"
+                    class="relative"
+                  />
+                </div>
+              </li>
+              <li class="flex items-center gap-2">
+                <p class="min-w-[40px] text-14">감칠맛</p>
+                <div
+                  class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[80%]"
+                >
+                  <img
+                    src="/assets/images/point-bg.png"
+                    alt="4단계"
+                    class="relative"
+                  />
+                </div>
+              </li>
+              <li class="flex items-center gap-2">
+                <p class="min-w-[40px] text-14">단맛</p>
+                <div
+                  class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[60%]"
+                >
+                  <img
+                    src="/assets/images/point-bg.png"
+                    alt="3단계"
+                    class="relative"
+                  />
+                </div>
+              </li>
+              <li class="flex items-center gap-2">
+                <p class="min-w-[40px] text-14">신맛</p>
+                <div
+                  class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[80%]"
+                >
+                  <img
+                    src="/assets/images/point-bg.png"
+                    alt="4단계"
+                    class="relative"
+                  />
+                </div>
+              </li>
+              <li class="flex items-center gap-2">
+                <p class="min-w-[40px] text-14">짠맛</p>
+                <div
+                  class="inline-flex h-3 relative after:content-[''] after:block after:absolute after:left-0 after:top-0 after:h-full after:[background-image:var(--point-dot)] after:bg-no-repeat after:bg-cover after:w-[60%]"
+                >
+                  <img
+                    src="/assets/images/point-bg.png"
+                    alt="3단계"
+                    class="relative"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 대표원재료 -->
+        <details class="font-medium border-t text-15 break-keep group">
+          <summary class="flex items-center justify-between px-4 py-6">
+            <span class="sr-only">대표원재료</span>
+            <span class="font-newbery">Profile</span>
+            <span class="relative">
+              <span
+                class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+              ></span>
+              <span
+                class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+              ></span>
+            </span>
+          </summary>
+          <div class="px-4 pb-6 space-y-4">
+            <ul class="flex flex-wrap gap-x-4 gap-y-2">
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-4.png"
+                  alt="트러플"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-13"
+                >
+                  트러플
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-1-1.png"
+                  alt="표고버섯"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-13"
+                >
+                  표고버섯
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-7.png"
+                  alt="올리브오일"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-13"
+                >
+                  올리브오일
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-13.png"
+                  alt="화이트와인비네거"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-13"
+                >
+                  화이트와인비네거
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-8.png"
+                  alt="고춧가루"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-13"
+                >
+                  고춧가루
+                </p>
+              </li>
+              <li class="flex flex-col items-center gap-3 w-[60px]">
+                <img
+                  src="/assets/images/img-6.png"
+                  alt="마늘"
+                  aria-hidden="true"
+                  class="h-[40px] lg:h-auto"
+                />
+                <p
+                  class="font-semibold leading-none text-center break-all text-13"
+                >
+                  마늘
+                </p>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- 상세보기 -->
+        <div class="px-4 py-6 font-medium text-15 break-keep border-y">
+          <p class="sr-only">상세보기(하단영역)</p>
+          <p class="font-newbery">Detail view</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 상세보기(PC) -->
+    <div class="hidden px-10 py-10 font-semibold lg:block text-20 border-y">
+      <p class="sr-only">상세보기(하단영역)</p>
+      <p class="font-newbery">Detail view</p>
+    </div>
 
       <!-- SECTION-02 -->
       <section aria-labelledby="shop-product-section2">
@@ -923,10 +909,10 @@
             class="w-full px-4 flex flex-col gap-[60px] items-center justify-center break-keep relative"
           >
             <h2
-              class="text-center font-gastro text-[14vw] md:text-[105px] lg:text-[128px] transition-all duration-300 leading-[1.1] text-hot-brand"
+              class="flex flex-col gap-2 text-center font-gastro text-[14vw] md:text-[105px] lg:text-[128px] transition-all duration-300 leading-[1.1] text-hot-brand"
             >
-              <p>WESTERN</p>
-              <p class="text-hot-secondary">EASTERN</p>
+              <span>WESTERN</span>
+              <span class="text-hot-secondary">EASTERN</span>
             </h2>
             <div class="grid grid-cols-2 gap-x-[50px] gap-y-6 lg:gap-x-[100px]">
               <div class="relative flex flex-col gap-y-6">
@@ -1139,7 +1125,7 @@
               경험해보세요
             </p>
             <img
-              src="/assets/images/sec8-graph (1).png"
+              src="/assets/images/sec8-graph_1.png"
               alt="소스관련그래프"
               aria-hidden="true"
               class="max-w-[250px] hidden lg:block"
@@ -1340,9 +1326,7 @@
 
             <!-- 가격 박스 -->
             <div
-              class="flex items-center justify-center mt-6 font-bold"
-              role="text"
-            >
+              class="flex items-center justify-center mt-6 font-bold">
               <h4 class="sr-only">하랜띵스키트 가격정보</h4>
               <span
                 class="pt-1 text-13 text-hot-goldbrown lg:text-[24px] lg:font-bold"

@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
         <div class="w-full mx-auto py-[37px] flex flex-col items-center text-center lg:max-w-[1920px] lg:items-start lg:py-10 lg:pb-[33px] lg:text-left">
 
           <div class="w-[100px] lg:w-[150px]">
-            <a href="/src/pages/home.html" class="inline-block text-0">
+            <a href="/src/pages/home.html" class="inline-block text-0" rel="noopener noreferrer" aria-label="홈으로바로가기">
               <span class="inline-block w-[100px] h-[20px] lg:w-[150px] lg:h-[30px] bg-[image:var(--hot-logo)] bg-no-repeat bg-contain" aria-label="HOTN'THINGS"></span>
             </a>
           </div>
