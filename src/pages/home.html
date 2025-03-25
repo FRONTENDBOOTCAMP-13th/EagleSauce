@@ -22,172 +22,167 @@
 </head>
 <body class="font-sans modal">
 
+  <main-header></main-header>
 
-<main-header></main-header>
+  <div id="container" class="bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
+    
 
-<div id="container" class="bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
-  
+    <!-- photo frame start -->
+    <section>
+      <div class="py-[50px] flex justify-center items-center">
+        <div class="relative w-[90%] max-w-7xl">
+          <img src="/public/assets/images/main-frame1.png" loading="lazy" alt="포토 프레임" class="w-full h-auto"/>
 
-  <!-- photo frame start -->
-  <section>
-    <div class="py-[50px] flex justify-center items-center">
-      <div class="relative w-[90%] max-w-7xl">
-        <img src="/public/assets/images/main-frame1.png" loading="lazy" alt="포토 프레임" class="w-full h-auto"/>
-
-        <div class="absolute inset-0 py-[2.3%] px-[2.2%]">
-          <div class="sld_btn w-[40px] h-[80px] absolute left-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" data-type="prev">
-            <img src="/public/assets/images/prev.png" loading="lazy" alt="슬라이드 왼쪽 버튼">
-          </div>
-          <div class="sld_btn w-[40px] h-[80px] absolute right-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" data-type="next">
-            <img src="/public/assets/images/next.png" loading="lazy" alt="슬라이드 오른쪽 버튼">
-          </div>
-
-          <div id="photo_frame_sld" class="swiper photo_frame_sld">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="/public/assets/images/napoli-zip.jpg" loading="lazy" alt="나폴리맛피아가 핫소스 뿌리는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main01-zip.jpg" loading="lazy" alt="피자에 핫소스 뿌리는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main02-zip.jpg" loading="lazy" alt="감자튀김 핫소스에 찍어먹는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main03-zip.jpg" loading="lazy" alt="음식에 핫소스 뿌리는 모습"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main04-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main05-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main06-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
-              <div class="swiper-slide"><img src="/public/assets/images/main07-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+          <div class="absolute inset-0 py-[2.3%] px-[2.2%]">
+            <div class="sld_btn w-[40px] h-[80px] absolute left-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" data-type="prev">
+              <img src="/public/assets/images/prev.png" loading="lazy" alt="슬라이드 왼쪽 버튼">
             </div>
+            <div class="sld_btn w-[40px] h-[80px] absolute right-[-40px] top-1/2 transform -translate-y-1/2 max-[959px]:hidden" data-type="next">
+              <img src="/public/assets/images/next.png" loading="lazy" alt="슬라이드 오른쪽 버튼">
+            </div>
+
+            <div id="photo_frame_sld" class="swiper photo_frame_sld">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/public/assets/images/napoli-zip.jpg" loading="lazy" alt="나폴리맛피아가 핫소스 뿌리는 모습"></div>
+                <div class="swiper-slide"><img src="/public/assets/images/main01-zip.jpg" loading="lazy" alt="피자에 핫소스 뿌리는 모습"></div>
+                <div class="swiper-slide"><img src="/public/assets/images/main02-zip.jpg" loading="lazy" alt="감자튀김 핫소스에 찍어먹는 모습"></div>
+                <div class="swiper-slide"><img src="/public/assets/images/main03-zip.jpg" loading="lazy" alt="음식에 핫소스 뿌리는 모습"></div>
+                <div class="swiper-slide"><img src="/public/assets/images/main04-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+                <div class="swiper-slide"><img src="/public/assets/images/main05-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+                <div class="swiper-slide"><img src="/public/assets/images/main06-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+                <div class="swiper-slide"><img src="/public/assets/images/main07-zip.jpg" loading="lazy" alt="핫소스 사진"></div>
+              </div>
+            </div>
+
           </div>
-
         </div>
       </div>
-    </div>
-  </section>
-  <!-- photo frame end -->
+    </section>
+    <!-- photo frame end -->
 
 
-  <!-- showcase start -->
-  <section class="w-full">
-    <div class="relative w-full">
-      <!-- 왼쪽 선반 이미지 -->
-      <div class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" aria-hidden="true">
-        <img src="/public/assets/images/left-showcase.png" loading="lazy" alt="좌측 선반" aria-hidden="true" class="w-full align-top"/>
-      </div>
+    <!-- showcase start -->
+    <section class="w-full">
+      <div class="relative w-full">
+        <!-- 왼쪽 선반 이미지 -->
+        <div class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" aria-hidden="true">
+          <img src="/public/assets/images/left-showcase.png" loading="lazy" alt="좌측 선반" aria-hidden="true" class="w-full align-top"/>
+        </div>
 
-      <!-- 오른쪽 선반 이미지 -->
-      <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" aria-hidden="true">
-        <img src="/public/assets/images/right-showcase.png" loading="lazy" alt="우측 선반" aria-hidden="true" class="w-full align-top"/>
-      </div>
+        <!-- 오른쪽 선반 이미지 -->
+        <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" aria-hidden="true">
+          <img src="/public/assets/images/right-showcase.png" loading="lazy" alt="우측 선반" aria-hidden="true" class="w-full align-top"/>
+        </div>
 
-      <!-- 중앙 쇼케이스 이미지 -->
-      <div class="w-full lg:w-[40%] mx-auto relative z-1">
-        <img src="/public/assets/images/showcase.png" loading="lazy" alt="쇼케이스" class="w-full align-top"/>
-        <ul class="pl-10 w-[40%]">
-          <li>
-            <a href="/src/components/showcase-pyogo-popup.html" aria-label="표고러플 팝업창 보기">
-              <div class="top-[19%] left-[21%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-1.png" loading="lazy" alt="표고러플" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[102%] left-[35%] absolute w-[24.5%]">
-                  <img src="/public/assets/images/PYOGORUFFLE-nametag.png" loading="lazy" alt="표고러플 네임태그" class="w-full align-top"/>
+        <!-- 중앙 쇼케이스 이미지 -->
+        <div class="w-full lg:w-[40%] mx-auto relative z-1">
+          <img src="/public/assets/images/showcase.png" loading="lazy" alt="쇼케이스" class="w-full align-top"/>
+          <ul class="pl-10 w-[40%]">
+            <li>
+              <a href="/src/components/showcase-pyogo-popup.html" aria-label="표고러플 팝업창 보기">
+                <div class="top-[19%] left-[21%] absolute w-[33%] group">
+                  <img src="/public/assets/images/product-1.png" loading="lazy" alt="표고러플" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플" class="hidden w-full align-top group-hover:block"/>
+                  <div class="top-[102%] left-[35%] absolute w-[24.5%]">
+                    <img src="/public/assets/images/PYOGORUFFLE-nametag.png" loading="lazy" alt="표고러플 네임태그" class="w-full align-top"/>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/showcase-parmesan-popup.html" aria-label="파마산 고추장 소스 제품 설명 보기">
-              <div class="top-[44%] left-[21%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-2.png" loading="lazy" alt="파마산고추장" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[103%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" loading="lazy" alt="파마산고추장 네임태그" class="w-full align-top"/>
+              </a>
+            </li>
+            <li>
+              <a href="/src/components/showcase-parmesan-popup.html" aria-label="파마산 고추장 소스 제품 설명 보기">
+                <div class="top-[44%] left-[21%] absolute w-[33%] group">
+                  <img src="/public/assets/images/product-2.png" loading="lazy" alt="파마산고추장" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장" class="hidden w-full align-top group-hover:block"/>
+                  <div class="top-[103%] left-[35%] absolute w-[25%]">
+                    <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" loading="lazy" alt="파마산고추장 네임태그" class="w-full align-top"/>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/showcase-shrimp-popup.html" aria-label="XO쉬림프 소스 제품 설명 보기">
-              <div class="top-[69.5%] left-[21%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-3.png" loading="lazy" alt="XO쉬림프" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프" class="hidden w-full align-top border-0 group-hover:block"/>
-                <div class="top-[103.5%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/XOSHRIMP-nametag.png" loading="lazy" alt="XO쉬림프 네임태그" class="w-full align-top"/>
+              </a>
+            </li>
+            <li>
+              <a href="/src/components/showcase-shrimp-popup.html" aria-label="XO쉬림프 소스 제품 설명 보기">
+                <div class="top-[69.5%] left-[21%] absolute w-[33%] group">
+                  <img src="/public/assets/images/product-3.png" loading="lazy" alt="XO쉬림프" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프" class="hidden w-full align-top border-0 group-hover:block"/>
+                  <div class="top-[103.5%] left-[35%] absolute w-[25%]">
+                    <img src="/public/assets/images/XOSHRIMP-nametag.png" loading="lazy" alt="XO쉬림프 네임태그" class="w-full align-top"/>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/showcase-pyogo-popup.html" aria-label="표고러플 팝업창 보기">
-              <div class="top-[19%] left-[47.7%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-1.png" loading="lazy" alt="표고러플" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[102%] left-[35%] absolute w-[24.5%]">
-                  <img src="/public/assets/images/PYOGORUFFLE-nametag.png" loading="lazy" alt="표고러플 네임태그" class="w-full align-top"/>
+              </a>
+            </li>
+            <li>
+              <a href="/src/components/showcase-pyogo-popup.html" aria-label="표고러플 팝업창 보기">
+                <div class="top-[19%] left-[47.7%] absolute w-[33%] group">
+                  <img src="/public/assets/images/product-1.png" loading="lazy" alt="표고러플" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플" class="hidden w-full align-top group-hover:block"/>
+                  <div class="top-[102%] left-[35%] absolute w-[24.5%]">
+                    <img src="/public/assets/images/PYOGORUFFLE-nametag.png" loading="lazy" alt="표고러플 네임태그" class="w-full align-top"/>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/showcase-parmesan-popup.html" aria-label="파마산 고추장 소스 제품 설명 보기">
-              <div class="top-[44%] left-[47.7%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-2.png" loading="lazy" alt="파마산고추장" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[103%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" loading="lazy" alt="파마산고추장 네임태그" class="w-full align-top"/>
+              </a>
+            </li>
+            <li>
+              <a href="/src/components/showcase-parmesan-popup.html" aria-label="파마산 고추장 소스 제품 설명 보기">
+                <div class="top-[44%] left-[47.7%] absolute w-[33%] group">
+                  <img src="/public/assets/images/product-2.png" loading="lazy" alt="파마산고추장" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장" class="hidden w-full align-top group-hover:block"/>
+                  <div class="top-[103%] left-[35%] absolute w-[25%]">
+                    <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" loading="lazy" alt="파마산고추장 네임태그" class="w-full align-top"/>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="/src/components/showcase-shrimp-popup.html" aria-label="XO쉬림프 소스 제품 설명 보기">
-              <div class="test top-[69.5%] left-[47.7%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-3.png" loading="lazy" alt="XO쉬림프" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프" class="hidden w-full align-top border-0 group-hover:block"/>
-                <div class="top-[103.5%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/XOSHRIMP-nametag.png" loading="lazy" alt="XO쉬림프 네임태그" class="w-full align-top"/>
+              </a>
+            </li>
+            <li>
+              <a href="/src/components/showcase-shrimp-popup.html" aria-label="XO쉬림프 소스 제품 설명 보기">
+                <div class="test top-[69.5%] left-[47.7%] absolute w-[33%] group">
+                  <img src="/public/assets/images/product-3.png" loading="lazy" alt="XO쉬림프" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프" class="hidden w-full align-top border-0 group-hover:block"/>
+                  <div class="top-[103.5%] left-[35%] absolute w-[25%]">
+                    <img src="/public/assets/images/XOSHRIMP-nametag.png" loading="lazy" alt="XO쉬림프 네임태그" class="w-full align-top"/>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="h-[80vw] lg:h-[28vw] w-full absolute bottom-0 left-0 z-0 bg-(image:--wood-bg) bg-center bg-no-repeat bg-cover">
-        <div class="absolute top-0 left-0 w-full overflow-hidden -translate-y-full bg-black z-1">
-          <p class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20"></p>
+        <div class="h-[80vw] lg:h-[28vw] w-full absolute bottom-0 left-0 z-0 bg-(image:--wood-bg) bg-center bg-no-repeat bg-cover">
+          <div class="absolute top-0 left-0 w-full overflow-hidden -translate-y-full bg-black z-1">
+            <p class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20"></p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- showcase end -->
+    </section>
+    <!-- showcase end -->
 
-  
-</div>
-<common-footer></common-footer>
-
-
-
-<div id="modal_wrap" class="z-[2000] fixed top-0 left-0 w-full h-dvh bg-[rgba(0,0,0,0.8)] break-keep">
-  <div class="absolute top-1/2 left-1/2 -translate-1/2 w-[calc(100%-32px)] min-w-[70vw] lg:min-w-fit md:w-fit p-5 lg:p-10 rounded-xs bg-hot-ivory">
-    <h2 class="text-18 mb-5 lg:mb-10 text-center lg:text-30 font-semibold">🦁 멋쟁이사자처럼 학습 프로젝트</h2>
-
-    <div class="text-13 lg:text-18">
-      <p>안녕하세요, 방문자님!</p>
-      <strong class="block">본 웹사이트는 멋쟁이사자처럼 프론트엔드 교육과정의 학습 프로젝트입니다.</strong>
-      <br/>
-      <b>【면책 조항】</b>
-      <ul class="text-13 lg:text-16">
-          <li>• 교육 목적으로 제작된 비상업적 프로젝트입니다.</li>
-          <li>• 사이트에 포함된 정보는 정확성이나 완전성을 보장하지 않습니다.</li>
-          <li>• 표시된 상품, 서비스, 가격 등은 실제로 제공되지 않습니다.</li>
-          <li>• 제3자 콘텐츠가 포함될 수 있으며, 해당 저작권은 원 소유자에게 있습니다.</li>
-      </ul>
-      <br/>
-      <b class="block">확인 버튼을 클릭하시면 이 내용에 동의하신 것으로 간주됩니다.</b>
-      <p>즐거운 탐색 되세요!</p><br />
-    </div>
-
-    <button type="button" onclick="modal_close()" class="w-full p-2 lg:p-4 rounded-xs bg-hot-brand text-white text-15 lg:text-20 font-semibold hover:bg-black">확인</button>
+    
   </div>
-</div>
+  <common-footer></common-footer>
 
+  <div id="modal_wrap" class="z-[2000] fixed top-0 left-0 w-full h-dvh bg-[rgba(0,0,0,0.8)] break-keep">
+    <div class="absolute top-1/2 left-1/2 -translate-1/2 w-[calc(100%-32px)] min-w-[70vw] lg:min-w-fit md:w-fit p-5 lg:p-10 rounded-xs bg-hot-ivory">
+      <h2 class="text-18 mb-5 lg:mb-10 text-center lg:text-30 font-semibold">🦁 멋쟁이사자처럼 학습 프로젝트</h2>
 
+      <div class="text-13 lg:text-18">
+        <p>안녕하세요, 방문자님!</p>
+        <strong class="block">본 웹사이트는 멋쟁이사자처럼 프론트엔드 교육과정의 학습 프로젝트입니다.</strong>
+        <br/>
+        <b>【면책 조항】</b>
+        <ul class="text-13 lg:text-16">
+            <li>• 교육 목적으로 제작된 비상업적 프로젝트입니다.</li>
+            <li>• 사이트에 포함된 정보는 정확성이나 완전성을 보장하지 않습니다.</li>
+            <li>• 표시된 상품, 서비스, 가격 등은 실제로 제공되지 않습니다.</li>
+            <li>• 제3자 콘텐츠가 포함될 수 있으며, 해당 저작권은 원 소유자에게 있습니다.</li>
+        </ul>
+        <br/>
+        <b class="block">확인 버튼을 클릭하시면 이 내용에 동의하신 것으로 간주됩니다.</b>
+        <p>즐거운 탐색 되세요!</p><br />
+      </div>
+
+      <button type="button" onclick="modal_close()" class="w-full p-2 lg:p-4 rounded-xs bg-hot-brand text-white text-15 lg:text-20 font-semibold hover:bg-black">확인</button>
+    </div>
+  </div>
 
 </body>
 </html>
