@@ -226,7 +226,7 @@ class mainHeader extends HTMLElement {
 									<a aria-label="질의응답" href="/src/pages/community-faq.html">FAQ</a>
 								</li>
 								<li class="px-6 py-1.5 hover:text-hot-main transition-all duration-300">
-									<a aria-label="Q&A바로가기" href="/src/pages/community-qna.html" target="_blank" rel="noopener noreferrer">1:1 Q&A</a>
+									<a aria-label="Q&A바로가기" href="/src/pages/community-qna.html" rel="noopener noreferrer">1:1 Q&A</a>
 								</li>
 							</ul>
 						</li>
