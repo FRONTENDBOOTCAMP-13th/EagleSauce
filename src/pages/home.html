@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>HOTN'THINGS - HOME</title>
+  <title>HOME - HOTN'THINGS</title>
   <link rel="icon" href="/assets/images/favicon.png" type="image/png">
 
   <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
@@ -21,14 +21,15 @@
   <script type="module" src="/src/main.js"></script>
 </head>
 <body class="font-sans modal">
-
+  <h1 class="sr-only">HOME - HOTN'THINGS</h1>
   <main-header></main-header>
 
   <div id="container" class="bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
     
 
     <!-- photo frame start -->
-    <section>
+    <section aria-labelledby="photo-frame-section">
+      <h2 id="photo-frame-section" class="sr-only">포토프레임 베너</h2>
       <div class="py-[50px] flex justify-center items-center">
         <div class="relative w-[90%] max-w-7xl">
           <img src="/public/assets/images/main-frame1.png" loading="lazy" alt="포토 프레임" class="w-full h-auto"/>
@@ -62,7 +63,8 @@
 
 
     <!-- showcase start -->
-    <section class="w-full">
+    <section class="w-full" aria-labelledby="showcase-section">
+      <h2 id="showcase-section" class="sr-only">하랜띵스 핫소스 상품 선반</h2>
       <div class="relative w-full">
         <!-- 왼쪽 선반 이미지 -->
         <div class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" aria-hidden="true">
@@ -112,34 +114,34 @@
               </a>
             </li>
             <li>
-              <a href="/src/components/showcase-pyogo-popup.html" aria-label="표고러플 팝업창 보기">
+              <a href="/src/components/showcase-pyogo-popup.html" aria-label="표고러플 팝업창 보기2">
                 <div class="top-[19%] left-[47.7%] absolute w-[33%] group">
-                  <img src="/public/assets/images/product-1.png" loading="lazy" alt="표고러플" class="w-full align-top group-hover:hidden"/>
-                  <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플" class="hidden w-full align-top group-hover:block"/>
+                  <img src="/public/assets/images/product-1.png" loading="lazy" alt="표고러플2" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플2" class="hidden w-full align-top group-hover:block"/>
                   <div class="top-[102%] left-[35%] absolute w-[24.5%]">
-                    <img src="/public/assets/images/PYOGORUFFLE-nametag.png" loading="lazy" alt="표고러플 네임태그" class="w-full align-top"/>
+                    <img src="/public/assets/images/PYOGORUFFLE-nametag.png" loading="lazy" alt="표고러플 네임태그2" class="w-full align-top"/>
                   </div>
                 </div>
               </a>
             </li>
             <li>
-              <a href="/src/components/showcase-parmesan-popup.html" aria-label="파마산 고추장 소스 제품 설명 보기">
+              <a href="/src/components/showcase-parmesan-popup.html" aria-label="파마산 고추장 소스 제품 설명 보기2">
                 <div class="top-[44%] left-[47.7%] absolute w-[33%] group">
-                  <img src="/public/assets/images/product-2.png" loading="lazy" alt="파마산고추장" class="w-full align-top group-hover:hidden"/>
-                  <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장" class="hidden w-full align-top group-hover:block"/>
+                  <img src="/public/assets/images/product-2.png" loading="lazy" alt="파마산고추장2" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장2" class="hidden w-full align-top group-hover:block"/>
                   <div class="top-[103%] left-[35%] absolute w-[25%]">
-                    <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" loading="lazy" alt="파마산고추장 네임태그" class="w-full align-top"/>
+                    <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.png" loading="lazy" alt="파마산고추장 네임태그2" class="w-full align-top"/>
                   </div>
                 </div>
               </a>
             </li>
             <li>
-              <a href="/src/components/showcase-shrimp-popup.html" aria-label="XO쉬림프 소스 제품 설명 보기">
+              <a href="/src/components/showcase-shrimp-popup.html" aria-label="XO쉬림프 소스 제품 설명 보기2">
                 <div class="test top-[69.5%] left-[47.7%] absolute w-[33%] group">
-                  <img src="/public/assets/images/product-3.png" loading="lazy" alt="XO쉬림프" class="w-full align-top group-hover:hidden"/>
-                  <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프" class="hidden w-full align-top border-0 group-hover:block"/>
+                  <img src="/public/assets/images/product-3.png" loading="lazy" alt="XO쉬림프2" class="w-full align-top group-hover:hidden"/>
+                  <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프2" class="hidden w-full align-top border-0 group-hover:block"/>
                   <div class="top-[103.5%] left-[35%] absolute w-[25%]">
-                    <img src="/public/assets/images/XOSHRIMP-nametag.png" loading="lazy" alt="XO쉬림프 네임태그" class="w-full align-top"/>
+                    <img src="/public/assets/images/XOSHRIMP-nametag.png" loading="lazy" alt="XO쉬림프 네임태그2" class="w-full align-top"/>
                   </div>
                 </div>
               </a>
