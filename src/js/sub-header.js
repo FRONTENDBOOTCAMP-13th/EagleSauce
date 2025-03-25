@@ -141,6 +141,12 @@ class subHeader extends HTMLElement {
 	
 				<!-- Desktop Header -->
 				<nav class="relative z-10 hidden px-6 font-bold text-black border-b menu-pc lg:flex lg:justify-between text-16 bg-hot-ivory">
+	
+					<!-- Logo -->
+					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute inline-flex w-32 mt-3 -translate-x-1/2 transform-none lg:w-56 left-1/2">
+						<div class="bg-(image:--hot-logo) bg-no-repeat w-[220px] h-[45px] bg-center bg-contain"></div>
+					</a>	
+
 					<ul class="flex">
 						<!-- ABOUT -->
 						<li class="group">
@@ -231,11 +237,6 @@ class subHeader extends HTMLElement {
 						<li><a href="/src/pages/cart.html" aria-label="장바구니바로가기" class="block p-6">CART</a></li>
 						<li><a href="/src/pages/join-login.html" aria-label="로그인/회원가입" class="block p-6">JOIN/LOGIN</a></li>
 					</ul>
-	
-					<!-- Logo -->
-					<a href="/src/pages/home.html" aria-label="홈바로가기" class="absolute inline-flex w-32 mt-3 -translate-x-1/2 transform-none lg:w-56 left-1/2" tabindex="1">
-						<div class="bg-(image:--hot-logo) bg-no-repeat w-[220px] h-[45px] bg-center bg-contain"></div>
-					</a>
 				</nav>
 			</header>
 		`;
