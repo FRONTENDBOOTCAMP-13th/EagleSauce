@@ -1,201 +1,426 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="sub">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>HOTN'THINGS - ALL PRODUCTS</title>
-	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ALL PRODUCTS - HOTN'THINGS</title>
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
 
-  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
-	
-  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
-  
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body class="font-sans">
+    <link
+      rel="preload"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+    />
 
-<sub-header></sub-header>
-<div id="container">
+    <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css" />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/gastromond/gastromond.css"
+    />
+    <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css" />
 
-	<!-- PYOGORUFFLE -->
-	<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
-		<!-- left: DETAIL VIEW -->
-		<div class="md:w-[580px]">
-			<a href="/src/pages/shop-pyogo.html" class="group">
-				<div class="relative">
-					<div class="absolute top-0 left-0 z-20 flex items-center justify-between w-full px-4 py-3 md:py-5 md:px-6">
-						<img src="/public/assets/images/icon_best.jpg" loading="lazy" alt="BEST상품" class="h-6">
-						<img src="/public/assets/images/spicy2.png" loading="lazy" alt="맵기 5칸 중 2칸" class="hidden h-9 md:block">
-					</div>
-					<div class="relative bg-[image:var(--shop-all-item-bg01)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
-						<img src="/public/assets/images/product-1.png" loading="lazy" alt="PYOGORUFFLE" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]">
-						<img src="/public/assets/images/product-1.gif" loading="lazy" alt="PYOGORUFFLE 회전되는 영상" class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]">
-					</div>
-					<div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
-						<img src="/public/assets/images/spicy2.png" loading="lazy" alt="맵기 5칸 중 2칸" class="absolute w-12 right-5 md:hidden">
-						<h3>
-							<span class="block font-semibold text-15">표고러플</span>
-							<span class="mt-1 font-semibold font-newbery text-25">PYOGORUFFLE</span>
-						</h3>
-						<p class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0">트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된 고급스러운 매운맛</p>
-						<div class="mt-5 font-newbery text-0">
-							<span class="sr-only">정상가</span><s class="font-normal text-hot-gray500 text-15">23,000</s><span class="sr-only">원</span>
-							<span class="sr-only">할인가</span><span class="ml-2.5 text-20 font-semibold">19,900</span><span class="sr-only">원</span>
-							<span class="sr-only">할인율</span><span class="ml-2.5 text-hot-brand text-20 font-semibold">13%</span>
-						</div>
-						<div class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
-					</div>
-				</div>
-			</a>
-		</div>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <h1 class="sr-only">ALL PRODUCTS - HOTN'THINGS</h1>
+    <sub-header></sub-header>
+    <div id="container">
+      <!-- PYOGORUFFLE -->
+      <section
+        class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch"
+        aria-labelledby="product-pyogoruffle"
+      >
+      <h2 class="sr-only" id="product-pyogoruffle">표고러플 구매영역</h2>
+        <!-- left: DETAIL VIEW -->
+        <div class="md:w-[580px]">
+          <a href="/src/pages/shop-pyogo.html" class="group">
+            <div class="relative">
+              <div
+                class="absolute top-0 left-0 z-20 flex items-center justify-between w-full px-4 py-3 md:py-5 md:px-6"
+              >
+                <img
+                  src="/public/assets/images/icon_best.jpg"
+                  loading="lazy"
+                  alt="BEST상품"
+                  class="h-6"
+                />
+                <img
+                  src="/public/assets/images/spicy2.png"
+                  loading="lazy"
+                  alt="맵기 5칸 중 2칸"
+                  class="hidden h-9 md:block"
+                />
+              </div>
+              <div
+                class="relative bg-[image:var(--shop-all-item-bg01)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden"
+              >
+                <img
+                  src="/public/assets/images/product-1.png"
+                  loading="lazy"
+                  alt="PYOGORUFFLE"
+                  class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]"
+                />
+                <img
+                  src="/public/assets/images/product-1.gif"
+                  loading="lazy"
+                  alt="PYOGORUFFLE 회전되는 영상"
+                  class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]"
+                />
+              </div>
+              <div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
+                <img
+                  src="/public/assets/images/spicy2.png"
+                  loading="lazy"
+                  alt="맵기 5칸 중 2칸"
+                  class="absolute w-12 right-5 md:hidden"
+                />
+                <h3>
+                  <span class="block font-semibold text-15">표고러플</span>
+                  <span class="mt-1 font-semibold font-newbery text-25"
+                    >PYOGORUFFLE</span
+                  >
+                </h3>
+                <p
+                  class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0"
+                >
+                  트러플 풍미와 표고의 감칠맛, 화이트와인식초의 산뜻함이 결합된
+                  고급스러운 매운맛
+                </p>
+                <div class="mt-5 font-newbery text-0">
+                  <span class="sr-only">정상가</span
+                  ><s class="font-normal text-hot-gray500 text-15">23,000</s
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인가</span
+                  ><span class="ml-2.5 text-20 font-semibold">19,900</span
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인율</span
+                  ><span class="ml-2.5 text-hot-brand text-20 font-semibold"
+                    >13%</span
+                  >
+                </div>
+                <div
+                  class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20"
+                >
+                  DETAIL VIEW
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
 
-		<!-- right: image -->
-		<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg01)] bg-no-repeat bg-center bg-cover"></div>
-	</div>
+        <!-- right: image -->
+        <div
+          class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg01)] bg-no-repeat bg-center bg-cover"
+        ></div>
+      </section>
 
+      <!-- PARMESAN GOCHUJANG -->
+      <section
+        class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch"        
+        aria-labelledby="product-parmesan"
+      >
+      <h2 class="sr-only" id="product-parmesan">파마산고추장 구매영역</h2>
+        <!-- left: DETAIL VIEW -->
+        <div class="md:w-[580px]">
+          <a href="/src/pages/shop-parmesan.html" class="group">
+            <div class="relative">
+              <div
+                class="absolute top-0 left-0 z-20 flex items-center justify-end w-full px-4 py-3 md:py-5 md:px-6"
+              >
+                <img
+                  src="/public/assets/images/spicy2-5.png"
+                  loading="lazy"
+                  class="hidden h-9 md:block"
+                  alt="맵기 다섯칸 중 두칸 반"
+                />
+              </div>
+              <div
+                class="relative bg-[image:var(--shop-all-item-bg02)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden"
+              >
+                <img
+                  src="/public/assets/images/product-2.png"
+                  loading="lazy"
+                  alt="PARMESAN GOCHUJANG"
+                  class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]"
+                />
+                <img
+                  src="/public/assets/images/product-2.gif"
+                  loading="lazy"
+                  alt="PARMESAN GOCHUJANG 회전되는 영상"
+                  class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]"
+                />
+              </div>
+              <div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
+                <img
+                  src="/public/assets/images/spicy2-5.png"
+                  loading="lazy"
+                  class="absolute w-12 right-5 md:hidden"
+                  alt="맵기 다섯칸 중 두칸 반"
+                />
+                <h3>
+                  <span class="block font-semibold text-15">파마산 고추장</span>
+                  <span class="mt-1 font-semibold font-newbery text-25"
+                    >PARMESAN GOCHUJANG</span
+                  >
+                </h3>
+                <p
+                  class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0"
+                >
+                  고추장의 깊고 진한 매콤함에 더한 치즈의 고소하고 짭쪼름한 풍미
+                </p>
+                <div class="mt-5 font-newbery text-0">
+                  <span class="sr-only">정상가</span
+                  ><s class="font-normal text-hot-gray500 text-15">18,000</s
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인가</span
+                  ><span class="ml-2.5 text-20 font-semibold">16,000</span
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인율</span
+                  ><span class="ml-2.5 text-hot-brand text-20 font-semibold"
+                    >11%</span
+                  >
+                </div>
+                <div
+                  class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20"
+                >
+                  DETAIL VIEW
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
 
-	<!-- PARMESAN GOCHUJANG -->
-	<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
-		<!-- left: DETAIL VIEW -->
-		<div class="md:w-[580px]">
-			<a href="/src/pages/shop-parmesan.html" class="group">
-				<div class="relative">
-					<div class="absolute top-0 left-0 z-20 flex items-center justify-end w-full px-4 py-3 md:py-5 md:px-6">
-						<img src="/public/assets/images/spicy2-5.png" loading="lazy" class="hidden h-9 md:block" alt="맵기 다섯칸 중 두칸 반">
-					</div>
-					<div class="relative bg-[image:var(--shop-all-item-bg02)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
-						<img src="/public/assets/images/product-2.png" loading="lazy" alt="PARMESAN GOCHUJANG" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]">
-						<img src="/public/assets/images/product-2.gif" loading="lazy" alt="PARMESAN GOCHUJANG 회전되는 영상" class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]">
-					</div>
-					<div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
-						<img src="/public/assets/images/spicy2-5.png" loading="lazy" class="absolute w-12 right-5 md:hidden" alt="맵기 다섯칸 중 두칸 반">
-						<h3>
-							<span class="block font-semibold text-15">파마산 고추장</span>
-							<span class="mt-1 font-semibold font-newbery text-25">PARMESAN GOCHUJANG</span>
-						</h3>
-						<p class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0">고추장의 깊고 진한 매콤함에 더한 치즈의 고소하고 짭쪼름한 풍미</p>
-						<div class="mt-5 font-newbery text-0">
-							<span class="sr-only">정상가</span><s class="font-normal text-hot-gray500 text-15">18,000</s><span class="sr-only">원</span>
-							<span class="sr-only">할인가</span><span class="ml-2.5 text-20 font-semibold">16,000</span><span class="sr-only">원</span>
-							<span class="sr-only">할인율</span><span class="ml-2.5 text-hot-brand text-20 font-semibold">11%</span>
-						</div>
-						<div class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
-					</div>
-				</div>
-			</a>
-		</div>
+        <!-- right: image -->
+        <div
+          class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg02)] bg-no-repeat bg-center bg-cover"
+        ></div>
+      </section>
 
-		<!-- right: image -->
-		<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg02)] bg-no-repeat bg-center bg-cover"></div>
-	</div>
+      <!-- XO SHRIMP -->
+      <section
+        class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch"        
+        aria-labelledby="product-shrimp"
+        >
+        <h2 class="sr-only" id="product-shrimp">XO쉬림프 구매영역</h2>
+        <!-- left: DETAIL VIEW -->
+        <div class="md:w-[580px]">
+          <a href="/src/pages/shop-shrimp.html" class="group">
+            <div class="relative">
+              <div
+                class="absolute top-0 left-0 z-20 flex items-center justify-end w-full px-4 py-3 md:py-5 md:px-6"
+              >
+                <img
+                  src="/public/assets/images/spicy3.png"
+                  loading="lazy"
+                  alt="맵기 다섯칸 중 세칸"
+                  class="hidden h-9 md:block"
+                />
+              </div>
+              <div
+                class="relative bg-[image:var(--shop-all-item-bg03)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden"
+              >
+                <img
+                  src="/public/assets/images/product-3.png"
+                  loading="lazy"
+                  alt="XO SHRIMP"
+                  class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]"
+                />
+                <img
+                  src="/public/assets/images/product-3.gif"
+                  loading="lazy"
+                  alt="XO SHRIMP 회전되는 영상"
+                  class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]"
+                />
+              </div>
+              <div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
+                <img
+                  src="/public/assets/images/spicy3.png"
+                  loading="lazy"
+                  alt="맵기 다섯칸 중 세칸"
+                  class="absolute w-12 right-5 md:hidden"
+                />
+                <h3>
+                  <span class="block font-semibold text-15">XO 쉬림프</span>
+                  <span class="mt-1 font-semibold font-newbery text-25"
+                    >XO SHRIMP</span
+                  >
+                </h3>
+                <p
+                  class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0"
+                >
+                  청양고추를 넣은 알싸한 간장 베이스에 새우로 감칠맛을 끌어올린
+                  단짠 매력
+                </p>
+                <div class="mt-5 font-newbery text-0">
+                  <span class="sr-only">정상가</span
+                  ><s class="font-normal text-hot-gray500 text-15">18,000</s
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인가</span
+                  ><span class="ml-2.5 text-20 font-semibold">16,000</span
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인율</span
+                  ><span class="ml-2.5 text-hot-brand text-20 font-semibold"
+                    >11%</span
+                  >
+                </div>
+                <div
+                  class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20"
+                >
+                  DETAIL VIEW
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
 
+        <!-- right: image -->
+        <div
+          class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg03)] bg-no-repeat bg-center bg-cover"
+        ></div>
+      </section>
 
-	<!-- XO SHRIMP -->
-	<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
-		<!-- left: DETAIL VIEW -->
-		<div class="md:w-[580px]">
-			<a href="/src/pages/shop-shrimp.html" class="group">
-				<div class="relative">
-					<div class="absolute top-0 left-0 z-20 flex items-center justify-end w-full px-4 py-3 md:py-5 md:px-6">
-						<img src="/public/assets/images/spicy3.png" loading="lazy" alt="맵기 다섯칸 중 세칸" class="hidden h-9 md:block">
-					</div>
-					<div class="relative bg-[image:var(--shop-all-item-bg03)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
-						<img src="/public/assets/images/product-3.png" loading="lazy" alt="XO SHRIMP" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]">
-						<img src="/public/assets/images/product-3.gif" loading="lazy" alt="XO SHRIMP 회전되는 영상" class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]">
-					</div>
-					<div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
-						<img src="/public/assets/images/spicy3.png" loading="lazy" alt="맵기 다섯칸 중 세칸" class="absolute w-12 right-5 md:hidden">
-						<h3>
-							<span class="block font-semibold text-15">XO 쉬림프</span>
-							<span class="mt-1 font-semibold font-newbery text-25">XO SHRIMP</span>
-						</h3>
-						<p class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0">청양고추를 넣은 알싸한 간장 베이스에 새우로 감칠맛을 끌어올린 단짠 매력</p>
-						<div class="mt-5 font-newbery text-0">
-							<span class="sr-only">정상가</span><s class="font-normal text-hot-gray500 text-15">18,000</s><span class="sr-only">원</span>
-							<span class="sr-only">할인가</span><span class="ml-2.5 text-20 font-semibold">16,000</span><span class="sr-only">원</span>
-							<span class="sr-only">할인율</span><span class="ml-2.5 text-hot-brand text-20 font-semibold">11%</span>
-						</div>
-						<div class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
-					</div>
-				</div>
-			</a>
-		</div>
+      <!-- HOTN'THINGS KIT -->
+      <section
+        class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch"
+        aria-labelledby="product-hotnthingskit"
+        >
+        <h2 class="sr-only" id="product-hotnthingskit">하랜띵스 키트 구매영역</h2>
+        <!-- left: DETAIL VIEW -->
+        <div class="md:w-[580px]">
+          <a href="/src/pages/shop-hotnkit.html" class="group">
+            <div class="relative">
+              <div
+                class="relative bg-[image:var(--shop-all-item-bg04)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden"
+              >
+                <img
+                  src="/public/assets/images/product-all.png"
+                  loading="lazy"
+                  alt="하랜띵스 키트"
+                  class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] md:max-w-[520px] md:translate-y-[11%]"
+                />
+              </div>
+              <div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
+                <h3>
+                  <span class="block font-semibold text-15"
+                    >하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)</span
+                  >
+                  <span class="mt-1 font-semibold font-newbery text-25"
+                    >HOTN'THINGS KIT</span
+                  >
+                </h3>
+                <p
+                  class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0"
+                >
+                  일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종 세트
+                </p>
+                <div class="mt-5 font-newbery text-0">
+                  <span class="sr-only">정상가</span
+                  ><s class="font-normal text-hot-gray500 text-15">59,000</s
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인가</span
+                  ><span class="ml-2.5 text-20 font-semibold">46,900</span
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인율</span
+                  ><span class="ml-2.5 text-hot-brand text-20 font-semibold"
+                    >21%</span
+                  >
+                </div>
+                <div
+                  class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20"
+                >
+                  DETAIL VIEW
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
 
-		<!-- right: image -->
-		<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg03)] bg-no-repeat bg-center bg-cover"></div>
-	</div>
+        <!-- right: image -->
+        <div
+          class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg04)] bg-no-repeat bg-center bg-cover"
+        ></div>
+      </section>
 
-	
-	<!-- HOTN'THINGS KIT -->
-	<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
-		<!-- left: DETAIL VIEW -->
-		<div class="md:w-[580px]">
-			<a href="/src/pages/shop-hotnkit.html" class="group">
-				<div class="relative">
-					<div class="relative bg-[image:var(--shop-all-item-bg04)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
-						<img src="/public/assets/images/product-all.png" loading="lazy" alt="하랜띵스 키트" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] md:max-w-[520px] md:translate-y-[11%]">
-					</div>
-					<div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
-						<h3>
-							<span class="block font-semibold text-15">하랜띵스 키트 (표고러플+파마산고추장+XO쉬림프)</span>
-							<span class="mt-1 font-semibold font-newbery text-25">HOTN'THINGS KIT</span>
-						</h3>
-						<p class="mt-5 font-medium leading-normal text-14 break-keep md:mt-0">일상에 미슐랭급 풍미를 선사할 하랜띵스의 대표 소스 3종 세트</p>
-						<div class="mt-5 font-newbery text-0">
-							<span class="sr-only">정상가</span><s class="font-normal text-hot-gray500 text-15">59,000</s><span class="sr-only">원</span>
-							<span class="sr-only">할인가</span><span class="ml-2.5 text-20 font-semibold">46,900</span><span class="sr-only">원</span>
-							<span class="sr-only">할인율</span><span class="ml-2.5 text-hot-brand text-20 font-semibold">21%</span>
-						</div>
-						<div class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
-					</div>
-				</div>
-			</a>
-		</div>
+      <!-- HOTN'THINGS GIFTBAG -->
+      <section
+        class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch"
+        aria-labelledby="product-giftbag"
+      >
+      <h2 class="sr-only" id="product-giftbag">기프트백 구매영역</h2>
+        <!-- left: DETAIL VIEW -->
+        <div class="md:w-[580px]">
+          <a href="/src/pages/shop-giftbag.html" class="group">
+            <div class="relative">
+              <div
+                class="relative bg-[image:var(--shop-all-item-bg05)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden"
+              >
+                <img
+                  src="/public/assets/images/paper_bag.png"
+                  loading="lazy"
+                  alt="기프트백"
+                  class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]"
+                />
+                <img
+                  src="/public/assets/images/paper_bag.gif"
+                  loading="lazy"
+                  alt="기프트백 회전되는 영상"
+                  class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]"
+                />
+              </div>
+              <div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
+                <h3>
+                  <span class="block font-semibold text-15">기프트백</span>
+                  <span class="mt-1 font-semibold font-newbery text-25"
+                    >HOTN'THINGS GIFTBAG</span
+                  >
+                </h3>
+                <p class="font-medium leading-normal text-14 break-keep">
+                  시각적 풍미를 더해줄 하랜띵스 기프트백
+                </p>
+                <div class="mt-5 font-newbery text-0">
+                  <span class="sr-only">정상가</span
+                  ><s class="font-normal text-hot-gray500 text-15">2,000</s
+                  ><span class="sr-only">원</span>
+                  <span class="sr-only">할인가</span
+                  ><span class="ml-2.5 text-20 font-semibold">2,000</span
+                  ><span class="sr-only">원</span>
+                </div>
+                <div
+                  class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20"
+                >
+                  DETAIL VIEW
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
 
-		<!-- right: image -->
-		<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg04)] bg-no-repeat bg-center bg-cover"></div>
-	</div>
-
-
-	<!-- HOTN'THINGS GIFTBAG -->
-	<div class="w-full border-b-2 border-black bg-hot-ivory md:flex md:items-stretch">
-		<!-- left: DETAIL VIEW -->
-		<div class="md:w-[580px]">
-			<a href="/src/pages/shop-giftbag.html" class="group">
-				<div class="relative">
-					<div class="relative bg-[image:var(--shop-all-item-bg05)] md:bg-none bg-no-repeat bg-center bg-cover before:content-[''] before:z-10 before:absolute before:top-0 before:left-0 before:block before:h-full before:w-full before:bg-[rgba(0,0,0,0.5)] md:before:hidden">
-						<img src="/public/assets/images/paper_bag.png" loading="lazy" alt="기프트백" class="z-10 relative w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-0 group-hover:invisible md:max-w-[520px] md:translate-y-[11%]">
-						<img src="/public/assets/images/paper_bag.gif" loading="lazy" alt="기프트백 회전되는 영상" class="opacity-0 invisible z-10 absolute top-0 w-full max-w-[600px] left-1/2 translate-x-[-50%] translate-y-[20%] group-hover:opacity-100 group-hover:visible md:max-w-[520px] md:translate-y-[11%]">
-					</div>
-					<div class="relative px-3 pt-16 pb-5 md:pt-17 md:px-7 md:pb-7">
-						<h3>
-							<span class="block font-semibold text-15">기프트백</span>
-							<span class="mt-1 font-semibold font-newbery text-25">HOTN'THINGS GIFTBAG</span>
-						</h3>
-						<p class="font-medium leading-normal text-14 break-keep">시각적 풍미를 더해줄 하랜띵스 기프트백</p>
-						<div class="mt-5 font-newbery text-0">
-							<span class="sr-only">정상가</span><s class="font-normal text-hot-gray500 text-15">2,000</s><span class="sr-only">원</span>
-							<span class="sr-only">할인가</span><span class="ml-2.5 text-20 font-semibold">2,000</span><span class="sr-only">원</span>
-						</div>
-						<div class="p-5 font-semibold text-center text-white bg-black font-newbery mt-9 text-15 group-hover:bg-hot-brand group-hover:text-white md:text-20">DETAIL VIEW</div>
-					</div>
-				</div>
-			</a>
-		</div>
-
-		<!-- right: image -->
-		<div class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg05)] bg-no-repeat bg-center bg-cover"></div>
-	</div>
-
-
-</div>
-<common-footer></common-footer>
-
-
-</body>
+        <!-- right: image -->
+        <div
+          class="hidden md:block md:w-[calc(100%-580px)] bg-[image:var(--shop-all-item-bg05)] bg-no-repeat bg-center bg-cover"
+        ></div>
+      </section>
+    </div>
+    <common-footer></common-footer>
+  </body>
 </html>
