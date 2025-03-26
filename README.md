@@ -12,8 +12,6 @@
 [🖥️ 사이트 구조 및 주요 개선사항](#🖥️-사이트-구조-및-주요-개선사항)  
 [🔗 참고 사이트](#🔗-참고-사이트)  
 
-
-
 ## 📝 프로젝트 개요
 멋쟁이사자처럼 프론트엔드 부트캠프 13기 UI 프로젝트 2팀 이글이글입니다🔥  
 저희는 핫소스를 판매하는 [하랜띵스홈페이지](https://hotnthings.com/ "하랜띵스 홈페이지로 이동")를 분석하여 사용자 경험과 웹 접근성을 개선했습니다.  
@@ -87,13 +85,6 @@
   </tr>
 </table>
 
-<div align="right">
-
-[목차로 이동🔝](#🏷️-목차)
-
-</div>
-
-
 ## ⚙️ 기술스택
 | 분류 | 기술 | 
 |:------:|:------:|
@@ -101,13 +92,6 @@
 |빌드툴|<img src="https://img.shields.io/badge/Vite-646cff.svg?style=for-the-badge&logo=Vite&logoColor=white" />&nbsp;|
 |협업툴|<img src="https://img.shields.io/badge/github-181717.svg?style=for-the-badge&logo=github&logoColor=white" />&nbsp;<img src="https://img.shields.io/badge/Discord-5865f2.svg?style=for-the-badge&logo=Discord&logoColor=white" />&nbsp;<img src="https://img.shields.io/badge/notion-000000.svg?style=for-the-badge&logo=notion&logoColor=white" />&nbsp;|
 |디자인&개발환경|<img src="https://img.shields.io/badge/figma-f01f7a.svg?style=for-the-badge&logo=figma&logoColor=white" />&nbsp;<img src="https://img.shields.io/badge/vscode-1572B6.svg?style=for-the-badge&logo=vscode&logoColor=white" />|
-
-<div align="right">
-
-[목차로 이동🔝](#🏷️-목차)
-
-</div>
-
 
 ## 📂 프로젝트 구조
 ```
@@ -131,12 +115,6 @@
 ├── 📄README.md                  
 └── 📄vite.config.js           
 ```
-<div align="right">
-
-[목차로 이동🔝](#🏷️-목차)
-
-</div>
-
 
 ## 🖥️ 사이트 구조 및 주요 개선사항
 
@@ -155,10 +133,10 @@
 반복되는 UI 요소를 컴포넌트로 분리하여, 재사용 가능하고 유지보수하기 쉬운 코드 구조 작업
 
 - 예시 : 기존사이트 이미지로 제공되던 것을 유지보수가 쉬운 컴포넌트로 분리  
-
+<div style="display:flex; align-items:center;">
 <img src="./public/assets/images/project/component.png" alt="기존사이트" width=400 title="기존사이트"/>
 <img src="./public/assets/images/project/component2.png" alt="개선된사이트" width=400 title="개선된사이트"/>
-
+</div>
 #### 3. Semantic Tag의 활용  
 HTML5의 시맨틱태그를 사용하여 문서의 구조를 명확하게 하고 SEO와 접근성을 개선  
     
@@ -175,20 +153,9 @@ aria-label, aria-labelledby, aria-hidden와 같은 ARIA 속성을 활용하여 �
   
 <img src="./public/assets/images/project/keyboard-tab.gif" alt="키보드접근성예시" width=800 title="키보드접근성예시"/>
 
-<div align="right">
-
-[목차로 이동🔝](#🏷️-목차)
-
-</div>
 
 ## 🔗 참고사이트
 <a href="https://hotnthings.com/" title="하랜띵스 홈페이지로 이동" style="display:flex; align-items:center;">
   <img src="./public/assets/images/product-1.gif" alt="핫소스gif" width=30 /> 
   <span>하랜띵스홈페이지</span>
 </a>
-
-<div align="right">
-
-[목차로 이동🔝](#🏷️-목차)
-
-</div>
