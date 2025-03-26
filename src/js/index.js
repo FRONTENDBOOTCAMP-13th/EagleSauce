@@ -1,46 +1,40 @@
 // [Index] Mobile - click_event
 document.addEventListener('DOMContentLoaded', function() {
+  const mobileBtns = document.querySelectorAll('.mobile-btn-group button');
+  const mobileImgs = document.querySelectorAll('.mobile-img img');
 
-  const listItems = document.querySelectorAll('.mt-5 li');
-  const images = document.querySelectorAll('.absolute.left-\\[28\\%\\] img');
-  
-  listItems.forEach((item, index) => {
-    item.addEventListener('click', function() {
-      images.forEach(img => {
-        img.classList.add('hidden');
-        img.classList.remove('block');
+  // 기본적으로 첫 번째 버튼과 이미지 활성화
+  mobileBtns[0].classList.add('bg-hot-brand');
+  mobileBtns[0].classList.remove('bg-black');
+  mobileBtns[0].setAttribute('aria-pressed', 'true');
+
+  mobileBtns.forEach(button => {
+    button.addEventListener('click', function() {
+      // 모든 버튼 비활성화 및 aria-pressed false
+      mobileBtns.forEach(btn => {
+        btn.classList.remove('bg-hot-brand');
+        btn.classList.add('bg-black');
+        btn.setAttribute('aria-pressed', 'false');
       });
-      
-      if (index < images.length) {
-        images[index].classList.remove('hidden');
-        images[index].classList.add('block');
-      }
-      
-      listItems.forEach(li => {
-        const span = li.querySelector('span');
-        span.classList.remove('bg-hot-brand');
-        span.classList.add('bg-black/90');
-      });
-      
-      const span = item.querySelector('span');
-      span.classList.remove('bg-black/90');
-      span.classList.add('bg-hot-brand');
+
+      // 현재 버튼 활성화 및 aria-pressed true
+      this.classList.add('bg-hot-brand');
+      this.classList.remove('bg-black');
+      this.setAttribute('aria-pressed', 'true');
+
+      // 모든 이미지 숨기기
+      mobileImgs.forEach(img => img.classList.add('hidden'));
+
+      // 해당 이미지만 표시
+      const imageIndex = parseInt(this.getAttribute('data-mobile')) - 1;
+      if (mobileImgs[imageIndex]) mobileImgs[imageIndex].classList.remove('hidden');
+
     });
   });
-  
-  if (images.length > 0) {
-    images[0].classList.remove('hidden');
-    images[0].classList.add('block');
-    
-    const firstSpan = listItems[0].querySelector('span');
-    firstSpan.classList.remove('bg-black/90');
-    firstSpan.classList.add('bg-hot-brand');
-  }
 });
 
 // [Index] PC - click_event
 document.addEventListener('DOMContentLoaded', function() {
-  // 모든 버튼과 이미지 요소 가져오기
   const buttons = document.querySelectorAll('.btn-group button');
   const images = document.querySelectorAll('.overflow-y-auto img');
   const scrollContainer = document.querySelector('.overflow-y-auto');
@@ -48,19 +42,22 @@ document.addEventListener('DOMContentLoaded', function() {
   // 기본적으로 첫 번째 버튼과 이미지 활성화
   buttons[0].classList.add('bg-hot-brand');
   buttons[0].classList.remove('bg-black');
-  
+  buttons[0].setAttribute('aria-pressed', 'true');  // 첫 번째 버튼 선택된 상태로 설정
+
   // 각 버튼에 클릭 이벤트 추가
   buttons.forEach(button => {
     button.addEventListener('click', function() {
-      // 모든 버튼 비활성화
+      // 모든 버튼 비활성화 및 aria-pressed 상태를 false로 설정
       buttons.forEach(btn => {
         btn.classList.remove('bg-hot-brand');
         btn.classList.add('bg-black');
+        btn.setAttribute('aria-pressed', 'false');  
       });
       
-      // 현재 버튼 활성화
+      // 현재 버튼 활성화 및 aria-pressed 상태를 true로 설정
       this.classList.add('bg-hot-brand');
       this.classList.remove('bg-black');
+      this.setAttribute('aria-pressed', 'true');  
       
       // 모든 이미지 숨기기
       images.forEach(img => {
