@@ -129,6 +129,7 @@
 <img src="./public/assets/images/project/component.png" alt="기존사이트" width=400 title="기존사이트"/>
 <img src="./public/assets/images/project/component2.png" alt="개선된사이트" width=400 title="개선된사이트"/>
 </div>
+
 #### 3. Semantic Tag의 활용  
 HTML5의 시맨틱태그를 사용하여 문서의 구조를 명확하게 하고 SEO와 접근성을 개선  
     
