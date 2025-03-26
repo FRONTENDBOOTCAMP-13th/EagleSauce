@@ -1,7 +1,7 @@
 
 # EagleSauce
 <a href="https://eaglesauce.netlify.app/" target="_blank" title="이글소스 프로젝트로 이동">
-<img src="./public/assets/images/project/team-profile.png" alt="팀대표이미지" width=800/>
+<img src="./public/assets/images/project/team-profile.webp" alt="팀대표이미지" width=800/>
 </a>
 
 ## 📝 프로젝트 개요
@@ -16,10 +16,10 @@
 ## 👥 프로젝트 팀 소개
 <table style="text-align:center;">
   <tr>
-    <td><img src="./public/assets/images/psh.png" alt="박상희" width="200"> <br/><a href="https://github.com/2sign" title="박상희 깃허브 저장소로 이동">박상희</a></td>
-    <td><img src="./public/assets/images/kjo.png" alt="김준오" width="200"> <br/><a href="https://github.com/kkjuno" title="김준오 깃허브 저장소로 이동">김준오</a></td>
-    <td><img src="./public/assets/images/psy.png" alt="박선영" width="200"> <br/><a href="https://github.com/seonyoungg" title="박선영 깃허브 저장소로 이동">박선영</a></td>
-    <td><img src="./public/assets/images/pjh.png" alt="박준환" width="200"> <br/><a href="https://github.com/fipark" title="박준환 깃허브 저장소로 이동">박준환</a></td>
+    <td><img src="./public/assets/images/psh.webp" alt="박상희" width="200"> <br/><a href="https://github.com/2sign" title="박상희 깃허브 저장소로 이동">박상희</a></td>
+    <td><img src="./public/assets/images/kjo.webp" alt="김준오" width="200"> <br/><a href="https://github.com/kkjuno" title="김준오 깃허브 저장소로 이동">김준오</a></td>
+    <td><img src="./public/assets/images/psy.webp" alt="박선영" width="200"> <br/><a href="https://github.com/seonyoungg" title="박선영 깃허브 저장소로 이동">박선영</a></td>
+    <td><img src="./public/assets/images/pjh.webp" alt="박준환" width="200"> <br/><a href="https://github.com/fipark" title="박준환 깃허브 저장소로 이동">박준환</a></td>
   </tr>
   <tr>
     <td>팀장/스크럼마스터</td>
@@ -111,7 +111,7 @@
 ## 🖥️ 사이트 구조 및 주요 개선사항
 
 ### 사이트 구조
-<img src="./public/assets/images/project/menutree.png" alt="메뉴트리" width=800/>
+<img src="./public/assets/images/project/menutree.webp" alt="메뉴트리" width=800/>
 
 --- 
 
@@ -125,20 +125,26 @@
 반복되는 UI 요소를 컴포넌트로 분리하여, 재사용 가능하고 유지보수하기 쉬운 코드 구조 작업
 
 - 예시 : 기존사이트 이미지로 제공되던 것을 유지보수가 쉬운 컴포넌트로 분리  
+<<<<<<< Updated upstream
 <div style="display:flex; align-items:center;">
 <img src="./public/assets/images/project/component.png" alt="기존사이트" width=400 title="기존사이트"/>
 <img src="./public/assets/images/project/component2.png" alt="개선된사이트" width=400 title="개선된사이트"/>
 </div>
+=======
+
+<img src="./public/assets/images/project/component.webp" alt="기존사이트" width=400 title="기존사이트"/>
+<img src="./public/assets/images/project/component2.webp" alt="개선된사이트" width=400 title="개선된사이트"/>
+>>>>>>> Stashed changes
 
 #### 3. Semantic Tag의 활용  
 HTML5의 시맨틱태그를 사용하여 문서의 구조를 명확하게 하고 SEO와 접근성을 개선  
     
-  <img src="./public/assets/images/project/semantic.png" alt="시멘틱태그예시" width=800 title="시맨틱태그예시"/>
+  <img src="./public/assets/images/project/semantic.webp" alt="시멘틱태그예시" width=800 title="시맨틱태그예시"/>
 
 #### 4. 스크린리더 지원  
 aria-label, aria-labelledby, aria-hidden와 같은 ARIA 속성을 활용하여 스크린리더 사용자 고려
 
-<img src="./public/assets/images/project/wac.png" alt="스크린리더예시" width=800 title="스크린리더예시"/>
+<img src="./public/assets/images/project/wac.webp" alt="스크린리더예시" width=800 title="스크린리더예시"/>
 
 #### 5. 키보드 접근성 개선  
 네비게이션 메뉴에서 키보드로도 메뉴 항목을 쉽게 접근할 수 있도록 tabindex와 같은 키보드 접근성을 위한 속성을 추가
