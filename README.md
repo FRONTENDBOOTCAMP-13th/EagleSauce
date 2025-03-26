@@ -16,10 +16,10 @@
 ## 👥 프로젝트 팀 소개
 <table style="text-align:center;">
   <tr>
-    <td><img src="./public/assets/images/psh.png" alt="박상희" width="200"> <br/><a href="https://github.com/2sign" title="박상희 깃허브 저장소로 이동">박상희</a></td>
-    <td><img src="./public/assets/images/kjo.png" alt="김준오" width="200"> <br/><a href="https://github.com/kkjuno" title="김준오 깃허브 저장소로 이동">김준오</a></td>
-    <td><img src="./public/assets/images/psy.png" alt="박선영" width="200"> <br/><a href="https://github.com/seonyoungg" title="박선영 깃허브 저장소로 이동">박선영</a></td>
-    <td><img src="./public/assets/images/pjh.png" alt="박준환" width="200"> <br/><a href="https://github.com/fipark" title="박준환 깃허브 저장소로 이동">박준환</a></td>
+    <td><img src="./public/assets/images/psh.webp" alt="박상희" width="200"> <br/><a href="https://github.com/2sign" title="박상희 깃허브 저장소로 이동">박상희</a></td>
+    <td><img src="./public/assets/images/kjo.webp" alt="김준오" width="200"> <br/><a href="https://github.com/kkjuno" title="김준오 깃허브 저장소로 이동">김준오</a></td>
+    <td><img src="./public/assets/images/psy.webp" alt="박선영" width="200"> <br/><a href="https://github.com/seonyoungg" title="박선영 깃허브 저장소로 이동">박선영</a></td>
+    <td><img src="./public/assets/images/pjh.webp" alt="박준환" width="200"> <br/><a href="https://github.com/fipark" title="박준환 깃허브 저장소로 이동">박준환</a></td>
   </tr>
   <tr>
     <td>팀장/스크럼마스터</td>
