@@ -1,112 +1,253 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="sub">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>SHOWCASE - COMPONENT</title>
-	<link rel="icon" href="/assets/images/favicon.webp" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SHOWCASE - COMPONENT</title>
+    <link rel="icon" href="/assets/images/favicon.webp" type="image/png" />
 
-  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
+    <link
+      rel="preload"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
 
-  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+    />
+    <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css" />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/gastromond/gastromond.css"
+    />
+    <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css" />
 
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body class="font-sans">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans">
+    <fieldset class="border m-4 p-4">
+      <legend class="text-20 font-semibold">[MAIN] 쇼케이스</legend>
 
+      <!-- showcase start -->
+      <section class="w-full">
+        <div class="relative w-full">
+          <!-- 왼쪽 선반 이미지 -->
+          <div
+            class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1"
+            aria-hidden="true"
+          >
+            <img
+              src="/public/assets/images/left-showcase.webp"
+              loading="lazy"
+              alt="좌측 선반"
+              aria-hidden="true"
+              class="w-full align-top"
+            />
+          </div>
 
-	<fieldset class="border m-4 p-4">
-    <legend class="text-20 font-semibold">[MAIN] 쇼케이스</legend>
+          <!-- 오른쪽 선반 이미지 -->
+          <div
+            class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1"
+            aria-hidden="true"
+          >
+            <img
+              src="/public/assets/images/right-showcase.webp"
+              loading="lazy"
+              alt="우측 선반"
+              aria-hidden="true"
+              class="w-full align-top"
+            />
+          </div>
 
-    <!-- showcase start -->
-    <section class="w-full">
-      <div class="relative w-full">
-        <!-- 왼쪽 선반 이미지 -->
-        <div class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" aria-hidden="true">
-          <img src="/public/assets/images/left-showcase.webp" loading="lazy" alt="좌측 선반" aria-hidden="true" class="w-full align-top"/>
-        </div>
-
-        <!-- 오른쪽 선반 이미지 -->
-        <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 w-[30%] max-w-[452px] z-1" aria-hidden="true">
-          <img src="/public/assets/images/right-showcase.webp" loading="lazy" alt="우측 선반" aria-hidden="true" class="w-full align-top"/>
-        </div>
-
-        <!-- 중앙 쇼케이스 이미지 -->
-        <div class="w-full lg:w-[40%] mx-auto relative z-1">
-          <img src="/public/assets/images/showcase.webp" loading="lazy" alt="쇼케이스" class="w-full align-top"/>
-          <ul class="pl-10 w-[40%]">
-            <li>
-              <div class="top-[19%] left-[21%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-1.webp" loading="lazy" alt="표고러플" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[102%] left-[35%] absolute w-[24.5%]">
-                  <img src="/public/assets/images/PYOGORUFFLE-nametag.webp" loading="lazy" alt="표고러플 네임태그" class="w-full align-top"/>
+          <!-- 중앙 쇼케이스 이미지 -->
+          <div class="w-full lg:w-[40%] mx-auto relative z-1">
+            <img
+              src="/public/assets/images/showcase.webp"
+              loading="lazy"
+              alt="쇼케이스"
+              class="w-full align-top"
+            />
+            <ul class="pl-10 w-[40%]">
+              <li>
+                <div class="top-[19%] left-[21%] absolute w-[33%] group">
+                  <img
+                    src="/public/assets/images/product-1.webp"
+                    loading="lazy"
+                    alt="표고러플"
+                    class="w-full align-top group-hover:hidden"
+                  />
+                  <img
+                    src="/public/assets/images/product-1.gif"
+                    loading="lazy"
+                    alt="회전하는 표고러플"
+                    class="hidden w-full align-top group-hover:block"
+                  />
+                  <div class="top-[102%] left-[35%] absolute w-[24.5%]">
+                    <img
+                      src="/public/assets/images/PYOGORUFFLE-nametag.webp"
+                      loading="lazy"
+                      alt="표고러플 네임태그"
+                      class="w-full align-top"
+                    />
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="top-[44%] left-[21%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-2.webp" loading="lazy" alt="파마산고추장" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[103%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp" loading="lazy" alt="파마산고추장 네임태그" class="w-full align-top"/>
+              </li>
+              <li>
+                <div class="top-[44%] left-[21%] absolute w-[33%] group">
+                  <img
+                    src="/public/assets/images/product-2.webp"
+                    loading="lazy"
+                    alt="파마산고추장"
+                    class="w-full align-top group-hover:hidden"
+                  />
+                  <img
+                    src="/public/assets/images/product-2.gif"
+                    loading="lazy"
+                    alt="회전하는 파마산고추장"
+                    class="hidden w-full align-top group-hover:block"
+                  />
+                  <div class="top-[103%] left-[35%] absolute w-[25%]">
+                    <img
+                      src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp"
+                      loading="lazy"
+                      alt="파마산고추장 네임태그"
+                      class="w-full align-top"
+                    />
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="top-[69.5%] left-[21%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-3.webp" loading="lazy" alt="XO쉬림프" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프" class="hidden w-full align-top border-0 group-hover:block"/>
-                <div class="top-[103.5%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/XOSHRIMP-nametag.webp" loading="lazy" alt="XO쉬림프 네임태그" class="w-full align-top"/>
+              </li>
+              <li>
+                <div class="top-[69.5%] left-[21%] absolute w-[33%] group">
+                  <img
+                    src="/public/assets/images/product-3.webp"
+                    loading="lazy"
+                    alt="XO쉬림프"
+                    class="w-full align-top group-hover:hidden"
+                  />
+                  <img
+                    src="/public/assets/images/product-3.gif"
+                    loading="lazy"
+                    alt="회전하는 XO쉬림프"
+                    class="hidden w-full align-top border-0 group-hover:block"
+                  />
+                  <div class="top-[103.5%] left-[35%] absolute w-[25%]">
+                    <img
+                      src="/public/assets/images/XOSHRIMP-nametag.webp"
+                      loading="lazy"
+                      alt="XO쉬림프 네임태그"
+                      class="w-full align-top"
+                    />
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="top-[19%] left-[47.7%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-1.webp" loading="lazy" alt="표고러플" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-1.gif" loading="lazy" alt="회전하는 표고러플" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[102%] left-[35%] absolute w-[24.5%]">
-                  <img src="/public/assets/images/PYOGORUFFLE-nametag.webp" loading="lazy" alt="표고러플 네임태그" class="w-full align-top"/>
+              </li>
+              <li>
+                <div class="top-[19%] left-[47.7%] absolute w-[33%] group">
+                  <img
+                    src="/public/assets/images/product-1.webp"
+                    loading="lazy"
+                    alt="표고러플"
+                    class="w-full align-top group-hover:hidden"
+                  />
+                  <img
+                    src="/public/assets/images/product-1.gif"
+                    loading="lazy"
+                    alt="회전하는 표고러플"
+                    class="hidden w-full align-top group-hover:block"
+                  />
+                  <div class="top-[102%] left-[35%] absolute w-[24.5%]">
+                    <img
+                      src="/public/assets/images/PYOGORUFFLE-nametag.webp"
+                      loading="lazy"
+                      alt="표고러플 네임태그"
+                      class="w-full align-top"
+                    />
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="top-[44%] left-[47.7%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-2.webp" loading="lazy" alt="파마산고추장" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-2.gif" loading="lazy" alt="회전하는 파마산고추장" class="hidden w-full align-top group-hover:block"/>
-                <div class="top-[103%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp" loading="lazy" alt="파마산고추장 네임태그" class="w-full align-top"/>
+              </li>
+              <li>
+                <div class="top-[44%] left-[47.7%] absolute w-[33%] group">
+                  <img
+                    src="/public/assets/images/product-2.webp"
+                    loading="lazy"
+                    alt="파마산고추장"
+                    class="w-full align-top group-hover:hidden"
+                  />
+                  <img
+                    src="/public/assets/images/product-2.gif"
+                    loading="lazy"
+                    alt="회전하는 파마산고추장"
+                    class="hidden w-full align-top group-hover:block"
+                  />
+                  <div class="top-[103%] left-[35%] absolute w-[25%]">
+                    <img
+                      src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp"
+                      loading="lazy"
+                      alt="파마산고추장 네임태그"
+                      class="w-full align-top"
+                    />
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="test top-[69.5%] left-[47.7%] absolute w-[33%] group">
-                <img src="/public/assets/images/product-3.webp" loading="lazy" alt="XO쉬림프" class="w-full align-top group-hover:hidden"/>
-                <img src="/public/assets/images/product-3.gif" loading="lazy" alt="회전하는 XO쉬림프" class="hidden w-full align-top border-0 group-hover:block"/>
-                <div class="top-[103.5%] left-[35%] absolute w-[25%]">
-                  <img src="/public/assets/images/XOSHRIMP-nametag.webp" loading="lazy" alt="XO쉬림프 네임태그" class="w-full align-top"/>
+              </li>
+              <li>
+                <div
+                  class="test top-[69.5%] left-[47.7%] absolute w-[33%] group"
+                >
+                  <img
+                    src="/public/assets/images/product-3.webp"
+                    loading="lazy"
+                    alt="XO쉬림프"
+                    class="w-full align-top group-hover:hidden"
+                  />
+                  <img
+                    src="/public/assets/images/product-3.gif"
+                    loading="lazy"
+                    alt="회전하는 XO쉬림프"
+                    class="hidden w-full align-top border-0 group-hover:block"
+                  />
+                  <div class="top-[103.5%] left-[35%] absolute w-[25%]">
+                    <img
+                      src="/public/assets/images/XOSHRIMP-nametag.webp"
+                      loading="lazy"
+                      alt="XO쉬림프 네임태그"
+                      class="w-full align-top"
+                    />
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+              </li>
+            </ul>
+          </div>
 
-        <div class="h-[80vw] lg:h-[28vw] w-full absolute bottom-0 left-0 z-0 bg-(image:--wood-bg) bg-center bg-no-repeat bg-cover">
-          <div class="absolute top-0 left-0 w-full overflow-hidden -translate-y-full bg-black z-1">
-            <p class="text-white animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20"></p>
+          <div
+            class="h-[80vw] lg:h-[28vw] w-full absolute bottom-0 left-0 z-0 bg-(image:--wood-bg) bg-center bg-no-repeat bg-cover"
+          >
+            <div
+              class="absolute top-0 left-0 w-full overflow-hidden -translate-y-full bg-black z-1"
+            >
+              <p
+                class="text-white motion-reduce:transition-none animate-roll before:content-[var(--roll-text)] before:text-[var(--roll-font-size)] before:tracking-[var(--roll-letter-spacing)] before:py-[var(--roll-padding)] font-bold anflex whitespace-nowrap font-newbery text-20"
+              ></p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- showcase end -->
-  </fieldset>
-
-
-</body>
+      </section>
+      <!-- showcase end -->
+    </fieldset>
+  </body>
 </html>

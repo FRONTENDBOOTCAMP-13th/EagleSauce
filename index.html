@@ -1,769 +1,1688 @@
 <!DOCTYPE html>
 <html lang="ko-KR" data-page="main">
-<head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<title>2팀 이글이글</title>
-  <link rel="icon" href="/assets/images/favicon.webp" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2팀 이글이글</title>
+    <link rel="icon" href="/assets/images/favicon.webp" type="image/png" />
 
-  <link rel="preload" href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf" as="font" type="font/otf" crossorigin>
-  <link rel="stylesheet" href="/public/assets/fonts/pretendard/pretendardvariable.css"/>
-	
-  <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/gastromond/gastromond.css"/>
-  <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css"/>
+    <link
+      rel="preload"
+      href="/public/assets/fonts/pretendard/woff2/PretendardVariable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_Bold.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/public/assets/fonts/newbery/fonnts.com-Newbery_Sans_Pro_ExtraLight.otf"
+      as="font"
+      type="font/otf"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/pretendard/pretendardvariable.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script type="module" src="/src/js/modal.js"></script>
-	<script type="module" src="/src/js/index.js"></script>
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body class="font-sans modal">
- 	<h1 class="sr-only">프로젝트 소개 페이지</h1>
+    <link rel="stylesheet" href="/public/assets/fonts/newbery/newbery.css" />
+    <link
+      rel="stylesheet"
+      href="/public/assets/fonts/gastromond/gastromond.css"
+    />
+    <link rel="stylesheet" href="/public/assets/fonts/adelle/adelle.css" />
 
-	<div id="modal_wrap" class="z-[2000] fixed top-0 left-0 w-full h-dvh bg-[rgba(0,0,0,0.8)] break-keep">
-		<div class="absolute top-1/2 left-1/2 -translate-1/2 w-[calc(100%-32px)] min-w-[70vw] lg:min-w-fit md:w-fit p-5 lg:p-10 rounded-xs bg-hot-ivory">
-			<h2 class="mb-5 font-semibold text-center text-18 lg:mb-10 lg:text-30">🦁 멋쟁이사자처럼 학습 프로젝트</h2>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/js/modal.js"></script>
+    <script type="module" src="/src/js/index.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body class="font-sans modal">
+    <h1 class="sr-only">프로젝트 소개 페이지</h1>
 
-			<div class="text-13 lg:text-18">
-				<p>안녕하세요, 방문자님!</p>
-				<strong class="block">본 웹사이트는 멋쟁이사자처럼 프론트엔드 교육과정의 학습 프로젝트입니다.</strong>
-				<br/>
-				<b>【면책 조항】</b>
-				<ul class="text-13 lg:text-16">
-						<li>• 교육 목적으로 제작된 비상업적 프로젝트입니다.</li>
-						<li>• 사이트에 포함된 정보는 정확성이나 완전성을 보장하지 않습니다.</li>
-						<li>• 표시된 상품, 서비스, 가격 등은 실제로 제공되지 않습니다.</li>
-						<li>• 제3자 콘텐츠가 포함될 수 있으며, 해당 저작권은 원 소유자에게 있습니다.</li>
-				</ul>
-				<br/>
-				<b class="block">확인 버튼을 클릭하시면 이 내용에 동의하신 것으로 간주됩니다.</b>
-				<p>즐거운 탐색 되세요!</p><br />
-			</div>
-	
-			<button type="button" onclick="modal_close()" class="w-full p-2 font-semibold text-white lg:p-4 rounded-xs bg-hot-brand text-15 lg:text-20 hover:bg-black focus:bg-black" aria-label="모달창닫기">확인</button>
-		</div>
-	</div>
+    <div
+      id="modal_wrap"
+      class="z-[2000] fixed top-0 left-0 w-full h-dvh bg-[rgba(0,0,0,0.8)] break-keep"
+    >
+      <div
+        class="absolute top-1/2 left-1/2 -translate-1/2 w-[calc(100%-32px)] min-w-[70vw] lg:min-w-fit md:w-fit p-5 lg:p-10 rounded-xs bg-hot-ivory"
+      >
+        <h2 class="mb-5 font-semibold text-center text-18 lg:mb-10 lg:text-30">
+          🦁 멋쟁이사자처럼 학습 프로젝트
+        </h2>
 
-	<div id="container" class="pt-0 bg-hot-ivory" role="main">
-		<section data-section="intro" aria-labelledby="intro-contents" class="bg-black">
-			<div class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) overflow-x-hidden bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]">
-				<img src="/assets/images/bird.gif" loading="lazy" alt="" aria-hidden="true" class="w-full scale-[200%] md:scale-100">
-				<div class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-14 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]">
-					<div class="w-1/2">
-						<h2  id="intro-contents" class="inline-block mt-1 text-4xl font-semibold lg:text-6xl text-nowrap">2팀 이글이글</h2><br />
-						<h3 class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white">프로젝트 소개</h3>
-					</div>
-					<div class="font-medium lg:mt-3 text-16 lg:text-18 break-keep">
-						<p>
-							'이글이글'이라는 팀명에 어울리는 '핫소스'를 판매하는<br class="lg:hidden"/>
-							<a href="/src/pages/home.html" aria-label="하랜띵스 클론홈페이지로 이동" rel="noopener noreferrer">
-								<img src="/public/assets/images/logo.webp" loading="lazy" alt="" class="inline-block w-[100px] lg:w-[150px] border-2"/>
-							</a>
-							(하랜띵스)라는 홈페이지를 깊이 있게 분석하고 사용자 경험을 새롭게 재해석했습니다.
-						</p>
-						<p class="mt-3">무조건 따라하는 것 보다, 사용자 입장에서 한번 더 생각하고 코드 재사용을 고려한 컴포넌트 작업과 코드 개선 등을 고민하여 작업하였습니다.</p>
-						<p class="mt-3">고급스러운 매콤함을 더해 평범한 일상 속에서도 미슐랭급 웹 경험을 즐겨보세요😊</p>
-					</div>
-				</div>
-			</div>
-			<div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
-				<div class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"></div>
-			</div>
-		</section>
+        <div class="text-13 lg:text-18">
+          <p>안녕하세요, 방문자님!</p>
+          <strong class="block"
+            >본 웹사이트는 멋쟁이사자처럼 프론트엔드 교육과정의 학습
+            프로젝트입니다.</strong
+          >
+          <br />
+          <b>【면책 조항】</b>
+          <ul class="text-13 lg:text-16">
+            <li>• 교육 목적으로 제작된 비상업적 프로젝트입니다.</li>
+            <li>
+              • 사이트에 포함된 정보는 정확성이나 완전성을 보장하지 않습니다.
+            </li>
+            <li>• 표시된 상품, 서비스, 가격 등은 실제로 제공되지 않습니다.</li>
+            <li>
+              • 제3자 콘텐츠가 포함될 수 있으며, 해당 저작권은 원 소유자에게
+              있습니다.
+            </li>
+          </ul>
+          <br />
+          <b class="block"
+            >확인 버튼을 클릭하시면 이 내용에 동의하신 것으로 간주됩니다.</b
+          >
+          <p>즐거운 탐색 되세요!</p>
+          <br />
+        </div>
 
-		<section data-section="team_member" aria-labelledby="team-members">
-			<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery" id="team-members">TEAM MEMBER🥫</h2>
-				
-				<div class="grid max-[500px]:grid-cols-2 grid-cols-4 gap-5 justify-items-center lg:grid-cols-8">
-					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-						<div class="flex flex-col">
-							<div class="bg-white">
-								<img src="/public/assets/images/psh.webp" loading="lazy" alt="박상희 미모지" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">박상희</h3>
-								<P class="text-14 lg:text-16 break-keep">
-									짧은 시간이지만 함께 재밌게 코딩하며 서로에게 배움을 주는 값진 경험이 되길 바랍니다!<br />
-									우리의 코드처럼 열정도 이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between">
-										<span>역할</span>
-										<span>팀장/스크럼마스터</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>MBTI</span>
-										<span>INTP</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>지역</span>
-										<span>대전</span>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/2sign" aria-label="박상희 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-								GITHUB
-							</a>
-						</div>
-					</div>
+        <button
+          type="button"
+          onclick="modal_close()"
+          class="w-full p-2 font-semibold text-white lg:p-4 rounded-xs bg-hot-brand text-15 lg:text-20 hover:bg-black focus:bg-black"
+          aria-label="모달창닫기"
+        >
+          확인
+        </button>
+      </div>
+    </div>
 
-					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-						<div class="flex flex-col">
-							<div class="bg-white">
-								<img src="/public/assets/images/kjo.webp" loading="lazy" alt="김준오 미모지" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">김준오</h3>
-								<P class="text-14 lg:text-16 break-keep">
-									이번 첫 프로젝트를 통해 서로의 강점을 배우고, 새로운 도전을 통해 함께 성장하는 소중한 시간이 되길 기대합니다!<br />
-									이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between">
-										<span>역할</span>
-										<span>팀원</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>MBTI</span>
-										<span>ISFJ</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>지역</span>
-										<span>부산</span>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/kkjuno" aria-label="김준오 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-								GITHUB
-							</a>
-						</div>
-					</div>
+    <div id="container" class="pt-0 bg-hot-ivory" role="main">
+      <section
+        data-section="intro"
+        aria-labelledby="intro-contents"
+        class="bg-black"
+      >
+        <div
+          class="w-full py-20 lg:py-30 bg-(image:--symbol-bg) overflow-x-hidden bg-repeat bg-cetner bg-[length:200%] lg:bg-[length:100%]"
+        >
+          <img
+            src="/assets/images/bird.gif"
+            loading="lazy"
+            alt=""
+            aria-hidden="true"
+            class="w-full scale-[200%] md:scale-100"
+          />
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-8 lg:gap-10 m-auto mt-14 lg:mt-20 text-white font-semibold w-[calc(100%-64px)] lg:max-w-[1000px]"
+          >
+            <div class="w-1/2">
+              <h2
+                id="intro-contents"
+                class="inline-block mt-1 text-4xl font-semibold lg:text-6xl text-nowrap"
+              >
+                2팀 이글이글
+              </h2>
+              <br />
+              <h3
+                class="mt-0.5 lg:mt-3 text-2xl lg:text-3xl font-light lg:font-medium text-white"
+              >
+                프로젝트 소개
+              </h3>
+            </div>
+            <div class="font-medium lg:mt-3 text-16 lg:text-18 break-keep">
+              <p>
+                '이글이글'이라는 팀명에 어울리는 '핫소스'를 판매하는<br
+                  class="lg:hidden"
+                />
+                <a
+                  href="/src/pages/home.html"
+                  aria-label="하랜띵스 클론홈페이지로 이동"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="/public/assets/images/logo.webp"
+                    loading="lazy"
+                    alt=""
+                    class="inline-block w-[100px] lg:w-[150px] border-2"
+                  />
+                </a>
+                (하랜띵스)라는 홈페이지를 깊이 있게 분석하고 사용자 경험을
+                새롭게 재해석했습니다.
+              </p>
+              <p class="mt-3">
+                무조건 따라하는 것 보다, 사용자 입장에서 한번 더 생각하고 코드
+                재사용을 고려한 컴포넌트 작업과 코드 개선 등을 고민하여
+                작업하였습니다.
+              </p>
+              <p class="mt-3">
+                고급스러운 매콤함을 더해 평범한 일상 속에서도 미슐랭급 웹 경험을
+                즐겨보세요😊
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
+          <div
+            class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain motion-reduce:transition-none animate-marquee"
+          ></div>
+        </div>
+      </section>
 
-					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-						<div class="flex flex-col">
-							<div class="bg-white">
-								<img src="/public/assets/images/psy.webp" loading="lazy" alt="박선영 미모지" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">박선영</h3>
-								<P class="text-14 lg:text-16 break-keep">
-									함께하는 프로젝트를 통해<br />
-									많이 배우며 성장하는 기회가 되길 원해요!<br />
-									서로 부족한 부분을 채워가봅시다💪<br/>
-									이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between">
-										<span>역할</span>
-										<span>팀원/문서작성</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>MBTI</span>
-										<span>ESFP</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>지역</span>
-										<span>서울</span>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/seonyoungg" aria-label="박선영 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-								GITHUB
-							</a>
-						</div>
-					</div>
+      <section data-section="team_member" aria-labelledby="team-members">
+        <div
+          class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+        >
+          <h2
+            class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery"
+            id="team-members"
+          >
+            TEAM MEMBER🥫
+          </h2>
 
-					<div class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2">
-						<div class="flex flex-col">
-							<div class="bg-white">
-								<img src="/public/assets/images/pjh.webp" loading="lazy" alt="박준환 미모지" />
-							</div>
-							<div class="text-white bg-black p-7">
-								<h3 class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40">박준환</h3>
-								<P class="text-14 lg:text-16 break-keep">
-									처음이기에 부족한 점도 많겠지만, 그만큼 배울 수 있는 기회도 크다고 생각합니다. 
-									어려운 일에는 주저하지 않고 도전하며, 맡은 일은 끝까지 책임지자! <br />
-									이글이글 화이팅🔥🔥
-								</P>
-								<ul class="mt-10 text-17">
-									<li class="flex items-center justify-between">
-										<span>역할</span>
-										<span>팀원</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>MBTI</span>
-										<span>ISFP</span>
-									</li>
-									<li class="flex items-center justify-between">
-										<span>지역</span>
-										<span>서울</span>
-									</li>
-								</ul>
-							</div>
-							<a href="https://github.com/fipark" aria-label="박준환 깃허브저장소이동" target="_blank" class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full">
-								GITHUB
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+          <div
+            class="grid max-[500px]:grid-cols-2 grid-cols-4 gap-5 justify-items-center lg:grid-cols-8"
+          >
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/psh.webp"
+                    loading="lazy"
+                    alt="박상희 미모지"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40"
+                  >
+                    박상희
+                  </h3>
+                  <p class="text-14 lg:text-16 break-keep">
+                    짧은 시간이지만 함께 재밌게 코딩하며 서로에게 배움을 주는
+                    값진 경험이 되길 바랍니다!<br />
+                    우리의 코드처럼 열정도 이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀장/스크럼마스터</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>INTP</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>대전</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/2sign"
+                  aria-label="박상희 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
 
-		<section data-section="components" aria-labelledby="team-components">
-			<div class="py-10 overflow-hidden lg:py-20">
-				<!-- 상단 이미지 영역 -->
-				<div class="relative flex gap-4 transform animate-cardrolling-r -rotate-2">
-					<!-- 1 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-1.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 2 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-2.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 3 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-3.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 4 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-4.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 5 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-5.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 6 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-6.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 7 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-7.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 8 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-8.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 9 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-9.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-				</div>
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/kjo.webp"
+                    loading="lazy"
+                    alt="김준오 미모지"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40"
+                  >
+                    김준오
+                  </h3>
+                  <p class="text-14 lg:text-16 break-keep">
+                    이번 첫 프로젝트를 통해 서로의 강점을 배우고, 새로운 도전을
+                    통해 함께 성장하는 소중한 시간이 되길 기대합니다!<br />
+                    이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀원</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>ISFJ</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>부산</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/kkjuno"
+                  aria-label="김준오 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
 
-				<!-- 가운데 텍스트 영역 -->
-				<div class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-					<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery" id="team-components">COMPONENTS🍕</h2>
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/psy.webp"
+                    loading="lazy"
+                    alt="박선영 미모지"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40"
+                  >
+                    박선영
+                  </h3>
+                  <p class="text-14 lg:text-16 break-keep">
+                    함께하는 프로젝트를 통해<br />
+                    많이 배우며 성장하는 기회가 되길 원해요!<br />
+                    서로 부족한 부분을 채워가봅시다💪<br />
+                    이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀원/문서작성</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>ESFP</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>서울</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/seonyoungg"
+                  aria-label="박선영 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
 
-					<div class="flex flex-col items-center gap-4">
-						<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
-							<summary class="flex items-center justify-between px-2 py-6 sm:px-4">
-								<span class="font-normal lg:text-20">
-									<strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등
-								</span>
-								<span class="relative">
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-								</span>
-							</summary>
-							<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-								<li class="flex items-start gap-6">
-									<a href="/src/components/pages-btn.html" class="min-w-[160px] text-center px-6 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										primary button
-									</a>
-									<p>[SHOP] ALL PRODUCTS 페이지<br />[SHOP] PYOGORUFFLE 페이지<br />[SHOP] PARMESAN GOCHUJANG 페이지<br />[SHOP] XO SHRIMP 페이지<br />[SHOP] HOTN'THINGS KIT 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-text.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										title
-									</a>
-									<p>[COMMUNITY] review 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-searchbar.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										search
-									</a>
-									<p>검색 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a
-										href="/src/components/join-login-input-component.html"
-										class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
-									>
-										input
-									</a>
-									<p>[Join-Login]</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-select.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										select
-									</a>
-									<p>[SHOP]</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-tag.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										name tag
-									</a>
-									<p>[ABOUT] OUT BRAND 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-pagination.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										pagination
-									</a>
-									<p>[COMMUNITY]</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-pagination2.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										pagination2
-									</a>
-									<p>[COMMUNITY]</p>
-								</li>
-							</ul>
-						</details>
+            <div
+              class="inline-block align-top content-end md:even:translate-y-[80px] col-span-2"
+            >
+              <div class="flex flex-col">
+                <div class="bg-white">
+                  <img
+                    src="/public/assets/images/pjh.webp"
+                    loading="lazy"
+                    alt="박준환 미모지"
+                  />
+                </div>
+                <div class="text-white bg-black p-7">
+                  <h3
+                    class="mb-5 font-semibold leading-none break-all font-newbery text-30 lg:text-40"
+                  >
+                    박준환
+                  </h3>
+                  <p class="text-14 lg:text-16 break-keep">
+                    처음이기에 부족한 점도 많겠지만, 그만큼 배울 수 있는 기회도
+                    크다고 생각합니다. 어려운 일에는 주저하지 않고 도전하며,
+                    맡은 일은 끝까지 책임지자! <br />
+                    이글이글 화이팅🔥🔥
+                  </p>
+                  <ul class="mt-10 text-17">
+                    <li class="flex items-center justify-between">
+                      <span>역할</span>
+                      <span>팀원</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>MBTI</span>
+                      <span>ISFP</span>
+                    </li>
+                    <li class="flex items-center justify-between">
+                      <span>지역</span>
+                      <span>서울</span>
+                    </li>
+                  </ul>
+                </div>
+                <a
+                  href="https://github.com/fipark"
+                  aria-label="박준환 깃허브저장소이동"
+                  target="_blank"
+                  class="p-1.5 bg-hot-brand font-newbery text-white text-25 font-medium text-center content-center w-full"
+                >
+                  GITHUB
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
-							<summary class="flex items-center justify-between px-4 py-6">
-								<span class="font-normal lg:text-20">
-									<strong>🥫레이아웃 요소</strong> - 헤더, 푸터, 모달 창
-								</span>
-								<span class="relative">
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-								</span>
-							</summary>
-							<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-								<li class="flex items-center gap-6">
-									<a href="/src/components/main-header.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										header
-									</a>
-									<p>전체 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/main-footer.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										footer
-									</a>
-									<p>전체 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/modal.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										modal
-									</a>
-									<p>[MAIN] home.html 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-summary.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										summary
-									</a>
-									<p>[FAQ]</p>
-								</li>
-							</ul>
-						</details>
+      <section data-section="components" aria-labelledby="team-components">
+        <div class="py-10 overflow-hidden lg:py-20">
+          <!-- 상단 이미지 영역 -->
+          <div
+            class="relative flex gap-4 transform motion-reduce:transition-none animate-cardrolling-r -rotate-2"
+          >
+            <!-- 1 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-1.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 2 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-2.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 3 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-3.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 4 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 5 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 6 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 7 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-7.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 8 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-8.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 9 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-9.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
 
-						<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
-							<summary class="flex items-center justify-between w-full px-4 py-6">
-								<span class="font-normal lg:text-20">
-									<strong>🌶️페이지별 카드 컴포넌트</strong> - 상품 카드, 프로필 카드, 게시물 카드
-								</span>
-								<span class="relative">
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-								</span>
-							</summary>
-							<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-napolimatfia-buynow.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										buynow
-									</a>
-									<p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-recipes_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										recipes
-									</a>
-									<p>[COMMUNITY] RECIPES & PARING 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-review_all.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										review item
-									</a>
-									<p>[COMMUNITY] REVIEW 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-review_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										review item2
-									</a>
-									<p>[COMMUNITY] REVIEW 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-review_img.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										review img
-									</a>
-									<p>[COMMUNITY] REVIEW 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-review_text.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										review text
-									</a>
-									<p>[COMMUNITY] REVIEW 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/shop-component_info.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										shop info
-									</a>
-									<p>[SHOP] Shop 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/shop-product_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										product item
-									</a>
-									<p>[SHOP] ALL PRODUCTS</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/shop-product_item2.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										prodcut item2
-									</a>
-									<p>[SHOP] Shop 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/shop-product_item3.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										prodcut item3
-									</a>
-									<p>[SHOP] Shop 페이지</p>
-								</li>
+          <!-- 가운데 텍스트 영역 -->
+          <div
+            class="section_inner w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+          >
+            <h2
+              class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery"
+              id="team-components"
+            >
+              COMPONENTS🍕
+            </h2>
 
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-event_item.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										event item
-									</a>
-									<p>[COMMUNITY] EVENT 페이지</p>
-								</li>
-							</ul>
-						</details>
+            <div class="flex flex-col items-center gap-4">
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+              >
+                <summary
+                  class="flex items-center justify-between px-2 py-6 sm:px-4"
+                >
+                  <span class="font-normal lg:text-20">
+                    <strong>🤯UI 요소</strong> - 버튼, 입력 필드, 아이콘 등
+                  </span>
+                  <span class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </span>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-start gap-6">
+                    <a
+                      href="/src/components/pages-btn.html"
+                      class="min-w-[160px] text-center px-6 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      primary button
+                    </a>
+                    <p>
+                      [SHOP] ALL PRODUCTS 페이지<br />[SHOP] PYOGORUFFLE
+                      페이지<br />[SHOP] PARMESAN GOCHUJANG 페이지<br />[SHOP]
+                      XO SHRIMP 페이지<br />[SHOP] HOTN'THINGS KIT 페이지
+                    </p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-text.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      title
+                    </a>
+                    <p>[COMMUNITY] review 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-searchbar.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      search
+                    </a>
+                    <p>검색 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/join-login-input-component.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      input
+                    </a>
+                    <p>[Join-Login]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-select.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      select
+                    </a>
+                    <p>[SHOP]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-tag.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      name tag
+                    </a>
+                    <p>[ABOUT] OUT BRAND 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-pagination.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      pagination
+                    </a>
+                    <p>[COMMUNITY]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-pagination2.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      pagination2
+                    </a>
+                    <p>[COMMUNITY]</p>
+                  </li>
+                </ul>
+              </details>
 
-						<details class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group">
-							<summary class="flex items-center justify-between px-4 py-6">
-								<span class="font-normal lg:text-20">
-									<strong>🍰디자인 요소</strong>
-								</span>
-								<span class="relative">
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"></span>
-									<span class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"></span>
-								</span>
-							</summary>
-							<ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
-								<li class="flex items-center gap-6">
-									<a href="/src/components/main-showcase.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										showcase
-									</a>
-									<p>[MAIN] home.html 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/community-napolimatfia-hashtag.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										hash tag
-									</a>
-									<p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/shop-component_taste.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										taste
-									</a>
-									<p>[SHOP]</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/main-photoframe.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-										photoframe
-									</a>
-									<p>[MAIN]</p>
-								</li>
-								<li class="flex items-center gap-6">
-									<a href="/src/components/pages-rollingtext.html" class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand">
-											rollingtext
-									</a>
-									<p>[MAIN] rollingtext</p>
-							</li>
-							</ul>
-						</details>
-					</div>
-				</div>
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+              >
+                <summary class="flex items-center justify-between px-4 py-6">
+                  <span class="font-normal lg:text-20">
+                    <strong>🥫레이아웃 요소</strong> - 헤더, 푸터, 모달 창
+                  </span>
+                  <span class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </span>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/main-header.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      header
+                    </a>
+                    <p>전체 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/main-footer.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      footer
+                    </a>
+                    <p>전체 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/modal.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      modal
+                    </a>
+                    <p>[MAIN] home.html 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-summary.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      summary
+                    </a>
+                    <p>[FAQ]</p>
+                  </li>
+                </ul>
+              </details>
 
-				<!-- 하단 이미지 영역 -->
-				<div class="relative flex gap-4 transform animate-cardrolling rotate-2">
-					<!-- 10 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-4.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 11 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-5.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 12 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-6.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 13 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-4.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 14 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-5.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 15 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-6.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 16 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-4.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 17 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-5.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-					<!-- 18 -->
-					<div class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]" >
-						<img src="/public/assets/images/component-6.webp" loading="lazy" aria-hidden="true" alt="" class="object-cover w-full h-full" />
-					</div>
-				</div>
-			</div>
-		</section>
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+              >
+                <summary
+                  class="flex items-center justify-between w-full px-4 py-6"
+                >
+                  <span class="font-normal lg:text-20">
+                    <strong>🌶️페이지별 카드 컴포넌트</strong> - 상품 카드,
+                    프로필 카드, 게시물 카드
+                  </span>
+                  <span class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </span>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-napolimatfia-buynow.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      buynow
+                    </a>
+                    <p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-recipes_item.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      recipes
+                    </a>
+                    <p>[COMMUNITY] RECIPES & PARING 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-review_all.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review item
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-review_item.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review item2
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-review_img.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review img
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-review_text.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      review text
+                    </a>
+                    <p>[COMMUNITY] REVIEW 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/shop-component_info.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      shop info
+                    </a>
+                    <p>[SHOP] Shop 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/shop-product_item.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      product item
+                    </a>
+                    <p>[SHOP] ALL PRODUCTS</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/shop-product_item2.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      prodcut item2
+                    </a>
+                    <p>[SHOP] Shop 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/shop-product_item3.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      prodcut item3
+                    </a>
+                    <p>[SHOP] Shop 페이지</p>
+                  </li>
 
-		<section data-section="mobile_page" aria-labelledby="team-mobilepages">
-			<div class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 id="team-mobilepages" class="mb-10 font-semibold text-center lg:mb-10 text-25 lg:text-40 font-newbery flex flex-col gap-4">
-					<span>MOBILE PAGE🧁</span>
-					<span class="font-normal text-center text-16 break-keep">
-						하단의 애니메이션을 클릭하면 모바일 화면을 <strong>맛보기</strong>로 살펴볼 수 있어요😋
-					</span>
-				</h2>
-				<div class="flex flex-col items-center gap-4">
-					<div class="max-w-[500px] mx-auto relative">
-						<img src="/public/assets/images/phone.webp" alt=""  aria-hidden="true" class="relative z-1"/>
-						<div class="mobile-img absolute left-[28%] top-[3%] w-[43%] h-[94%] rounded-[1vw] bg-white overflow-hidden">
-							<img class="block" src="/public/assets/images/phone-screen1.webp" alt="메인홈페이지 모바일 스크린샷"/>
-							<img class="hidden" src="/public/assets/images/phone-screen2.webp" alt="브랜드소개 페이지 모바일 스크린샷"/>
-							<img class="hidden" src="/public/assets/images/phone-screen3.webp" alt="모든 상품 구매하기 페이지 모바일 스크린샷"/>
-							<img class="hidden" src="/public/assets/images/phone-screen4.webp" alt="이벤트 쿠폰 페이지 모바일 스크린샷"/>
-						</div>
-					</div>
-					<ul class="mobile-btn-group relative flex flex-wrap items-center justify-center mt-5 gap-y-8 gap-x-4 sm:flex-nowrap">
-							<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
-								<button aria-pressed="true" aria-label="메인홈페이지 모바일 스크린샷 보기" class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium" data-mobile="1"># HOME🤯</button>
-							</li>
-							<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-2)">
-								<button aria-pressed="false" aria-label="브랜드소개 페이지 모바일 스크린샷 보기" class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[20px]" data-mobile="2"># ABOUT🥫</button>
-							</li>
-							<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-3)">
-								<button aria-pressed="false" aria-label="모든 상품 구매하기 페이지 모바일 스크린샷 보기" class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[8px]" data-mobile="3"># SHOP🌶️</button>
-							</li>
-							<li class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] animate-(--animate-bounce-1)">
-								<button aria-pressed="false" aria-label="이벤트 쿠폰 페이지 모바일 스크린샷 보기" class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[8px]" data-mobile="4"># COMMUNITY🍔</button>
-							</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-event_item.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      event item
+                    </a>
+                    <p>[COMMUNITY] EVENT 페이지</p>
+                  </li>
+                </ul>
+              </details>
 
-		<section data-section="pc_page" aria-labelledby="team-pcpages">
-			<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60">
-				<h2 id="team-pcpages" class="mb-10 font-semibold text-center lg:mb-20 text-25 lg:text-40 font-newbery flex flex-col gap-4">
-					<span>PC PAGE🥑</span>
-					<span class="font-normal text-center text-16 break-keep">
-						<span class="xl:hidden">하단</span>
-						<span class="hidden xl:inline">우측</span>
-						버튼을 클릭하면 PC 페이지 전체를 살펴볼 수 있어요👀
-					</span>
-				</h2>
+              <details
+                class="overflow-hidden w-full lg:w-[60%] font-medium border-2 rounded-2xl text-15 break-keep group"
+              >
+                <summary class="flex items-center justify-between px-4 py-6">
+                  <span class="font-normal lg:text-20">
+                    <strong>🍰디자인 요소</strong>
+                  </span>
+                  <span class="relative">
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transition-opacity duration-300 group-open:opacity-0"
+                    ></span>
+                    <span
+                      class="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-[1.5px] bg-black block transform rotate-90 transition-transform duration-300 group-open:rotate-0"
+                    ></span>
+                  </span>
+                </summary>
+                <ul class="flex flex-col gap-4 px-6 py-6 border-t-2">
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/main-showcase.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      showcase
+                    </a>
+                    <p>[MAIN] home.html 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/community-napolimatfia-hashtag.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      hash tag
+                    </a>
+                    <p>[COMMUNITY] NAPOLI MATFIA 페이지</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/shop-component_taste.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      taste
+                    </a>
+                    <p>[SHOP]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/main-photoframe.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      photoframe
+                    </a>
+                    <p>[MAIN]</p>
+                  </li>
+                  <li class="flex items-center gap-6">
+                    <a
+                      href="/src/components/pages-rollingtext.html"
+                      class="min-w-[160px] text-center px-2 py-2 font-medium text-white bg-black text-nowrap font-newbery text-2 hover:bg-hot-brand"
+                    >
+                      rollingtext
+                    </a>
+                    <p>[MAIN] rollingtext</p>
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
 
-				<div class="flex flex-col items-center justify-center gap-8 xl:flex-row">
-					<div class="max-w-[800px] mx-auto relative">
-						<img src="/public/assets/images/computer.webp" alt="" aria-hidden="true"/>
-						<div class="absolute left-[4%] top-[6%] w-[92%] h-[62%] bg-hot-ivory overflow-y-auto">
-							<img class="block" src="/public/assets/images/screenshot-1.webp" alt="메인홈페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-2.webp" alt="브랜드소개 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-3.webp" alt="입점 문의 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-4.webp" alt="모든 상품 구매하기 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-5.webp" alt="표고러플 상품 구매하기 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-6.webp" alt="파마산 고추장 상품 구매하기 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-7.png" alt="XO쉬림프 상품 구매하기 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-8.webp" alt="쇼핑백 구매하기 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-9.webp" alt="이벤트 쿠폰 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-10.webp" alt="카카오톡 이벤트 쿠폰 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-11.webp" alt="레시피, 페어링 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-12.webp" alt="나폴리맛피아 광고 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-13.webp" alt="리뷰 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-14.webp" alt="질의응답 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-15.webp" alt="1:1 문의하기 연결 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-16.webp" alt="검색 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-17.webp" alt="장바구니 페이지"/>
-							<img class="hidden" src="/public/assets/images/screenshot-18.webp" alt="로그인 페이지"/>
-						</div>
-					</div>
-					<div class="btn-group w-full max-[500px]:grid-cols-2 grid grid-cols-(--btngroup) xl:grid-cols-2 gap-x-4 gap-y-2">
-						<button aria-pressed="true" aria-label="메인홈페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="1">HOME</button>
-						<button aria-pressed="false" aria-label="브랜드소개 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="2">OURBRAND</button>
-						<button aria-pressed="false" aria-label="입점 문의 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="3">INQUIRY</button>
-						<button aria-pressed="false" aria-label="모든 상품 구매하기 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="4">ALL PRODUCT</button>
-						<button aria-pressed="false" aria-label="표고러플 상품 구매하기 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="5">PYOGORUFFLE</button>
-						<button aria-pressed="false" aria-label="파마산 고추장 상품 구매하기 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="6">PARMESAN GOCHUJANG</button>
-						<button aria-pressed="false" aria-label="XO쉬림프 상품 구매하기 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="7">XO SHIRIMP</button>
-						<button aria-pressed="false" aria-label="쇼핑백 구매하기 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="8">HOTN'THINGS KIT</button>
-						<button aria-pressed="false" aria-label="이벤트 쿠폰 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="9">SHOPPING BAG</button>
-						<button aria-pressed="false" aria-label="카카오톡 이벤트 쿠폰 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="10">EVENT</button>
-						<button aria-pressed="false" aria-label="레시피, 페어링 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="11">EVENT-Sub</button>
-						<button aria-pressed="false" aria-label="나폴리맛피아 광고 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="12">RECIPES & PARING</button>
-						<button aria-pressed="false" aria-label="리뷰 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="13">NAPOLI MATFIA</button>
-						<button aria-pressed="false" aria-label="질의응답 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="14">REVIEW</button>
-						<button aria-pressed="false" aria-label="1:1 문의하기 연결 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="15">FAQ</button>
-						<button aria-pressed="false" aria-label="검색 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="16">SEARCH</button>
-						<button aria-pressed="false" aria-label="장바구니 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="17">CART</button>
-						<button aria-pressed="false" aria-label="로그인 페이지 스크린샷 보기" class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light" data-pc="18">JOIN & LOGIN</button>
-					</div>
-				</div>
-			</div>
-		</section>
+          <!-- 하단 이미지 영역 -->
+          <div
+            class="relative flex gap-4 transform motion-reduce:transition-none animate-cardrolling rotate-2"
+          >
+            <!-- 10 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 11 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 12 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 13 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 14 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 15 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 16 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-4.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 17 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-5.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+            <!-- 18 -->
+            <div
+              class="flex-none border-[10px] border-black w-[200px] h-[150px] lg:w-[500px] lg:h-[300px]"
+            >
+              <img
+                src="/public/assets/images/component-6.webp"
+                loading="lazy"
+                aria-hidden="true"
+                alt=""
+                class="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<section data-section="review" aria-labelledby="team-reviews">
-			<div class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]">
-				<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30">
-					<h2 class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery" id="team-reviews">REVIEW🍿</h2>
+      <section data-section="mobile_page" aria-labelledby="team-mobilepages">
+        <div
+          class="w-[calc(100%-64px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+        >
+          <h2
+            id="team-mobilepages"
+            class="mb-10 font-semibold text-center lg:mb-10 text-25 lg:text-40 font-newbery flex flex-col gap-4"
+          >
+            <span>MOBILE PAGE🧁</span>
+            <span class="font-normal text-center text-16 break-keep">
+              하단의 애니메이션을 클릭하면 모바일 화면을
+              <strong>맛보기</strong>로 살펴볼 수 있어요😋
+            </span>
+          </h2>
+          <div class="flex flex-col items-center gap-4">
+            <div class="max-w-[500px] mx-auto relative">
+              <img
+                src="/public/assets/images/phone.webp"
+                alt=""
+                aria-hidden="true"
+                class="relative z-1"
+              />
+              <div
+                class="mobile-img absolute left-[28%] top-[3%] w-[43%] h-[94%] rounded-[1vw] bg-white overflow-hidden"
+              >
+                <img
+                  class="block"
+                  src="/public/assets/images/phone-screen1.webp"
+                  alt="메인홈페이지 모바일 스크린샷"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/phone-screen2.webp"
+                  alt="브랜드소개 페이지 모바일 스크린샷"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/phone-screen3.webp"
+                  alt="모든 상품 구매하기 페이지 모바일 스크린샷"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/phone-screen4.webp"
+                  alt="이벤트 쿠폰 페이지 모바일 스크린샷"
+                />
+              </div>
+            </div>
+            <ul
+              class="mobile-btn-group relative flex flex-wrap items-center justify-center mt-5 gap-y-8 gap-x-4 sm:flex-nowrap"
+            >
+              <li
+                class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] motion-reduce:transition-none animate-(--motion-reduce:transition-none animate-bounce-1)"
+              >
+                <button
+                  aria-pressed="true"
+                  aria-label="메인홈페이지 모바일 스크린샷 보기"
+                  class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium"
+                  data-mobile="1"
+                >
+                  # HOME🤯
+                </button>
+              </li>
+              <li
+                class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] motion-reduce:transition-none animate-(--motion-reduce:transition-none animate-bounce-2)"
+              >
+                <button
+                  aria-pressed="false"
+                  aria-label="브랜드소개 페이지 모바일 스크린샷 보기"
+                  class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[20px]"
+                  data-mobile="2"
+                >
+                  # ABOUT🥫
+                </button>
+              </li>
+              <li
+                class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] motion-reduce:transition-none animate-(--motion-reduce:transition-none animate-bounce-3)"
+              >
+                <button
+                  aria-pressed="false"
+                  aria-label="모든 상품 구매하기 페이지 모바일 스크린샷 보기"
+                  class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[8px]"
+                  data-mobile="3"
+                >
+                  # SHOP🌶️
+                </button>
+              </li>
+              <li
+                class="text-13 sm:text-16 inline-block m-[2px] md:m-[10px] motion-reduce:transition-none animate-(--motion-reduce:transition-none animate-bounce-1)"
+              >
+                <button
+                  aria-pressed="false"
+                  aria-label="이벤트 쿠폰 페이지 모바일 스크린샷 보기"
+                  class="whitespace-nowrap inline-block px-4 py-2 md:px-[18px] md:py-[10px] rounded-[50px] bg-black/90 hover:bg-hot-brand focus:bg-hot-brand transition-all duration-200 text-white md:font-medium translate-y-[8px]"
+                  data-mobile="4"
+                >
+                  # COMMUNITY🍔
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-					<div class="mb-20">
-						<ul class="grid max-[450px]:grid-cols-1 grid-cols-2 xl:grid-cols-4 gap-4 break-keep">
-							<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
-								<img src="/assets/images/symbol.webp" alt="" aria-hidden="true" />
-								<div class="space-y-8 text-center keep-all">
-									<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Sanghee</h3>
-									<ul class="space-y-4 font-medium text-15 lg:text-16">
-										<li>준오 : 로드맵을 탄탄하게 짜주시고, 항상 큰 그림을 보여주신, 저희의 나침반이였습니다🧭</li>
-										<li>선영 : 2팀의 보석💎<br/> 든든한 팀장님과 코딩하는 매순간이 즐거웠어요❤️</li>
-										<li>준환 : 이번 프로젝트를 통해 많은 걸 배울 수 있었던 건 팀장님의 리드 덕분입니다🔥</li>
-									</ul>
-									<!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
-								</div>
-							</li>
-							<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
-								<img src="/assets/images/symbol.webp" alt="" aria-hidden="true" />
-								<div class="space-y-8 text-center keep-all">
-									<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Juno</h3>
-									<ul class="space-y-4 font-medium text-15 lg:text-16">
-										<li>상희 : 항상 적극적으로 맡은일들 책임감있게 처리해주는 모습이 최고였어요❤️ (가끔씩 올려주는 짤도 재밌었어요)</li>
-										<li>선영 : 적극적인 의견제시와 완벽한 일처리 GOOD😎</li>
-										<li>준환 : 준오님이랑 같이 배워가며 함께했던 시간이 큰 힘이 됐어요! 앞으로도 같이 멋지게 성장합시다!!🔥</li>
-									</ul>
-									<!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
-								</div>
-							</li>
-							<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
-								<img src="/assets/images/symbol.webp" alt="" aria-hidden="true" />
-								<div class="space-y-8 text-center keep-all">
-									<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Seonyoung</h3>
-									<ul class="space-y-4 font-medium text-15 lg:text-16">
-										<li>상희 : 우리팀의 자랑 올라운더 선영님, 항상 선영님이 있어서 너무 든든했어요❤️</li>
-										<li>준오 : 충돌을 두려워하지 말자고 격려해주셔서 마음이 든든했습니다🙊</li>
-										<li>준환 : 함께해서 든든했고, 많이 배울 수 있어서 감사했어요! 또 같이 프로젝트 할 기회가 있으면 좋겠네요!🥺</li>
-									</ul>
-									<!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
-								</div>
-							</li>
-							<li class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center">
-								<img src="/assets/images/symbol.webp" alt="" aria-hidden="true" />
-								<div class="space-y-8 text-center keep-all">
-									<h3 class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]">Junhwan</h3>
-									<ul class="space-y-4 font-medium text-15 lg:text-16">
-										<li>상희 : 날카로운 피드백에 깜짝깜짝 놀랄때가 많았어요. 덕분에 많이 배웠어요❤️</li>
-										<li>준오 : 저와 마찬가지로 첫 웹 개발 프로젝트였는데, 서로 의지하며 함께 성장할 수 있어서 정말 좋았습니다🔥</li>
-										<li>선영 : 꼼꼼한 검토와 빠른 피드백 수용 최고👍</li>
-									</ul>
-									<!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
+      <section data-section="pc_page" aria-labelledby="team-pcpages">
+        <div
+          class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30 pb-30 lg:pb-60"
+        >
+          <h2
+            id="team-pcpages"
+            class="mb-10 font-semibold text-center lg:mb-20 text-25 lg:text-40 font-newbery flex flex-col gap-4"
+          >
+            <span>PC PAGE🥑</span>
+            <span class="font-normal text-center text-16 break-keep">
+              <span class="xl:hidden">하단</span>
+              <span class="hidden xl:inline">우측</span>
+              버튼을 클릭하면 PC 페이지 전체를 살펴볼 수 있어요👀
+            </span>
+          </h2>
 
-				<!-- showcase -->
-				<div class="relative">
-					<div class="z-20 relative max-w-[300px] mx-auto w-[calc(100%-32px)] md:w-2/5">
-						<img src="/public/assets/images/showcase.webp" alt=""  aria-hidden="true">
-						<div class="hidden md:block absolute top-0 left-[-70%] w-[65%] max-w-[452px] mt-[160px]">
-							<img src="/public/assets/images/left-showcase.webp" alt=""  aria-hidden="true">
-						</div>
-						<div class="hidden md:block absolute top-0 right-[-70%] w-[65%] max-w-[452px] mt-[160px]">
-							<img src="/public/assets/images/right-showcase.webp" alt=""  aria-hidden="true">
-						</div>
+          <div
+            class="flex flex-col items-center justify-center gap-8 xl:flex-row"
+          >
+            <div class="max-w-[800px] mx-auto relative">
+              <img
+                src="/public/assets/images/computer.webp"
+                alt=""
+                aria-hidden="true"
+              />
+              <div
+                class="absolute left-[4%] top-[6%] w-[92%] h-[62%] bg-hot-ivory overflow-y-auto"
+              >
+                <img
+                  class="block"
+                  src="/public/assets/images/screenshot-1.webp"
+                  alt="메인홈페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-2.webp"
+                  alt="브랜드소개 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-3.webp"
+                  alt="입점 문의 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-4.webp"
+                  alt="모든 상품 구매하기 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-5.webp"
+                  alt="표고러플 상품 구매하기 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-6.webp"
+                  alt="파마산 고추장 상품 구매하기 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-7.png"
+                  alt="XO쉬림프 상품 구매하기 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-8.webp"
+                  alt="쇼핑백 구매하기 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-9.webp"
+                  alt="이벤트 쿠폰 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-10.webp"
+                  alt="카카오톡 이벤트 쿠폰 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-11.webp"
+                  alt="레시피, 페어링 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-12.webp"
+                  alt="나폴리맛피아 광고 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-13.webp"
+                  alt="리뷰 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-14.webp"
+                  alt="질의응답 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-15.webp"
+                  alt="1:1 문의하기 연결 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-16.webp"
+                  alt="검색 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-17.webp"
+                  alt="장바구니 페이지"
+                />
+                <img
+                  class="hidden"
+                  src="/public/assets/images/screenshot-18.webp"
+                  alt="로그인 페이지"
+                />
+              </div>
+            </div>
+            <div
+              class="btn-group w-full max-[500px]:grid-cols-2 grid grid-cols-(--btngroup) xl:grid-cols-2 gap-x-4 gap-y-2"
+            >
+              <button
+                aria-pressed="true"
+                aria-label="메인홈페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="1"
+              >
+                HOME
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="브랜드소개 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="2"
+              >
+                OURBRAND
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="입점 문의 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="3"
+              >
+                INQUIRY
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="모든 상품 구매하기 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="4"
+              >
+                ALL PRODUCT
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="표고러플 상품 구매하기 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="5"
+              >
+                PYOGORUFFLE
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="파마산 고추장 상품 구매하기 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="6"
+              >
+                PARMESAN GOCHUJANG
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="XO쉬림프 상품 구매하기 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="7"
+              >
+                XO SHIRIMP
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="쇼핑백 구매하기 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="8"
+              >
+                HOTN'THINGS KIT
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="이벤트 쿠폰 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="9"
+              >
+                SHOPPING BAG
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="카카오톡 이벤트 쿠폰 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="10"
+              >
+                EVENT
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="레시피, 페어링 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="11"
+              >
+                EVENT-Sub
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="나폴리맛피아 광고 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="12"
+              >
+                RECIPES & PARING
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="리뷰 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="13"
+              >
+                NAPOLI MATFIA
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="질의응답 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="14"
+              >
+                REVIEW
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="1:1 문의하기 연결 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="15"
+              >
+                FAQ
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="검색 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="16"
+              >
+                SEARCH
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="장바구니 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="17"
+              >
+                CART
+              </button>
+              <button
+                aria-pressed="false"
+                aria-label="로그인 페이지 스크린샷 보기"
+                class="text-13 sm:text-15 py-2.5 mx-2 sm:mx-3 px-2 sm:px-4 rounded-4xl bg-black focus:bg-hot-brand hover:bg-hot-brand text-white font-newbery font-light"
+                data-pc="18"
+              >
+                JOIN & LOGIN
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-						<ul class="absolute top-0 left-0 grid w-full h-full pt-[29.3%] px-[18%] pb-[7%] grid-cols-2 grid-rows-3">
-							<li class="relative translate-x-[8%]">
-								<div class="w-full cursor-pointer">
-									<img src="/public/assets/images/product-1.webp" alt=""  aria-hidden="true">
-									<img class="hidden" src="/public/assets/images/product-1.gif" alt=""  aria-hidden="true">
-								</div>
-								<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PYOGORUFFLE-nametag.webp" alt=""  aria-hidden="true">
-							</li>
-							<li class="relative translate-x-[-8%]">
-								<div class="w-full cursor-pointer">
-									<img src="/public/assets/images/product-1.webp" alt=""  aria-hidden="true">
-									<img class="hidden" src="/public/assets/images/product-1.gif" alt=""  aria-hidden="true">
-								</div>
-								<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PYOGORUFFLE-nametag.webp" alt=""  aria-hidden="true">
-							</li>
-							<li class="relative translate-x-[8%]">
-								<div class="w-full cursor-pointer">
-									<img src="/public/assets/images/product-2.webp" alt=""  aria-hidden="true">
-									<img class="hidden" src="/public/assets/images/product-2.gif" alt=""  aria-hidden="true">
-								</div>
-								<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp" alt=""  aria-hidden="true">
-							</li>
-							<li class="relative translate-x-[-8%]">
-								<div class="w-full cursor-pointer">
-									<img src="/public/assets/images/product-2.webp" alt=""  aria-hidden="true">
-									<img class="hidden" src="/public/assets/images/product-2.gif" alt=""  aria-hidden="true">
-								</div>
-								<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp" alt=""  aria-hidden="true">
-							</li>
-							<li class="relative translate-x-[8%]">
-								<div class="w-full cursor-pointer">
-									<img src="/public/assets/images/product-3.webp" alt=""  aria-hidden="true">
-									<img class="hidden" src="/public/assets/images/product-3.gif" alt=""  aria-hidden="true">
-								</div>
-								<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/XOSHRIMP-nametag.webp" alt=""  aria-hidden="true">
-							</li>
-							<li class="relative translate-x-[-8%]">
-								<div class="w-full cursor-pointer">
-									<img src="/public/assets/images/product-3.webp" alt=""  aria-hidden="true">
-									<img class="hidden" src="/public/assets/images/product-3.gif" alt=""  aria-hidden="true">
-								</div>
-								<img class="w-[26%] mx-auto my-[4%] cursor-pointer" src="/public/assets/images/XOSHRIMP-nametag.webp" alt=""  aria-hidden="true">
-							</li>
-						</ul>
-					</div>
-			
-					<div class="absolute bottom-0 left-0 w-full overflow-hidden">
-							<div class="h-[200px] bg-[image:var(--wood-bg)] bg-repeat-x bg-bottom bg-[length:auto_100%]"></div>
-					</div>
-				</div>
+      <section data-section="review" aria-labelledby="team-reviews">
+        <div
+          class="w-full bg-(image:--pattern-bg) bg-repeat bg-top sm:bg-[length:12%] lg:bg-[length:5%]"
+        >
+          <div
+            class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] pt-20 lg:pt-30"
+          >
+            <h2
+              class="mb-10 font-semibold text-center lg:mb-30 text-25 lg:text-40 font-newbery"
+              id="team-reviews"
+            >
+              REVIEW🍿
+            </h2>
 
+            <div class="mb-20">
+              <ul
+                class="grid max-[450px]:grid-cols-1 grid-cols-2 xl:grid-cols-4 gap-4 break-keep"
+              >
+                <li
+                  class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center"
+                >
+                  <img
+                    src="/assets/images/symbol.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="space-y-8 text-center keep-all">
+                    <h3
+                      class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]"
+                    >
+                      Sanghee
+                    </h3>
+                    <ul class="space-y-4 font-medium text-15 lg:text-16">
+                      <li>
+                        준오 : 로드맵을 탄탄하게 짜주시고, 항상 큰 그림을
+                        보여주신, 저희의 나침반이였습니다🧭
+                      </li>
+                      <li>
+                        선영 : 2팀의 보석💎<br />
+                        든든한 팀장님과 코딩하는 매순간이 즐거웠어요❤️
+                      </li>
+                      <li>
+                        준환 : 이번 프로젝트를 통해 많은 걸 배울 수 있었던 건
+                        팀장님의 리드 덕분입니다🔥
+                      </li>
+                    </ul>
+                    <!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
+                  </div>
+                </li>
+                <li
+                  class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center"
+                >
+                  <img
+                    src="/assets/images/symbol.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="space-y-8 text-center keep-all">
+                    <h3
+                      class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]"
+                    >
+                      Juno
+                    </h3>
+                    <ul class="space-y-4 font-medium text-15 lg:text-16">
+                      <li>
+                        상희 : 항상 적극적으로 맡은일들 책임감있게 처리해주는
+                        모습이 최고였어요❤️ (가끔씩 올려주는 짤도 재밌었어요)
+                      </li>
+                      <li>선영 : 적극적인 의견제시와 완벽한 일처리 GOOD😎</li>
+                      <li>
+                        준환 : 준오님이랑 같이 배워가며 함께했던 시간이 큰 힘이
+                        됐어요! 앞으로도 같이 멋지게 성장합시다!!🔥
+                      </li>
+                    </ul>
+                    <!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
+                  </div>
+                </li>
+                <li
+                  class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center"
+                >
+                  <img
+                    src="/assets/images/symbol.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="space-y-8 text-center keep-all">
+                    <h3
+                      class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]"
+                    >
+                      Seonyoung
+                    </h3>
+                    <ul class="space-y-4 font-medium text-15 lg:text-16">
+                      <li>
+                        상희 : 우리팀의 자랑 올라운더 선영님, 항상 선영님이
+                        있어서 너무 든든했어요❤️
+                      </li>
+                      <li>
+                        준오 : 충돌을 두려워하지 말자고 격려해주셔서 마음이
+                        든든했습니다🙊
+                      </li>
+                      <li>
+                        준환 : 함께해서 든든했고, 많이 배울 수 있어서
+                        감사했어요! 또 같이 프로젝트 할 기회가 있으면
+                        좋겠네요!🥺
+                      </li>
+                    </ul>
+                    <!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
+                  </div>
+                </li>
+                <li
+                  class="min-h-[460px] rounded-4xl bg-hot-ivory overflow-hidden py-8 px-8 flex flex-col gap-4 items-center justify-center"
+                >
+                  <img
+                    src="/assets/images/symbol.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                  <div class="space-y-8 text-center keep-all">
+                    <h3
+                      class="text-26 lg:text-33 font-bold font-newbery leading-[1.3]"
+                    >
+                      Junhwan
+                    </h3>
+                    <ul class="space-y-4 font-medium text-15 lg:text-16">
+                      <li>
+                        상희 : 날카로운 피드백에 깜짝깜짝 놀랄때가 많았어요.
+                        덕분에 많이 배웠어요❤️
+                      </li>
+                      <li>
+                        준오 : 저와 마찬가지로 첫 웹 개발 프로젝트였는데, 서로
+                        의지하며 함께 성장할 수 있어서 정말 좋았습니다🔥
+                      </li>
+                      <li>선영 : 꼼꼼한 검토와 빠른 피드백 수용 최고👍</li>
+                    </ul>
+                    <!-- <p class="text-13 text-hot-gray300">Reviewer</p> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-			</div>
-		</section>
+          <!-- showcase -->
+          <div class="relative">
+            <div
+              class="z-20 relative max-w-[300px] mx-auto w-[calc(100%-32px)] md:w-2/5"
+            >
+              <img
+                src="/public/assets/images/showcase.webp"
+                alt=""
+                aria-hidden="true"
+              />
+              <div
+                class="hidden md:block absolute top-0 left-[-70%] w-[65%] max-w-[452px] mt-[160px]"
+              >
+                <img
+                  src="/public/assets/images/left-showcase.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+              <div
+                class="hidden md:block absolute top-0 right-[-70%] w-[65%] max-w-[452px] mt-[160px]"
+              >
+                <img
+                  src="/public/assets/images/right-showcase.webp"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
 
-		<section data-section="go_page" aria-labelledby="gopage-links">
-			<div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
-				<div class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain animate-marquee"></div>
-			</div>
-			<div class="py-5 lg:py-10 bg-hot-ivory">
-				<div class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] flex items-center justify-between">
-					<h2 id="gopage-links" class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]">EagleSauce</h2>
-					<a href="/src/pages/home.html" aria-label="하랜띵스 클론홈페이지로 이동" rel="noopener noreferrer" class="px-6 py-3 font-semibold rounded-full lg:px-20 lg:py-5 bg-hot-brand text-hot-ivory text-16 lg:text-30 hover:bg-black">페이지 바로가기</a>
-				</div>
-			</div>
-		</section>
-	</div>
-</body>
+              <ul
+                class="absolute top-0 left-0 grid w-full h-full pt-[29.3%] px-[18%] pb-[7%] grid-cols-2 grid-rows-3"
+              >
+                <li class="relative translate-x-[8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      src="/public/assets/images/product-1.webp"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-1.gif"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PYOGORUFFLE-nametag.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="relative translate-x-[-8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      src="/public/assets/images/product-1.webp"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-1.gif"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PYOGORUFFLE-nametag.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="relative translate-x-[8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      src="/public/assets/images/product-2.webp"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-2.gif"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="relative translate-x-[-8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      src="/public/assets/images/product-2.webp"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-2.gif"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/PARMESANGOCHUJANG-nametag.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="relative translate-x-[8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      src="/public/assets/images/product-3.webp"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-3.gif"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/XOSHRIMP-nametag.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+                <li class="relative translate-x-[-8%]">
+                  <div class="w-full cursor-pointer">
+                    <img
+                      src="/public/assets/images/product-3.webp"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                    <img
+                      class="hidden"
+                      src="/public/assets/images/product-3.gif"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <img
+                    class="w-[26%] mx-auto my-[4%] cursor-pointer"
+                    src="/public/assets/images/XOSHRIMP-nametag.webp"
+                    alt=""
+                    aria-hidden="true"
+                  />
+                </li>
+              </ul>
+            </div>
+
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden">
+              <div
+                class="h-[200px] bg-[image:var(--wood-bg)] bg-repeat-x bg-bottom bg-[length:auto_100%]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section data-section="go_page" aria-labelledby="gopage-links">
+        <div class="h-6 py-1.5 box-border bg-black lg:h-10 lg:py-2.5">
+          <div
+            class="w-full h-full translate-x-0 bg-[image:var(--rolling-bg)] bg-repeat-x bg-[0_0] bg-contain motion-reduce:transition-none animate-marquee"
+          ></div>
+        </div>
+        <div class="py-5 lg:py-10 bg-hot-ivory">
+          <div
+            class="w-[calc(100%-32px)] mx-auto lg:max-w-[1440px] flex items-center justify-between"
+          >
+            <h2
+              id="gopage-links"
+              class="text-hot-brand font-gastro font-normal text-[26px] lg:text-[75px]"
+            >
+              EagleSauce
+            </h2>
+            <a
+              href="/src/pages/home.html"
+              aria-label="하랜띵스 클론홈페이지로 이동"
+              rel="noopener noreferrer"
+              class="px-6 py-3 font-semibold rounded-full lg:px-20 lg:py-5 bg-hot-brand text-hot-ivory text-16 lg:text-30 hover:bg-black"
+              >페이지 바로가기</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
